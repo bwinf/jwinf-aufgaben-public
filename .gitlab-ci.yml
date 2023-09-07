@@ -1,0 +1,22 @@
+variables:
+  GIT_DEPTH: 0
+
+stages:
+  - deploy
+
+deploy-job:
+  image: bitnami/git
+  stage: deploy
+  only:
+    - main
+  before_script:
+    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+    - mkdir -p ~/.ssh
+    - eval $(ssh-agent -s)
+    - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+  script:
+    - ssh-add <(echo "$GITHUB_DEPLOY_KEY_PRIVATE")
+    - git checkout $CI_COMMIT_BRANCH
+    - git fetch --all
+    - git reset --hard origin/$CI_COMMIT_BRANCH
+    - git push git@github.com:bwinf/jwinf-aufgaben-public.git

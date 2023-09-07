@@ -1,0 +1,26 @@
+name: Push to git.bwinf.de
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Pre Script
+        run: |
+          which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )
+          mkdir -p ~/.ssh
+          eval $(ssh-agent -s)
+          echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+      - name: Script
+        env:
+           SSH_AUTH_SOCK: /tmp/ssh_agent.sock
+        run: |
+          ssh-agent -a $SSH_AUTH_SOCK > /dev/null
+          ssh-add - <<< "${{ secrets.GITLAB_DEPLOY_KEY_PRIVATE }}"
+          git push git@git.bwinf.de:bwinf/jwinf-aufgaben-public.git

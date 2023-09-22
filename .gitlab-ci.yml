@@ -1,14 +1,36 @@
-variables:
-  GIT_DEPTH: 0
-
 stages:
-  - deploy
+  - gitcopy
+  - testdeploy
 
-deploy-job:
-  image: bitnami/git
-  stage: deploy
+testdeploy:
+  image: 'alpine:latest'
+  stage: testdeploy
   only:
     - main
+  script:
+    # Setup SSH deploy keys
+    - 'which ssh-agent || ( apk add --no-cache openssh-client )'
+    - eval $(ssh-agent -s)
+    - echo "$DEPLOY_KEY_TEST_JWINF" | ssh-add -
+    - mkdir -p ~/.ssh
+    - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+
+    # Stop server and upload
+    - ssh medald@jim.test.bwinf.de "cd medal/tasks/jwinf/jwinf-aufgaben-public ; git pull"
+    - ssh medald@jim.test.bwinf.de "cd medal/tasks/jwinf/_common/modules ; git pull"
+    - ssh medald@jim.test.bwinf.de "sudo /bin/systemctl restart medal && exit"
+    - ssh medald@jim.test.bwinf.de "sudo /bin/systemctl restart medalp && exit"
+    - sleep 30
+    - ssh medald@jim.test.bwinf.de "sudo /bin/systemctl status medal && exit"
+    - ssh medald@jim.test.bwinf.de "sudo /bin/systemctl status medalp && exit"
+
+gitcopy:
+  image: bitnami/git
+  stage: gitcopy
+  only:
+    - main
+  variables:
+    GIT_DEPTH: 0
   before_script:
     - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
     - mkdir -p ~/.ssh

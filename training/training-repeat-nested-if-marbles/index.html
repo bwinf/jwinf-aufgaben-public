@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>training-repeat-nested-if-marbles</title>
+  <script>
+    window.stringsLanguage = 'de';
+  </script>
+  <script class="remove" type="text/javascript" src="../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js" id="import-modules"></script>
+  <script class="remove" type="text/javascript">
+    var modulesPath = '../../../_common/modules/'
+    importModules([
+      'jquery-1.7.1', 'JSON-js', 'raphael-2.2.1', 'beaver-task-2.0', 'jschannel', 'raphaelFactory-1.0', 'delayFactory-1.0', 'simulationFactory-1.0',
+      'platform-pr', 'buttonsAndMessages', 'beav-1.0', 'installationAPI.01', 'miniPlatform',
+      'taskStyles-mobileFirst', 'blockly-robot-0.9', 'jwinf_css'
+    ]);
+    // set Blockly as default language when none is specified through ?language=
+    importLanguageModules('blockly');
+  </script>
+  <script class="remove" type="text/javascript">
+    var json = {
+      "id": "http://castor-informatique.fr/questions/algorea_training/training-repeat-nested-if-marbles/",
+      "language": "fr",
+      "version": "fr.01",
+      "authors": "Mathias Hiron",
+      "translators": [],
+      "license": "",
+      "taskPathPrefix": "",
+      "modulesPathPrefix": "",
+      "browserSupport": [],
+      "fullFeedback": true,
+      "minWidth": "auto"
+    };
+  </script>
+  <script type="text/javascript" src="task.js"></script>
+
+</head>
+
+<body onresize="task.displayedSubTask.updateScale()">
+  <div id="task">
+    <h1>Murmeln verschieben</h1>
+    <img src="hole.png" style="display:none" />
+    <img src="marble.png" style="display:none" />
+    <img src="green_robot.png" style="display:none" />
+    <img src="icon.png" style="display:none" />
+
+    <div id="tabsContainer"></div>
+    <div id="taskContent">
+      <div id="taskIntro">
+        <p>
+          Programmiere den Roboter:<br>
+          Der Roboter soll jede Murmel aufheben und in einem Loch ablegen.
+        </p>
+        <p>
+          Der Roboter kann höchstens eine Murmel auf einmal tragen.
+        </p>
+        <div class="long">
+          <div data-lang="blockly">
+            <p class="easy">
+              Verwende den Baustein <code>wiederhole</code>.
+              Verwende den Baustein <code>falls</code>, um zu testen ob auf dem aktuellen Feld eine Murmel liegt oder ob sich auf dem aktuellen Feld ein Loch befindet.
+            </p>
+            <p class="medium hard">
+              Verwende Baustein <code>wiederhole</code> ineinander verschachtelt.
+              Verwende den Baustein <code>falls</code>, um zu testen ob auf dem aktuellen Feld eine Murmel liegt oder ob sich auf dem aktuellen Feld ein Loch befindet.
+            </p>
+          </div>
+          <p class="hard">Der Roboter darf nicht versuchen, eine Murmel abzulegen, wenn er gar keine Murmel transportiert. Der Roboter hat keine Sensoren um zu prüfen, ob er eine Murmel transportiert. Er hat auch kein Gedächtnis, mit
+            dem er sich merken könnte, ob er bereits eine Murmel aufgehoben hat. Du musst du dir also etwas anderes überlegen.</p>
+        </div>
+      </div>
+      <div id="gridContainer"></div>
+      <div id="blocklyLibContent"></div>
+    </div>
+
+  </div><!-- task -->
+</body>
+
+</html>

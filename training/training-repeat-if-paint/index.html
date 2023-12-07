@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>training-repeat-if-paint</title>
+  <script>
+    window.stringsLanguage = 'de';
+  </script>
+  <script class="remove" type="text/javascript" src="../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js" id="import-modules"></script>
+  <script class="remove" type="text/javascript">
+    var modulesPath = '../../../_common/modules/'
+    importModules([
+      'jquery-1.7.1', 'JSON-js', 'raphael-2.2.1', 'beaver-task-2.0', 'jschannel', 'raphaelFactory-1.0', 'delayFactory-1.0', 'simulationFactory-1.0',
+      'platform-pr', 'buttonsAndMessages', 'beav-1.0', 'installationAPI.01', 'miniPlatform',
+      'taskStyles-mobileFirst', 'blockly-robot-0.9', 'jwinf_css'
+    ]);
+    // set Blockly as default language when none is specified through ?language=
+    importLanguageModules('blockly');
+  </script>
+  <script class="remove" type="text/javascript">
+    var json = {
+      "id": "http://castor-informatique.fr/questions/algorea_training/training-repeat-if-paint/",
+      "language": "fr",
+      "version": "fr.01",
+      "authors": "Mathias Hiron",
+      "translators": [],
+      "license": "",
+      "taskPathPrefix": "",
+      "modulesPathPrefix": "",
+      "browserSupport": [],
+      "fullFeedback": true,
+      "minWidth": "auto"
+    };
+  </script>
+  <script type="text/javascript" src="task.js"></script>
+
+</head>
+
+<body onresize="task.displayedSubTask.updateScale()">
+  <div id="task">
+    <h1>Markierte Felder bemalen</h1>
+    <img src="paint.png" style="display:none" />
+    <img src="marker.png" style="display:none" />
+    <img src="green_robot.png" style="display:none" />
+    <img src="icon.png" style="display:none" />
+
+    <div id="tabsContainer"></div>
+    <div id="taskContent">
+      <div id="taskIntro">
+        <p>
+          Programmiere den Roboter: <br>
+          Der Roboter soll alle markierten Felder färben.
+        </p>
+        <div class="long">
+          <p class="medium hard">
+            Es gibt immer zwei markierte Felder übereinander. Dein Roboter muss beide Felder färben, bevor er in die nächste Spalte geht.
+          </p>
+          <div class="easy">
+            <div data-lang="blockly scratch">
+              <p>
+                Mit
+                <span data-lang="blockly scratch">dem Baustein <code>falls</code>,</span>
+                kannst du prüfen, ob das aktuelle Feld, auf dem der Roboter steht markiert ist, um es dann ggf. zu färben:
+              </p>
+              <p data-lang="blockly">
+                <img src="example_if.png" style="width:277px">
+              </p>
+              <p data-lang="scratch">
+                <img src="example_if_scratch.png" style="width:200px">
+              </p>
+            </div>
+            <div data-lang="python">
+              <p>
+                Mit
+                <span data-lang="python">der <code>if</code>-Kontrollanweisung,</span>
+                kannst du prüfen, ob das aktuelle Feld, auf dem der Roboter steht markiert ist, um es dann ggf. zu färben:
+              </p>
+<pre data-lang="python">
+  if feldMarkiert():
+     bemale()
+</pre>
+             </div>
+          </div>
+          <div class="medium">
+            <div data-lang="blockly scratch">
+              <p>
+                Vergiss nicht, dass du mehrere Anweisungen in
+                <span data-lang="blockly scratch">einen <code>falls</code>-Baustein,</span>
+                einfügen kannst:
+              </p>
+              <p data-lang="blockly">
+                <img src="example_if_2.png" style="width:277px">
+              </p>
+              <p data-lang="scratch">
+                <img src="example_if_2_scratch.png" style="width:200px">
+              </p>
+            </div>
+            <div data-lang="python">
+              <p>
+                Vergiss nicht, dass du mehrere Anweisungen in
+                <span data-lang="python">eine <code>if</code>-Kontrollanweisung,</span>
+                einfügen kannst:
+              </p>
+<pre data-lang="python">
+if feldMarkiert():
+   bemale()
+   rechts()
+</pre>
+              <p>
+                Alle Befehle die nach dem Doppelpunkt eingerückt in Zeilen stehen werden ausgeführt, falls die Bedingung "True" ist. In diese Fall also: Wenn das Feld markiert ist,
+                dann bemahlt der Roboter das Feld und geht einen Schritt nach rechts.
+              </p>
+            </div>
+          </div>
+          <div class="hard">
+            <div data-lang="blockly scratch">
+              <p>
+                Du kannst
+                <span data-lang="blockly scratch">den Baustein <code>falls- sonst</code></span>
+                benutzen um verschiedene Anweisung ausführen zu lassen, je nachdem ob das Feld markiert ist oder nicht.
+              </p>
+              <p data-lang="blockly">
+                <img src="example_if_else.png" style="width:277px">
+              </p>
+              <p data-lang="scratch">
+                <img src="example_if_else_scratch.png" style="width:200px">
+              </p>
+            </div>
+            <div data-lang="python">
+              <p>
+                Du kannst
+                <span data-lang="python">die <code>if/else</code>-Kontrollanweisung</span>
+                benutzen um verschiedene Anweisung ausführen zu lassen, je nachdem ob das Feld markiert ist oder nicht.
+              </p>
+<pre data-lang="python">
+if feldMarkiert():
+   markiere()
+else:
+   oben()
+              </pre>
+              <p>
+                Alle Befehle, die in der <code>if</code>- bzw. <code>if/else</code>-Kontrollstruktur ausgeführt werden sollen,
+                müssen eingerückt werden.
+              </p>
+            </div>
+          </div>
+        </div>
+        <p>Insgesamt muss sich der Roboter 14 mal nach rechts bewegen, um die letzte Markierung zu erreichen.</p>
+      </div>
+      <div id="gridContainer"></div>
+      <div id="blocklyLibContent"></div>
+    </div>
+
+  </div><!-- task -->
+</body>
+
+</html>

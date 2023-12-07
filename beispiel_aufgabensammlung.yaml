@@ -1,0 +1,29 @@
+name: "Beispiel-Aufgabensammlung"
+protected: false
+duration_minutes: 0
+public_listing: false
+secret: "beispiel"
+language: "blockly"
+
+
+tasks:
+  "Einleitung: Bausteine zusammensetzen":
+    "training/training-intro": {stars: 4}
+  "Befehlsfolgen":
+    "training/training-sequence-marble": {stars: 4}
+  "Wiederholungen":
+    "Btraining/training-repeat-marble": {stars: 4}
+  "Muster malen":
+    "Btraining/training-repeat-paint": {stars: 4}
+  "Bedingte Anweisung":
+    "Btraining/training-repeat-if-paint": {stars: 4}
+  "Labyrinth":
+    "Btraining/training-repeat-if-obstacles": {stars: 4}
+  "Mehr Wiederholungen":
+    "Btraining/training-repeat-nested-marbles": {stars: 4}
+  "Zick-Zack":
+    "Btraining/training-repeat-nested-obstacles": {stars: 4}
+  "Murmeln finden":
+    "Btraining/training-repeat-nested-if-marbles": {stars: 4}
+  "Abschluss: Haus malen":
+    "Btraining/training-repeat-nested-if-paint": {stars: 4}

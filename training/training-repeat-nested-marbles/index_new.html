@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <title>training-repeat-nested-marbles</title>
+   <script>
+      window.stringsLanguage = 'de';
+   </script>
+   <script class="remove" type="text/javascript" src="../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js"
+      id="import-modules"></script>
+   <script class="remove" type="text/javascript">
+      var modulesPath = '../../../_common/modules/'
+      importModules([
+         'jquery-1.7.1', 'JSON-js', 'raphael-2.2.1', 'beaver-task-2.0', 'jschannel', 'raphaelFactory-1.0',
+         'delayFactory-1.0', 'simulationFactory-1.0',
+         'platform-pr', 'buttonsAndMessages', 'beav-1.0', 'installationAPI.01', 'miniPlatform',
+         'conceptDisplay-1.0', 'conceptViewer-1.0', 'conceptViewer_css-1.0',
+         'taskStyles-mobileFirst', 'blockly-robot-1.1', 'jwinf_css'
+      ]);
+      // set Blockly as default language when none is specified through ?language=
+      importLanguageModules('blockly');
+   </script>
+   <script class="remove" type="text/javascript">
+      var json = {
+         "id": "http://castor-informatique.fr/questions/algorea_training/training-repeat-nested-marbles/",
+         "language": "fr",
+         "version": "fr.01",
+         "authors": "Mathias Hiron",
+         "translators": [],
+         "license": "",
+         "taskPathPrefix": "",
+         "modulesPathPrefix": "",
+         "browserSupport": [],
+         "fullFeedback": true,
+         "minWidth": "auto"
+      };
+   </script>
+   <script type="text/javascript" src="task_new.js"></script>
+
+</head>
+
+<body onresize="task.displayedSubTask.updateScale()">
+   <div id="task">
+      <h1>Murmeln verschieben</h1>
+      <img src="hole.png" style="display:none" />
+      <img src="marble.png" style="display:none" />
+      <img src="green_robot.png" style="display:none" />
+      <img src="icon.png" style="display:none" />
+
+      <div id="tabsContainer"></div>
+      <div id="taskContent">
+         <div id="taskIntro">
+            Programmiere den Roboter:
+            <p>
+               Der Roboter soll jeden Fisch aufheben und auf der entsprechenden Insel <span class="medium hard">in der
+                  jeweiligen Zeile</span> ablegen.
+            </p>
+            <p>
+               Der Roboter kann höchstens einen Fisch auf einmal tragen.
+            </p>
+            <p data-lang="blockly">
+               Bitte schau dir vorab die <span class="easy"><b>Erläuterungen</b></span> <span class="medium hard"><b>Erläuterungen der Bausteine</b></span> unter "weitere Hinweise" an.
+             </p>
+             <p data-lang="python">
+               Bitte schau dir vorab die <b>Erläuterungen</b> unter "weitere Hinweise" an.
+             </p>
+            <div class="long">
+               <h2>Weitere Hinweise:</h2>
+               <img src="Parameter.png" /> <br>
+               <p>
+                  Die Zahl am Netz zeigt jeweils an, wie viele Fische enthalten sind.<br>
+                  Die Zahl an der Insel zeigt jeweils an, wie viele Fische bestellt wurden und abgeliefert werden
+                  sollen.
+               </p>
+               <div class="easy">
+                  <p data-lang="python">
+                     Als Erinnerung:
+<pre>
+for loop in range(5):
+   rechts()
+   oben()
+</pre>
+                     Dieser Code lässt den Roboter fünf Mal einen Schritt nach rechts und einen Schritt nach oben gehen.
+                  </p>
+               </div>
+               <div class="medium hard">
+                  <div data-lang="blockly scratch">
+                     <p>
+                        Du kannst den Bausteine <code>wiederhole</code> mehrmals ineinander verschachtelt verwenden:
+                     </p>
+                     <img src="example_nested_repeat.png" style="width:auto">
+                  </div>
+
+                  <div data-lang="python">
+                     Du wirst dafür mehrere <code>for</code>-Anweisungen ineinander verschachteln müssen, so wie hier im Beispiel 
+                     gezeigt:<br>
+
+                     <img src="example_nested_repeat_python.png" style="width:auto">
+                     <p>
+                        Dabei wird alles, was beim grünen Block eingerückt ist, 5-Mal ausgeführt. Alle Befehle im orangenen Block werden 3-mal ausgeführt. Der Roboter geht also 5-Mal: <br>
+                        einen Schritt nach rechts, drei nach oben, einen Schritt nach rechts.</p>
+                        <p>
+                        <i>Anmerkung:</i> Das Wort zwischen <code>for</code> und <code>in</code> ist nur ein Platzhalter, auch Variable genannt (dazu später mehr). Als Name kann hier alles verwendet werde, gesehen habe wir schon <code>loop</code>, <code>i</code> oder <code>j</code>. <b>Wichtig</b> ist, dass bei zwei ineinander geschachtelten <code>for</code> Schleifen nicht zwei Mal der gleiche Name verwendet wird.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div id="gridContainer"></div>
+         <div id="blocklyLibContent"></div>
+      </div>
+
+   </div><!-- task -->
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+name: "Mehr Wiederholungen"
+standalone: true
+public_listing: true
+
+languages:
+  - blockly
+  - python
+
+tags:
+  - Zählschleife
+  - verschachtelte Schleife

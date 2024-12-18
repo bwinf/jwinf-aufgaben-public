@@ -1,0 +1,11 @@
+name: "Edelsteine und Hindernisse"
+standalone: true
+public_listing: true
+
+languages:
+  - blockly
+
+tags:
+  - Verzweigungen
+  - Variablen
+  - Zählschleife

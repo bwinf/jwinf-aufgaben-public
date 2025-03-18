@@ -1,0 +1,7 @@
+standalone: true
+
+name: "Beispiel-Aufgabensammlung"
+secret: "beispiel"
+
+languages:
+ - blockly

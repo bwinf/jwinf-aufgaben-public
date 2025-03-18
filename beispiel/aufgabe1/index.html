@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>training-repeat-if-obstacles</title>
+      <script>
+      window.stringsLanguage = 'de';
+      </script>
+      <script class="remove" type="text/javascript" src="../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js" id="import-modules"></script>
+      <script class="remove" type="text/javascript">
+        var modulesPath = '../../../_common/modules/'
+        importModules([
+            'jquery-1.7.1', 'JSON-js', 'raphael-2.2.1', 'beaver-task-2.0', 'jschannel', 'raphaelFactory-1.0', 'delayFactory-1.0', 'simulationFactory-1.0',
+            'platform-pr', 'buttonsAndMessages', 'beav-1.0', 'installationAPI.01', 'miniPlatform',
+            'taskStyles-mobileFirst', 'blockly-robot-0.9', 'jwinf_css']);
+        // set Blockly as default language when none is specified through ?language=
+        importLanguageModules('blockly');
+      </script>
+      <script class="remove" type="text/javascript">
+       var json = {
+          "id": "http://castor-informatique.fr/questions/algorea_training/training-repeat-if-obstacles/",
+          "language": "fr",
+          "version": "fr.01",
+          "authors": "Mathias Hiron",
+          "translators": [],
+          "license": "CC-BY-SA",
+          "taskPathPrefix": "",
+          "modulesPathPrefix": "",
+          "browserSupport": [],
+          "fullFeedback": true,
+          "minWidth": "auto"
+      };
+      </script>
+      <script type="text/javascript" src="task.js"></script>
+</head>
+
+<body onresize="task.displayedSubTask.updateScale()">
+    <div id="task">
+        <h1>Hindernisse umgehen</h1>
+        <img src="green.png" style="display:none" />
+        <img src="obstacle.png" style="display:none" />
+        <img src="green_robot.png" style="display:none" />
+        <img src="icon.png" style="display:none" />
+
+        <div id="tabsContainer"></div>
+        <div id="taskContent">
+            <div id="taskIntro">
+                <p>
+                    Programmiere den Roboter:<br>
+                    Der Roboter soll das grüne Feld erreichen, ohne gegen die Hindernisse zu laufen.
+                </p>
+                <div class="long">
+                    <div class="easy">
+                        <p>
+                            Um zu testen, ob sich vor dem Roboter ein Hindernis befindet, benutze
+                                <span data-lang="blockly scratch">den Baustein <code>falls</code>.</span>
+                                <span data-lang="python">die <code>if</code>-Kontrollanweisung.</span>
+                        </p>
+                        <p>Um zum Beispiel den Roboter nach unten zu bewegen, falls sich rechts von ihm ein Hindernis befindet, kannst du schreiben:</p>
+                        <p data-lang="blockly">
+                            <img src="example_if.png" style="width:250px">
+                        </p>
+                        <p data-lang="scratch">
+                            <img src="example_if_scratch.png" style="width:200px">
+                        </p>
+<pre data-lang="python">
+ if hindernisRechts():
+    unten()
+</pre>
+                    </div>
+                <div class="medium hard">
+                    <p>
+                        Um zu testen, ob sich von dem Roboter ein Hindernis befindet, benutze
+                            <span data-lang="blockly scratch">den Baustein <code>falls - sonst</code>.</span>
+                            <span data-lang="python">die <code>if/else</code>-Kontrollanweisung.</span>
+                    </p>
+                    <p>Um zum Beispiel den Roboter nach unten zu bewegen, falls sich rechts von ihm ein Hindenis befindet, und ihn andernfalls nach oben zu bewegen, kannst du schreiben:</p>
+                    <p data-lang="blockly">
+                        <img src="example_if_else.jpg" style="width:250px">
+                    </p>
+                    <p data-lang="scratch">
+                        <img src="example_if_else_scratch.png" style="width:200px">
+                    </p>
+<pre data-lang="python">
+ if hindernisRechts():
+    unten()
+ else:
+    oben()
+</pre>
+                </div>
+               </div>
+               <p class="easy hard">Das grüne Feld ist 16 Felder rechts vom Roboter.</p>
+               <p class="medium">Das grüne Feld ist 24 Schritte vom Roboter entfernt.</p>
+            </div>
+            <div id="gridContainer"></div>
+            <div id="blocklyLibContent"></div>
+         </div>
+
+    </div><!-- task -->
+</body>
+
+</html>

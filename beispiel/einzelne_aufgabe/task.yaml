@@ -1,6 +1,6 @@
 standalone: true
 
-name: "Beispiel-Aufgabensammlung"
+name: "Beispiel-Aufgabe"
 secret: "beispiel"
 
 languages:

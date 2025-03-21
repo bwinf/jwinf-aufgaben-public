@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Text in Liste einlesen</title>
+  <script>
+    window.stringsLanguage = 'de';
+  </script>
+  <script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js" id="import-modules"></script>
+  <script class="remove" type="text/javascript">
+    var modulesPath = '../../../../_common/modules/';
+    importModules([
+      'jquery-1.7.1', 'JSON-js', 'raphael-2.2.1', 'beaver-task-2.0', 'jschannel', 'raphaelFactory-1.0', 'delayFactory-1.0', 'simulationFactory-1.0',
+      'platform-pr', 'buttonsAndMessages', 'beav-1.0', 'installationAPI.01', 'miniPlatform',
+      'taskStyles-mobileFirst', 'blockly-printer', 'jwinf_css'
+    ]);
+    // set Blockly as default language when none is specified through ?language=
+    importLanguageModules('blockly');
+  </script>
+  <script class="remove" type="text/javascript">
+    var json = {
+      "id": "training_liste_einf",
+      "language": "de",
+      "version": "de.01",
+      "authors": "Katharina Schuster",
+      "translators": [],
+      "license": "",
+      "taskPathPrefix": "",
+      "modulesPathPrefix": "",
+      "browserSupport": [],
+      "acceptedAnswers": [""],
+      "fullFeedback": true,
+      "minWidth": "auto"
+    };
+
+    window.stringsLanguage = 'de';
+    var strings = {
+      moreThan100Moves: "Vous avez cependant fait plus de 100 déplacements.",
+      notAllCellsPainted: "Das hat noch nicht ganz geklappt. Versuch es noch einmal!",
+      allCellsPainted: "Bravo! Du hast die Zeilen richtig ausgegeben!"
+    };
+  </script>
+  <script type="text/javascript" src="printer_task.js"></script>
+
+</head>
+
+<body onresize="task.displayedSubTask.updateScale()">
+  <div id="task">
+    <h1>Text in Liste einlesen</h1>
+
+    <div id="tabsContainer"></div>
+    <div id="taskContent">
+      <div id="taskIntro">
+        Schreibe ein Programm:
+        <div class="easy">
+          <p>
+            Das Programm soll aus dem vorgegebenen Text eine Liste erstellen. Das Trennzeichen ist das "Leerzeichen".
+            Gib die Liste aus.
+          </p>
+          <p>
+            Bitte schau dir vorab die Erläuterungen der Bausteine unter <b>"weitere Hinweise"</b> an.
+          </p>
+          <div class="long">
+            <hr>
+            <h2>Weitere Hinweise:</h2>
+            <p>Mit dem Baustein <img src="../../../Bilder/lists_split.svg"> wird ein Text an den vorgegebenen Trennzeichen
+              in eine Liste aufgeteilt.
+            </p>
+            <p>
+              Im folgenden Beispiel ist der eingebene Text "123-234-345". Das Trennzeichen, an dem die Listeneinträge getrennt werden, ist der
+              Bindestrich "-". Die Liste hat die folgenden Einträge: 123, 234 und 345.
+            </p>
+            <p><img data-lang="blockly" src="liste_split.svg" /></p>
+          </div>
+        </div>
+        <div class="medium">
+          <p>
+            Das Programm soll die Wörter in eine Liste einlesen.
+            Gib die Wörter als Satz aus mit dem Leerzeichen als Trennzeichen.
+          </p>
+          <p>
+            Bitte schau dir vorab die Erläuterungen der Bausteine unter <b>"weitere Hinweise"</b> an.
+          </p>
+          <div class="long">
+            <hr>
+            <h2>Weitere Hinweise:</h2>
+            <p>
+              Mit dem Baustein <img src="../../../Bilder/lists_split.svg"> wird aus einer Liste ein Text erstellt. Die Listenelemente
+              werden im Text mit dem angebenen Trennzeichen getrennt.
+            </p>
+            <p>
+              Mit dem Pfeil neben <code>Liste aus Text</code> kann beim zwischen den
+              Optionen gewechselt werden.
+            </p>
+          </div>
+        </div>
+        <div class="hard">
+          <p>
+            Das Prorgramm soll das Wort <code>super</code> in den Satz einfügen. An welcher Position das Wort eingefügt werden soll,
+            steht am Anfang des Satzes. Diese Position soll bei der Ausgabe entfernt werden.
+          </p>
+        </div>
+        <div>
+          <p>
+            <i>Beachte: Dein Programm muss mit allen Testfällen zurechtkommen.</i>
+          </p>
+        </div>
+      </div>
+      <div id="gridContainer"></div>
+      <div id="blocklyLibContent"></div>
+    </div>
+  </div><!-- task -->
+</body>
+
+</html>

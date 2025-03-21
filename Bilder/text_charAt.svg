@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   class="blocklySvg"
+   width="350.57812"
+   height="37"
+   id="svg506"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2" />
+  <g
+     class="blocklyWorkspace"
+     id="g506"
+     transform="translate(-8,2338)">
+    <g
+       class="blocklyFlyout"
+       style="display:block"
+       id="g497">
+      <g
+         class="blocklyWorkspace"
+         id="g496">
+        <g
+           class="blocklyBlockCanvas"
+           transform="translate(0,-4151)"
+           id="g493">
+          <g
+             class="blocklyDraggable"
+             transform="translate(16,1813)"
+             id="g151">
+            <path
+               class="blocklyPathDark"
+               transform="translate(1,1)"
+               fill="#522d84"
+               d="M 0,0 H 20 341.57812 V 36 H 0 V 20 C 0,10 -8,28 -8,12.5 -8,-3 0,15 0,5 Z M 137.39062,5 H 72.171875 v 5 c 0,10 -8,-8 -8,7.5 0,15.5 8,-2.5 8,7.5 v 7 h 65.218745 z m 92.67188,0 h -14.5 v 5 c 0,10 -8,-8 -8,7.5 0,15.5 8,-2.5 8,7.5 v 6 h 14.5 z"
+               id="path142" />
+            <path
+               class="blocklyPath"
+               fill="#6638a5"
+               d="M 0,0 H 20 341.57812 V 36 H 0 V 20 C 0,10 -8,28 -8,12.5 -8,-3 0,15 0,5 Z M 137.39062,5 H 72.171875 v 5 c 0,10 -8,-8 -8,7.5 0,15.5 8,-2.5 8,7.5 v 7 h 65.218745 z m 92.67188,0 h -14.5 v 5 c 0,10 -8,-8 -8,7.5 0,15.5 8,-2.5 8,7.5 v 6 h 14.5 z"
+               id="path143" />
+            <g
+               class="blocklyDraggable"
+               transform="translate(73.171875,6)"
+               id="g148">
+              <path
+                 class="blocklyPathDark"
+                 transform="translate(1,1)"
+                 fill="#843456"
+                 d="M 0,0 H 63.21875 V 25 H 0 V 20 C 0,10 -8,28 -8,12.5 -8,-3 0,15 0,5 Z"
+                 id="path145" />
+              <path
+                 class="blocklyPath"
+                 fill="#a5416b"
+                 d="M 0,0 H 63.21875 V 25 H 0 V 20 C 0,10 -8,28 -8,12.5 -8,-3 0,15 0,5 Z"
+                 id="path146" />
+              <path
+                 class="blocklyPathLight"
+                 stroke="#c07a97"
+                 d="m 0.5,0.5 h 62.21875 m 0,0 M 0.5,24.5 v -6 M -6.86,18 q -1.52,-5.5 0,-11 M 0.5,8 V 0.5 H 1"
+                 id="path147" />
+              <g
+                 class="blocklyEditableText"
+                 transform="translate(10,5)"
+                 id="g147">
+                <rect
+                   rx="4"
+                   ry="4"
+                   x="-5"
+                   y="0"
+                   height="16"
+                   width="53.21875"
+                   id="rect147"
+                   style="fill:#dbb3c4;fill-opacity:1" />
+                <text
+                   class="blocklyText"
+                   y="12.5"
+                   id="text147"
+                   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1">Text<tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1"
+   id="tspan147">▾</tspan></text>
+              </g>
+            </g>
+            <text
+               class="blocklyText"
+               y="12.5"
+               transform="translate(10,10)"
+               id="text148"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1">im Text</text>
+            <g
+               class="blocklyEditableText"
+               transform="translate(147.39062,10)"
+               id="g149">
+              <rect
+                 rx="4"
+                 ry="4"
+                 x="-5"
+                 y="0"
+                 height="16"
+                 width="62.171875"
+                 id="rect148"
+                 style="fill:#c2afdb;fill-opacity:1" />
+              <text
+                 class="blocklyText"
+                 y="12.5"
+                 id="text149"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1">nimm<tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1"
+   id="tspan148">▾</tspan></text>
+            </g>
+            <text
+               class="blocklyText"
+               y="12.5"
+               transform="translate(240.0625,10)"
+               id="text150"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1">.</text>
+            <text
+               class="blocklyText"
+               y="12.5"
+               transform="translate(254.14062,10)"
+               id="text151"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1">Buchstaben</text>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

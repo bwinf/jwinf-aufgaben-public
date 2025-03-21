@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Rucksack</title>
+  <script>
+    window.stringsLanguage = 'de';
+  </script>
+  <script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js" id="import-modules"></script>
+  <script class="remove" type="text/javascript">
+    var modulesPath = '../../../../_common/modules/';
+    importModules([
+      'jquery-1.7.1', 'JSON-js', 'raphael-2.2.1', 'beaver-task-2.0', 'jschannel', 'raphaelFactory-1.0', 'delayFactory-1.0', 'simulationFactory-1.0',
+      'platform-pr', 'buttonsAndMessages', 'beav-1.0', 'installationAPI.01', 'miniPlatform',
+      'taskStyles-mobileFirst', 'blockly-printer', 'jwinf_css'
+    ]);
+    // set Blockly as default language when none is specified through ?language=
+    importLanguageModules('blockly');
+  </script>
+  <script class="remove" type="text/javascript">
+    var json = {
+      "id": "test-printer-copy",
+      "language": "de",
+      "version": "de.01",
+      "authors": "Robert Czechowski",
+      "translators": [],
+      "license": "",
+      "taskPathPrefix": "",
+      "modulesPathPrefix": "",
+      "browserSupport": [],
+      "acceptedAnswers": [""],
+      "fullFeedback": true,
+      "minWidth": "auto"
+    };
+
+    window.stringsLanguage = 'de';
+    var strings = {
+      moreThan100Moves: "Vous avez cependant fait plus de 100 déplacements.",
+      notAllCellsPainted: "Das hat noch nicht ganz geklappt. Versuch es noch einmal!",
+      allCellsPainted: "Bravo! Du hast die Zeilen richtig ausgegeben!"
+    };
+  </script>
+  <script type="text/javascript" src="printer_task.js"></script>
+
+</head>
+
+<body onresize="task.displayedSubTask.updateScale()">
+  <div id="task">
+    <h1>Rucksack</h1>
+
+    <div id="tabsContainer"></div>
+    <div id="taskContent">
+      <div id="taskIntro">
+        <div class="easy">
+          <p>Die Füchse Juna und Juno wollen in den Urlaub fahren. Beide haben ihren Rucksack gewogen.
+          Wie viel wiegen die Rucksäcke zusammen?</p>
+          <p>
+            Schreibe ein Programm:<br>
+            Das Programm soll zwei Zahlen einlesen und die Summe der beiden Zahlen ausgeben.
+          </p>
+        </div>
+        <div class="medium">
+          <p>Juna und Juno wollen noch mehr Sachen in ihre Rucksäcke packen. Sie haben die Sachen gewogen und wollen wissen, was sie insgesamt wiegen.</p>
+          <p>
+            Schreibe ein Programm:<br>
+            Das Programm soll beliebig viele Zahlen einlesen und die Summe der Zahlen ausgeben.
+          </p>
+        </div>
+        <div class="hard">
+          <!-- Damit der Rucksack nicht zu schwer wird, haben sich Juna und Juno ein Limit gesetzt, wie schwer der Rucksack maximal werden darf. Nun wollen sie wissen, ob sie alle Sachen einpacken können, ohne dass das Gewicht das Limit überschreitet.-->
+          <p>Juna und Juno wollen, dass der Rucksack nicht zu schwer wird und ein Limit nicht überschreitet.
+          Sie haben noch einmal alle Sachen gewogen. Können sie sie einpacken?</p>
+          <p>
+            Schreibe ein Programm:<br>
+            Das Programm soll zuerst das Limit einlesen. Danach soll es beliebig viele Zahlen einlesen und deren Summe bilden. 
+            Das Programm soll <code>ja</code> ausgeben, wenn diese Summe nicht größer ist als das Limit. 
+            Ansonsten soll das Programm <code>nein</code> ausgeben.
+          </p>
+        </div>
+        <p><i>Beachte: Dein Programm muss mit allen Testfällen zurechtkommen.</i></p>
+      </div>
+      <div id="gridContainer"></div>
+      <div id="blocklyLibContent"></div>
+    </div>
+  </div><!-- task -->
+</body>
+
+</html>

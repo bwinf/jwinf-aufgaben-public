@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <title>Beheize das Schloss</title>
+   <script>
+      window.stringsLanguage = 'de';
+      window.taskStrings = {};
+   </script>
+   <script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js"
+      id="import-modules"></script>
+   <script class="remove" type="text/javascript">
+      var modulesPath = '../../../../_common/modules/'
+      importModules([
+         'jquery-1.7.1', 'JSON-js', 'raphael-2.2.1', 'beaver-task-2.0', 'jschannel', 'raphaelFactory-1.0',
+         'delayFactory-1.0', 'simulationFactory-1.0',
+         'platform-pr', 'buttonsAndMessages', 'beav-1.0', 'installationAPI.01', 'miniPlatform',
+         'conceptDisplay-1.0', 'conceptViewer-1.0', 'conceptViewer_css-1.0',
+         'taskStyles-mobileFirst', 'blockly-robot-1.1', 'jwinf_css'
+      ]);
+      // set Blockly as default language when none is specified through ?language=
+      importLanguageModules('blockly');
+   </script>
+   <script class="remove" type="text/javascript">
+      var json = {
+         "id": "http://castor-informatique.fr/questions/algorea_training_2/01_sequence_02_gems/",
+         "language": "fr",
+         "version": "fr.01",
+         "authors": "Mathias Hiron, Marielle Léonard",
+         "translators": [],
+         "license": "",
+         "taskPathPrefix": "",
+         "modulesPathPrefix": "",
+         "browserSupport": [],
+         "fullFeedback": true,
+         "minWidth": "auto"
+      };
+   </script>
+   <script type="text/javascript" src="task.js"></script>
+</head>
+
+<body onresize="task.displayedSubTask.updateScale()">
+   <div id="task">
+      <h1>Beheize das Schloss</h1>
+      <img src="icon.png" style="display:none" />
+
+      <div id="tabsContainer"></div>
+      <div id="taskContent" style="text-align:left;position:relative">
+         <div id="taskIntro">
+            Programmiere den Roboter:<br>
+            <div class="easy">
+               <p>Der Roboter soll das Holz <img src="../../../Bilder/Roboter-Grafiken/firewood.png" style="vertical-align: middle; height: 40px;"> in den Kamin <img src="../../../Bilder/Roboter-Grafiken/hearth.png" style="vertical-align: middle; height: 40px;"> legen.</p>
+               <p> <b>Hinweis:</b> Beim Verlassen einer Plattform fährt der Roboter automatisch auf eine Plattform darunter. Der Roboter geht kaputt, wenn er mehr als drei Felder nach unten springt. Das Holz liegt immer zwischen Roboter und Kamin.</p>
+               <div data-lang="python">
+               <div class="long">
+                  <hr>
+                  <h2>Weitere Hinweise:</h2>
+                  <!-- <p data-lang="blockly">
+                     Mit dem Sensor <img src="Plattform-vorne.png" style='vertical-align:middle' />
+                     kann geprüft werden, ob sich vor dem Roboter eine Plattform befindet.
+                     Dementsprechend gibt <img src="nicht-Plattform-vorne.png"
+                        style='vertical-align:middle' />
+                     zurück, ob sich <b>keine</b> Plattform vor dem Roboter befindet.
+                  </p> -->
+                  
+                     Mit der Funktion <code>plattformVorne()</code> 
+                     kann geprüft werden, ob sich vor dem Roboter eine Plattform befindet.
+                     Dementsprechend gibt <code> not plattformVorne()</code>
+                     zurück, ob sich <b>keine</b> Plattform vor dem Roboter befindet.
+               </div>
+
+               </div>
+               <p><i>Beachte: Dein Programm muss mit allen Testfällen zurechtkommen.</i></p>
+            </div>
+            <div class="medium">
+               <p>Der Roboter soll das Holz <img src="../../../Bilder/Roboter-Grafiken/firewood.png" style="vertical-align: middle; height: 40px;"> in den Kamin <img src="../../../Bilder/Roboter-Grafiken/hearth.png" style="vertical-align: middle; height: 40px;"> legen.</p>
+               <p><b>Hinweis:</b> Beim Verlassen einer Plattform fährt der Roboter automatisch auf eine Plattform darunter. Der Roboter geht kaputt, wenn er mehr als drei Felder nach unten springt. Das Holz liegt immer zwischen Roboter und Kamin.</p>
+               <div data-lang="python" class="long">
+                  <hr>
+                  <h2>Weitere Hinweise:</h2>
+                  <!-- <p data-lang="blockly">
+                     Mit dem Sensor <img src="auf-Holz.png" style='vertical-align:middle' />
+                     kann geprüft werden, ob auf dem Feld des Roboters ein Holzstapel liegt.
+                     Genau so kann mit dem Sensor <img src="beim-Kamin.png"
+                        style='vertical-align:middle' />
+                     geprüft werden, ob sich auf dem Feld des Roboters ein Kamin befindet.
+                  </p> -->
+                  <p>
+                     Mit der Funktion <code>aufHolz()</code> 
+                     kann geprüft werden, ob auf dem Feld des Roboters ein Holzstapel liegt.
+                     Genau so kann mit der Funktion <code>beimKamin()</code>
+                     geprüft werden, ob sich auf dem Feld des Roboters ein Kamin befindet.
+                  </p>
+
+               </div>
+               <p><i>Beachte: Dein Programm muss mit allen Testfällen zurechtkommen.</i></p>
+            </div>
+            <div class="hard">
+               <p>Der Roboter soll in jeden Kamin <img src="../../../Bilder/Roboter-Grafiken/hearth.png" style="vertical-align: middle; height: 40px;"> ein Holz <img src="../../../Bilder/Roboter-Grafiken/firewood.png" style="vertical-align: middle; height: 40px;"> legen.</p>
+               <p>
+                  <b>Hinweis:</b> Der Roboter kann immer nur einen Holzstapel tragen. In jeden Kamin kann nur ein Holzstapel gelegt
+                  werden.
+                  Alle Ebenen sind 3 Schritte lang, wobei einige Plattformen teilweise fehlen.
+               <br>
+                   Beim Verlassen einer Plattform fährt der Roboter automatisch auf eine Plattform darunter. Der Roboter geht kaputt, wenn er mehr als drei Felder nach unten springt.
+               </p>
+               <div class="long" data-lang="python">
+                  <hr>
+                  <h2>Weitere Hinweise:</h2>
+                  <!-- <p data-lang="blockly">
+                     Mit der Aktion <img data-lang="blockly" src="springe.png" style='vertical-align:middle' />
+                     kann der Roboter eine Ebene höher springen, falls sich über ihm eine Plattform befindet.
+                  </p> -->
+                  <p data-lang="python">
+                     Mit der Funktion <code>spring()</code>
+                     kann der Roboter eine Ebene höher springen, falls sich über ihm eine Plattform befindet.
+                  </p>
+
+               </div>
+            </div>
+         </div>
+         <div id="gridContainer"></div>
+         <div id="blocklyLibContent"></div>
+      </div>
+
+   </div><!-- task -->
+</body>
+
+</html>

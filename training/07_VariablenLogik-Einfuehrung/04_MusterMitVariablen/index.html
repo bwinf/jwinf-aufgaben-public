@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Muster mit Variablen</title>
+  <script>
+    window.stringsLanguage = 'de';
+  </script>
+  <script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js" id="import-modules"></script>
+  <script class="remove" type="text/javascript">
+    var modulesPath = '../../../../_common/modules/'
+    importModules([
+      'jquery-1.7.1', 'JSON-js', 'raphael-2.2.1', 'beaver-task-2.0', 'jschannel', 'raphaelFactory-1.0', 'delayFactory-1.0', 'simulationFactory-1.0',
+      'platform-pr', 'buttonsAndMessages', 'beav-1.0', 'installationAPI.01', 'miniPlatform', 'conceptDisplay-1.0', 'conceptViewer-1.0', 'conceptViewer_css-1.0',
+      'taskStyles-mobileFirst', 'blockly-robot-1.1', 'jwinf_css'
+    ]);
+    // set Blockly as default language when none is specified through ?language=
+    importLanguageModules('blockly');
+  </script>
+  <script class="remove" type="text/javascript">
+    var json = {
+      "id": "http://castor-informatique.fr/questions/algorea_training/training-var",
+      "language": "fr",
+      "version": "fr.01",
+      "authors": "Mathias Hiron",
+      "translators": [],
+      "license": "",
+      "taskPathPrefix": "",
+      "modulesPathPrefix": "",
+      "browserSupport": [],
+      "acceptedAnswers": [""],
+      "fullFeedback": true,
+      "minWidth": "auto"
+    };
+  </script>
+  <script type="text/javascript" src="task.js"></script>
+</head>
+
+<body onresize="task.displayedSubTask.updateScale()">
+  <div id="task">
+    <h1>Muster mit Variablen</h1>
+    <img src="icon.png" style="display:none" />
+
+    <div id="tabsContainer"></div>
+    <div id="taskContent" style="text-align:left;position:relative">
+      <div id="taskIntro">
+        Programmiere den Roboter:<br>
+        <p>Der Roboter soll alle markierten Felder <img src="../../../Bilder/Roboter-Grafiken/paint_marker.png" style="height: 40px;"> färben.</p>
+        <div class="easy">
+          <p>
+            Die Zahl vor dem Roboter gibt an, wie viele Felder markiert sind.
+            Er muss diese Zahl einlesen, in einer Variablen speichern und dann diese Variable im Programm nutzen.
+          </p>
+          <div class="long">
+            <hr>
+            <h2>Weitere Hinweise:</h2>
+            <p>
+              Eine Variable speichert einen Wert, der sich im Verlauf deines Programms ändern kann.
+            </p>
+            <p>
+              Um die Zahl einzulesen und in der Variablen <code>RoboterGedächtnis</code> zu speichern, werden die folgenden Bausteine genutzt:
+            </p>
+            <img src="../../../Bilder/initVar_readNumber.svg"/>
+            <p>
+              Du kannst die Variable anschließend dort benutzen, wo du ihren Wert benötigst, zum Beispiel:
+            </p>
+            <img src="Beispiel_useVar_short.svg" />
+          </div>
+        </div>
+        <div class="medium">
+          <p>
+            Vor dem Roboter gibt es zwei Zahlen: Die erste Zahl gibt die Anzahl der Zeilen und die zweite Zahl
+            die Anzahl der Spalten von dem zu färbenden Rechteck an.
+          </p>
+          <div class="long">
+            <hr>
+            <h2>Weitere Hinweise:</h2>
+            <p>
+              Um diese Aufgabe zu lösen, musst du zwei Variablen erstellen, um die beiden Zahlen zu speichern.
+              Nenne diese Variablen zum Beispiel <code>AnzahlZeilen</code> und <code>AnzahlSpalten</code>.
+              <p>
+                <img src="erstelle_var.jpg" />
+              </p>
+            </p>
+            <p>
+              In dieser Aufgabe sind die Bausteine in Kategorien einsortiert.
+              Klicke auf eine Kategorie, um Zugriff auf die Bausteine der Kategorie zu erhalten.
+            </p>
+          </div>
+        </div>
+        <div class="hard">
+          <p>
+            Vor dem Roboter steht eine Zahl: Die Anzahl an Zeilen und Spalten, die das Dreieck aus markierten Feldern belegt.
+          </p>
+          <div class="long">
+            <hr>
+            <h2>Weitere Hinweise:</h2>
+            <p>
+              Um die richtige Anzahl an Feldern in jeder Zeile zu färben,
+              kannst du eine Variable für jede Zeile verwenden, die die Anzahl der zu markierenden Felder enthält.
+              Nachdem die Zeile gefärbt wurde, solltest du die Variable um 1 erhöhen. Das könnte etwa so aussehen:
+            </p>
+            <img data-lang="blockly" src="Beispiel_useVar_long.svg" />
+          </div>
+        </div>
+        <p>
+          Bitte schau dir vorab die Erläuterungen der Bausteine unter <b>"weitere Hinweise"</b> an.
+        </p>
+        <p>
+          <i>Beachte: Dein Programm muss mit allen Testfällen zurechtkommen.</i>
+        </p>
+      </div>
+      <div id="gridContainer"></div>
+      <div id="blocklyLibContent"></div>
+    </div>
+
+  </div><!-- task -->
+</body>
+
+</html>

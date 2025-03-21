@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Murmel finden</title>
+  <script>
+    window.stringsLanguage = 'de';
+  </script>
+  <script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js" id="import-modules"></script>
+  <script class="remove" type="text/javascript">
+    var modulesPath = '../../../../_common/modules/'
+    importModules([
+      'jquery-1.7.1', 'JSON-js', 'raphael-2.2.1', 'beaver-task-2.0', 'jschannel', 'raphaelFactory-1.0', 'delayFactory-1.0', 'simulationFactory-1.0',
+      'platform-pr', 'buttonsAndMessages', 'beav-1.0', 'installationAPI.01', 'miniPlatform', 'conceptDisplay-1.0', 'conceptViewer-1.0', 'conceptViewer_css-1.0',
+      'taskStyles-mobileFirst', 'blockly-robot-1.1', 'jwinf_css'
+    ]);
+    // set Blockly as default language when none is specified through ?language=
+    importLanguageModules('blockly');
+  </script>
+  <script class="remove" type="text/javascript">
+    var json = {
+      "id": "http://castor-informatique.fr/questions/algorea_training/training-var",
+      "language": "fr",
+      "version": "fr.01",
+      "authors": "Mathias Hiron",
+      "translators": [],
+      "license": "",
+      "taskPathPrefix": "",
+      "modulesPathPrefix": "",
+      "browserSupport": [],
+      "acceptedAnswers": [""],
+      "fullFeedback": true,
+      "minWidth": "auto"
+    };
+  </script>
+  <script type="text/javascript" src="task.js"></script>
+</head>
+
+<body onresize="task.displayedSubTask.updateScale()">
+  <div id="task">
+    <h1>Murmel finden</h1>
+    <img src="icon.png" style="display:none" />
+
+    <div id="tabsContainer"></div>
+    <div id="taskContent" style="text-align:left;position:relative">
+      <div id="taskIntro">
+        Programmiere den Roboter: <br>
+        <p>Der Roboter soll die Murmel <img src="../../../Bilder/Roboter-Grafiken/marble.png" style="height: 40px;"> im Loch <img src="../../../Bilder/Roboter-Grafiken/hole.png" style="height: 40px;"> ablegen.</p>
+          <p class="easy medium">
+            Neben dem Roboter stehen zwei Zahlen.
+            Sie geben an, wie viele Schritte der Roboter von seiner Ecke aus
+            nach rechts (1. Zahl) bzw. nach unten (2. Zahl) gehen muss,
+            um die Murmel zu finden.
+          </p>
+          <p class="easy">
+            <b>Hinweis: </b>Das Loch befindet sich immer an der gleichen Stelle, direkt unter dem Roboter.
+          </p>
+          <p class="medium">
+            <b>Hinweis: </b>Das Loch befindet sich immer in der unteren rechten Ecke des Gitters.<br>
+            Das Gitter ist 12 Felder breit und 8 Felder hoch.
+          </p>
+          <p class="hard">
+            <b>Hinweis: </b>Neben dem Roboter stehen vier Zahlen.
+            Sie geben an, wie weit der Roboter von seiner Ecke aus nach rechts bzw. nach unten gehen muss.
+            Mit den ersten beiden Zahlen kann er die Murmel finden, mit den nächsten beiden Zahlen kann er das Loch finden.
+          </p>
+          <p>
+            <i>Beachte: Dein Programm muss mit allen Testfällen zurechtkommen.</i>
+          </p>
+      </div>
+      <div id="gridContainer"></div>
+      <div id="blocklyLibContent"></div>
+    </div>
+
+  </div><!-- task -->
+</body>
+
+</html>

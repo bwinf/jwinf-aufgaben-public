@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   class="blocklySvg"
+   width="55.572155"
+   height="26"
+   id="svg506"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2" />
+  <g
+     class="blocklyWorkspace"
+     id="g506"
+     transform="translate(-22.929165,1355.2834)">
+    <g
+       class="blocklyFlyout"
+       style="display:block"
+       id="g497">
+      <g
+         class="blocklyWorkspace"
+         id="g496">
+        <g
+           class="blocklyBlockCanvas"
+           transform="translate(0,-4151)"
+           id="g493">
+          <g
+             class="blocklyDraggable"
+             transform="translate(31.048197,2795.7166)"
+             id="g238">
+            <path
+               class="blocklyPathDark"
+               transform="translate(1,1)"
+               fill="#2e4084"
+               d="M 0,0 H 46.453125 V 25 H 0 V 20 C 0,10 -8,28 -8,12.5 -8,-3 0,15 0,5 Z"
+               id="path235" />
+            <path
+               class="blocklyPath"
+               fill="#3950a5"
+               d="M 0,0 H 46.453125 V 25 H 0 V 20 C 0,10 -8,28 -8,12.5 -8,-3 0,15 0,5 Z"
+               id="path236" />
+            <path
+               class="blocklyPathLight"
+               stroke="#7485c0"
+               d="m 0.5,0.5 h 45.453125 m 0,0 M 0.5,24.5 v -6 M -6.86,18 q -1.52,-5.5 0,-11 M 0.5,8 V 0.5 H 1"
+               id="path237" />
+            <g
+               class="blocklyEditableText"
+               transform="translate(10,5)"
+               id="g237">
+              <rect
+                 rx="4"
+                 ry="4"
+                 x="-5"
+                 y="0"
+                 height="16"
+                 width="36.453125"
+                 id="rect237"
+                 style="fill:#b0b9db;fill-opacity:1" />
+              <text
+                 class="blocklyText"
+                 y="12.5"
+                 id="text237"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1">π<tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1"
+   id="tspan237">▾</tspan></text>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

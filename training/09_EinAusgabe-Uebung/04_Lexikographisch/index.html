@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Lexikographisch</title>
+  <script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js"
+    id="import-modules"></script>
+  <script class="remove" type="text/javascript">
+    window.stringsLanguage = 'de';
+    var modulesPath = '../../../../_common/modules/';
+    importModules([
+      'jquery-1.7.1', 'JSON-js', 'raphael-2.2.1', 'beaver-task-2.0', 'jschannel', 'raphaelFactory-1.0', 'delayFactory-1.0', 'simulationFactory-1.0',
+      'platform-pr', 'buttonsAndMessages', 'beav-1.0', 'installationAPI.01', 'miniPlatform',
+      'taskStyles-mobileFirst', 'blockly-printer', 'jwinf_css'
+    ]);
+    // set Blockly as default language when none is specified through ?language=
+    importLanguageModules('blockly');
+  </script>
+  <script class="module" type="text/javascript" src="../../../_common/modules/pemFioi/blocklyPrinter_lib.js"
+    id="blocklyRobot_lib"></script>
+  <!--link class="module" rel="stylesheet" type="text/css" href="../../../_common/modules/pemFioi/taskStyles-0.1.css" id="http://www.france-ioi.org/modules/pemFioi/taskStyles-0.1.css"-->
+  <script class="remove" type="text/javascript">
+    var json = {
+      "id": "test-printer-copy",
+      "language": "de",
+      "version": "de.01",
+      "authors": "Robert Czechowski",
+      "translators": [],
+      "license": "",
+      "taskPathPrefix": "",
+      "modulesPathPrefix": "",
+      "browserSupport": [],
+      "acceptedAnswers": [""],
+      "fullFeedback": true,
+      "minWidth": "auto"
+    };
+  </script>
+  <script type="text/javascript" src="printer_task.js"></script>
+</head>
+
+<body onresize="task.displayedSubTask.updateScale()">
+  <div id="task">
+    <h1>Lexikographisch</h1>
+
+    <div id="tabsContainer"></div>
+    <div id="taskContent">
+      <div id="taskIntro">
+        Schreibe ein Programm:<br>
+        <div class="easy">
+          <p>
+            Das Programm soll ein Wort einlesen und überprüfen, ob das Wort
+            im Wörterbuch <strong>vor</strong> dem Wort "Informatik" stehen würde.
+            Falls ja, soll das Programm <code>davor</code> ausgeben, ansonsten <code>danach</code>.
+          </p>
+          <p>Bitte schau dir vorab die Erläuterungen der Bausteine unter <b>"weitere Hinweise"</b> an.</p>
+        </div>
+        <div class="medium">
+          <p>Das Programm soll zwei Wörter einlesen und sie in der Wörterbuch-Reihenfolge ausgeben.</p>
+          <p>Bitte schau dir vorab die Erläuterungen der Bausteine unter <b>"weitere Hinweise"</b> an.</p>
+        </div>
+        <div class="hard">
+          <p>
+            Das Programm soll zwei Wörter einlesen, das kleinere Wort ausgeben und sich das andere Wort merken.
+            Danach soll es für jedes weitere Wort das neue Wort mit dem gemerkten Wort vergleichen,
+            wieder das kleinere ausgeben und das andere merken.
+            Am Ende soll es das zuletzt gemerkte Wort ausgeben.
+          </p>
+          <p>Bitte schau dir vorab die Erläuterungen der Bausteine unter <b>"weitere Hinweise"</b> an.</p>
+        </div>
+        <p><i>Beachte: Dein Programm muss mit allen Testfällen zurechtkommen.</i></p>
+        <div class="long">
+          <hr>
+          <h2>Weitere Hinweise:</h2>
+          <p>
+            Mit dem Baustein <img src="../../../Bilder/logic_compare.svg">,
+            kann ein Programm die Wörterbuch-Reihenfolge herausfinden. <br />
+            Ändere den Vergleich auf "&lt;" (kleiner).
+            Wenn Wort1 im Wörterbuch vor Wort2 stehen würde, ist es "kleiner" als Wort2.
+          </p>
+          <p data-lang="blockly">
+            <img src="example.png" style="width: 232px;" />
+          </p>
+          <p>
+            <b>Ein Beispiel:</b>
+          </p>
+          <table>
+            <tr>
+              <td style="padding: 0px 30px;vertical-align: top;">
+                <p><b>Eingabe:</b></p>
+                <div class="easy">
+                  Berechnung
+                </div>
+                <div class="medium">
+                  Algorithmus<br>
+                  Algensalat
+                </div>
+                <div class="hard">
+                  Information<br>
+                  Informatik<br>
+                  Programmieren<br>
+                  Computer<br>
+                </div>
+              </td>
+              <td style="padding: 0px 30px;vertical-align: top;">
+                <p><b>Ausgabe:</b></p>
+                <div class="easy">
+                  davor
+                </div>
+                <div class="medium">
+                  Algensalat<br>
+                  Algorithmus
+                </div>
+                <div class="hard">
+                  Informatik<br>
+                  Information<br>
+                  Computer<br>
+                  Programmieren
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div id="gridContainer"></div>
+      <div id="blocklyLibContent"></div>
+    </div>
+  </div><!-- task -->
+</body>
+
+</html>

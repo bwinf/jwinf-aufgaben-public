@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   class="blocklySvg"
+   width="216.125"
+   height="30"
+   id="svg506"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2" />
+  <g
+     class="blocklyWorkspace"
+     id="g506"
+     transform="translate(-16,2733)">
+    <g
+       class="blocklyFlyout"
+       style="display:block"
+       id="g497">
+      <g
+         class="blocklyWorkspace"
+         id="g496">
+        <g
+           class="blocklyBlockCanvas"
+           transform="translate(0,-4151)"
+           id="g493">
+          <g
+             class="blocklyDraggable"
+             transform="translate(16,1418)"
+             id="g99">
+            <path
+               class="blocklyPathDark"
+               transform="translate(1,1)"
+               fill="#522d84"
+               d="M 0,8 A 8,8 0 0 1 8,0 h 7 l 6,4 h 3 l 6,-4 h 185.125 v 5 c 0,10 -8,-8 -8,7.5 0,15.5 8,-2.5 8,7.5 v 5 H 29.5 l -6,4 h -3 l -6,-4 H 8 A 8,8 0 0 1 0,17 Z"
+               id="path95" />
+            <path
+               class="blocklyPath"
+               fill="#6638a5"
+               d="M 0,8 A 8,8 0 0 1 8,0 h 7 l 6,4 h 3 l 6,-4 h 185.125 v 5 c 0,10 -8,-8 -8,7.5 0,15.5 8,-2.5 8,7.5 v 5 H 29.5 l -6,4 h -3 l -6,-4 H 8 A 8,8 0 0 1 0,17 Z"
+               id="path96" />
+            <text
+               class="blocklyText"
+               y="12.5"
+               transform="translate(10,5)"
+               id="text97"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1">an</text>
+            <g
+               class="blocklyEditableText"
+               transform="translate(36.3125,5)"
+               id="g98">
+              <rect
+                 rx="4"
+                 ry="4"
+                 x="-5"
+                 y="0"
+                 height="16"
+                 width="64.625"
+                 id="rect97"
+                 style="fill:#c2afdb;fill-opacity:1" />
+              <text
+                 class="blocklyText"
+                 y="12.5"
+                 id="text98"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1">etwas<tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1"
+   id="tspan97">▾</tspan></text>
+            </g>
+            <text
+               class="blocklyText"
+               y="12.5"
+               transform="translate(100.9375,5)"
+               id="text99"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1">Text anhängen</text>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

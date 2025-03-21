@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   class="blocklySvg"
+   width="389.35938"
+   height="41"
+   id="svg97"
+   sodipodi:docname="lists_getIndex_remove.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview97"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
+  <defs
+     id="defs2" />
+  <g
+     class="blocklyWorkspace"
+     id="g97"
+     transform="translate(-497.3125,-291)">
+    <g
+       class="blocklyBlockCanvas"
+       transform="translate(421,7)"
+       id="g91">
+      <g
+         class="blocklyDraggable"
+         transform="translate(76.3125,284)"
+         id="g90">
+        <path
+           class="blocklyPathDark"
+           transform="translate(1,1)"
+           fill="#ad6e22"
+           d="M 0,8 A 8,8 0 0 1 8,0 h 7 l 6,4 h 3 L 30,0 H 40 388.35937 V 36 H 29.5 l -6,4 h -3 l -6,-4 H 8 A 8,8 0 0 1 0,28 Z M 167.01562,5 H 97.71875 v 5 c 0,10 -8,-8 -8,7.5 0,15.5 8,-2.5 8,7.5 v 7 h 69.29687 z m 211.34375,0 h -14.5 v 5 c 0,10 -8,-8 -8,7.5 0,15.5 8,-2.5 8,7.5 v 6 h 14.5 z"
+           id="path81" />
+        <path
+           class="blocklyPath"
+           fill="#d8892b"
+           d="M 0,8 A 8,8 0 0 1 8,0 h 7 l 6,4 h 3 L 30,0 H 40 388.35937 V 36 H 29.5 l -6,4 h -3 l -6,-4 H 8 A 8,8 0 0 1 0,28 Z M 167.01562,5 H 97.71875 v 5 c 0,10 -8,-8 -8,7.5 0,15.5 8,-2.5 8,7.5 v 7 h 69.29687 z m 211.34375,0 h -14.5 v 5 c 0,10 -8,-8 -8,7.5 0,15.5 8,-2.5 8,7.5 v 6 h 14.5 z"
+           id="path82" />
+        <text
+           class="blocklyText"
+           y="12.5"
+           transform="translate(10,10)"
+           id="text83"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1">in der Liste</text>
+        <g
+           class="blocklyEditableText"
+           transform="translate(177.01562,10)"
+           id="g84">
+          <rect
+             rx="4"
+             ry="4"
+             x="-5"
+             y="0"
+             height="16"
+             width="80.125"
+             id="rect83"
+             style="fill:#efd0aa;fill-opacity:1" />
+          <text
+             class="blocklyText"
+             y="12.5"
+             id="text84"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1">entferne<tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1"
+   id="tspan83">▾</tspan></text>
+        </g>
+        <text
+           class="blocklyText"
+           y="12.5"
+           transform="translate(257.14062,10)"
+           id="text85"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1" />
+        <g
+           class="blocklyEditableText"
+           transform="translate(271.21875,10)"
+           id="g86">
+          <rect
+             rx="4"
+             ry="4"
+             x="-5"
+             y="0"
+             height="16"
+             width="86.640625"
+             id="rect85"
+             style="fill:#efd0aa;fill-opacity:1" />
+          <text
+             class="blocklyText"
+             y="12.5"
+             id="text86"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1">am Index<tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1"
+   id="tspan85">▾</tspan></text>
+        </g>
+        <g
+           class="blocklyDraggable"
+           transform="translate(98.71875,6)"
+           id="g89">
+          <path
+             class="blocklyPathDark"
+             transform="translate(1,1)"
+             fill="#843456"
+             d="M 0,0 H 67.296875 V 25 H 0 V 20 C 0,10 -8,28 -8,12.5 -8,-3 0,15 0,5 Z"
+             id="path86" />
+          <path
+             class="blocklyPath"
+             fill="#a5416b"
+             d="M 0,0 H 67.296875 V 25 H 0 V 20 C 0,10 -8,28 -8,12.5 -8,-3 0,15 0,5 Z"
+             id="path87" />
+          <g
+             class="blocklyEditableText"
+             transform="translate(10,5)"
+             id="g88">
+            <rect
+               rx="4"
+               ry="4"
+               x="-5"
+               y="0"
+               height="16"
+               width="57.296875"
+               id="rect88"
+               style="fill:#dbb3c4;fill-opacity:1" />
+            <text
+               class="blocklyText"
+               y="12.5"
+               id="text88"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1">Liste<tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1"
+   id="tspan88">▾</tspan></text>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

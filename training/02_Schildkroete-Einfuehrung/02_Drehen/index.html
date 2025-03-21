@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Drehen</title>
+  <script>
+    window.stringsLanguage = 'de';
+  </script>
+  <script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js"
+    id="import-modules"></script>
+  <script class="remove" type="text/javascript">
+    var modulesPath = '../../../../_common/modules/';
+    importModules([
+      'jquery-1.7.1', 'JSON-js', 'raphael-2.2.1', 'beaver-task-2.0', 'jschannel', 'raphaelFactory-1.0', 'delayFactory-1.0', 'simulationFactory-1.0',
+      'platform-pr', 'buttonsAndMessages', 'beav-1.0', 'installationAPI.01', 'miniPlatform',
+      'taskStyles-mobileFirst', 'blockly-turtle', 'jwinf_css'
+    ]);
+    // set Blockly as default language when none is specified through ?language=
+    importLanguageModules('blockly');
+  </script>
+
+  <script class="remove" type="text/javascript">
+    var json = {
+      "id": "test-turtle-square",
+      "language": "de",
+      "version": "de.01",
+      "authors": "Robert Czechowski",
+      "translators": [],
+      "license": "",
+      "taskPathPrefix": "",
+      "modulesPathPrefix": "",
+      "browserSupport": [],
+      "acceptedAnswers": [""],
+      "fullFeedback": true,
+      "minWidth": "auto"
+    };
+  </script>
+  <script type="text/javascript" src="turtle_task.js"></script>
+
+
+</head>
+
+<body onresize="task.displayedSubTask.updateScale()">
+  <div id="task">
+    <h1>Drehen</h1>
+    <div id="tabsContainer"></div>
+    <div id="taskContent">
+      <div id="taskIntro">
+        Programmiere die Schildkröte:
+        <p>
+          Die Schildkröte soll den hellgrauen Strich zeichnen.
+        </p>
+        <p class="easy" data-lang="blockly">
+          Der Baustein <img src="../../../Bilder/turtle_turnleft.svg" style='vertical-align:middle'> dreht die Schildkröte um 90° gegen den
+          Uhrzeigersinn.
+        </p>
+        <p class="easy" data-lang="python">
+          Die Funktion <code>dreheLinks90Grad()</code> dreht die Schildkröte um 90° gegen den
+          Uhrzeigersinn.
+        </p>
+        <p class="medium" data-lang="blockly">
+          Der Baustein <img src="../../../Bilder/turtle_turnright.svg" style='vertical-align:middle'> dreht die Schildkröte um 90° im Uhrzeigersinn.
+        </p>
+        <p class="medium" data-lang="python">
+          Die Funktion <code>dreheRechts90Grad()</code> dreht die Schildkröte um 90° im Uhrzeigersinn.
+        </p>
+        <p class="hard" data-lang="blockly">
+          Der Baustein <img src="../../../Bilder/turtle_turneitheramountvalue.svg" style='vertical-align:middle'> dreht die Schildkröte um den 60&deg; nach rechts. Die Gradzahl und 
+          Drehrichtung kann frei gewählt werden.
+        </p>
+        <p class="hard" data-lang="python">
+          Die Funktion <code>dreheGrad()</code> kann aufgerufen werden, um die Schildkröte in eine beliebige Richtung zu drehen.
+          Dabei muss der Funktion ein Parameter übergeben werden, um wie viel Grad gedreht werden soll. Diesen Parameter schreiben wir in die runden Klammern.<br><br>
+
+          So kann die Schildkröt zum Beispiel mit <code>dreheGrad(30)</code> um 30° gegen den Uhrzeigersinn gedreht werden und mit
+          <code>dreheGrad(330)</code> um 30° im Urzeigersinn. Alternativ können dir auch <code>dreheGrad(-30)</code> verwenden, um 30° nach rechts zu drehen.
+        </p>
+      </div>
+      <div id="gridContainer"></div>
+      <div id="blocklyLibContent"></div>
+    </div>
+  </div><!-- task -->
+</body>
+
+</html>

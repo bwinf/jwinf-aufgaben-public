@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   class="blocklySvg"
+   width="167.03125"
+   height="66.000023"
+   id="svg26"
+   sodipodi:docname="Funktion.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="6.4059869"
+     inkscape:cx="83.515625"
+     inkscape:cy="33.01599"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg26" />
+  <defs
+     id="defs2" />
+  <g
+     class="blocklyFlyout"
+     transform="translate(-17.6,-10.799979)"
+     style="display:block"
+     id="g26">
+    <g
+       class="blocklyWorkspace"
+       id="g25">
+      <g
+         class="blocklyBlockCanvas"
+         transform="matrix(1.1,0,0,1.1,0,2)"
+         id="g22">
+        <g
+           class="blocklyDraggable"
+           transform="translate(16,8)"
+           id="g21">
+          <path
+             class="blocklyPathDark"
+             transform="translate(1,1)"
+             fill="#7a0e84"
+             d="M 0,8 A 8,8 0 0 1 8,0 H 150.84659 V 25 H 50 l -6,4 h -3 l -6,-4 h -7 a 8,8 0 0 0 -8,8 v 8 a 8,8 0 0 0 8,8 H 150.84659 V 59 H 8 A 8,8 0 0 1 0,51 Z"
+             id="path15" />
+          <path
+             class="blocklyPath"
+             fill="#9911a5"
+             d="M 0,8 A 8,8 0 0 1 8,0 H 150.84659 V 25 H 50 l -6,4 h -3 l -6,-4 h -7 a 8,8 0 0 0 -8,8 v 8 a 8,8 0 0 0 8,8 H 150.84659 V 59 H 8 A 8,8 0 0 1 0,51 Z"
+             id="path16" />
+          <path
+             class="blocklyPathLight"
+             stroke="#b858c0"
+             d="M 0.5,7.5 A 7.5,7.5 0 0 1 8,0.5 h 142.34659 m 0,0 m 0,25 M 21.989592,47.010408 A 8.5,8.5 0 0 0 28,49.5 H 150.34659 M 2.6966991,56.303301 A 7.5,7.5 0 0 1 0.5,51 V 8"
+             id="path17"
+             style="display:inline;opacity:0" />
+          <g
+             class="blocklyIconGroup blocklyIconGroupReadonly"
+             display="block"
+             transform="translate(10,5)"
+             id="g18">
+            <rect
+               class="blocklyIconShape"
+               rx="4"
+               ry="4"
+               height="16"
+               width="16"
+               id="rect17"
+               style="fill:#3c06db;fill-opacity:1"
+               x="0"
+               y="0" />
+            <path
+               class="blocklyIconSymbol"
+               d="m 4.203,7.296 v 1.368 l -0.92,0.677 -0.11,0.41 0.9,1.559 0.41,0.11 1.043,-0.457 1.187,0.683 0.127,1.134 0.3,0.3 h 1.8 l 0.3,-0.299 0.127,-1.138 1.185,-0.682 1.046,0.458 0.409,-0.11 0.9,-1.559 -0.11,-0.41 -0.92,-0.677 V 7.297 L 12.797,6.62 12.907,6.21 12.007,4.651 11.598,4.542 10.552,5 9.367,4.318 9.24,3.18 8.94,2.881 H 7.14 L 6.84,3.181 6.714,4.316 5.527,4.998 4.484,4.541 4.074,4.651 3.175,6.21 3.283,6.619 Z"
+               id="path18"
+               style="fill:#d6a0db;fill-opacity:1.0" />
+            <circle
+               class="blocklyIconShape"
+               r="2.7"
+               cx="8"
+               cy="8"
+               id="circle18"
+               style="fill:#3c06db;fill-opacity:1" />
+          </g>
+          <g
+             class="blocklyIconGroup blocklyIconGroupReadonly"
+             display="block"
+             transform="translate(37,5)"
+             id="g19">
+            <circle
+               class="blocklyIconShape"
+               r="8"
+               cx="8"
+               cy="8"
+               id="circle19"
+               style="fill:#3c06db;fill-opacity:1" />
+            <path
+               class="blocklyIconSymbol"
+               d="m 6.8,10 h 2 C 8.803,9.383 9.071,9.038 9.433,8.734 12.308,6.329 10.04,3.2 5.668,4.86 v 1.7 C 8.788,4.903 9.366,6.678 8.004,7.81 6.803,8.808 6.803,9.338 6.8,10 Z"
+               id="path19"
+               style="fill:#d6a0db;fill-opacity:1.0" />
+            <rect
+               class="blocklyIconSymbol"
+               x="6.8000002"
+               y="10.78"
+               height="2"
+               width="2"
+               id="rect19"
+               style="fill:#d6a0db;fill-opacity:1.0" />
+          </g>
+          <g
+             class="blocklyEditableText"
+             transform="translate(64,5)"
+             id="g20">
+            <rect
+               rx="4"
+               ry="4"
+               x="-5"
+               y="0"
+               height="16"
+               width="72.769882"
+               id="rect20"
+               style="fill:#d6a0db;fill-opacity:1" />
+            <text
+               class="blocklyText"
+               y="12.5"
+               id="text20"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1">etwas tun</text>
+          </g>
+          <text
+             class="blocklyText"
+             y="12.5"
+             transform="translate(136.76989,5)"
+             id="text21" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

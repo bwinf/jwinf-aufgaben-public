@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Lichter anzünden</title>
+	<script>
+		// Die information 'de' bezieht sich darauf, welche Übersetzungen aus der Bibliothek geladen werden.
+		// In diesem Fall werden alle Blöcke, Blockhilfen etc. auf deutsch angezeigt.
+		window.stringsLanguage = 'de';
+		window.taskStrings = {};
+	</script>
+	<script class="remove" type="text/javascript"
+		src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js" id="import-modules"></script>
+	<script class="remove" type="text/javascript">
+		var modulesPath = '../../../../_common/modules/'
+		// Die Bibliotheken werden geladen. Dabei sind die ersten immer gleich.
+		// 'jwinf_css' spezifiziert das für die JwInf-Plattform verwendete Design z.B. den Fuchs und das grün
+		// Davor steht die Aufgaben spezifische Bibliothek. So wird für
+		// Roboteraufgaben: 'blockly-robot-1.1' 
+		// Textaufgaben: 'blockly-printer'
+		// Turtleaufgaben: 'blockly-turtle' geladen.
+		importModules([
+			'jquery-1.7.1', 'JSON-js', 'raphael-2.2.1', 'beaver-task-2.0',
+			'jschannel', 'raphaelFactory-1.0', 'delayFactory-1.0',
+			'simulationFactory-1.0', 'platform-pr', 'buttonsAndMessages',
+			'beav-1.0', 'installationAPI.01', 'miniPlatform', 'conceptDisplay-1.0',
+			'conceptViewer-1.0', 'conceptViewer_css-1.0', 'taskStyles-mobileFirst',
+			'blockly-robot-1.1',
+			'jwinf_css'
+		]);
+		// Die Standardsprache wird definiert, in diesem Fall Blockly 
+		// Andere Sprachen (wenn vorhanden) können dann mit ?language= als Suffix in der URL geladen werden.
+		importLanguageModules('blockly');
+
+		// Hier werden ein paar Grundinformationen zu der Aufgabe festgehalten
+	</script>
+	<script class="remove" type="text/javascript">
+		var json = {
+			"id": "",
+			"language": "de",
+			"version": "de.01",
+			"authors": "Hannah Rauterberg",
+			"translators": [],
+			"license": "",
+			"taskPathPrefix": "",
+			"modulesPathPrefix": "",
+			"browserSupport": [],
+			"fullFeedback": true,
+			"minWidth": "auto"
+		};
+	</script>
+	<script type="text/javascript" src="task.js"></script>
+</head>
+
+<body onresize="task.displayedSubTask.updateScale()">
+	<!-- Der Aufgabenname sowie die verwendeten Bildresourcen -->
+	<div id="task">
+		<h1>Lichter anzünden</h1>
+		<img src="icon.png" style="display:none" />
+
+		<div id="tabsContainer"></div>
+		<div id="taskContent" style="text-align:left;position:relative">
+			<div id="taskIntro">
+				<!-- Der Einleitungstext für alle Versionen ist gleich -->
+				Programmiere den Roboter:<br>
+				<p>Alle Punkte müssen mit dem Laserstrahl angeschaltet werden. 
+					Laser müssen dabei über die Spiegel (dargestellt als weiße Balken) gelenkt werden.</p>
+				<div class="easy medium hard">
+					<div
+						style="display: inline-block; vertical-align: top; padding: 5px; margin-right: 5px; border: 1px solid black; max-width: 33%;">
+						<div style="width: 90%; max-width: 150px; margin: auto;">
+							<img src="../../../Bilder/Roboter-Grafiken/launcher_instructions2.png" />
+						</div>
+						<p style="text-align: center; margin: 0;"><strong>Startprogramm</strong></p>
+					</div>
+					<div style="display: inline-block; vertical-align: top; max-width: 65%">
+						<p>
+							Ein Laserstrahl beleuchtet alle Stellen auf seinem Weg. Einmal erleuchtete Stellen bleiben
+							erleuchtet.
+						</p>
+						<p>
+							Um einen Laserwerfer zu verwenden, muss der Roboter auf dem gleichen Feld stehen.
+						</p>
+						<p>
+							Die Richtung wird durch eine ganze Zahl zwischen 0 und 7 vorgegeben. Die Richtungen werden auf
+							dem Laserwerfer angezeigt.
+						</p>
+					</div>
+					<div class="long" data-lang="blockly">
+						<h2>Weitere Hinweise:</h2>
+						<p>Um einen Laserwerfer zu aktivieren kannst du die Blöcke <img src="../../../Bilder/shoot.svg"
+								style="vertical-align:middle" /> und <img src="../../../Bilder/math_number.svg" style="vertical-align:middle" />
+							miteinander kombinieren, oder die Richtung direkt beim ersten Baustein eintragen.</p>
+
+						<p>So hat zum Beispiel die Richtung <code>2</code> folgenden Effekt: <br>
+							<img src="Beispiel.png" style="vertical-align:middle" />
+						</p>
+					</div>
+					<div class="long" data-lang="python">
+						<h2>Weitere Hinweise:</h2>
+						<p>
+							Um einen Laserwerfer zu aktivieren kannst musst du die Funktion <code>richteLaserstrahlAus(n)</code> verwenden. Dieser Funktion kannst du die Richtung <b>als Parameter <code>n</code></b> übergeben. Das <code>n</code> musst du also durch die Richtung ersetzen und in der Funktion in den Klammern schreiben.</p>
+
+						<p>
+							Um also einen Laserstrahl in Richtung <code>2</code> zu werfen, schreibst du <code>richteLaserstrahlAus(2)</code>:<br>
+							<img src="Beispiel2.png" style="vertical-align:middle" />
+						</p>
+					</div>
+				</div>
+			</div>
+			<div id="gridContainer"></div>
+			<div id="blocklyLibContent"></div>
+		</div>
+
+	</div><!-- task -->
+</body>
+
+</html>

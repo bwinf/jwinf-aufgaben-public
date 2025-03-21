@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Logische Verknüpfung</title>
+  <script>
+    window.stringsLanguage = 'de';
+  </script>
+  <script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js" id="import-modules"></script>
+  <script class="remove" type="text/javascript">
+    var modulesPath = '../../../../_common/modules/'
+    importModules([
+      'jquery-1.7.1', 'JSON-js', 'raphael-2.2.1', 'beaver-task-2.0', 'jschannel', 'raphaelFactory-1.0', 'delayFactory-1.0', 'simulationFactory-1.0',
+      'platform-pr', 'buttonsAndMessages', 'beav-1.0', 'installationAPI.01', 'miniPlatform', 'conceptDisplay-1.0', 'conceptViewer-1.0', 'conceptViewer_css-1.0',
+      'taskStyles-mobileFirst', 'blockly-robot-1.1', 'jwinf_css'
+    ]);
+    // set Blockly as default language when none is specified through ?language=
+    importLanguageModules('blockly');
+  </script>
+  <script class="remove" type="text/javascript">
+    var json = {
+      "id": "http://castor-informatique.fr/questions/algorea_training/training-repeat-paint/",
+      "language": "fr",
+      "version": "fr.01",
+      "authors": "Mathias Hiron",
+      "translators": [],
+      "license": "",
+      "taskPathPrefix": "",
+      "modulesPathPrefix": "",
+      "browserSupport": [],
+      "fullFeedback": true,
+      "minWidth": "auto"
+    };
+  </script>
+  <script type="text/javascript" src="task.js"></script>
+</head>
+
+<body onresize="task.displayedSubTask.updateScale()">
+  <div id="task">
+    <h1>Logische Verknüpfungen</h1>
+    <img src="icon.png" style="display:none" />
+
+    <div id="tabsContainer"></div>
+    <div id="taskContent">
+      <div id="taskIntro">
+        <p>
+          Programmiere den Roboter:<br>
+          Der Roboter soll alle markierten Felder <img src="../../../Bilder/Roboter-Grafiken/paint_marker.png" style="height: 40px;"> färben.
+        </p>
+        <div class="easy">
+          <p>
+            Bitte schau dir vorab die Erläuterungen der Bausteine unter <b>"weitere Hinweise"</b> an.
+          </p>
+          <p>
+            <i>Beachte: Dein Programm muss mit allen Testfällen zurechtkommen.</i>
+          </p>
+          <div class="long">
+            <hr>
+            <h2>Weitere Hinweise:</h2>
+            <p>
+              Das Ziel ist es, ein Programm zu schreiben, dass nur aus einem <code>wiederhole</code>-Baustein und einer Bedingung
+              besteht, wie folgt:
+            </p>
+            <img data-lang="blockly" src="structure_easy_blockly.svg" />
+            <p>
+              Um eine geeignete Bedingung zu wählen, nutze die Spalte, in der sich der Roboter befindet.
+            </p>
+            <p>
+              Mit dem <img src="../../../Bilder/logic_operation_and.svg" >-Baustein können zwei Bedingungen miteinander verknüpft werden. Damit die verknüpfte Bedingung
+              <code>True</code> ist, müssen beide Bedingungen erfüllt sein.
+            </p>
+            <p>
+              Mit dem <img src="../../../Bilder/logic_operation_or.svg" >-Baustein können zwei Bedingungen miteinander verknüpft werden. Damit die verknüpfte Bedingung
+              <code>True</code> ist, muss eine der Bedingungen erfüllt sein.
+            </p>
+            <p>
+              Mit dem kleinen Pfeil kann zwischen "und" und "oder" gewechselt werden.
+            </p>
+            <p>
+              Im folgenden Beispiel wird das Feld gefärbt, wenn die Spalte des Roboters kleiner als 4 oder größer als 8 ist.
+            </p>
+            <p>
+              <img src="und-oder_Beispiel.svg" />
+            </p>
+          </div>
+        </div>
+          <div class="medium hard">
+            <p>
+              Das Ziel ist es, ein Programm zu schreiben, dass den Roboter über alle Felder des
+              Gitters gehen lässt, und eine Bedingung verwendet um zu entscheiden, ob ein Feld gefärbt werden soll oder nicht.
+              Diese Bedingung kann von der Zeilennummer und von der Spaltennummer des Roboters abhängen.
+            </p>
+            <p class="medium">
+              <b>Hinweis: </b>Die Felder unter der Diagonalen sind Felder bei denen die Spaltennummer echt kleiner als die Zeilennummer ist.
+              <p>
+                <p>
+                  Dein Programm sollte die Anweisung <img src="../../../Bilder/paint.svg"> nur einmal enthalten.
+                </p>
+          </div>
+
+      </div>
+      <div id="gridContainer"></div>
+      <div id="blocklyLibContent"></div>
+    </div>
+
+  </div><!-- task -->
+</body>
+
+</html>

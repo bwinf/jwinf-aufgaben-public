@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Wie verwende ich Funktionen</title>
+  <script>
+    window.stringsLanguage = 'de';
+  </script>
+  <script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js" id="import-modules"></script>
+  <script class="remove" type="text/javascript">
+    var modulesPath = '../../../../_common/modules/'
+    importModules([
+      'jquery-1.7.1', 'JSON-js', 'raphael-2.2.1', 'beaver-task-2.0', 'jschannel', 'raphaelFactory-1.0', 'delayFactory-1.0', 'simulationFactory-1.0',
+      'platform-pr', 'buttonsAndMessages', 'beav-1.0', 'installationAPI.01', 'miniPlatform',
+      'taskStyles-mobileFirst', 'blockly-robot-1.1', 'jwinf_css'
+    ]);
+    // set Blockly as default language when none is specified through ?language=
+    importLanguageModules('blockly');
+  </script>
+  <script class="remove" type="text/javascript">
+    var json = {
+      "id": "http://castor-informatique.fr/questions/algorea_training/training-functions-cactus",
+      "language": "fr",
+      "version": "fr.01",
+      "authors": "Mathias Hiron",
+      "translators": [],
+      "license": "",
+      "taskPathPrefix": "",
+      "modulesPathPrefix": "",
+      "browserSupport": [],
+      "acceptedAnswers": [""],
+      "fullFeedback": true,
+      "minWidth": "auto"
+    };
+  </script>
+  <script type="text/javascript" src="task.js"></script>
+</head>
+
+<body onresize="task.displayedSubTask.updateScale()">
+  <div id="task">
+    <h1>Wie verwende ich Funktionen</h1>
+    <img src="icon.png" style="display:none" />
+
+    <div id="tabsContainer"></div>
+    <div id="taskContent" style="text-align:left;position:relative">
+      <div id="taskIntro">
+        Programmiere den Roboter:<br>
+        <p>Der Roboter soll alle markierten Felder <img src="../../../Bilder/Roboter-Grafiken/paint_marker.png" style="height: 40px;"> färben. Löse die Aufgabe mit Hilfe von Funktionen.</p>
+        <div class="easy">
+          <p>
+            Bitte schau dir vorab die Erläuterungen der Bausteine unter <b>"weitere Hinweise"</b> an.
+          </p>
+          <div class="long">
+            <hr>
+            <h2>Weitere Hinweise:</h2>
+            <p>
+              Eine Funktion zu schreiben bedeutet, einen eigenen, neuen Baustein zu erzeugen,
+              den du dann wie einen normalen Baustein an verschieden Stellen im Programm verwenden kannst.
+            </p>
+            <p>
+              Hier siehst du ein Beispiel einer Funktion, die zwei Felder übereinander einfärbt und dann zur Anfangsposition zurückkehrt:
+            </p>
+            <img data-lang="blockly" src="function_blockly.png" />
+            <p>
+              Und hier ist ein Beispiel, wie das Programm diese Funktion nutzen kann, und das Ergebnis:
+            </p>
+            <img data-lang="blockly" src="use_function_blockly.png" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="result_function.png" style="height:160px" />
+          </div>
+        </div>
+        <div class="hard">
+          <p>
+            In dieser Version musst du mehrere Funktionen benutzen, um sparsam mit den Bausteinen umzugehen!
+          </p>
+        </div>
+          <div class="medium">
+            <p>
+              Um die Bausteinbegrenzung nicht zu überschreiben, musst du außerdem einen Schleifen-Baustein benutzen.
+            </p>
+          </div>
+      </div>
+      <div id="gridContainer"></div>
+      <div id="blocklyLibContent"></div>
+    </div>
+
+  </div><!-- task -->
+</body>
+
+</html>

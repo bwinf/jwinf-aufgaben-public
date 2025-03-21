@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Text ausgeben</title>
+  <script>
+    window.stringsLanguage = 'de';
+  </script>
+  <script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js" id="import-modules"></script>
+  <script class="remove" type="text/javascript">
+    var modulesPath = '../../../../_common/modules/';
+    importModules([
+      'jquery-1.7.1', 'JSON-js', 'raphael-2.2.1', 'beaver-task-2.0', 'jschannel', 'raphaelFactory-1.0', 'delayFactory-1.0', 'simulationFactory-1.0',
+      'platform-pr', 'buttonsAndMessages', 'beav-1.0', 'installationAPI.01', 'miniPlatform',
+      'taskStyles-mobileFirst', 'blockly-printer', 'jwinf_css'
+    ]);
+    // set Blockly as default language when none is specified through ?language=
+    importLanguageModules('blockly');
+  </script>
+  <script class="remove" type="text/javascript">
+    var json = {
+      "id": "test-printer-copy",
+      "language": "de",
+      "version": "de.01",
+      "authors": "Robert Czechowski",
+      "translators": [],
+      "license": "",
+      "taskPathPrefix": "",
+      "modulesPathPrefix": "",
+      "browserSupport": [],
+      "acceptedAnswers": [""],
+      "fullFeedback": true,
+      "minWidth": "auto"
+    };
+    window.stringsLanguage = 'de';
+  </script>
+  <script type="text/javascript" src="printer_task.js"></script>
+
+</head>
+
+<body onresize="task.displayedSubTask.updateScale()">
+  <div id="task">
+    <h1>Text ausgeben</h1>
+    <div id="tabsContainer"></div>
+    <div id="taskContent">
+      <div id="taskIntro">
+        Schreibe ein Programm: <br>
+        <div class="easy">
+          <p>
+            Das Programm soll <code>Hallo Juno!</code> in dem Ausgabefeld ausgeben.<br>
+          </p>
+          <div class="long">
+            <hr>
+            <h2>Weitere Hinweise:</h2>
+            <p>
+              Mit dem Baustein <code>schreibe</code> wird der eingebene Text in das Ausgabefeld "Ausgabe" geschrieben.
+            </p>
+            <p>
+              <img data-lang="blockly" src="schreibe.svg" style='vertical-align:middle'/>
+            </p>
+            <p>
+              Achte darauf, dass die Groß- und Kleinschreibung beachtet werden muss und vergiss nicht das Ausrufezeichen am Ende!
+            </p>
+          </div>
+        </div>
+        <div class="medium">
+          <p>
+            Das Programm soll den Text im Eingabefeld <samp>Eingabe</samp> einlesen und im Ausgabefeld <samp>Ausgabe</samp> ausgeben.
+          </p>
+          <div class="long">
+            <hr>
+            <h2>Weitere Hinweise:</h2>
+            <p>
+              Der Baustein <img data-lang="blockly" src="../../../Bilder/read.svg" style='vertical-align:middle'/>
+              liest eine Zeile im Eingabefeld ein.
+            </p>
+          </div>
+        </div>
+        <div class="hard">
+          <p>
+            Das Programm soll einen mehrzeiligen Text im Eingabefeld <samp>Eingabe</samp> einlesen und im Ausgabefeld <samp>Ausgabe</samp>
+            in mehreren Zeilen wieder ausgeben.
+          </p>
+          <div class="long">
+            <hr>
+            <h2>Weitere Hinweise:</h2>
+            <p>
+              Mit dem Baustein
+              <img data-lang="blockly" src="../../../Bilder/eof.svg" style='vertical-align:middle'/>
+              kann geprüft werden, ob das Ende des im Eingabefeld stehenden Textes erreicht wurde.
+            </p>
+            <p>
+              Der Baustein <img data-lang="blockly" src="../../../Bilder/read.svg" style='vertical-align:middle'/>
+              liest eine Zeile im Eingabefeld ein.
+            </p>
+          </div>
+        </div>
+        <div>
+          <p>
+            Bitte schau dir vorab die Erläuterungen der Bausteine unter <b>"weitere Hinweise"</b> an.
+          </p>
+        </div>
+      </div>
+      <div id="gridContainer"></div>
+      <div id="blocklyLibContent"></div>
+    </div>
+  </div><!-- task -->
+</body>
+
+</html>

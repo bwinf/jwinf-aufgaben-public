@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   class="blocklySvg"
+   width="322.6875"
+   height="30"
+   id="svg112"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2" />
+  <g
+     class="blocklyWorkspace"
+     id="g68"
+     transform="translate(-317.3125,-148)">
+    <g
+       class="blocklyBlockCanvas"
+       transform="translate(75.3125,1)"
+       id="g62">
+      <g
+         class="blocklyDraggable"
+         transform="translate(242,147)"
+         id="g15">
+        <path
+           class="blocklyPathDark"
+           transform="translate(1,1)"
+           fill="#843456"
+           d="M 0,8 A 8,8 0 0 1 8,0 h 7 l 6,4 h 3 l 6,-4 h 216.09375 v 5 c 0,10 -8,-8 -8,7.5 0,15.5 8,-2.5 8,7.5 v 5 H 29.5 l -6,4 h -3 l -6,-4 H 8 A 8,8 0 0 1 0,17 Z"
+           id="path8" />
+        <path
+           class="blocklyPath"
+           fill="#a5416b"
+           d="M 0,8 A 8,8 0 0 1 8,0 h 7 l 6,4 h 3 l 6,-4 h 216.09375 v 5 c 0,10 -8,-8 -8,7.5 0,15.5 8,-2.5 8,7.5 v 5 H 29.5 l -6,4 h -3 l -6,-4 H 8 A 8,8 0 0 1 0,17 Z"
+           id="path9" />
+        <text
+           class="blocklyText"
+           y="12.5"
+           transform="translate(10,5)"
+           id="text10"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1">setze</text>
+        <g
+           class="blocklyEditableText"
+           transform="translate(55.046875,5)"
+           id="g11">
+          <rect
+             rx="4"
+             ry="4"
+             x="-5"
+             y="0"
+             height="16"
+             width="152.65625"
+             id="rect10"
+             style="fill:#dbb3c4;fill-opacity:1" />
+          <text
+             class="blocklyText"
+             y="12.5"
+             id="text11"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1">RoboterGedächtnis<tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1"
+   id="tspan10">▾</tspan></text>
+        </g>
+        <text
+           class="blocklyText"
+           y="12.5"
+           transform="translate(207.70312,5)"
+           id="text12"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1">auf</text>
+        <g
+           class="blocklyDraggable"
+           transform="translate(247.09375)"
+           id="g14">
+          <path
+             class="blocklyPathDark"
+             transform="translate(1,1)"
+             fill="#226384"
+             d="M 0,0 H 74.59375 V 24 H 0 V 20 C 0,10 -8,28 -8,12.5 -8,-3 0,15 0,5 Z"
+             id="path12" />
+          <path
+             class="blocklyPath"
+             fill="#2b7ca5"
+             d="M 0,0 H 74.59375 V 24 H 0 V 20 C 0,10 -8,28 -8,12.5 -8,-3 0,15 0,5 Z"
+             id="path13" />
+          <path
+             class="blocklyPathLight"
+             stroke="#6ba3c0"
+             d="m 0.5,0.5 h 73.59375 m 0,0 M 0.5,23.5 v -5 M -6.86,18 q -1.52,-5.5 0,-11 M 0.5,8 V 0.5 H 1"
+             id="path14" />
+          <text
+             class="blocklyText"
+             y="12.5"
+             transform="translate(10,5)"
+             id="text14"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1">lies Zahl</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

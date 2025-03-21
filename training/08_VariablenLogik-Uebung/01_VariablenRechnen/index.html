@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Variablen Rechnen</title>
+  <script>
+    window.stringsLanguage = 'de';
+  </script>
+  <script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js"
+    id="import-modules"></script>
+  <script class="remove" type="text/javascript">
+    var modulesPath = '../../../../_common/modules/'
+    importModules([
+      'jquery-1.7.1', 'JSON-js', 'raphael-2.2.1', 'beaver-task-2.0', 'jschannel', 'raphaelFactory-1.0',
+      'delayFactory-1.0', 'simulationFactory-1.0',
+      'platform-pr', 'buttonsAndMessages', 'beav-1.0', 'installationAPI.01', 'miniPlatform',
+      'taskStyles-mobileFirst', 'blockly-robot-1.1', 'jwinf_css'
+    ]);
+    // set Blockly as default language when none is specified through ?language=
+    importLanguageModules('blockly');
+  </script>
+  <script class="remove" type="text/javascript">
+    var json = {
+      "id": "http://castor-informatique.fr/questions/algorea_training/training-var",
+      "language": "fr",
+      "version": "fr.01",
+      "authors": "Mathias Hiron",
+      "translators": [],
+      "license": "",
+      "taskPathPrefix": "",
+      "modulesPathPrefix": "",
+      "browserSupport": [],
+      "acceptedAnswers": [""],
+      "fullFeedback": true,
+      "minWidth": "auto"
+    };
+  </script>
+  <script type="text/javascript" src="task.js"></script>
+</head>
+
+<body onresize="task.displayedSubTask.updateScale()">
+  <div id="task">
+    <h1>Variablen Rechnen</h1>
+    <img src="green_robot.png" style="display:none" />
+    <img src="icon.png" style="display:none" />
+
+    <div id="tabsContainer"></div>
+    <div id="taskContent" style="text-align:left;position:relative">
+      <div id="taskIntro">
+        <div class="easy">
+          Programmiere den Roboter:<br>
+          <p>Der Roboter soll die Zahlen aus der linken Spalte auf die Tafeln <img src='../../../Bilder/Roboter-Grafiken/grey.png' style="height: 40px;"/>
+            in der rechten Spalte schreiben. Am Ende muss der Roboter zur Rakete <img src='../../../Bilder/Roboter-Grafiken/rocket.png' style="height: 40px;"/> zurückkehren.
+          </p>
+          
+          <p data-lang="blockly">
+            Mit dem Baustein <img src="../../../Bilder/Number_read.svg"> kann der Roboter die Zahl auf dem Feld lesen.</p>
+          <p data-lang="python">
+            Mit dem Befehl <code>leseZahl()</code> kann der Roboter die Zahl auf dem Feld lesen.</p>
+
+          <div class="long">
+            <hr>
+            <h2>Weitere Hinweise:</h2>
+            <p>
+              Der Roboter muss den Inhalt eines Feldes einlesen, in sein Gedächtnis schreiben,
+              zwei Felder nach rechts gehen und dann den Inhalt seines Gedächtnis auf das Feld schreiben.
+            </p>
+            <p data-lang="blockly">
+              Um die Zahl auf dem Feld einzulesen, und in die Variable <code>Gedächtnis des Roboters</code> zu
+              schreiben,
+              kannst du die folgenden Bausteine nutzen: <img src="../../../Bilder/initVar_readNumber.svg"> 
+              Um die Zahl aus der Variable <code>Gedächtnis des Roboters</code> auf das Feld zu schreiben, nutze den
+              Baustein: <img src="../../../Bilder/Number_write.svg"></p>
+            <p data-lang="python">
+              Um die Zahl auf dem Feld einzulesen, und in die Variable <code>x</code> zu
+              schreiben,
+              kannst du den Befehl <code>leseZahl()</code> nutzen.
+              Um die Zahl aus der Variable <code>x</code> auf das Feld zu schreiben, nutze den Befehl <code>schreibeZahl()</code> </p>
+
+          </div>
+        </div>
+        <div class="medium">
+          Programmiere den Roboter:<br>
+          <p>Der Roboter soll in jeder Zeile die beiden Zahlen addieren und die Summe auf die Tafeln <img src='../../../Bilder/Roboter-Grafiken/grey.png' style="height: 40px;"/>
+            in der rechten Spalte schreiben. Am Ende muss der Roboter zur Rakete <img src='../../../Bilder/Roboter-Grafiken/rocket.png' style="height: 40px;"/>zurückkehren.</p>
+          <div class="long">
+            <hr>
+            <h2>Weitere Hinweise:</h2>
+            <p data-lang="blockly">
+              Nachdem der Roboter die erste Zahl in die Variable <code>Gedächtnis des Roboters</code> geschrieben hat,
+              kannst du die zweite Zahl auf zwei Arten hinzufügen: <br>
+            <img data-lang="blockly" src="erhoehe1.png" /> <br>
+            <img data-lang="blockly" src="erhoehe2.png" /> </p>
+            <p data-lang="python">
+              Nachdem der Roboter die erste Zahl in die Variable <code>x</code> geschrieben hat,
+              kannst du die zweite Zahl mit folgender Zeile hinzufügen: <code>x = x + leseZahl()</code></p>
+          </div>
+        </div>
+        <div class="hard">
+          Programmiere den Roboter:<br>
+          <p>Der Roboter soll in jeder Zeile alle Zahlen addieren und die Summe auf die Tafeln <img src='../../../Bilder/Roboter-Grafiken/grey.png' style="height: 40px;"/>
+            in der rechten Spalte schreiben. Am Ende muss der Roboter zur Rakete <img src='../../../Bilder/Roboter-Grafiken/rocket.png' style="height: 40px;"/>zurückkehren.</p>
+        </div>
+      </div>
+      <div id="gridContainer"></div>
+      <div id="blocklyLibContent"></div>
+    </div>
+
+  </div><!-- task -->
+</body>
+
+</html>

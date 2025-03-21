@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Liste durchsuchen</title>
+  <script>
+    window.stringsLanguage = 'de';
+  </script>
+  <script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js" id="import-modules"></script>
+  <script class="remove" type="text/javascript">
+    var modulesPath = '../../../../_common/modules/';
+    importModules([
+      'jquery-1.7.1', 'JSON-js', 'raphael-2.2.1', 'beaver-task-2.0', 'jschannel', 'raphaelFactory-1.0', 'delayFactory-1.0', 'simulationFactory-1.0',
+      'platform-pr', 'buttonsAndMessages', 'beav-1.0', 'installationAPI.01', 'miniPlatform',
+      'taskStyles-mobileFirst', 'blockly-printer', 'jwinf_css'
+    ]);
+    // set Blockly as default language when none is specified through ?language=
+    importLanguageModules('blockly');
+  </script>
+  <script class="remove" type="text/javascript">
+    var json = {
+      "id": "training_liste_einf",
+      "language": "de",
+      "version": "de.01",
+      "authors": "Katharina Schuster",
+      "translators": [],
+      "license": "",
+      "taskPathPrefix": "",
+      "modulesPathPrefix": "",
+      "browserSupport": [],
+      "acceptedAnswers": [""],
+      "fullFeedback": true,
+      "minWidth": "auto"
+    };
+
+    window.stringsLanguage = 'de';
+    var strings = {
+      moreThan100Moves: "Vous avez cependant fait plus de 100 déplacements.",
+      notAllCellsPainted: "Das hat noch nicht ganz geklappt. Versuch es noch einmal!",
+      allCellsPainted: "Bravo! Du hast die Zeilen richtig ausgegeben!"
+    };
+  </script>
+  <script type="text/javascript" src="printer_task.js"></script>
+
+</head>
+
+<body onresize="task.displayedSubTask.updateScale()">
+  <div id="task">
+    <h1>Liste durchsuchen</h1>
+
+    <div id="tabsContainer"></div>
+    <div id="taskContent">
+      <div id="taskIntro">
+        Schreibe ein Programm:
+        <div class="easy">
+          <p>
+            Das Programm soll die Wörter in eine Liste einlesen, das erste Auftreten des Wortes "nicht" suchen und den Index ausgeben.
+          </p>
+          <div>
+            <p>Bitte schau dir vorab die Erläuterungen der Bausteine unter <b>"weitere Hinweise"</b> an.</p>
+          </div>
+          <div class="long">
+            <h2>Weitere Hinweise:</h2>
+            <p>
+              Mit dem Baustein <img data-lang="blockly" src="../../../Bilder/lists_getIndex.svg" /> kann man das erste bzw. letzte Auftreten eines Wertes finden.
+              Man bekommt den Index, die Position in der Lieste, als Zahl zurück. Der Wert ist 0, falls kein Element gefunden wurde. Der erste Eintrag
+              in der Liste hat den Index 1.
+            </p>
+          </div>
+        </div>
+        <div class="medium">
+          <p>Das Programm soll die Wörter in eine Liste einlesen und dann das Wort "nicht" aus der Liste löschen.
+            Die verkürzte Liste soll ausgegeben werden.
+          </p>
+          <div>
+            <p>Bitte schau dir vorab die Erläuterungen der Bausteine unter <b>"weitere Hinweise"</b> an.</p>
+          </div>
+          <div class="long">
+            <hr>
+            <h2>Weitere Hinweise:</h2>
+            <p>
+              Mit dem Baustein <img data-lang="blockly" src="../../../Bilder/lists_getIndex.svg" /> kann ein Wert aus der Liste entnommen oder entfernt werden.
+            </p>
+            <p>
+              Soll ein Wert aus der Liste entnommen werden, wird dieser in einer Variablen gespeichert. Soll der
+              Wert aus der Liste entfernt werden, wird keine weitere Variable benötigt. Der Baustein verändert sich dadurch.
+            </p>
+            <p><img data-lang="blockly" src="../../../Bilder/lists_getIndex_remove.svg" /></p>
+            <p>
+              Über den kleinen Pfeil bei <code>am Index</code> kann die Position, an welcher Stelle etwas entnommen oder entfernt werden soll,
+              verändert werden.
+            </p>
+          </div>
+        </div>
+        <div class="hard">
+          <p>
+            Das Programm soll die Wörter in eine Liste einlesen und das erste Auftreten des Wortes "nicht" suchen. Das Wort soll an dieser Stelle in der Liste entfernt werden und am Ende der Liste angehängt werden. Der ursprüngliche Index von "nicht" soll als letztes in der Liste gespeichert werden.
+          </p>
+          <table>
+            <tr>
+              <td style="padding: 0px 30px;vertical-align: top;">
+                  <b>Eingabe:</b><br>
+                  nicht<br>
+                  den<br>
+                  Keks<br>
+              </td>
+              <td style="padding: 0px 30px;vertical-align: top;">
+                <b>Ausgabe:</b><br>
+                <div class="hard">
+                  den,Keks,nicht,1<br>
+                </div>
+              </td>
+            </tr>
+          </table>
+          <div>
+            <p>Bitte schau dir vorab die Erläuterungen der Bausteine unter <b>"weitere Hinweise"</b> an.</p>
+          </div>
+          <div class="long">
+            <hr>
+            <h2>Weitere Hinweise:</h2>
+            <p>
+              Mit dem Baustein <img data-lang="blockly" src="../../../Bilder/lists_getIndex.svg" /> kann ein Wert aus der Liste entnommen oder entfernt werden.
+            </p>
+            <p>
+              Über den kleinen Pfeil bei <code>am Index</code> kann die Position, an welcher Stelle etwas entnommen oder entfernt werden soll,
+              verändert werden.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="gridContainer"></div>
+      <div id="blocklyLibContent"></div>
+    </div>
+  </div><!-- task -->
+</body>
+
+</html>

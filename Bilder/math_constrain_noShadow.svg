@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   class="blocklySvg"
+   width="286.40625"
+   height="36"
+   id="svg506"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2" />
+  <g
+     class="blocklyWorkspace"
+     id="g506"
+     transform="translate(-8,853)">
+    <g
+       class="blocklyFlyout"
+       style="display:block"
+       id="g497">
+      <g
+         class="blocklyWorkspace"
+         id="g496">
+        <g
+           class="blocklyBlockCanvas"
+           transform="translate(0,-4151)"
+           id="g493">
+          <g
+             class="blocklyDraggable"
+             transform="translate(16,3298)"
+             id="g295">
+            <path
+               class="blocklyPathDark"
+               transform="translate(1,1)"
+               fill="#2e4084"
+               d="M 0,0 H 20 277.40625 V 35 H 0 V 20 C 0,10 -8,28 -8,12.5 -8,-3 0,15 0,5 Z M 101.64063,5 H 87.140625 v 5 c 0,10 -8,-8 -8,7.5 0,15.5 8,-2.5 8,7.5 v 6 H 101.64063 Z M 202.4375,5 h -14.5 v 5 c 0,10 -8,-8 -8,7.5 0,15.5 8,-2.5 8,7.5 v 6 h 14.5 z m 64.96875,0 h -14.5 v 5 c 0,10 -8,-8 -8,7.5 0,15.5 8,-2.5 8,7.5 v 6 h 14.5 z"
+               id="path291" />
+            <path
+               class="blocklyPath"
+               fill="#3950a5"
+               d="M 0,0 H 20 277.40625 V 35 H 0 V 20 C 0,10 -8,28 -8,12.5 -8,-3 0,15 0,5 Z M 101.64063,5 H 87.140625 v 5 c 0,10 -8,-8 -8,7.5 0,15.5 8,-2.5 8,7.5 v 6 H 101.64063 Z M 202.4375,5 h -14.5 v 5 c 0,10 -8,-8 -8,7.5 0,15.5 8,-2.5 8,7.5 v 6 h 14.5 z m 64.96875,0 h -14.5 v 5 c 0,10 -8,-8 -8,7.5 0,15.5 8,-2.5 8,7.5 v 6 h 14.5 z"
+               id="path292" />
+            <text
+               class="blocklyText"
+               y="12.5"
+               transform="translate(10,10)"
+               id="text293"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1">begrenze</text>
+            <text
+               class="blocklyText"
+               y="12.5"
+               transform="translate(111.64063,10)"
+               id="text294"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1">zwischen</text>
+            <text
+               class="blocklyText"
+               y="12.5"
+               transform="translate(212.4375,10)"
+               id="text295"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1">und</text>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

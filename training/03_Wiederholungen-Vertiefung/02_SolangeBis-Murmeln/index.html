@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Solange / Bis Murmeln</title>
+  <script>
+    window.stringsLanguage = 'de';
+  </script>
+  <script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js" id="import-modules"></script>
+  <script class="remove" type="text/javascript">
+    var modulesPath = '../../../../_common/modules/'
+    importModules([
+      'jquery-1.7.1', 'JSON-js', 'raphael-2.2.1', 'beaver-task-2.0', 'jschannel', 'raphaelFactory-1.0', 'delayFactory-1.0', 'simulationFactory-1.0',
+      'platform-pr', 'buttonsAndMessages', 'beav-1.0', 'installationAPI.01', 'miniPlatform', 'conceptDisplay-1.0', 'conceptViewer-1.0', 'conceptViewer_css-1.0',
+      'taskStyles-mobileFirst', 'blockly-robot-1.1', 'jwinf_css'
+    ]);
+    // set Blockly as default language when none is specified through ?language=
+    importLanguageModules('blockly');
+  </script>
+  <script class="remove" type="text/javascript">
+    var json = {
+      "id": "http://castor-informatique.fr/questions/algorea_training/training-while-marbles/",
+      "language": "fr",
+      "version": "fr.01",
+      "authors": "Mathias Hiron",
+      "translators": [],
+      "license": "",
+      "taskPathPrefix": "",
+      "modulesPathPrefix": "",
+      "browserSupport": [],
+      "fullFeedback": true,
+      "minWidth": "auto"
+    };
+  </script>
+  <script type="text/javascript" src="task.js"></script>
+</head>
+
+<body onresize="task.displayedSubTask.updateScale()">
+  <div id="task">
+    <h1>Solange / Bis Murmeln</h1>
+    <img src="hole.png" style="display:none" />
+    <img src="marble.png" style="display:none" />
+    <img src="green_robot.png" style="display:none" />
+    <img src="icon.png" style="display:none" />
+
+    <div id="tabsContainer"></div>
+    <div id="taskContent">
+      <div id="taskIntro">
+        <p>
+          Programmiere den Roboter:<br>
+          Der Roboter soll die Murmel<span class="medium hard">n</span> <img src="../../../Bilder/Roboter-Grafiken/marble.png" style="vertical-align: middle; height: 40px;"><span class="medium hard">jeweils</span> im Loch <img src="../../../Bilder/Roboter-Grafiken/hole.png" style="vertical-align: middle; height: 40px;"> <span class="medium hard">in der selben Zeile</span> ablegen.
+
+        </p>
+          <p class="medium hard">
+            <b>Hinweis: </b>Der Roboter kann höchstens eine Murmel auf einmal tragen.<br>
+          </p>
+          <p data-lang="blockly">
+            Bitte schau dir vorab die Erläuterungen der Bausteine unter <b>"weitere Hinweise"</b> an.
+          </p>
+          <p data-lang="python">
+            Bitte schau dir vorab die <b>Erläuterungen</b> unter "weitere Hinweise" an.
+          </p>
+          <div class="long" data-lang ="blockly">
+            <hr>
+            <h2>Weitere Hinweise:</h2>
+            <p>
+              Der Baustein <code>wiederhole solange/bis</code> wiederholt etwas solange bzw. bis eine Bedingung erfüllt ist.
+              Dieser Baustein wird genutzt, wenn man die Anzahl der Wiederholungen im Voraus <b>nicht</b> kennt.
+            </p>
+            <p>
+              <img src="wiederhole_solange.jpg" style="vertical-align:middle"> oder
+              <img src="wiederhole_bis.jpg" style="vertical-align:middle">
+            </p>
+            <p>
+              <span class="easy">Hier kennst du die Anzahl der Felder zwischen Murmel und Loch nicht.</span>
+              <span class="medium">Hier kennst du die Anzahl der Zeilen mit einer Murmel und einem Loch nicht:</span>
+            </p>
+            <img class="easy" src="easy_tests_neu.png" style="height:60px" />
+            <img class="medium" src="medium_tests_neu.png" style="height:200px" />
+          </div>
+          <div class="long" data-lang="python">
+            <hr>
+            <h2>Weitere Hinweise:</h2>
+            <p>
+              Mit der <code>while</code>-Schleife kann etwas so lange wiederholt werden, wie
+              eine Bedingung erfüllt ist.
+              Wenn der Roboter sich bewegen soll, <b>bis</b> eine bestimmte Bedingung erfüllt ist,
+              so kann das Schlüsselwort <code>not</code> (nicht) verwendet werden.
+            </p>
+<pre>
+   while not aufLoch():
+      rechts()
+</pre>
+            <p>
+              <span class="easy">Hier kennst du die Anzahl der Felder zwischen Murmel und Loch nicht.</span>
+              <span class="medium">Hier kennst du die Anzahl der Zeilen mit einer Murmel und einem Loch nicht:</span>
+            </p>
+            <img class="easy" src="easy_tests_neu.png" style="height:60px" />
+            <img class="medium" src="medium_tests_neu.png" style="height:200px" />
+          </div>
+          <p>
+            <i>Beachte: Dein Programm muss mit allen Testfällen zurechtkommen.</i>
+          </p>
+      </div>
+      <div id="gridContainer"></div>
+      <div id="blocklyLibContent"></div>
+    </div>
+
+  </div><!-- task -->
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Blumen</title>
+  <script>
+    window.stringsLanguage = 'de';
+  </script>
+  <script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js" id="import-modules"></script>
+  <script class="remove" type="text/javascript">
+    var modulesPath = '../../../../_common/modules/';
+    importModules([
+      'jquery-1.7.1', 'JSON-js', 'raphael-2.2.1', 'beaver-task-2.0', 'jschannel', 'raphaelFactory-1.0', 'delayFactory-1.0', 'simulationFactory-1.0',
+      'platform-pr', 'buttonsAndMessages', 'beav-1.0', 'installationAPI.01', 'miniPlatform',
+      'taskStyles-mobileFirst', 'blockly-turtle', 'jwinf_css'
+    ]);
+    // set Blockly as default language when none is specified through ?language=
+    importLanguageModules('blockly');
+  </script>
+  <script class="module" type="text/javascript" src="../../../../_common/modules/pemFioi/blocklyTurtle_lib.js" id="blocklyTurtle_lib"></script>
+  <script class="remove" type="text/javascript">
+    var json = {
+      "id": "19-DE-01-flowers",
+      "language": "de",
+      "version": "de.01",
+      "authors": "Robert Czechowski",
+      "translators": [],
+      "license": "",
+      "taskPathPrefix": "",
+      "modulesPathPrefix": "",
+      "browserSupport": [],
+      "acceptedAnswers": [""],
+      "fullFeedback": true,
+      "minWidth": "auto"
+    };
+  </script>
+  <script type="text/javascript" src="task.js"></script>
+
+
+</head>
+
+<body onresize="task.displayedSubTask.updateScale()">
+  <div id="task">
+    <h1>Blumen</h1>
+    <div id="tabsContainer"></div>
+    <div id="taskContent">
+      <div id="taskIntro">
+        Programmiere die Schildkröte:<br>
+        <div class="easy">
+          <p>
+            Die Schildkröte soll die vorgezeichnete Blume nachmalen. Die Blüte der Blume ist ein Achteck.
+          </p>
+          <p>
+            Die Farben deiner Blume müssen nicht mit den Farben der vorgezeichneten Blume übereinstimmen.
+          </p>
+        </div>
+        <div class="medium">
+          <p>
+            Die Schildkröte soll die vorgezeichneten Blumen nachmalen.
+          </p>
+          <p>
+            Erstelle dazu eine Funktion, die eine einzelne Blume malt.<br>
+            Nur so kannst du mit der Anzahl der verfügbaren Bausteine auskommen.
+          </p>
+          <p>
+            Die Farben deiner Blume müssen nicht mit den Farben der vorgezeichneten Blume übereinstimmen.
+          </p>
+        </div>
+        <div class="hard">
+          <p>
+            Die Schildkröte soll die vorgezeichneten Blumen nachmalen.
+          </p>
+          <p>Bitte schau dir vorab die Erläuterungen der Bausteine unter <b>"weitere Hinweise"</b> an.</p>
+          <div class="long">
+            <hr>
+            <h2>Weitere Hinweise:</h2>
+            <p>
+              Erstelle dazu eine Funktion, die eine einzelne Blume malt.
+              Füge der Funktion über die Einstellungen (Zahnrad-Symbol) einen Parameter hinzu.
+              Der Wert des Parameters soll die Größe der Blume bestimmen.
+              Die größte Blume ist 1,5-mal so groß wie die Blume ganz rechts; 
+              die kleinste Blume 0,5-mal so groß.
+            </p>
+            <p>
+              <img src="../../../Bilder/function_setParameter.svg" />
+            </p>
+            <p>
+              Wenn du die Funktion verwendest, musst du einen Wert für den Parameter angeben<br>
+              Beachte dabei, dass du Kommazahlen mit einem Punkt statt Komma schreiben musst:
+            </p>
+            <p>
+              <img src="../../../Bilder/function_useParameter.svg" />
+            </p>
+          </div>
+          <p>
+            Die Farben deiner Blume müssen nicht mit den Farben der vorgezeichneten Blume übereinstimmen.
+          </p>
+        </div>
+      </div>
+      <div id="gridContainer"></div>
+      <div id="blocklyLibContent"></div>
+    </div>
+  </div><!-- task -->
+</body>
+
+</html>

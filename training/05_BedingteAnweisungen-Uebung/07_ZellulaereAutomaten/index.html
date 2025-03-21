@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Zelluläre Automaten</title>
+  <script>
+    window.stringsLanguage = 'de';
+    window.taskStrings = {
+      success: "Bravo! Der Roboter hat alle markierten Felder gefärbt.",
+      failure: "Dein Roboter hat nicht alle markierten Felder gefärbt.",
+    };
+  </script>
+  <script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js" id="import-modules"></script>
+  <script class="remove" type="text/javascript">
+    var modulesPath = '../../../../_common/modules/'
+    importModules([
+      'jquery-1.7.1', 'JSON-js', 'raphael-2.2.1', 'beaver-task-2.0', 'jschannel', 'raphaelFactory-1.0', 'delayFactory-1.0', 'simulationFactory-1.0',
+      'platform-pr', 'buttonsAndMessages', 'beav-1.0', 'installationAPI.01', 'miniPlatform', 'conceptDisplay-1.0', 'conceptViewer-1.0', 'conceptViewer_css-1.0',
+      'taskStyles-mobileFirst', 'blockly-robot-1.1', 'jwinf_css'
+    ]);
+    // set Blockly as default language when none is specified through ?language=
+    importLanguageModules('blockly');
+  </script>
+  <script class="remove" type="text/javascript">
+    var json = {
+      "id": "http://castor-informatique.fr/questions/algorea_2017_1/cellular_automata",
+      "language": "de",
+      "version": "de.01",
+      "authors": "Mathias Hiron",
+      "translators": ["Robert Czechowski", "Wolfgang Pohl"],
+      "license": "",
+      "taskPathPrefix": "",
+      "modulesPathPrefix": "",
+      "browserSupport": [],
+      "fullFeedback": true,
+      "minWidth": "auto"
+    };
+  </script>
+  <script type="text/javascript" src="task.js"></script>
+</head>
+
+<body onresize="task.displayedSubTask.updateScale()">
+  <div id="task">
+    <h1>Zelluläre Automaten</h1>
+    <img src="icon.png" style="display:none" />
+
+    <div id="tabsContainer"></div>
+    <div id="taskContent" style="text-align:left;position:relative">
+      <div id="taskIntro">
+        Programmiere den Roboter:<br>
+        <p>
+          Der Roboter soll die markierten Felder <img src="../../../Bilder/Roboter-Grafiken/paint_marker.png" style="vertical-align: middle; height: 40px;"> färben.
+        </p>
+        <p class="easy">
+          Ein Feld ist markiert, wenn das Feld darüber gefärbt ist.
+        </p>
+        <div class="medium">
+          Ein Feld ist markiert, wenn das Feld darüber und das Feld links oben unterschiedlich sind.
+          Nur eines dieser Felder darf gefärbt sein.
+          <p>
+            <img src="rule_a.png">
+          </p>
+        </div>
+        <p class="easy medium">
+          Der Roboter muss 14-mal gehen, um alle markierten Felder zu färben.
+        </p>
+        <div class="hard">
+          Ob ein Feld markiert ist, hängt davon ab, welche der drei Felder oberhalb (links oben, oben und rechts oben) gefärbt sind.
+          <p>
+            <img src="rule_30.png">
+          </p>
+          <p>
+            Der Roboter muss 20-mal gehen, um nach ganz rechts zu kommen. <br />
+            Der Roboter muss 10-mal gehen, um nach ganz unten zu kommen.
+          </p>
+          <div class="long">
+              <h2>Weitere Hinweise:</h2>
+              Zum Beispiel bedeutet die erste Regel (von links): Ein Feld ist <em>nicht</em> markiert, wenn alle drei Felder oberhalb nicht gefärbt sind.<br />
+              Die zweite Regel bedeutet: Ein Feld ist markiert, wenn von den drei Feldern oberhalb nur das Feld rechts oben gefärbt ist.
+          </div>
+        </div>
+      </div>
+      <div id="gridContainer"></div>
+      <div id="blocklyLibContent"></div>
+    </div>
+
+  </div><!-- task -->
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   class="blocklySvg"
+   width="161.14688"
+   height="31.900009"
+   id="svg25"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2" />
+  <g
+     class="blocklyWorkspace"
+     id="g25"
+     transform="translate(-268.9328,-119.2)">
+    <g
+       class="blocklyBlockCanvas"
+       transform="matrix(1.1,0,0,1.1,266.73281,117)"
+       id="g19">
+      <g
+         transform="translate(2,2)"
+         id="g18">
+        <path
+           class="blocklyPathDark"
+           transform="translate(1,1)"
+           fill="#496684"
+           d="M 0,8 A 8,8 0 0 1 8,0 H 145.49715 V 24 H 29.5 l -6,4 h -3 l -6,-4 H 8 A 8,8 0 0 1 0,16 Z"
+           id="path16" />
+        <path
+           class="blocklyPath"
+           fill="#5b80a5"
+           d="M 0,8 A 8,8 0 0 1 8,0 H 145.49715 V 24 H 29.5 l -6,4 h -3 l -6,-4 H 8 A 8,8 0 0 1 0,16 Z"
+           id="path17" />
+        <text
+           class="blocklyText"
+           y="12.5"
+           transform="translate(10,5)"
+           id="text18"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.5455px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1">Roboter-Programm</text>
+      </g>
+    </g>
+  </g>
+</svg>

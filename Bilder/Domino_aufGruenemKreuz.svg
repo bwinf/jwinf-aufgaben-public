@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   class="blocklySvg"
+   width="160.24968"
+   height="27.5"
+   id="svg61"
+   sodipodi:docname="Domino_aufGruenemKreuz.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="6.6770804"
+     inkscape:cx="80.12484"
+     inkscape:cy="13.703594"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg61" />
+  <defs
+     id="defs2" />
+  <g
+     class="blocklyWorkspace"
+     id="g61"
+     transform="translate(-314.66905,-177.5)">
+    <g
+       class="blocklyBlockCanvas"
+       transform="matrix(1.1,0,0,1.1,218.8875,7)"
+       id="g55">
+      <g
+         class="blocklyDraggable"
+         transform="translate(95.193173,155)"
+         id="g51">
+        <path
+           class="blocklyPathDark"
+           transform="translate(1,1)"
+           fill="#226384"
+           d="M 0,0 H 136.5625 V 24 H 0 V 20 C 0,10 -8,28 -8,12.5 -8,-3 0,15 0,5 Z"
+           id="path49" />
+        <path
+           class="blocklyPath"
+           fill="#2b7ca5"
+           d="M 0,0 H 136.5625 V 24 H 0 V 20 C 0,10 -8,28 -8,12.5 -8,-3 0,15 0,5 Z"
+           id="path50" />
+        <path
+           class="blocklyPathLight"
+           stroke="#6ba3c0"
+           d="m 0.5,0.5 h 135.5625 m 0,0 M 0.5,23.5 v -5 M -6.86,18 q -1.52,-5.5 0,-11 M 0.5,8 V 0.5 H 1"
+           id="path51" />
+        <text
+           class="blocklyText"
+           y="12.5"
+           transform="translate(10,5)"
+           id="text51"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.5455px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1">auf grünem Kreuz</text>
+      </g>
+    </g>
+  </g>
+</svg>

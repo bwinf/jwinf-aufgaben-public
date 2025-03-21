@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Felder färben</title>
+  <script>
+    window.stringsLanguage = 'de';
+  </script>
+  <script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js"
+    id="import-modules"></script>
+  <script class="remove" type="text/javascript">
+    var modulesPath = '../../../../_common/modules/'
+    importModules([
+      'jquery-1.7.1', 'JSON-js', 'raphael-2.2.1', 'beaver-task-2.0', 'jschannel', 'raphaelFactory-1.0', 'delayFactory-1.0', 'simulationFactory-1.0',
+      'platform-pr', 'buttonsAndMessages', 'beav-1.0', 'installationAPI.01', 'miniPlatform',
+      'taskStyles-mobileFirst', 'blockly-robot-1.1', 'jwinf_css'
+    ]);
+    // set Blockly as default language when none is specified through ?language=
+    importLanguageModules('blockly');
+  </script>
+  <script class="remove" type="text/javascript">
+    var json = {
+      "id": "http://castor-informatique.fr/questions/algorea_training/training-array-1D",
+      "language": "fr",
+      "version": "fr.01",
+      "authors": "Mathias Hiron",
+      "translators": [],
+      "license": "",
+      "taskPathPrefix": "",
+      "modulesPathPrefix": "",
+      "browserSupport": [],
+      "acceptedAnswers": [""],
+      "fullFeedback": true,
+      "minWidth": "auto"
+    };
+  </script>
+  <script type="text/javascript" src="task.js"></script>
+</head>
+
+<body onresize="task.displayedSubTask.updateScale()">
+  <div id="task">
+    <h1>Felder färben</h1>
+    <img src="icon.png" style="display:none" />
+
+    <div id="tabsContainer"></div>
+    <div id="taskContent" style="text-align:left;position:relative">
+      <div id="taskIntro">
+        Programmiere den Roboter:<br>
+        <p>Der Roboter soll alle markierten Felder <img src="../../../Bilder/Roboter-Grafiken/paint_marker.png" style="height: 40px;"> färben.</p>
+        <p class="easy">
+          <b>Hinweis: </b>Die markierten Felder liegen alle unter einem bereits eingefärbten <span
+            style="color:#146c6e">dunkelgrünen</span> Feld.
+        </p>
+        <p class="medium">
+          <b>Hinweis: </b>Die untere Zeile entspricht der oberen Zeile, bloß, dass sie von links nach rechts vertauscht ist.
+          Das untere Feld an der Stelle 2 ist markiert, wenn das obere Feld an der Stelle 15
+          <span style="color:#146c6e">dunkelgrün</span> eingefärbt ist, das an der Stelle 3,
+          wenn das an der Stelle 14 <span style="color:#146c6e">dunkelgrün</span> markiert ist, und so weiter.
+        </p>
+        <p class="hard">
+          <b>Hinweis: </b>Ein Feld in der untere Zeile ist markiert, wenn es darüber mehr <span style="color:#146c6e">dunkelgrün</span>
+          eingefärbte Felder gibt,
+          als ungefärbte Felder.
+        </p>
+        <div class="long">
+          <hr>
+          <h2>Weitere Hinweise:</h2>
+          <p>
+            Die Schwierigkeit besteht darin, dass der Roboter, sobald er in die zweite Zeile gegangen ist, nicht mehr
+            nach oben
+            gehen kann.
+          </p>
+          <div class="easy">
+            <p>
+              Dein Programm muss sich also merken, welche Felder in der ersten Zeile markiert sind, und dann mit diesem
+              Speicher bestimmen, welche Felder in der zweiten Zeile gefärbt werden sollen.<br>
+              Ein mögliches Vorgehen wird hier hergeleitet:
+            </p>
+            <p>
+              Zum Beispiel kann man eine Variable pro Zelle zu erstellen, um die Sensorwerte zu speichern:
+            </p>
+            <img data-lang="blockly" src="nolist_write_blockly.png" />
+            <p>In den Variablen wird ein Wahrheitswert (Boolean) gespeichert. Ist das Feld gefärbt, hat die Variable den
+              Wert <code>True</code>.
+              Ist das Feld nicht gefärbt, hat die Variable den Wert <code>False</code>. <br>
+              Dann könnte man für jedes Feld in der zweiten Zeile die entsprechende Variable lesen, um festzustellen, ob
+              das Feld gefärbt werden soll.
+              Falls die Variable den Wert <code>True</code> hat, wird die Anweisung im <code>falls-mache</code>-Baustein ausgeführt.
+            </p>
+            <img data-lang="blockly" src="nolist_read_blockly.png" />
+            <p>
+              Anstatt 15 verschiedene Variablen für jedes der 15 Felder vor dem Roboter zu speichern, soll der Roboter
+              eine
+              Liste verwenden, um sich zu merken, ob das Feld gefärbt ist oder nicht. Eine Liste ist eine Variable, die
+              mehrere Elemente
+              enthalten kann. Die Elemente sind durchnummeriert, beginnend mit 1. Wir beginnen mit der Erstellung
+              einer <span data-lang="blockly">Liste
+                mit 16 mal dem Element <code>False</code></span>, die wir einer Variablen zuweisen:
+            </p>
+            <img data-lang="blockly" src="list_init_blockly.png" />
+            <p>
+              Die Werte können dann als Elemente in der Liste gespeichert werden, indem man ihre Nummer und den Wert,
+              den man
+              an der Position mit dieser Nummer speichern möchte, angibt.
+            </p>
+            <p>
+              Hier wollen wir den Sensorwert für jede der 15 Felder vor dem Roboter speichern. Daher wird ein Sensor,
+              der
+              die Nummer der Spalte des Roboters auf dem Gitter angibt, als Positionsnummer in der Liste verwendet. Der
+              Baustein <code>Farbe auf Feld</code> gibt
+              <code>True</code> zurück, falls Farbe auf dem Feld ist und <code>False</code>, falls keine Farbe auf dem
+              Feld ist. Für jede Spalte speichern wir in der Liste
+              <code>alleSpalten</code> also die Information <code>True</code> oder <code>False</code>:
+            </p>
+            <img data-lang="blockly" src="list_write_blockly.png" />
+            <p>
+              Sobald der Roboter dann in der zweiten Zeile ist, kann er die gespeicherten Werte wieder aus der Liste
+              lesen. Falls in
+              der Liste <code>True</code> gespeichert wurde, so muss das Feld markiert werden:
+            </p>
+            <img data-lang="blockly" src="list_read_blockly.png" />
+          </div>
+          <div class="medium">
+            <p>
+              Dein Programm muss daher einfache Berechnungen mit den Positionsangaben der Spalten machen.
+            </p>
+          </div>
+        </div>
+        <p>
+          <i>Beachte: Dein Programm muss mit allen Testfällen zurechtkommen.</i>
+        </p>
+      </div>
+      <div id="gridContainer"></div>
+      <div id="blocklyLibContent"></div>
+    </div>
+
+  </div><!-- task -->
+</body>
+
+</html>

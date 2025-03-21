@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   class="blocklySvg"
+   width="493.74402"
+   height="26"
+   id="svg506"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2" />
+  <g
+     class="blocklyWorkspace"
+     id="g506"
+     transform="translate(-7.8809681,1946)">
+    <g
+       class="blocklyFlyout"
+       style="display:block"
+       id="g497">
+      <g
+         class="blocklyWorkspace"
+         id="g496">
+        <g
+           class="blocklyBlockCanvas"
+           transform="translate(0,-4151)"
+           id="g493">
+          <g
+             class="blocklyDraggable"
+             transform="translate(16,2205)"
+             id="g174">
+            <path
+               class="blocklyPathDark"
+               transform="translate(1,1)"
+               fill="#522d84"
+               d="m 0,0 h 484.625 v 5 c 0,10 -8,-8 -8,7.5 0,15.5 8,-2.5 8,7.5 v 5 H 0 V 20 C 0,10 -8,28 -8,12.5 -8,-3 0,15 0,5 Z"
+               id="path170" />
+            <path
+               class="blocklyPath"
+               fill="#6638a5"
+               d="m 0,0 h 484.625 v 5 c 0,10 -8,-8 -8,7.5 0,15.5 8,-2.5 8,7.5 v 5 H 0 V 20 C 0,10 -8,28 -8,12.5 -8,-3 0,15 0,5 Z"
+               id="path171" />
+            <path
+               class="blocklyPathLight"
+               stroke="#9474c0"
+               d="m 0.5,0.5 h 483.625 m 0,0 m -4.5,18.8 3.68,-2.1 M 0.5,24.5 v -6 M -6.86,18 q -1.52,-5.5 0,-11 M 0.5,8 V 0.5 H 1"
+               id="path172" />
+            <text
+               class="blocklyText"
+               y="12.5"
+               transform="translate(10,5)"
+               id="text172"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1">entferne Leerzeichen vom</text>
+            <g
+               class="blocklyEditableText"
+               transform="translate(189.51562,5)"
+               id="g173">
+              <rect
+                 rx="4"
+                 ry="4"
+                 x="-5"
+                 y="0"
+                 height="16"
+                 width="287.10938"
+                 id="rect172"
+                 style="fill:#c2afdb;fill-opacity:1" />
+              <text
+                 class="blocklyText"
+                 y="12.5"
+                 id="text173"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1">Anfang und vom Ende (links und rechts)<tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1"
+   id="tspan172">▾</tspan></text>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

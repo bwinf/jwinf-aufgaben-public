@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   class="blocklySvg"
+   width="207.57812"
+   height="41.000019"
+   id="svg75"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2" />
+  <g
+     class="blocklyWorkspace"
+     id="g75"
+     transform="translate(-16,-286.99998)">
+    <g
+       class="blocklyFlyout"
+       style="display:block"
+       id="g66">
+      <g
+         class="blocklyWorkspace"
+         id="g65">
+        <g
+           class="blocklyBlockCanvas"
+           transform="translate(0,2)"
+           id="g62">
+          <g
+             class="blocklyDraggable"
+             transform="translate(16,285)"
+             id="g25">
+            <path
+               class="blocklyPathDark"
+               transform="translate(1,1)"
+               fill="#5b3084"
+               d="M 0,8 A 8,8 0 0 1 8,0 h 7 l 6,4 h 3 L 30,0 H 40 206.57812 V 36 H 29.5 l -6,4 h -3 l -6,-4 H 8 A 8,8 0 0 1 0,28 Z M 118.125,5 H 87.96875 v 5 c 0,10 -8,-8 -8,7.5 0,15.5 8,-2.5 8,7.5 v 7 H 118.125 Z"
+               id="path18" />
+            <path
+               class="blocklyPath"
+               fill="#723ca5"
+               d="M 0,8 A 8,8 0 0 1 8,0 h 7 l 6,4 h 3 L 30,0 H 40 206.57812 V 36 H 29.5 l -6,4 h -3 l -6,-4 H 8 A 8,8 0 0 1 0,28 Z M 118.125,5 H 87.96875 v 5 c 0,10 -8,-8 -8,7.5 0,15.5 8,-2.5 8,7.5 v 7 H 118.125 Z"
+               id="path19" />
+            <path
+               class="blocklyPathLight"
+               stroke="#9c77c0"
+               d="M 0.5,7.5 A 7.5,7.5 0 0 1 8,0.5 h 7 l 6,4 h 3 l 6,-4 h 9.5 m 0,0 H 206.07812 M 2.6966991,33.303301 A 7.5,7.5 0 0 1 0.5,28 V 8 M 118.625,5.5 v 27 H 88.46875 m -5.6,-8.2 3.68,-2.1"
+               id="path20"
+               style="opacity:0" />
+            <g
+               transform="translate(88.96875,6)"
+               id="g24">
+              <path
+                 class="blocklyPathDark"
+                 transform="translate(1,1)"
+                 fill="#b0b9db"
+                 d="M 0,0 H 28.15625 V 25 H 0 V 20 C 0,10 -8,28 -8,12.5 -8,-3 0,15 0,5 Z"
+                 id="path21" />
+              <path
+                 class="blocklyPath"
+                 fill="#b0b9db"
+                 d="M 0,0 H 28.15625 V 25 H 0 V 20 C 0,10 -8,28 -8,12.5 -8,-3 0,15 0,5 Z"
+                 id="path22" />
+              <path
+                 class="blocklyPathLight"
+                 d="m 0.5,0.5 h 27.15625 m 0,0 M 0.5,24.5 v -6 M -6.86,18 q -1.52,-5.5 0,-11 M 0.5,8 V 0.5 H 1"
+                 style="display:none"
+                 id="path23" />
+              <g
+                 class="blocklyEditableText"
+                 transform="translate(10,5)"
+                 id="g23">
+                <rect
+                   rx="4"
+                   ry="4"
+                   x="-5"
+                   y="0"
+                   height="16"
+                   width="18.15625"
+                   id="rect23"
+                   style="fill:#dfe3f1;fill-opacity:1" />
+                <text
+                   class="blocklyText"
+                   y="12.5"
+                   id="text23"
+                   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1">0</text>
+              </g>
+            </g>
+            <text
+               class="blocklyText"
+               y="12.5"
+               transform="translate(10,10)"
+               id="text24"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1">übergebe</text>
+            <text
+               class="blocklyText"
+               y="12.5"
+               transform="translate(128.125,10)"
+               id="text25"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1">Holzstapel</text>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Muster malen</title>
+  <script>
+    window.stringsLanguage = 'de';
+  </script>
+  <script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js" id="import-modules"></script>
+  <script class="remove" type="text/javascript">
+    var modulesPath = '../../../../_common/modules/'
+    importModules([
+      'jquery-1.7.1', 'JSON-js', 'raphael-2.2.1', 'beaver-task-2.0', 'jschannel', 'raphaelFactory-1.0', 'delayFactory-1.0', 'simulationFactory-1.0',
+      'platform-pr', 'buttonsAndMessages', 'beav-1.0', 'installationAPI.01', 'miniPlatform',
+      'taskStyles-mobileFirst', 'blockly-robot-1.1', 'jwinf_css'
+    ]);
+    // set Blockly as default language when none is specified through ?language=
+    importLanguageModules('blockly');
+  </script>
+  <script class="remove" type="text/javascript">
+    var json = {
+      "id": "19-DE-14-bildcode",
+      "language": "de",
+      "version": "de.01",
+      "authors": "Robert Czechowski",
+      "translators": [],
+      "license": "",
+      "taskPathPrefix": "",
+      "modulesPathPrefix": "",
+      "browserSupport": [],
+      "fullFeedback": true,
+      "minWidth": "auto"
+    };
+  </script>
+  <script type="text/javascript" src="task.js"></script>
+</head>
+
+<body onresize="task.displayedSubTask.updateScale()">
+  <div id="task">
+    <h1>Muster malen</h1>
+    <img src="icon.png" style="display:none" />
+
+    <div id="tabsContainer"></div>
+    <div id="taskContent" style="text-align:left;position:relative">
+      <div id="taskIntro">
+        Programmiere den Roboter:<br>
+        <p class="easy">
+          Der Roboter steht vor einer Reihe <span style="color:#146c6e">dunkelgrün</span> gefärbter Felder. Er soll dahinter noch einmal so viele Felder färben.
+          Die Anzahl der gefärbten Felder soll also verdoppelt werden.
+        </p>
+        <div class="medium">
+          <p>
+            Der Roboter steht vor einer Zeile mit einem Muster aus gefärbten und nicht gefärbten Feldern.
+            In der Zeile darüber soll er das gleiche Muster malen.
+          </p>
+          <p>
+            Der Roboter muss 12 Felder nach rechts gehen, um alle gefärbten Felder zu erreichen.
+          </p>
+          <!-- <div class="long">
+            <p>
+              Der Roboter kann nur einmal nach oben gehen und nicht wieder nach unten.
+              Daher muss er die untere Zeile entlang gehen und sich merken, welche Felder eingefärbt sind.
+            </p>
+            <p>
+              Verwende dazu eine Liste und die Bausteine <img src="Listefuegeein.png"><br>
+              und <img src="Listenimm.png">.
+            </p>
+            <p>
+              Du kannst zum Beispiel so eine leere Liste anlegen:<br>
+              <img src="empty.png"><br>
+              Dann kannst du so ein neues Listenelement anhängen, das speichert, ob ein Feld gefärbt ist oder nicht:<br>
+              <img src="push.png"><br>
+              Und schließlich kannst du so ein Feld einfärben, abhängig davon was der letzte gespeicherte Wert in der Liste ist:<br>
+              <img src="pop.png"><br>
+            </p>
+          </div> -->
+        </div>
+        <div class="hard">
+          <p>
+            Der Roboter steht vor einem Muster aus gefärbten und nicht gefärbten Feldern in der unteren Hälfte des Gitters.
+            In der oberen Hälfte des Gitters soll er das Muster nachmalen &ndash; aber gespiegelt.
+          </p>
+          <p>
+            Die Fläche für das Muster ist 9 Felder breit und 8 Felder hoch.
+          </p>
+          <!-- <div class="long">
+            <p>
+              Der Roboter kann nur nach oben gehen, nicht nach unten.
+              Daher muss er die untere Hälfte entlang gehen und sich merken, welche Felder eingefärbt sind.
+            </p>
+            <p>
+              Verwende dazu eine Liste und die Bausteine <img src="Listefuegeein.png"><br>
+              und <img src="Listenimm.png">.
+            </p>
+          </div> -->
+        </div>
+      </div>
+      <div id="gridContainer"></div>
+      <div id="blocklyLibContent"></div>
+    </div>
+
+  </div><!-- task -->
+</body>
+
+</html>

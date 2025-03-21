@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Text verändern</title>
+  <script>
+    window.stringsLanguage = 'de';
+  </script>
+  <script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js" id="import-modules"></script>
+  <script class="remove" type="text/javascript">
+    var modulesPath = '../../../../_common/modules/';
+    importModules([
+      'jquery-1.7.1', 'JSON-js', 'raphael-2.2.1', 'beaver-task-2.0', 'jschannel', 'raphaelFactory-1.0', 'delayFactory-1.0', 'simulationFactory-1.0',
+      'platform-pr', 'buttonsAndMessages', 'beav-1.0', 'installationAPI.01', 'miniPlatform',
+      'taskStyles-mobileFirst', 'blockly-printer', 'jwinf_css'
+    ]);
+    // set Blockly as default language when none is specified through ?language=
+    importLanguageModules('blockly');
+  </script>
+  <script class="remove" type="text/javascript">
+    var json = {
+      "id": "test-printer-copy",
+      "language": "de",
+      "version": "de.01",
+      "authors": "Robert Czechowski",
+      "translators": [],
+      "license": "",
+      "taskPathPrefix": "",
+      "modulesPathPrefix": "",
+      "browserSupport": [],
+      "acceptedAnswers": [""],
+      "fullFeedback": true,
+      "minWidth": "auto"
+    };
+
+    window.stringsLanguage = 'de';
+    var strings = {
+      moreThan100Moves: "Vous avez cependant fait plus de 100 déplacements.",
+      notAllCellsPainted: "Das hat noch nicht ganz geklappt. Versuch es noch einmal!",
+      allCellsPainted: "Bravo! Du hast die Zeilen richtig ausgegeben!"
+    };
+  </script>
+  <script type="text/javascript" src="printer_task.js"></script>
+
+</head>
+
+<body onresize="task.displayedSubTask.updateScale()">
+  <div id="task">
+    <h1>Text verändern</h1>
+
+    <div id="tabsContainer"></div>
+    <div id="taskContent">
+      <div id="taskIntro">
+        Schreibe ein Programm:<br>
+        <div class="easy">
+          <p>
+            Das Programm soll eine Textzeile einlesen, in Großbuchstaben umwandeln und im Ausgabefeld ausgeben.
+          </p>
+          <div class="long">
+            <hr>
+            <h2>Weitere Hinweise:</h2>
+            Der Baustein <img data-lang="blockly" src="../../../Bilder/text_changeCase_noShadow.svg" /> wandelt einen Text um in
+            <ul>
+              <li>GROSSBUCHSTABEN</li>
+              <li>kleinbuchstaben</li>
+              <li>Substantive (1. Buchstabe ist ein Großbuchstabe und alle anderen sind Kleinbuchstaben).</li>
+            </ul>
+            <p>
+              Über den kleinen Pfeil, können dir verschiedenen Optionen ausgewählt werden.
+            </p>
+            </p>
+          </div>
+        </div>
+        <div class="medium">
+          <p>
+            Das Programm soll eine Textzeile einlesen und im Ausgabefeld die Länge des Textes ausgeben.
+          </p>
+          <div class="long">
+            <hr>
+            <h2>Weitere Hinweise:</h2>
+            <p>Der Baustein <img data-lang="blockly" src="../../../Bilder/text_length_noShadow.svg" style='vertical-align:middle'/> gibt die Anzahl der Zeichen eines Textes aus.</p>
+          </div>
+        </div>
+        <div class="hard">
+          <p>
+            Das Programm soll einen Namen einlesen und eine Begrüßung
+            nach dem folgenden Muster im Ausgabefeld ausgeben:
+          </p>
+          <p>
+            <table>
+              <tr>
+                <td style="padding: 0px 30px;vertical-align: top;">
+                    <b>Eingabe:</b><br>
+                    Juna<br>
+                </td>
+                <td style="padding: 0px 30px;vertical-align: top;">
+                  <b>Ausgabe:</b><br>
+                    Hallo Juna<br>
+                  </div>
+                </td>
+              </tr>
+            </table>
+        </p>
+          <div class="long">
+            <h2>Weitere Hinweise:</h2>
+            <p>Mit dem Baustein <img data-lang="blockly" src="../../../Bilder/text_join.svg" style='vertical-align:middle'/> werden mehrere Texte aneinander gehängt.</p>
+            <p>
+              Über das Zahnrad-Symbol können weitere Textelemente hinzugefügt werden.
+              Dazu muss per Drag and Drop der Baustein <code>etwas</code> in den Text-Baustein gezogen werden.
+            </p>
+            <p>
+              <img data-lang="blockly" src="../../../Bilder/text_join_Zahnrad.svg" style='vertical-align:middle'/>
+            </p>
+          </div>
+        </div>
+        <div>
+          <p>
+            Bitte schau dir vorab die Erläuterungen der Bausteine unter <b>"weitere Hinweise"</b> an.
+          </p>
+          <p>
+            <i>Beachte: Dein Programm muss mit allen Testfällen zurechtkommen.</i>
+          </p>
+        </div>
+      </div>
+      <div id="gridContainer"></div>
+      <div id="blocklyLibContent"></div>
+    </div>
+  </div><!-- task -->
+</body>
+
+</html>

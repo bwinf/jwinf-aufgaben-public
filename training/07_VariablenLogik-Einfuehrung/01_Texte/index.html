@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Texte</title>
+  <script>
+    window.stringsLanguage = 'de';
+  </script>
+  <script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js"
+    id="import-modules"></script>
+  <script class="remove" type="text/javascript">
+    var modulesPath = '../../../../_common/modules/';
+    importModules([
+      'jquery-1.7.1', 'JSON-js', 'raphael-2.2.1', 'beaver-task-2.0', 'jschannel', 'raphaelFactory-1.0',
+      'delayFactory-1.0', 'simulationFactory-1.0',
+      'platform-pr', 'buttonsAndMessages', 'beav-1.0', 'installationAPI.01', 'miniPlatform',
+      'taskStyles-mobileFirst', 'blockly-printer', 'jwinf_css'
+    ]);
+    // set Blockly as default language when none is specified through ?language=
+    importLanguageModules('blockly');
+  </script>
+  <script class="remove" type="text/javascript">
+    var json = {
+      "id": "?", //TODO: muss verändert werden - wozu?
+      "language": "de",
+      "version": "de.01",
+      "authors": "Hannah Rauterberg",
+      "translators": [],
+      "license": "",
+      "taskPathPrefix": "",
+      "modulesPathPrefix": "",
+      "browserSupport": [],
+      "acceptedAnswers": [""],
+      "fullFeedback": true,
+      "minWidth": "auto"
+    };
+
+    window.stringsLanguage = 'de';
+    var strings = {
+      moreThan100Moves: "Vous avez cependant fait plus de 100 déplacements.",
+      notAllCellsPainted: "Das hat noch nicht ganz geklappt. Versuch es noch einmal!",
+      allCellsPainted: "Bravo! Du hast die Zeilen richtig ausgegeben!"
+    };
+  </script>
+  <script type="text/javascript" src="printer_task.js"></script>
+
+</head>
+
+<body onresize="task.displayedSubTask.updateScale()">
+  <div id="task">
+    <h1>Texte</h1>
+
+    <div id="tabsContainer"></div>
+    <div id="taskContent">
+      <div id="taskIntro">
+        Schreibe ein Programm:<br>
+        <div class="easy">
+          <p>In der Eingabe steht ein Satz. Das Programm soll das letzte Zeichen ausgeben.</p>
+        </div>
+        <div class="medium">
+          <p>In der Eingabe steht ein Textausschnitt. Genau genommen ein Wort und ein beliebiges Satzzeichen. <br>
+          Das Programm soll bestimmen, ob der Ausschnitt aus einer Frage ist.</p>
+
+          <p> Falls der Text also mit einem <b>Fragezeichen</b> endet, soll es <code>Frage</code> ausgeben. Falls dort ein anderes Satzzeichen steht, soll das Programm <code>keine Frage</code> ausgeben.</p>
+
+        </div>
+        <div class="hard">
+          <p>In der Eingabe steht ein Textausschnitt. Genau genommen ein Wort und ein beliebiges Satzzeichen.<br>
+          Das Programm soll bestimmen, ob der Ausschnitt aus der Mitte eines Satzes kommt, oder vom Ende. Falls es ein Endabschnitt ist, soll geprüft werden, ob es sich um eine Frage handelt</p>
+
+          <p> Falls der Text also mit einem <b>Leerzeichen</b> endet, soll es <code>Mitte</code> ausgeben. Falls der Text aber mit einem <b>Fragezeichen</b> endet, soll es <code>Frage</code> ausgeben und andernfalls <code>keine Frage</code>.</p>
+
+        </div>
+        <p class="medium hard">
+          <b>Hinweis:</b> <span class="hard">Um zu prüfen, ob an einer Stelle ein Leerzeichen ist, musst du in den Textbaustein <img data-lang="blockly" src="../../../Bilder/text.svg" /> ein Leerzeichen eintragen. Es reicht nicht aus, das Textfeld leer zu lassen. <br></span> Bevor du eine Variable benutzen kannst, musst du ihr einen Wert zuweisen. Zum Beispiel: 
+                    <img data-lang="blockly" src="../../../Bilder/initVar_Text.svg" />
+        </p>
+        <p><i>Beachte: Dein Programm muss mit allen Testfällen zurechtkommen.</i></p>
+
+      </div>
+      <div id="gridContainer"></div>
+      <div id="blocklyLibContent"></div>
+    </div>
+  </div><!-- task -->
+</body>
+
+</html>

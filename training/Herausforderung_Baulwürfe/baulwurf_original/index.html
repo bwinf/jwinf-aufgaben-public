@@ -1,0 +1,283 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Baulwürfe (3. Runde Jugendwettbewerb, 2020)</title>
+  <script>
+    window.stringsLanguage = 'de';
+  </script>
+  <script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js"
+    id="import-modules"></script>
+  <script class="remove" type="text/javascript">
+    var modulesPath = '../../../../_common/modules/';
+    importModules([
+      'jquery-1.7.1', 'JSON-js', 'raphael-2.2.1', 'beaver-task-2.0', 'jschannel', 'raphaelFactory-1.0',
+      'delayFactory-1.0', 'simulationFactory-1.0',
+      'platform-pr', 'buttonsAndMessages', 'beav-1.0', 'installationAPI.01', 'miniPlatform',
+      'taskStyles-mobileFirst', 'blockly-printer', 'jwinf_css'
+    ]);
+    // set Blockly as default language when none is specified through ?language=
+    importLanguageModules('blockly');
+  </script>
+  <script class="remove" type="text/javascript">
+    var json = {
+      "id": "01",
+      "language": "de",
+      "version": "de.01",
+      "authors": "Annika Petersen, Hannah Rauterberg",
+      "translators": [],
+      "license": "",
+      "taskPathPrefix": "",
+      "modulesPathPrefix": "",
+      "browserSupport": [],
+      "acceptedAnswers": [""],
+      "fullFeedback": true,
+      "minWidth": "auto"
+    };
+
+    window.stringsLanguage = 'de';
+    var strings = {
+      moreThan100Moves: "Vous avez cependant fait plus de 100 déplacements.",
+      notAllCellsPainted: "Das hat noch nicht ganz geklappt. Versuch es noch einmal!",
+      allCellsPainted: "Bravo! Du hast die Zeilen richtig ausgegeben!"
+    };
+  </script>
+  <script type="text/javascript" src="printer_task.js"></script>
+
+</head>
+
+<body onresize="task.displayedSubTask.updateScale()">
+  <div id="task">
+    <h1>Baulwürfe (3. Runde Jugendwettbewerb, 2020)</h1>
+
+    <div id="tabsContainer"></div>
+    <div id="taskContent">
+      <div id="taskIntro">
+        <div>
+        <p>Ein Forschungsteam will das Verhalten der Maulwürfe untersuchen, die offenkundig, aber
+          unterirdisch ein großes Feld bevölkern und dort ihre Hügel aufwerfen. Das Team hat das Feld
+          gesichtet und dabei eine sogenannte Hügelkarte erstellt.
+          Eine Hügelkarte ist in kleine Planquadrate eingeteilt; jedes Planquadrat, auf dem sich ein
+          Hügel befindet, ist mit <code>X</code> markiert. Hier ist ein Ausschnitt dieser Karte: </p>
+        </div>
+
+        <table>
+          <tr>
+            <td>
+      <pre>
+    X   XXX                                        
+        X X                                        
+  X     X X    X     
+    X   XXX            
+              </pre>
+            </td>
+          </tr>
+        </table>
+        <div class="basic">
+          <hr>
+          <!-- alte Version (Karte unverändert ausgeben): <p> Dein Programm soll eine solche Hügelkarte als Eingabe einlesen, in einer Liste speichern und diese Variable dann wieder ausgeben. Der <code>schreibe</code>-Block schreibt alle Listenelemente durch Komma getrennt in eine Zeile - dieses Format sollte deine Ausgabe haben.</p>-->
+          <p>
+            Schreibe ein Programm:<br>
+            Dein Programm soll prüfen, ob an einer bestimmten Stelle ein Hügel ist (<code>X</code>), oder nicht (ein Leerzeichen).
+          </p>
+          <p>
+            In der ersten und zweiten Zeile der Eingabe steht die Zeile und Spalte der zu prüfenden Stelle. 
+            Die folgenden Zeilen enthalten die Hügelkarte.
+            Falls an der Stelle ein Hügel ist, gib <code>Hügel</code> aus, ansonsten <code>kein Hügel</code>.
+          </p>
+        </div>
+
+        <div class = "easy medium hard">
+          <hr class="easy">
+          <p>Beim Betrachten der Karte macht das Forschungsteam eine Entdeckung: Es kann nicht sein, dass dort nur gewöhnliche Maulwürfe leben. Ein
+            Planquadrat mit einem normalen Maulwurfshügel ist nämlich immer rundum von Quadraten ohne Hügel umgeben. Die Markierungen bilden aber auch immer wieder dieses Muster: </p>
+          <table>
+            <tr>
+              <td>
+                <pre>
+XXX
+X X
+X X
+XXX
+                </pre>
+              </td>
+            </tr>
+          </table>
+          <p>Im Forschungsteam herrscht große Aufregung: Es muss sich um eine neue Maulwurfsart handeln, die ihre Hügel zu solch rechteckigen Bauen formiert. Die Forscher taufen sie <b>Baulwürfe</b>. </p>
+        </div>
+
+        <div class = "easy">
+          Schreibe ein Programm:<br>
+          <p>Dein Programm soll den 4x3 Planquadrate großen Kartenauschnitt in der Eingabe einlesen und prüfen, ob es sich hierbei um einen Baulwurfsbau handelt. </p>
+          <p>Gib <code>Baulwurfsbau</code> aus, falls es sich um einen Baulwurfsbau handelt, und sonst <code>kein Baulwurfsbau</code>. </p>
+        </div>
+
+        <div class="medium">
+          <hr>
+          Schreibe ein Programm:<br>
+          <p> Dein Programm soll die Anzahl aller Baulwurfsbaue bestimmen.</p>
+        </div>
+
+        <div class = "hard">
+          <hr>
+          Schreibe ein Programm:<br>
+          <p> Dein Programm soll die Anzahl aller Baulwurfsbaue bestimmen. </p>
+          <p> <b>Achtung: </b>Es gibt auch Baulwurfsbaue, die aneinander angrenzen. Sie überlappen sich allerdings nie. In dieser Karte hier gibt es beispielsweise nur 4 Baulwurfsbaue, nicht 5: </p>
+          <table>
+            <tr>
+              <td>
+                <pre>
+ XXX   
+ X X   
+ X XXXX
+ XXXX X
+XXX X X
+X X XXX
+X XXXX 
+XXXX X 
+   X X 
+   XXX 
+                </pre>
+              </td>
+            </tr>
+          </table>
+          <p><b>Hinweis:</b> Es ist also notwendig, dass du dir speicherst, ob ein Eintrag einer Karte schon zu einem Baulwurfsbau gehört, oder nicht. Dafür könntest du die Karte bearbeitest (z.B. ein <code>X</code> zu einem <code>x</code> machen), oder eine neue Listen anlegen, um zu speichern, welche Baue du bereits wo gefunden hast.</p>
+          
+          <p> Unter <b>"weitere Hinweise"</b> findest du mehr <b>Erklärungen und Tipps</b>.</p>
+        </div>
+        
+        <div class = "easy medium">
+          <p> Die erste und zweite Zeile der Eingabe geben an, wie breit und wie hoch die Karte ist. Danach folgt eine entsprechend große Karte mit den Hügelmarkierungen. </p>
+        </div>
+
+        <p class = "easy"> <b>Hinweis:</b> Um zu prüfen, ob an einer Stelle <b>keine</b> Markierung ist, muss in den Textbaustein ein <b>Leerzeichen</b> eingetragen werden. Es reicht nicht aus, den Textbaustein leer zu lassen.</p>
+
+        <div class = "medium">
+          <p><b>Hinweis:</b> Um jeden Maulwurfhügel und um jeden Baulwurfsbau sind rundherum freie Felder.</p>
+        
+        </div>
+        <!-- <div class = "medium hard">
+          <p>Unter der Karte steht die Zeilennummer, dann die Spaltennummer von der Position auf der Karte, die untersucht werden soll.</p>
+        </div> -->
+        
+        <div class = "basic easy medium">
+          <p> Unter <b>"weitere Hinweise"</b> findest du mehr <b>Erklärungen und Tipps</b>.</p>
+        </div>
+
+        <div class="medium hard">
+          <p>Falls du zwei Schleifen verwendest, um zu prüfen, ob es sich um einen Baulwurfsbau handelt, dann kann es vorkommen, dass das Programm mit einer Fehlermeldung <code>Maximum call stack size exceeded.</code> abbricht. Dieser Fehler bedeutet ganz vereinfacht ausgedrückt, dass zu viele Schleifendurchgänge erfolgen. Bitte schaue unter <b>"weitere Hinweise"</b> im Bereich "Maximum call stack size exceeded." nach, wie du diesen Fehler umgehen kannst.</p>
+        </div>
+
+        <div class = "long">
+          <hr>
+          <h2>Weitere Hinweise:</h2>
+          <p>
+            <h3>Karte einlesen</h3>
+            Es ist sinnvoll die Karte als Liste zu speichern. Dafür gibt es zwei Möglichkeiten.
+            <ol>
+              <li>Liste von Listen</li>
+                <p>Dafür müssen wir die Zeile auftrennen, sodass jede Lücke und jedes <code>X</code> ein Eintrag sind. Dafür kann der Baustein <img src="ListFromText.png"> verwendet werden. Da wir allerdings keine Kommata in der Eingabe haben muss das Trennzeichen leer bleiben, dann wird jedes Zeichen als neuer Listeneintrag gewertet.</p>
+                <p>Der folgende Code
+                  <ol>
+                    <li>Speichert eine leere Liste in der Variable <code>Karte</code>.</li>
+                    <li>Liest eine Zeile in der Eingabe ein und speichert diese als Liste, jedes Zeichen ein Eintrag, in der Variable <code>eineZeile</code>.</li>
+                    <li>Fügt der Liste <code>Karte</code> von hinten die Liste <code>eineZeile</code> an.</li>
+                  </ol>
+                  <p><img src="listeInListeEinlesen.png"/></p>
+                </p>
+                <p> Auf ein einzelnes Element können wir zugreifen, indem wir erst auf die richtige Zeile in der Liste, und dann den richtigen Spalteneintrag in der Liste zugreifen: </p>
+                <p><img src="getEntryListOfLists.png"/></p>
+
+              <li>Liste von Zeichenketten</li>
+                <p>(<i>Anmerkung: Für die <span><svg viewBox='0 0 53.867 53.867' x='0px' y='0px' style='width: 1em; height: 1em;'><polygon style='fill:rgb(239, 206, 74);' points='26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 10.288,52.549 13.467,34.013 0,20.887 18.611,18.182'></polygon></svg></span><span><svg viewBox='0 0 53.867 53.867' x='0px' y='0px' style='width: 1em; height: 1em;'><polygon style='fill:rgb(239, 206, 74);' points='26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 10.288,52.549 13.467,34.013 0,20.887 18.611,18.182'></polygon></svg></span><span><svg viewBox='0 0 53.867 53.867' x='0px' y='0px' style='width: 1em; height: 1em;'><polygon style='fill:rgb(239, 206, 74);' points='26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 10.288,52.549 13.467,34.013 0,20.887 18.611,18.182'></polygon></svg></span><span class='u-icon u-icon-2'><svg class='u-svg-content' viewBox='0 0 53.867 53.867' x='0px' y='0px' style='width: 1em; height: 1em;'><polygon style='fill:rgb(239, 206, 74);' points='26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 10.288,52.549 13.467,34.013 0,20.887 18.611,18.182'></polygon></svg></span>-Version kann es von Vorteil sein, direkt mit Listen von Listen zu arbeiten.</i>)<br>
+                  Dafür bleiben die Zeilen eine Zeichenkette (Text) und werden der Liste <code>Karte</code> nacheinander angehängt.
+                <p>Auf ein einzelnes Element können wir zugreifen, indem wir erst auf die richtige Zeile in der Liste, und dann den richtigen Spalteneintrag im Text zugreifen:</p>
+                <p><img src="getEntryListOfTexts.png"/></p>
+                
+            </ol> 
+          </p>
+          
+          
+            <div class = "easy medium hard">
+            <h3>Auf Nachbarfelder zugreifen</h3>
+              <p>Um auf ein Nachbarfeld zuzugreifen können wir ganz einfach auf den Zeilen- und/oder den Spaltenindex eine 1 addieren. Wollen wir zum Beispiel auf das Feld rechts von Zeile <code>i</code> und Spalte <code>j</code> zugreifen, so können wir <code>j + 1</code> rechnen. Für das Feld darunter können wir <code> i + 1</code> rechnen.<br>
+              Eine Schleife, die direkt über den Zahlenbereich läuft, funktioniert natürlich auch:
+              <img src = "iterate2dList.png">
+              </p>
+            </div>
+            <div class = "medium hard">
+              <hr class="medium">
+              <h3>Gültiger Index</h3>
+              <p class="medium hard">
+              In dieser Version ist die Karte größer und mögliche Baulwurfsbaue können auch am Rand der Karte liegen.
+              Beim Zugriff auf Felder über einen Index müssen wir deshalb immer aufpassen, dass wir nicht bereits am Rand der Karte sind und sozusagen "herauslaufen" würden.
+              Bevor wir also auf ein Feld zugreifen, sollten wir prüfen, ob der Index dieses Feldes noch in der Karte liegt. Das ist genau dann der Fall, wenn der Zeilenindex &leq; der Höhe, der Spaltenindex &leq; der Breite der Karte sind:<br>
+              <img src = "Randfälle.png"></p>
+
+              <h3><b><code>Maximum call stack size exceeded.</code></b></h3>
+              <p class="medium hard">
+              Wenn dieser Fehler auftritt, dann haben wir sehr wahrscheinlich gerade vier ineinander geschachtelte Schleifen: Zwei, um über die Karte zu iterieren und zwei, um zu prüfen, ob wir einen Baulwurfsbau haben.<br>
+              <img src = "VierSchleifen.png"></p>
+              <b>Das bedeutet nicht, dass das Programm falsch ist!</b> Dieser Fehler tritt auf, da Blockly keine effiziente Programmiersprache ist.
+              Wir können den Fehler trotzdem umgehen, indem wir ineinander geschachtelte Schleifen reduzieren bzw. reduzieren, wie oft diese Schleifen aufgerufen werden. Dafür haben wir zwei Optionen:
+              <ol>
+                <li>
+                  Keine Schleifen verwenden, um zu prüfen, ob ein Baulwurfsbau vorliegt. Anstatt dessen, können wir etwas in dieser Art zu schreiben:<br>
+                  <img src = "ZweiSchleifenIfElse.png">
+                </li>
+                <li>
+                  Die Schleifen abbrechen, wenn weitere Durchläufe nicht notwendig sind. Wenn wir schon wissen, dass dieser Kartenausschnitt definitiv kein Baulwurfsbau mehr sein kann, da z.B. bereits ein <code>X</code> an einer falschen Stelle war, können wir mit dem Baustein <img src = "break.png"> die Schleife abbrechen. <br>
+                  Der Baustein <img src = "break.png"> beendet allerdings immer nur die "innere Schleife", also die, in der wir uns gerade befinden. Wenn wir aus einer geschachtelten Schleife herausspringen wollen, dann müssen wir eine Variablen verwenden. Das kann z.B. so aussehen:<br>
+                  <img src = "break_small.png">
+                </li>
+              </ol>
+              </p>
+
+          </div>
+          
+          <div class = "hard">
+            <hr>
+            <h3><b>Angrenzende Bauten</b></h3>
+            <p>
+              Wenn du bereits gezählte Baulwürfe nicht doppelt zählen willst, gibt es zwei Optionen:
+              <ol>
+                <li>
+                  <p>
+                    Einmal bietet es sich an, Einträge in der Karte zu überschreiben, zum Beispiel indem man für bereits gefundene Baulwurfsbaue die <code>X</code>-Einträge mit <code>x</code> ersetzt. Für die Karte gespeichert als Liste von Listen sähe die Veränderung für den Eintrag in Zeile <code>i</code>, Spalte <code>j</code> z.B: so aus:<br>
+                    <img src = "setEntryListOfLists.png"><br><br>
+
+                    Falls du die Karte als Liste von Texten speicherst, wird es ein wenig komplizierter, da Zeichenketten sich nicht einfach so verändern lassen, wie Listen. Du musst dir den Zeileneintrag also "neu zusammensetzen". Die Veränderung für den Eintrag in Zeile <code>i</code>, Spalte <code>j</code> sähe damit z.B: so aus:<br>
+                    <img src="setEntryListOfTexts.png"/>
+                  </p> 
+                </li>
+                <li>
+                  <p>
+                    Alternativ kannst du dir in einer Liste den Index speichern (z.B. die obere linke Ecke), wo du schon einen Baulwurfsbau gefunden hast:<br>
+                    <img src="indesxSpeichern.png"/><br>
+                    Es reicht die obere linke Ecke zu speichern, da ein weiterer Bau mindestens 4 Zeilen bzw. mindestens 3 Spalten entfernt sein muss, damit sie sich nicht überschneiden.
+                    Du kannst zum Beispiel mit einer Schleife durch deine gefundenen Indizes iterieren und prüfen, ob der Abstand ausreichend ist, um als neuer Bau gezählt zu werden:
+                      <img src = "checkGeprüft.png"> 
+                  </p>
+                </li>
+              </ol>
+
+            
+            </p>
+           
+          </div>
+        </div>
+        
+        <div>
+          <p>
+            <i>Beachte: Dein Programm muss mit allen Testfällen zurechtkommen.</i>
+          </p>
+        </div>
+      </div>
+      <div id="gridContainer"></div>
+      <div id="blocklyLibContent"></div>
+    </div>
+  </div><!-- task -->
+</body>
+
+</html>

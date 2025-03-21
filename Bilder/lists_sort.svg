@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   class="blocklySvg"
+   width="322.64062"
+   height="36"
+   id="svg506"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2" />
+  <g
+     class="blocklyWorkspace"
+     id="g506"
+     transform="translate(-8,3043)">
+    <g
+       class="blocklyFlyout"
+       style="display:block"
+       id="g497">
+      <g
+         class="blocklyWorkspace"
+         id="g496">
+        <g
+           class="blocklyBlockCanvas"
+           transform="translate(0,-4151)"
+           id="g493">
+          <g
+             class="blocklyDraggable"
+             transform="translate(16,1108)"
+             id="g434">
+            <path
+               class="blocklyPathDark"
+               transform="translate(1,1)"
+               fill="#ad6e22"
+               d="M 0,0 H 20 313.64062 V 35 H 0 V 20 C 0,10 -8,28 -8,12.5 -8,-3 0,15 0,5 Z m 236.59375,5 h -14.5 v 5 c 0,10 -8,-8 -8,7.5 0,15.5 8,-2.5 8,7.5 v 6 h 14.5 z"
+               id="path430" />
+            <path
+               class="blocklyPath"
+               fill="#d8892b"
+               d="M 0,0 H 20 313.64062 V 35 H 0 V 20 C 0,10 -8,28 -8,12.5 -8,-3 0,15 0,5 Z m 236.59375,5 h -14.5 v 5 c 0,10 -8,-8 -8,7.5 0,15.5 8,-2.5 8,7.5 v 6 h 14.5 z"
+               id="path431" />
+            <g
+               class="blocklyEditableText"
+               transform="translate(10,10)"
+               id="g432">
+              <rect
+                 rx="4"
+                 ry="4"
+                 x="-5"
+                 y="0"
+                 height="16"
+                 width="93.953125"
+                 id="rect432"
+                 style="fill:#efd0aa;fill-opacity:1" />
+              <text
+                 class="blocklyText"
+                 y="12.5"
+                 id="text432"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1">numerisch<tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1"
+   id="tspan432">▾</tspan></text>
+            </g>
+            <g
+               class="blocklyEditableText"
+               transform="translate(113.95313,10)"
+               id="g433">
+              <rect
+                 rx="4"
+                 ry="4"
+                 x="-5"
+                 y="0"
+                 height="16"
+                 width="102.14062"
+                 id="rect433"
+                 style="fill:#efd0aa;fill-opacity:1" />
+              <text
+                 class="blocklyText"
+                 y="12.5"
+                 id="text433"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1">aufsteigend<tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1"
+   id="tspan433">▾</tspan></text>
+            </g>
+            <text
+               class="blocklyText"
+               y="12.5"
+               transform="translate(246.59375,10)"
+               id="text434"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1">sortieren</text>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

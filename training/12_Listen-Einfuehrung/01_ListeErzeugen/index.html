@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Liste erzeugen</title>
+  <script>
+    window.stringsLanguage = 'de';
+  </script>
+  <script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js" id="import-modules"></script>
+  <script class="remove" type="text/javascript">
+    var modulesPath = '../../../../_common/modules/';
+    importModules([
+      'jquery-1.7.1', 'JSON-js', 'raphael-2.2.1', 'beaver-task-2.0', 'jschannel', 'raphaelFactory-1.0', 'delayFactory-1.0', 'simulationFactory-1.0',
+      'platform-pr', 'buttonsAndMessages', 'beav-1.0', 'installationAPI.01', 'miniPlatform',
+      'taskStyles-mobileFirst', 'blockly-printer', 'jwinf_css'
+    ]);
+    // set Blockly as default language when none is specified through ?language=
+    importLanguageModules('blockly');
+  </script>
+  <script class="remove" type="text/javascript">
+    var json = {
+      "id": "training_liste_einf",
+      "language": "de",
+      "version": "de.01",
+      "authors": "Katharina Schuster",
+      "translators": [],
+      "license": "",
+      "taskPathPrefix": "",
+      "modulesPathPrefix": "",
+      "browserSupport": [],
+      "acceptedAnswers": [""],
+      "fullFeedback": true,
+      "minWidth": "auto"
+    };
+
+    window.stringsLanguage = 'de';
+    var strings = {
+      moreThan100Moves: "Vous avez cependant fait plus de 100 déplacements.",
+      notAllCellsPainted: "Das hat noch nicht ganz geklappt. Versuch es noch einmal!",
+      allCellsPainted: "Bravo! Du hast die Zeilen richtig ausgegeben!"
+    };
+  </script>
+  <script type="text/javascript" src="printer_task.js"></script>
+
+</head>
+
+<body onresize="task.displayedSubTask.updateScale()">
+  <div id="task">
+    <h1>Liste erzeugen</h1>
+
+    <div id="tabsContainer"></div>
+    <div id="taskContent">
+      <div id="taskIntro">
+        Schreibe ein Programm:
+        <div class="easy">
+          <p>Das Programm soll eine Liste mit den Werten <code>4</code>, <code>8</code> und <code>3</code> erzeugen.  Gib diese Liste aus.</p>
+        </div>
+        <div class="medium">
+          <p>Das Programm soll eine Liste mit 5 Elementen erzeugen, die alle den Wert "rot" haben. Gib diese Liste aus.</p>
+        </div>
+        <div class="hard">
+          <p> Das Programm soll die Wörter in eine Liste einlesen und den Inhalt der Liste wieder ausgeben.</p>
+        </div>
+        <div>
+          <p>Bitte schau dir vorab die Erläuterungen der Bausteine unter <b>"weitere Hinweise"</b> an.</p>
+        </div>
+        <div class="long">
+          <hr>
+          <h2>Weitere Hinweise:</h2>
+          <p><b>Was ist eine Liste?</b></p>
+          <p>
+            Eine Liste ist eine Datenstruktur, die mehrere Elemente enthalten kann. Die Elemente sind durchnummeriert und die Länge, also die Anzahl an Elementen die darin enthalten sind, ist veränderbar.
+            Durch verschiedene Operationen, die wir nach und nach erklären, kann die Liste verändert werden.
+          </p>
+          <p>
+            Um mit einer Liste arbeiten zu können, muss sie zuerst initialisiert werden. Dazu gibt es in Blockly mehrere Bausteine:
+            <ul>
+              <li><img data-lang="blockly" src="../../../Bilder/lists_create_with_empty.png" /> - erzeugt eine leere Liste.</li>
+              <li><img data-lang="blockly" src="../../../Bilder/lists_create_with.svg" /> - erzeugt eine Liste mit Werten, die bekannt sind.</li>
+              <li><img data-lang="blockly" src="../../../Bilder/lists_repeat.svg" /> - erzeugt eine Liste mit x (hier 5) Elementen, die alle den Wert y (hier nicht angegeben) haben.</li>
+            </ul>
+          </p>
+          <p>
+            <b>Hinweis:</b> In Blockly wird die Liste bei Ausgabe mit "Komma" getrennt. Dies ist nur eine äußere Darstellung.
+            In anderen Programmiersprachen können dies andere Trennzeichen sein. Die Ausgabe der Liste ist in den Einführungsaufgaben
+            zu Demonstrationszwecken. Normalerweise werden Listen nicht ausgegeben. 
+          </p>
+        </div>
+        <div class="hard">
+          <div class="long">
+            <p><b>Wie füge ich einer Liste Elemente hinzu?</b></p>
+
+            <p>Um die leere Liste zu füllen wird der Baustein <img data-lang="blockly" src="../../../Bilder/lists_setIndex.svg" /> benötigt.
+              Über einen kleinen Pfeil kann man zwischen <code>ersetze mit</code> und <code>füge ein</code> wechseln.
+            </p>
+            <p>
+              Über den kleinen Pfeil bei <code>am Index</code> kann die Position, an welcher Stelle etwas eingefügt werden soll, verändert werden.
+              Das erste Element einer Liste hat den Index <b>1</b>.
+            </p>
+              Wählt man <code>füge ein</code> aus, machen die Optionen folgendes:
+              <ul>
+                <li>am Index: Der Wert wird an der Position Index eingefügt. Nehmen wir zum Beispiel die Liste <b>1, 2, 3, 4, 5</b>. An Index 3 wollen wir den Wert 7 einfügen. Alle schon bestehenden Einträge rutschen ab der Position Index eine Position nach hinten. Die Liste sieht dann so aus: <b>1, 2, 7, 3, 4, 5</b>. Die 3, die er zuvor an Index 3 stand, hat nun den Index 4.
+                </li>
+                <li>am Index von hinten: Der Wert wird <b>vor</b> dem Index von hinten gezählt eingefügt.
+                  Beispiel: Index hat den Wert 3. In der Liste werden von hinten 3 Positionen abgezählt. Der Wert wird dann
+                  <b>davor</b> eingesetzt. Das heißt die letzten 3 Listeneinträge bleiben unverändert, rutschen aber eine Position nach hinten.
+                </li>
+                <li>
+                  bei erstem Element: Der Wert wird vor dem ersten Element eingefügt.
+                  Er ist dann der erste Wert in der Liste. Alle schon bestehenden Einträge rutschen eine Position nach hinten.
+                </li>
+                <li>bei letztem Element: Der Wert wird hinter dem letzten Element eingefügt. Er ist dann der letzte Wert in der Liste.</li>
+                <li>bei zufälligem Element: Der Wert wird an einer zufälligen Stelle der Liste eingefügt.</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="gridContainer"></div>
+      <div id="blocklyLibContent"></div>
+    </div>
+  </div><!-- task -->
+</body>
+
+</html>

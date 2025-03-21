@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Palindrome</title>
+  <script>
+    window.stringsLanguage = 'de';
+  </script>
+  <script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js" id="import-modules"></script>
+  <script class="remove" type="text/javascript">
+    var modulesPath = '../../../../_common/modules/';
+    importModules([
+      'jquery-1.7.1', 'JSON-js', 'raphael-2.2.1', 'beaver-task-2.0', 'jschannel', 'raphaelFactory-1.0', 'delayFactory-1.0', 'simulationFactory-1.0',
+      'platform-pr', 'buttonsAndMessages', 'beav-1.0', 'installationAPI.01', 'miniPlatform',
+      'taskStyles-mobileFirst', 'blockly-printer', 'jwinf_css'
+    ]);
+    // set Blockly as default language when none is specified through ?language=
+    importLanguageModules('blockly');
+  </script>
+  <script class="module" type="text/javascript" src="../../../../_common/modules/pemFioi/blocklyPrinter_lib.js" id="blocklyRobot_lib"></script>
+  <!--link class="module" rel="stylesheet" type="text/css" href="../../../_common/modules/pemFioi/taskStyles-0.1.css" id="http://www.france-ioi.org/modules/pemFioi/taskStyles-0.1.css"-->
+  <script class="remove" type="text/javascript">
+    var json = {
+      "id": "test-printer-copy",
+      "language": "de",
+      "version": "de.01",
+      "authors": "Robert Czechowski",
+      "translators": [],
+      "license": "",
+      "taskPathPrefix": "",
+      "modulesPathPrefix": "",
+      "browserSupport": [],
+      "acceptedAnswers": [""],
+      "fullFeedback": true,
+      "minWidth": "auto"
+    };
+
+    window.stringsLanguage = 'de';
+    var strings = {
+      notAllCellsPainted: "Das hat noch nicht ganz geklappt. Versuch es noch einmal!",
+      allCellsPainted: "Bravo! Du hast die Zeilen richtig ausgegeben!"
+    };
+  </script>
+  <script type="text/javascript" src="printer_task.js"></script>
+</head>
+
+<body onresize="task.displayedSubTask.updateScale()">
+  <div id="task">
+    <h1>Palindrome</h1>
+
+    <div id="tabsContainer"></div>
+    <div id="taskContent">
+      <div id="taskIntro">
+        <p>Schreibe ein Programm:<br>
+          Das Programm soll nach und nach jede Zeile der Eingabe einlesen.
+          Wenn das Wort in der Zeile ein Palindrom ist, soll das Programm die Zeile in die
+          Ausgabe schreiben; sonst nicht. Eine richtige Ausgabe enthält also genau alle in
+          der Eingabe enthaltenen Palindrome, und zwar in der gleichen Reihenfolge.
+        </p>
+        <p>
+          Bitte schau dir vorab die Erläuterungen <b"weitere Hinweise"></b> an.
+        </p>
+        <p>
+          <i>Beachte: Dein Programm muss mit allen Testfällen zurechtkommen.</i>
+        </p>        
+        <div class="long">
+          <hr>
+          <h2>Weitere Hinweise:</h2>
+          <p>
+            Ein Palindrom ist ein Wort, dass rückwärts gelesen genauso aussieht,
+            wie vorwärts gelesen. Ein Beispiel für ein Palidrom ist: "LAGERREGAL".
+          </p>
+          <p>Die Eingabe besteht aus mehreren Zeilen, die jeweils ein Wort enthalten.</p>
+          <table>
+            <tr>
+              <td style="padding: 0px 30px;vertical-align: top;">
+                <b>Eingabe:</b><br>
+                hans<br>
+                neben<br>
+                otto
+              </td>
+              <td style="padding: 0px 30px;vertical-align: top;">
+                <b>Ausgabe:</b><br>
+                neben<br>
+                otto<br>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div id="gridContainer"></div>
+      <div id="blocklyLibContent"></div>
+    </div>
+  </div><!-- task -->
+</body>
+
+</html>

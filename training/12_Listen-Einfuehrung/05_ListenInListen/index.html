@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Listen in Listen</title>
+  <script>
+    window.stringsLanguage = 'de';
+  </script>
+  <script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js"
+    id="import-modules"></script>
+  <script class="remove" type="text/javascript">
+    var modulesPath = '../../../../_common/modules/';
+    importModules([
+      'jquery-1.7.1', 'JSON-js', 'raphael-2.2.1', 'beaver-task-2.0', 'jschannel', 'raphaelFactory-1.0',
+      'delayFactory-1.0', 'simulationFactory-1.0',
+      'platform-pr', 'buttonsAndMessages', 'beav-1.0', 'installationAPI.01', 'miniPlatform',
+      'taskStyles-mobileFirst', 'blockly-printer', 'jwinf_css'
+    ]);
+    // set Blockly as default language when none is specified through ?language=
+    importLanguageModules('blockly');
+  </script>
+  <script class="remove" type="text/javascript">
+    var json = {
+      "id": "?", //TODO: muss verändert werden - wozu?
+      "language": "de",
+      "version": "de.01",
+      "authors": "Hannah Rauterberg",
+      "translators": [],
+      "license": "",
+      "taskPathPrefix": "",
+      "modulesPathPrefix": "",
+      "browserSupport": [],
+      "acceptedAnswers": [""],
+      "fullFeedback": true,
+      "minWidth": "auto"
+    };
+
+    window.stringsLanguage = 'de';
+    var strings = {
+      moreThan100Moves: "Vous avez cependant fait plus de 100 déplacements.",
+      notAllCellsPainted: "Das hat noch nicht ganz geklappt. Versuch es noch einmal!",
+      allCellsPainted: "Bravo! Du hast die Zeilen richtig ausgegeben!"
+    };
+  </script>
+  <script type="text/javascript" src="printer_task.js"></script>
+
+</head>
+
+<body onresize="task.displayedSubTask.updateScale()">
+  <div id="task">
+    <h1>Listen in Listen</h1>
+
+    <div id="tabsContainer"></div>
+    <div id="taskContent">
+      <div id="taskIntro">
+        Schreibe ein Programm:
+        <div class="easy">
+          <p>
+            In der Eingabe steht eine große Zahl ohne Nullen. 
+            Das Programm soll die Zahl in ihre Ziffern auftrennen und jede als eigenen Eintrag in einer Liste speichern.
+          </p>
+          <p>Gibt jeweils in einer Zeile die Liste, die erste und die letzte Ziffer aus.</p>
+          <p>
+            <b>Hinweis:</b> Wenn du dem Baustein <img src="../../../Bilder/lists_split.svg"> als Trennzeichen nichts übergibst, dann ist jedes Zeichen ein eigener Eintrag in der Liste.
+          </p>
+        </div>
+        <div class="medium">
+          <p>
+            In der Eingabe steht eine große Zahl ohne Nullen. 
+            Das Programm soll zählen wie oft jede Ziffer vorkommt.
+          </p>
+          <p>Gib jeweils in einer Zeile die Zahl und die Häufigkeit durch ein Leerzeichen getrennt aus.</p>
+          <p>
+            <b>Hinweis:</b> Um mit den vorgegebenen Variablen auszukommen musst du mit einer Liste arbeiten. Für mehr Tipps schaue unter <b>"weitere Hinweise"</b> nach.
+          </p>
+         <div class="long">
+          <hr>
+          <h2>Weitere Hinweise:</h2>
+            Wir wissen, dass wir genau die Zahlen von 1-9 haben, da wir nur Ziffern betrachten. Anstatt also neun Variablen anzulegen, können wir einfach eine Liste verwenden. <br>
+            In der Ergebnisliste kann der Index dann für die Ziffer stehen und der Eintrag für die Häufigkeit.
+            Für die Zahl <code>4442399</code> würde die Ergebnisliste dann so aussehen: <code>0,1,1,3,0,0,0,0,2</code>. Wir haben also:
+            <pre>
+0,1,1,3,0,0,0,0,2 &larr; Eintrag
+&uarr; &uarr; &uarr; &uarr; &uarr; &uarr; &uarr; &uarr; &uarr;
+1 2 3 4 5 6 7 8 9 &larr; Index
+            </pre>
+            <hr>
+            Es ist wichtig zwischen Index und Eintrag zu unterscheiden.
+            Benutzen wir z.B. die Schleife:<br>
+            <img src="../../../Bilder/controls_forEach.svg" /><br>
+            Dann ist <code>i</code> jeweils das 1. Zeichen <code>4</code>, das 2. Zeichen <code>4</code> und so weiter... <br>
+            Benutzen wir allerdings <br>
+            <img src="../../../Bilder/controls_for.svg" /><br>
+            Dann ist <code>i</code> jeweils das 1, 2 und so weiter... <br>
+
+            Je nachdem, welche der beiden Versionen wir verwenden, kann  für die erste Version direkt
+            <img src="Eintrag_sol.svg" /><br>
+           verwendet werden, oder für die Zweite Schleifenversion
+            <img src="Index_sol.svg" /><br>
+         </div>
+        </div>
+        <div class = "hard">
+            <p>
+              In der Eingabe steht eine große Zahl ohne Nullen. 
+              Das Programm soll speichern an welchen Positionen jede Ziffer jeweils vorkommt.
+            </p>
+            <p>Gib jeweils in einer Zeile die Zahl und an welchen Positionen diese Zahl auftritt durch ein Leerzeichen getrennt aus:
+<pre>
+1 2,4,5
+2 
+3 7
+...
+</pre>
+            </p>
+            <p>
+              <b>Hinweis:</b> Um nicht zu viele Variablen erstellen zu müssen sollte mit einer Liste gearbeitet werden. Für mehr Tipps schaue unter <b>"weitere Hinweise"</b> nach.
+            </p>
+           <div class="long">
+            <hr>
+            <h2>Weitere Hinweise:</h2>
+              Wir wissen, dass wir genau die Zahlen von 1-9 haben, da wir nur Ziffern betrachten. Anstatt also neun Variablen anzulegen, können wir einfach eine Liste verwenden. <br>
+              Da jede Zahl aber an mehreren Positonen vorkommen kann, sollte diese ebenfalls als Liste gespeichert werden. <b>Wir haben also eine Liste von Listen.</b>
+              In der Ergebnisliste kann der Index dann für die Ziffer stehen und der Eintrag für die Positionen.
+              Für die Zahl <code>4442399</code> würde die Ergebnisliste dann so aussehen: <code>[[0],[4],[5],[1,2,3],[0],[0],[0],[0],[6,7]]</code>. Wir haben also:
+              
+              <table style="margin-bottom: -30px;">
+                <tr>
+                  <td>
+<pre style="border: 1px solid black; display: block; white-space:pre-wrap; width: fit-content;">      3        
+      2         7
+0,4,5,1,0,0,0,0,6</pre>
+                  </td>
+                  <td>
+<pre style="display: block; white-space:pre-wrap; width: fit-content;">&larr; 3
+&larr; 2
+&larr; 1</pre>
+                  </td>
+                  <td>
+<pre style="display: block; white-space:pre-wrap; width: fit-content;">
+  &larr; Index der Positionen
+ 
+</pre>
+                  </td>
+                </tr>
+              </table>
+<pre>&uarr; &uarr; &uarr; &uarr; &uarr; &uarr; &uarr; &uarr; &uarr;
+1 2 3 4 5 6 7 8 9 &larr; Index der Positionslisten in der Ergebnisliste
+              </pre>
+              <hr>
+              Es ist wichtig zwischen Index und Eintrag zu unterscheiden.
+              Benutzen wir z.B. die Schleife:<br>
+              <img src="../../../Bilder/controls_forEach.svg" /><br>
+              Dann ist <code>i</code> jeweils das 1. Zeichen <code>4</code>, das 2. Zeichen <code>4</code> und so weiter... <br>
+              Benutzen wir allerdings <br>
+              <img src="../../../Bilder/controls_for.svg" /><br>
+              Dann ist <code>i</code> jeweils das 1, 2 und so weiter... <br>
+  
+              Je nachdem, welche der beiden Versionen wir verwenden, kann  für die erste Version direkt
+              <img src="Eintrag_sol.svg" /><br>
+             verwendet werden, oder für die Zweite Schleifenversion
+              <img src="Index_sol.svg" /><br>
+           </div>
+          </p>
+        </div>
+        <div>
+          <p>
+            <i>Beachte: Dein Programm muss mit allen Testfällen zurechtkommen.</i>
+          </p>
+        </div>
+      </div>
+      <div id="gridContainer"></div>
+      <div id="blocklyLibContent"></div>
+    </div>
+  </div><!-- task -->
+</body>
+
+</html>

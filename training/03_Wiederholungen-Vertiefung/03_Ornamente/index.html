@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Ornamente</title>
+  <script>
+    window.stringsLanguage = 'de';
+  </script>
+  <script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js" id="import-modules"></script>
+  <script class="remove" type="text/javascript">
+    var modulesPath = '../../../../_common/modules/';
+    importModules([
+      'jquery-1.7.1', 'JSON-js', 'raphael-2.2.1', 'beaver-task-2.0', 'jschannel', 'raphaelFactory-1.0', 'delayFactory-1.0', 'simulationFactory-1.0',
+      'platform-pr', 'buttonsAndMessages', 'beav-1.0', 'installationAPI.01', 'miniPlatform',
+      'taskStyles-mobileFirst', 'blockly-turtle', 'jwinf_css'
+    ]);
+    // set Blockly as default language when none is specified through ?language=
+    importLanguageModules('blockly');
+  </script>
+  <script class="remove" type="text/javascript">
+    var json = {
+      "id": "test-turtle-square",
+      "language": "de",
+      "version": "de.01",
+      "authors": "Robert Czechowski, Wolfgang Pohl",
+      "translators": [],
+      "license": "",
+      "taskPathPrefix": "",
+      "modulesPathPrefix": "",
+      "browserSupport": [],
+      "acceptedAnswers": [""],
+      "fullFeedback": true,
+      "minWidth": "auto"
+    };
+  </script>
+  <script type="text/javascript" src="task.js"></script>
+
+
+</head>
+
+<body onresize="task.displayedSubTask.updateScale()">
+  <div id="task">
+    <h1>Ornamente</h1>
+    <div id="tabsContainer"></div>
+    <div id="taskContent">
+      <div id="taskIntro">
+        Programmiere die Schildkröte:<br>
+        <div class="easy">
+          <p>
+            Die Schildkröte soll die eckige Spirale zeichnen.
+          </p>
+          <p data-lang="blockly">
+            Bitte schau dir vorab die Erläuterungen der Bausteine unter <b>"weitere Hinweise"</b> an.
+          </p>
+          <p data-lang="python">
+            Bitte schau dir vorab die <b>Erläuterungen</b> unter "weitere Hinweise" an.
+          </p>
+          <div class="long" data-lang="blockly">
+            <hr>
+            <h2>Weitere Hinweise:</h2>
+            <p>
+              Beim <code>zähle</code>-Baustein durchläuft die Zählvariable i einen Zahlenbereich von einem Anfangswert
+              bis zu einem Endwert. Die Anweisungen innerhalb des Bausteins werden für jeden Durchlauf einmal
+              ausgeführt. Am Ende des Durchlaufs wird i um 1 erhöht.
+            </p>
+            <p>
+              Im folgenden Beispiel ist der Anfangswert 1 und der Endwert 10. i wird am Ende des Schleifendurchlaufs
+              um 1 erhöht. Das heißt: im 1. Durchlauf geht die Schildkröte 1 Schritt, im 2. Durchlauf geht sie 2 Schritte, usw.
+            </p>
+            <p>
+              <img src="zaehle_aufwaerts.jpg" />
+            </p>
+          </div>
+          <div class="long" data-lang="python">
+            <h2>Weitere Hinweise:</h2>
+            <p>
+              Bisher haben wir <code>range</code> immer mit einer <code>for</code>-Schleife verwendet, um Befehle zu wiederholen z.B. 3-Mal.<br>
+              Genau genommen beschreibt <code>range()</code> einen Zahlenstrahl. Schreiben wir z.B. <code>range(5)</code>, so sind damit die <b>fünf</b> Zahlen <code>0, 1, 2, 3, 4</code> gemeint. Python beginnt nämlich immer bei 0 mit dem zählen! Somit wird
+<pre>
+  for i in range(10):
+    rechts()
+</pre>
+              genau 10-Mal ausgeführt wird, da die Variable <code>i</code> den Wert 0 bis 9 einnimmt.
+            </p>
+            <p>
+              <code>range()</code> kann anstatt mit einem Parameter auch mit zweien bis dreien aufgerufen werden. Mehrere Parameter trennen wir durch Kommata:
+<pre>
+  range(start,ende,schritt)
+</pre>
+              Dabei steht <code>start</code> für den Startwert, <code>ende</code> für den Endwert und <code>schritt</code> für die Schrittweite.
+              Ein Beispiel:
+<pre>
+  for i in range(1,10,2):
+    geheSchritte(i)
+</pre>
+              In jedem Durchlauf nimmt die Variable <code>i</code> einen Zahlenwert in dem Bereich an, den <code>range()</code> beschreibt.
+              Das heißt: im 1. Durchlauf ist <code>i</code> <b>1</b> (<code>start</code>) und die Schildkröte geht 1 Schritt. 
+              Im 2. Durchlauf ist <code>i</code> <b>3</b>, da <code>schritt</code> 2 ist, und die Schildkröte geht 3 Schritte.
+              Dann geht sie im 3. <b>5</b>, im 4. <b>7</b>, im 5. <b>9</b> und dann beendet die Schleife.
+            </p>
+
+            <p><b>Wenn wir also:</b></p>
+            <ul>
+              <li>Einen Parameter übergeben: z.B. <code>range(10)</code>, so ist <code>ende</code> festgelegt und wir beschreibend den Zahlenraum 0 bis 9. <code>start</code> ist standardmäßig 0 und <code>schritt</code> 1.</li>
+              <li>Zwei Parameter übergeben: z.B. <code>range(5,10)</code>, so sind <code>start</code> und <code>ende</code> festgelegt und wir beschreibend den Zahlenraum 5 bis 9. <code>schritt</code> ist also standardmäßig 1.</li>
+              <li>Drei Parameter übergeben: z.B. <code>range(5,10,2)</code>, so sind <code>start</code>, <code>ende</code> und <code>schritt</code>festgelegt. Wir beschreibend den Zahlenraum 5,7, 9.</li>
+            </ul>
+          </div>
+          <p>
+            Die Spirale hat 17 Linien. Die erste Linie ist 1 Schritt lang.
+            Die anderen Linien sind jeweils einen Schritt länger als die vorherige Linie.
+          </p>
+        </div>
+        <div class="medium">
+          <p>
+            Die Schildkröte soll die eckige Spirale zeichnen &ndash; diesmal von außen nach innen.
+          </p>
+          <p data-lang="blockly">
+            Bitte schau dir vorab die Erläuterungen der Bausteine unter <b>"weitere Hinweise"</b> an.
+          </p>
+          <p data-lang="python">
+            Bitte schau dir vorab die <b>Erläuterungen</b> unter "weitere Hinweise" an.
+          </p>
+          <div class="long" data-lang="blockly">
+            <h2>Weitere Hinweise:</h2>
+            <p>
+              Der Anfangswert im <code>zähle</code>-Baustein kann auch größer sein, als der Endwert. Die Zählvariable i wird dann um 1 verringert.
+            </p>
+            <p>
+            Im folgenden Beispiel ist der Anfangswert 10 und der Endwert 1. i wird am Ende des Schleifendurchlaufs um 1 verringert.
+            Das heißt: im 1. Durchlauf geht die Schildkröte 10 Schritte, im 2. Durchlauf geht sie 9 Schritte, usw.
+          </p>
+          <p>
+            <img src="zaehle_abwaerts.jpg" />
+          </p>
+          </div>
+          <div class="long" data-lang="python">
+            <h2>Weitere Hinweise:</h2>
+            <p>Ist dir nicht klar, wie <code>range()</code> Funktioniert, so lies die weiteren Hinweise bei der zwei-Sterne Version noch einmal.</p>
+            <p>
+              Der Anfangswert in der <code>range()</code>-Funktion
+              kann auch größer sein, als der Endwert. 
+              Als Schrittweite muss dann allerdings ein negativer Wert angegeben werden.
+            </p>
+            <p>
+            Im folgenden Beispiel ist der Anfangswert 10 und der Endwert 1. <code>i</code>
+            wird am Ende des Schleifendurchlaufs um 1 verringert.
+          </p>
+<pre>
+   for i in range(10,1,-1):
+      geheSchritte(i)
+</pre>
+Das heißt: im 1. Durchlauf geht die Schildkröte 10 Schritte, im 2. Durchlauf geht sie 9 Schritte, usw.
+          </div>
+        </div>
+        <div class="hard">
+          <p>
+            Die Schildkröte soll die eckige Doppel-Spirale zeichnen &ndash;
+            zuerst von außen nach innen, dann von innen nach außen.
+          </p>
+          <div class="long" data-lang="python">
+            <h2>Weitere Hinweise:</h2>
+            <p>Ist dir nicht klar, wie <code>range()</code> Funktioniert, so lies die weiteren Hinweise bei der zwei- und drei-Sterne Version noch einmal.</p>
+          </div>
+        </div>
+      </div>
+      <div id="gridContainer"></div>
+      <div id="blocklyLibContent"></div>
+      <div id="hints" style="margin:20px;display:none;">
+        <p><b>Beschreibung der Befehle:</b></p>
+        <ul>
+          <li><b>gehe <i>Anzahl</i> Schritte:</b> Die Schildkröte geht eine bestimmte Anzahl Schritte vorwärts.</li>
+          <li><b>drehe nach links:</b> Die Schildkröte dreht sich um 90° gegen den Uhrzeigersinn.</li>
+          <li><b>drehe nach rechts:</b> Die Schildkröte dreht sich um 90° im Uhrzeigersinn.</li>
+        </ul>
+      </div>
+    </div>
+  </div><!-- task -->
+</body>
+
+</html>

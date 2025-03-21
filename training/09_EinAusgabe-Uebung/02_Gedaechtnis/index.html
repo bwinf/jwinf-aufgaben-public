@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Gedächtnis</title>
+  <script>
+    window.stringsLanguage = 'de';
+  </script>
+  <script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js"
+    id="import-modules"></script>
+  <script class="remove" type="text/javascript">
+    var modulesPath = '../../../../_common/modules/';
+    importModules([
+      'jquery-1.7.1', 'JSON-js', 'raphael-2.2.1', 'beaver-task-2.0', 'jschannel', 'raphaelFactory-1.0', 'delayFactory-1.0', 'simulationFactory-1.0',
+      'platform-pr', 'buttonsAndMessages', 'beav-1.0', 'installationAPI.01', 'miniPlatform',
+      'taskStyles-mobileFirst', 'blockly-printer', 'jwinf_css'
+    ]);
+    // set Blockly as default language when none is specified through ?language=
+    importLanguageModules('blockly');
+  </script>
+  <script class="remove" type="text/javascript">
+    var json = {
+      "id": "test-printer-copy",
+      "language": "de",
+      "version": "de.01",
+      "authors": "Robert Czechowski",
+      "translators": [],
+      "license": "",
+      "taskPathPrefix": "",
+      "modulesPathPrefix": "",
+      "browserSupport": [],
+      "acceptedAnswers": [""],
+      "fullFeedback": true,
+      "minWidth": "auto"
+    };
+
+    window.stringsLanguage = 'de';
+    var strings = {
+      moreThan100Moves: "Vous avez cependant fait plus de 100 déplacements.",
+      notAllCellsPainted: "Das hat noch nicht ganz geklappt. Versuch es noch einmal!",
+      allCellsPainted: "Bravo! Du hast die Zeilen richtig ausgegeben!"
+    };
+  </script>
+  <script type="text/javascript" src="printer_task.js"></script>
+
+</head>
+
+<body onresize="task.displayedSubTask.updateScale()">
+  <div id="task">
+    <h1>Gedächtnis</h1>
+
+    <div id="tabsContainer"></div>
+    <div id="taskContent">
+      <div id="taskIntro">
+        Schreibe ein Programm:
+        <p class="easy">
+          Das Programm soll eine Textzeile einlesen, und sie nacheinander in Kleinbuchstaben,
+          normal, und in Großbuchstaben ausgeben.
+        </p>
+        <p class="medium">
+          Das Programm soll einen Namen aus einer Textzeile einlesen 
+          und in der ersten Zeile eine Begrüßung und in einer zweiten Zeile eine Verabschiedung ausgeben.
+        </p>
+        <p class="hard">
+          Das Programm soll einen Namen aus einer Textzeile einlesen
+          und eine Begrüßung normal und anschließend nochmal in der gleichen Zeile in Großbuchstaben ausgeben.
+        </p>
+        <div>
+          <table class="easy">
+            <tr>
+              <td style="padding: 0px 30px;vertical-align: top;">
+                <p><b>Eingabe:</b></p>
+                Blumenwiese
+              </td>
+              <td style="padding: 0px 30px;vertical-align: top;">
+                <p><b>Ausgabe:</b></p>
+                blumenwiese<br>
+                Blumenwiese<br>
+                BLUMENWIESE
+              </td>
+            </tr>
+          </table>
+          <table class="medium">
+            <tr>
+              <td style="padding: 0px 30px;vertical-align: top;">
+                <p><b>Eingabe:</b></p>
+                Juna
+              </td>
+              <td style="padding: 0px 30px;vertical-align: top;">
+                <p><b>Ausgabe:</b></p>
+                Hallo Juna<br>
+                Tschüss Juna
+              </td>
+            </tr>
+          </table>
+          <table class="hard">
+            <tr>
+              <td style="padding: 0px 30px;vertical-align: top;">
+                <p><b>Eingabe:</b></p>
+                Juna
+              </td>
+              <td style="padding: 0px 30px;vertical-align: top;">
+                <p><b>Ausgabe:</b></p>
+                Hallo Juna! HALLO JUNA!
+              </td>
+            </tr>
+          </table>
+          <br>
+        </div>
+        <p><i>Beachte: Dein Programm muss mit allen Testfällen zurechtkommen.</i></p>
+      </div>
+      <div id="gridContainer"></div>
+      <div id="blocklyLibContent"></div>
+    </div>
+  </div><!-- task -->
+</body>
+
+</html>

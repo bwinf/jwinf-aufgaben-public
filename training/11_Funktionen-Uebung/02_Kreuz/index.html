@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Kreuz</title>
+  <script>
+    window.stringsLanguage = 'de';
+  </script>
+  <script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js" id="import-modules"></script>
+  <script class="remove" type="text/javascript">
+    var modulesPath = '../../../../_common/modules/';
+    importModules([
+      'jquery-1.7.1', 'JSON-js', 'raphael-2.2.1', 'beaver-task-2.0', 'jschannel', 'raphaelFactory-1.0', 'delayFactory-1.0', 'simulationFactory-1.0',
+      'platform-pr', 'buttonsAndMessages', 'beav-1.0', 'installationAPI.01', 'miniPlatform',
+      'taskStyles-mobileFirst', 'blockly-turtle', 'jwinf_css'
+    ]);
+    // set Blockly as default language when none is specified through ?language=
+    importLanguageModules('blockly');
+  </script>
+  <script class="module" type="text/javascript" src="../../../../_common/modules/pemFioi/blocklyTurtle_lib.js" id="blocklyTurtle_lib"></script>
+  <script class="remove" type="text/javascript">
+    var json = {
+      "id": "test-turtle-square",
+      "language": "de",
+      "version": "de.01",
+      "authors": "Robert Czechowski, Wolfgang Pohl, nach einer Idee von ???",
+      "translators": [],
+      "license": "",
+      "taskPathPrefix": "",
+      "modulesPathPrefix": "",
+      "browserSupport": [],
+      "acceptedAnswers": [""],
+      "fullFeedback": true,
+      "minWidth": "auto"
+    };
+  </script>
+  <script type="text/javascript" src="task.js"></script>
+
+
+</head>
+
+<body onresize="task.displayedSubTask.updateScale()">
+  <div id="task">
+    <h1>Kreuz</h1>
+    <div id="tabsContainer"></div>
+    <div id="taskContent">
+      <div id="taskIntro">
+        Programmiere die Schildkröte:<br>
+        <div class="easy">
+          <p>
+            Die Schildkröte soll das Kreuz zeichnen.
+          </p>
+          <b>Hinweis: </b>Die Kreuzbalken sind vier Schritte breit.
+        </div>
+        <div class="medium">
+          <p>
+            Die Schildkröte soll das Kreuz mehrfach zeichnen.
+          </p>
+          <b>Hinweis: </b>Die Kreuzbalken sind vier Schritte breit.
+          <p>
+            Erstelle und verwende eine Funktion, die das Kreuz zeichnet.
+          </p>
+        </div>
+        <div class="hard">
+          <p>
+            Die Schildkröte soll das Kreuz mehrfach in verschiedener Größe zeichnen.
+          </p>
+          <p>
+            <b>Hinweis: </b>Die Kreuzbalken sollen einmal 2, einmal 3 und einmal 4 Schritte breit sein.
+          </p>
+          <div class="long">
+            <hr>
+            <h2>Weitere Hinweise:</h2>
+            <p>
+              Erstelle und verwende eine Funktion, die das Kreuz zeichnet und für die Größe einen Eingabewert (Parameter) verwendet.<br>
+              Füge der Funktion über die Einstellungen (Zahnrad-Icon) einen Parameter hinzu:
+            </p>
+            <img src="../../../Bilder/function_setParameter.svg" />
+            <p>
+              Wenn du die Funktion verwendest, musst du einen Wert für den Parameter angeben:
+            </p>
+            <img src="../../../Bilder/function_useParameter.svg" />
+          </div>
+        </div>
+      </div>
+      <div id="gridContainer"></div>
+      <div id="blocklyLibContent"></div>
+      <div id="hints" style="margin:20px;display:none;">
+        <p><b>Beschreibung der Befehle:</b></p>
+        <ul>
+          <li><b>gehe <i>Anzahl</i> Schritte:</b> Die Schildkröte geht eine bestimmte Anzahl Schritte vorwärts.</li>
+          <li><b>drehe nach links:</b> Die Schildkröte dreht sich um 90° gegen den Uhrzeigersinn.</li>
+          <li><b>drehe nach rechts:</b> Die Schildkröte dreht sich um 90° im Uhrzeigersinn.</li>
+        </ul>
+      </div>
+    </div>
+  </div><!-- task -->
+</body>
+
+</html>

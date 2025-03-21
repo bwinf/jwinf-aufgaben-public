@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <title>In der Bibliothek</title>
+   <script>
+      // Die information 'de' bezieht sich darauf, welche Übersetzungen aus der Bibliothek geladen werden.
+      // In diesem Fall werden alle Blöcke, Blockhilfen etc. auf deutsch angezeigt.
+      window.stringsLanguage = 'de';
+   </script>
+   <script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js"
+      id="import-modules"></script>
+   <script class="remove" type="text/javascript">
+      var modulesPath = '../../../../_common/modules/'
+      // Die Bibliotheken werden geladen. Dabei sind die ersten immer gleich.
+      // 'jwinf_css' spezifiziert das für die JwInf-Plattform verwendete Design z.B. den Fuchs und das grün
+      // Davor steht die Aufgaben spezifische Bibliothek. So wird für
+      // Roboteraufgaben: 'blockly-robot-1.1' 
+      // Textaufgaben: 'blockly-printer'
+      // Turtleaufgaben: 'blockly-turtle' geladen.
+      importModules([
+         'jquery-1.7.1', 'JSON-js', 'raphael-2.2.1', 'beaver-task-2.0',
+         'jschannel', 'raphaelFactory-1.0', 'delayFactory-1.0',
+         'simulationFactory-1.0', 'platform-pr', 'buttonsAndMessages',
+         'beav-1.0', 'installationAPI.01', 'miniPlatform', 'conceptDisplay-1.0',
+         'conceptViewer-1.0', 'conceptViewer_css-1.0', 'taskStyles-mobileFirst',
+         'blockly-robot-1.1',
+         'jwinf_css',
+      ]);
+      // Die Standardsprache wird definiert, in diesem Fall Blockly 
+      // Andere Sprachen (wenn vorhanden) können dann mit ?language= als Suffix in der URL geladen werden.
+      importLanguageModules('blockly');
+
+      // Hier werden ein paar Grundinformationen zu der Aufgabe festgehalten
+   </script>
+   <script class="remove" type="text/javascript">
+      var json = {
+         "id": "",
+         "language": "de",
+         "version": "de.01",
+         "authors": "Hannah Rauterberg",
+         "translators": [],
+         "license": "",
+         "taskPathPrefix": "",
+         "modulesPathPrefix": "",
+         "browserSupport": [],
+         "fullFeedback": true,
+         "minWidth": "auto"
+      };
+   </script>
+   <script type="text/javascript" src="task.js"></script>
+</head>
+
+<body onresize="task.displayedSubTask.updateScale()">
+   <!-- Der Aufgabenname sowie die verwendeten Bildresourcen -->
+   <div id="task">
+      <h1>In der Bibliothek</h1>
+      <img src="icon.png" style="display:none" />
+
+      <div id="tabsContainer"></div>
+      <div id="taskContent">
+         <div id="taskIntro">
+            Programmiere den Roboter:<br>
+            Jede Kiste <img src="../../../Bilder/Roboter-Grafiken/cardboard_box.png" style="height: 40px;"> soll mit der vorgegebenen Anzahl an Büchern <img src="../../../Bilder/Roboter-Grafiken/books.png" style="height: 40px;">gefüllt werden.<br><br>
+            <p>
+               <b>Hinweis:</b> Der Roboter soll nur genau so viele Bücher einsammeln, wie er auch ausliefern muss.
+            </p>
+         </div>
+         <div id="gridContainer"></div>
+         <div id="blocklyLibContent"></div>
+      </div>
+
+   </div><!-- task -->
+</body>
+
+</html>

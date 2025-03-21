@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   class="blocklySvg"
+   width="316.17188"
+   height="30"
+   id="svg98"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2" />
+  <g
+     class="blocklyWorkspace"
+     id="g98"
+     transform="translate(-382,-208)">
+    <g
+       class="blocklyBlockCanvas"
+       transform="translate(323.84375,5)"
+       id="g92">
+      <g
+         class="blocklyDraggable"
+         transform="translate(58.15625,203)"
+         id="g91">
+        <path
+           class="blocklyPathDark"
+           transform="translate(1,1)"
+           fill="#843456"
+           d="M 0,8 A 8,8 0 0 1 8,0 h 7 l 6,4 h 3 l 6,-4 h 216.09375 v 5 c 0,10 -8,-8 -8,7.5 0,15.5 8,-2.5 8,7.5 v 5 H 29.5 l -6,4 h -3 l -6,-4 H 8 A 8,8 0 0 1 0,17 Z"
+           id="path81" />
+        <path
+           class="blocklyPath"
+           fill="#a5416b"
+           d="M 0,8 A 8,8 0 0 1 8,0 h 7 l 6,4 h 3 l 6,-4 h 216.09375 v 5 c 0,10 -8,-8 -8,7.5 0,15.5 8,-2.5 8,7.5 v 5 H 29.5 l -6,4 h -3 l -6,-4 H 8 A 8,8 0 0 1 0,17 Z"
+           id="path82" />
+        <text
+           class="blocklyText"
+           y="12.5"
+           transform="translate(10,5)"
+           id="text83"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1">setze</text>
+        <g
+           class="blocklyNonEditableText"
+           transform="translate(55.046875,5)"
+           id="g84">
+          <rect
+             rx="4"
+             ry="4"
+             x="-5"
+             y="0"
+             height="16"
+             width="152.65625"
+             id="rect83"
+             style="fill:#dbb3c4;fill-opacity:1" />
+          <text
+             class="blocklyText"
+             y="12.5"
+             id="text84"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1">Variablen Name ▾</text>
+        </g>
+        <text
+           class="blocklyText"
+           y="12.5"
+           transform="translate(207.70312,5)"
+           id="text85"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1">auf</text>
+        <g
+           class="blocklyDraggable"
+           transform="translate(247.09375)"
+           id="g90">
+          <path
+             class="blocklyPathDark"
+             transform="translate(1,1)"
+             fill="#522d84"
+             d="M 0,0 H 68.078125 V 25 H 0 V 20 C 0,10 -8,28 -8,12.5 -8,-3 0,15 0,5 Z"
+             id="path85" />
+          <path
+             class="blocklyPath"
+             fill="#6638a5"
+             d="M 0,0 H 68.078125 V 25 H 0 V 20 C 0,10 -8,28 -8,12.5 -8,-3 0,15 0,5 Z"
+             id="path86" />
+          <path
+             class="blocklyPathLight"
+             stroke="#9474c0"
+             d="m 0.5,0.5 h 67.078125 m 0,0 M 0.5,24.5 v -6 M -6.86,18 q -1.52,-5.5 0,-11 M 0.5,8 V 0.5 H 1"
+             id="path87" />
+          <g
+             transform="translate(10,5)"
+             id="g87">
+            <image
+               height="12"
+               width="12"
+               xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAKCAQAAAAqJXdxAAAAn0lEQVQI1z3OMa5BURSF4f/cQhAKjUQhuQmFNwGJEUi0RKN5rU7FHKhpjEH3TEMtkdBSCY1EIv8r7nFX9e29V7EBAOvu7RPjwmWGH/VuF8CyN9/OAdvqIXYLvtRaNjx9mMTDyo+NjAN1HNcl9ZQ5oQMM3dgDUqDo1l8DzvwmtZN7mnD+PkmLa+4mhrxVA9fRowBWmVBhFy5gYEjKMfz9AylsaRRgGzvZAAAAAElFTkSuQmCC"
+               id="image87" />
+          </g>
+          <g
+             class="blocklyEditableText"
+             transform="translate(32,5)"
+             id="g88">
+            <rect
+               rx="4"
+               ry="4"
+               x="-5"
+               y="0"
+               height="16"
+               width="14.078125"
+               id="rect87"
+               style="fill:#c2afdb;fill-opacity:1" />
+            <text
+               class="blocklyText"
+               y="12.5"
+               id="text87"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1" />
+          </g>
+          <g
+             transform="translate(46.078125,5)"
+             id="g89">
+            <image
+               height="12"
+               width="12"
+               xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAKCAQAAAAqJXdxAAAAqUlEQVQI1z3KvUpCcRiA8ef9E4JNHhI0aFEacm1o0BsI0Slx8wa8gLauoDnoBhq7DcfWhggONDmJJgqCPA7neJ7p934EOOKOnM8Q7PDElo/4x4lFb2DmuUjcUzS3URnGib9qaPNbuXvBO3sGPHJDRG6fGVdMSeWDP2q99FQdFrz26Gu5Tq7dFMzUvbXy8KXeAj57cOklgA+u1B5AoslLtGIHQMaCVnwDnADZIFIrXsoXrgAAAABJRU5ErkJggg=="
+               id="image88" />
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

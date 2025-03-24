@@ -12,6 +12,14 @@ Pull-Requests / Merge-Requests zum Hinzufügen eigener Aufgaben sind möglich un
 
 Für Fragen kann [im Gitlab ein Ticket](https://git.bwinf.de/bwinf/jwinf-aufgaben-public/-/issues) oder [auf Github ein Issue](https://github.com/bwinf/jwinf-aufgaben-public/issues) angelegt werden
 
+## Inhalt
+
+- [Struktur einer einzelnen Aufgabe](#struktur-einer-einzelnen-aufgabe)
+- [Struktur einer Aufgabesammlung](#struktur-einer-aufgabesammlung)
+- [Veröffentlichen von Aufgaben](#veröffentlichen-von-aufgaben)
+- [Lokale Entwicklung der Aufgaben](#lokale-entwicklung-der-aufgaben)
+
+
 ## Struktur einer einzelnen Aufgabe
 
 Eine Aufgabe besteht üblicherweise aus drei Dateien:

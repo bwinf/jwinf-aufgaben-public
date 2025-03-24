@@ -6,9 +6,9 @@ Dieses Repository ist im [BWINF Gitlab](https://git.bwinf.de/bwinf/jwinf-aufgabe
 
 Pull-Requests / Merge-Requests zum Hinzufügen eigener Aufgaben sind möglich und erwünscht!
 
-- Trainingsaufgaben die als Vorlage für eigene Aufgaben fungieren können finden sich unter `training`.
-- Minimale Beispiele für Aufgabensammlungen und einzelne Aufgaben finden sich unter `beispiel`.
-- Eigene Aufgaben und Aufgabensammlungen können unter `user` angelegt werden.
+- Trainingsaufgaben die als Vorlage für eigene Aufgaben fungieren können finden sich unter `training/`.
+- Minimale Beispiele für Aufgabensammlungen und einzelne Aufgaben finden sich unter `beispiel/`.
+- Eigene Aufgaben und Aufgabensammlungen können unter `user/` angelegt werden.
 
 Für Fragen kann [im Gitlab ein Ticket](https://git.bwinf.de/bwinf/jwinf-aufgaben-public/-/issues) oder [auf Github ein Issue](https://github.com/bwinf/jwinf-aufgaben-public/issues) angelegt werden
 
@@ -49,11 +49,15 @@ languages:
 - `secret: apfel` vergibt ein Wettbewerbspasswort mit dem die Aufgabe auf [jwinf.de](https://jwinf.de) gefunden werden kann.
 - `languages:` gibt die Liste der Programmiersprachen für die Aufgabe an. Mögliche Werte sind `blockly` und `python`.
 
+### Beispiel
+
+Unter `beispiel/Turtle-Aufgabe_einzeln` findet sich ein Beispiel für eine einzelne Aufgabe mit einer `task.yaml`.
+
 ## Struktur einer Aufgabesammlung
 
 Es können mehrere Aufgaben zu einer Aufgabensammlung ('contest') zusammengefasst werden. Die einzelnen Aufgaben brauchen dann keine `task.yaml` (aber sie schadet auch nicht).
 
-Eine Aufgabensammlung besteht aus einer `contest.yaml`, die mehrer Augaben zusammenfasst.
+Eine Aufgabensammlung besteht aus einer `contest.yaml`, die mehrere Augaben zusammenfasst.
 
 ### contest.yaml
 
@@ -84,6 +88,10 @@ tasks:
 - `language:` gibt die Programmiersprachen für die Aufgaben an. Mögliche Werte sind `blockly` und `python`. Im Gegensatz zu den einzelnen Aufgaben kann hier (zur Zeit) nur ein Wert angegeben werden.
 - `tasks:` beschreibt die einzenen Aufgaben die zu dem Aufgabensatz gehören.
 
+### Beispiel
+
+Unter `beispiel/aufgabensammlung.yaml` findet sich ein Beispiel für eine Aufgabensammlung bestehend aus zwei Aufgaben.
+
 ## Veröffentlichen von Aufgaben
 
 ### Aufgaben hinzufügen
@@ -96,11 +104,19 @@ Um die Aufgaben zu veröffentlichen kann [auf Github ein Pull Request](https://g
 
 ### Aufgaben auf jwinf.de aufrufen
 
-Damit die Aufgaben auf [jwinf.de](https://jwinf.de) gefunden werden können, ist es ratsam ein Wettbewerbspasswort (`secret`) zu setzen.
+Damit die Aufgaben auf [jwinf.de](https://jwinf.de) gefunden werden können, sollte ein Wettbewerbspasswort (`secret`) gesetzt werden..
 
-Unter `https://jwinf.de/contest/?secret=` können die die Aufgaben dann nach dem Passwort gesucht werden. Alternativ kann unter `https://jwinf.de/contest/?secret=[Wettbewerbspasswort]` direkt auf alle Aufgaben mit dem Passwort `[Wettbewerbspasswort]` verwiesen werden. Wenn es mehrere Aufgaben mit dem gleichen Passwort gibt werden alle dort angezeigt.
+- Unter https://jwinf.de/contest/public?secret= können die die Aufgabensammlungen dann nach dem Passwort gesucht werden.
+- Unter https://jwinf.de/contest/standalone_task?secret= können einzelne Aufgaben nach dem Passwort gesucht werden.
 
 ![Eingabefeld für das Wettbwerbspasswort](secret.png)
+
+Alternativ kann unter `https://jwinf.de/contest/?secret=<passwort>` direkt auf alle Aufgaben mit dem Wettbewerbspasswort `<passwort>` verwiesen werden. Ist als Wettbewerbspasswort z.B. `beispiel` gesetzt:
+
+- https://jwinf.de/contest/public?secret=beispiel listet die Aufgabensammlungen mit dem Wettbewerbspasswort `beispiel` auf.
+- https://jwinf.de/contest/standalone_task?secret=beispiel listet einzelne Aufgaben mit dem Wettbewerbspasswort `beispiel` auf.
+
+Wenn es mehrere Aufgaben mit dem gleichen Passwort gibt werden alle dort angezeigt.
 
 Hinweis: Dieses Passwort bietet keine Sicherheit, dass die Aufgaben nicht von anderen gesehen werden können, da die Passwörter in diesem Repository im Klartext auffindbar. Wir empfehlen einfache Passwörter aus Alltagswörtern oder Schul-/Lehrkraftnamen. Kleinschreibung der Passwörter hilft Falscheingaben zu vermeiden.
 

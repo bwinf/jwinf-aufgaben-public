@@ -7,7 +7,7 @@ duration_minutes: 0
 language: blockly
 
 tasks:
-  "Aufgabe Eins":
-    "aufgabe1": {stars: 4}
+  "In der Bibliothek":
+    "Roboter-Aufgabe": {stars: 4}
   "Aufgabe Zwei":
-    "aufgabe2": {stars: 4}
+    "Text-Aufgabe": {stars: 4}

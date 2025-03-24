@@ -1,7 +1,0 @@
-standalone: true
-
-name: "Beispiel-Aufgabe"
-secret: "beispiel"
-
-languages:
- - blockly

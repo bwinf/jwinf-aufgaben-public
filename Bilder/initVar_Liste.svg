@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   class="blocklySvg"
+   width="356.21875"
+   height="30"
+   id="svg67"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2" />
+  <g
+     class="blocklyWorkspace"
+     id="g24"
+     transform="translate(-313,-150)">
+    <g
+       class="blocklyBlockCanvas"
+       transform="translate(122,8)"
+       id="g18">
+      <g
+         class="blocklyDraggable"
+         transform="translate(191,142)"
+         id="g17">
+        <path
+           class="blocklyPathDark"
+           transform="translate(1,1)"
+           fill="#843456"
+           d="M 0,8 A 8,8 0 0 1 8,0 h 7 l 6,4 h 3 l 6,-4 h 120.73437 v 5 c 0,10 -8,-8 -8,7.5 0,15.5 8,-2.5 8,7.5 v 5 H 29.5 l -6,4 h -3 l -6,-4 H 8 A 8,8 0 0 1 0,17 Z"
+           id="path8" />
+        <path
+           class="blocklyPath"
+           fill="#a5416b"
+           d="M 0,8 A 8,8 0 0 1 8,0 h 7 l 6,4 h 3 l 6,-4 h 120.73437 v 5 c 0,10 -8,-8 -8,7.5 0,15.5 8,-2.5 8,7.5 v 5 H 29.5 l -6,4 h -3 l -6,-4 H 8 A 8,8 0 0 1 0,17 Z"
+           id="path9" />
+        <text
+           class="blocklyText"
+           y="12.5"
+           transform="translate(10,5)"
+           id="text10"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1">setze</text>
+        <g
+           class="blocklyEditableText"
+           transform="translate(55.046875,5)"
+           id="g11">
+          <rect
+             rx="4"
+             ry="4"
+             x="-5"
+             y="0"
+             height="16"
+             width="57.296875"
+             id="rect10"
+             style="fill:#dbb3c4;fill-opacity:1" />
+          <text
+             class="blocklyText"
+             y="12.5"
+             id="text11"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1">Liste<tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1"
+   id="tspan10">▾</tspan></text>
+        </g>
+        <text
+           class="blocklyText"
+           y="12.5"
+           transform="translate(112.34375,5)"
+           id="text12"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1">auf</text>
+        <g
+           class="blocklyDraggable"
+           transform="translate(151.73437)"
+           id="g16">
+          <path
+             class="blocklyPathDark"
+             transform="translate(1,1)"
+             fill="#ad6e22"
+             d="M 0,0 H 203.48437 V 24 H 0 V 20 C 0,10 -8,28 -8,12.5 -8,-3 0,15 0,5 Z"
+             id="path12" />
+          <path
+             class="blocklyPath"
+             fill="#d8892b"
+             d="M 0,0 H 203.48437 V 24 H 0 V 20 C 0,10 -8,28 -8,12.5 -8,-3 0,15 0,5 Z"
+             id="path13" />
+          <g
+             class="blocklyIconGroup"
+             display="block"
+             transform="translate(10,5)"
+             id="g15">
+            <rect
+               class="blocklyIconShape"
+               rx="4"
+               ry="4"
+               height="16"
+               width="16"
+               id="rect14"
+               style="fill:#3347a4;fill-opacity:1"
+               x="0"
+               y="0" />
+            <path
+               class="blocklyIconSymbol"
+               d="m 4.203,7.296 v 1.368 l -0.92,0.677 -0.11,0.41 0.9,1.559 0.41,0.11 1.043,-0.457 1.187,0.683 0.127,1.134 0.3,0.3 h 1.8 l 0.3,-0.299 0.127,-1.138 1.185,-0.682 1.046,0.458 0.409,-0.11 0.9,-1.559 -0.11,-0.41 -0.92,-0.677 V 7.297 L 12.797,6.62 12.907,6.21 12.007,4.651 11.598,4.542 10.552,5 9.367,4.318 9.24,3.18 8.94,2.881 H 7.14 L 6.84,3.181 6.714,4.316 5.527,4.998 4.484,4.541 4.074,4.651 3.175,6.21 3.283,6.619 Z"
+               id="path15"
+               style="fill:#efd0aa;fill-opacity:1" />
+            <circle
+               class="blocklyIconShape"
+               r="2.7"
+               cx="8"
+               cy="8"
+               id="circle15"
+               style="fill:#3347a4;fill-opacity:1" />
+          </g>
+          <text
+             class="blocklyText"
+             y="12.5"
+             transform="translate(37,5)"
+             id="text15"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1">erzeuge eine leere Liste</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,7 @@
+standalone: true
+
+name: "Turtle-Beispielaufgabe"
+secret: "beispiel"
+
+languages:
+ - blockly

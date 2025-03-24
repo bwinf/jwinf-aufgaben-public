@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Prüfung</title>
+  <script>
+    // Die information 'de' bezieht sich darauf, welche Übersetzungen aus der Bibliothek geladen werden.
+    // In diesem Fall werden alle Blöcke, Blockhilfen etc. auf deutsch angezeigt.
+    window.stringsLanguage = 'de';
+  </script>
+  <!-- Der Pfad unter zu den Modulen muss immer richtig sein. Wenn ein weitere Unterordner angelegt wird, 
+   dann muss im Pfad eine Ebene höher gegangen werden. -->
+  <script class="remove" type="text/javascript" src="../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js"
+    id="import-modules"></script>
+  <script class="remove" type="text/javascript">
+    var modulesPath = '../../../_common/modules/';
+    importModules([
+      // Die Bibliotheken werden geladen. Dabei sind die ersten immer gleich.
+      // 'jwinf_css' spezifiziert das für die JwInf-Plattform verwendete Design z.B. den Fuchs und das grün
+      // Davor steht die Aufgaben spezifische Bibliothek. So wird für
+      // Roboteraufgaben: 'blockly-robot-1.1' 
+      // Textaufgaben: 'blockly-printer'
+      // Turtleaufgaben: 'blockly-turtle' geladen.
+      'jquery-1.7.1', 'JSON-js', 'raphael-2.2.1', 'beaver-task-2.0', 'jschannel', 'raphaelFactory-1.0',
+      'delayFactory-1.0', 'simulationFactory-1.0',
+      'platform-pr', 'buttonsAndMessages', 'beav-1.0', 'installationAPI.01', 'miniPlatform',
+      'taskStyles-mobileFirst', 'blockly-printer', 'jwinf_css'
+    ]);
+    // Die Standardsprache wird definiert, in diesem Fall Blockly 
+    // Andere Sprachen (wenn vorhanden) können dann mit ?language= (bspw. python) als Suffix in der URL geladen werden.
+    importLanguageModules('blockly');
+    // Hier werden ein paar Grundinformationen zu der Aufgabe festgehalten
+  </script>
+  <script class="remove" type="text/javascript">
+    var json = {
+      // Hier werden ein paar Grundinformationen zu der Aufgabe festgehalten
+      "id": "Text-Beispiel",
+      "language": "de",
+      "version": "01",
+      "authors": "Hannah Rauterberg",
+      "translators": [],
+      "license": "",
+      "taskPathPrefix": "",
+      "modulesPathPrefix": "",
+      "browserSupport": [],
+      "acceptedAnswers": [""],
+      "fullFeedback": true,
+      "minWidth": "auto"
+    };
+  </script>
+  <!-- Hier der Name der Javascript-Datei, welche den Task definiert. -->
+  <script type="text/javascript" src="printer_task.js"></script>
+
+</head>
+
+<body onresize="task.displayedSubTask.updateScale()">
+  <div id="task">
+    <h1>Prüfung</h1>
+
+    <div id="tabsContainer"></div>
+    <div id="taskContent">
+      <div id="taskIntro">
+        <!-- Alles im taskInto-Container wird für alle Aufgaben angezeigt. Texte für die Versionen kann über class ["easy", "medium", "hard"] definiert werden. -->
+        <div class="easy">
+          <p>
+            Schreibe ein Programm:<br>
+            Das Programm soll prüfen, ob eine Zahlenreihe gültig ist. Eine Zahlenreihe ist gültig, wenn sie eine
+            <code>1</code> enthält.</p>
+          <p>
+            Die Zahlenreihe steht durch Kommas getrennt in einer Zeile der Eingabe. Wenn eine <code>1</code> zu finden
+            ist, soll das Programm <code>Gültig</code> ausgeben. Ansonsten soll das Programm <code>Ungültig</code> in
+            die Ausgabe schreiben.
+          </p>
+        </div>
+        <div class="medium">
+          <p>Schreibe ein Programm:<br>
+            Das Programm soll prüfen, ob eine Zahlenreihe gültig ist. Eine Zahlenreihe ist gültig, wenn sie alle ganzen
+            Zahlen von <code>1</code>bis <code>n</code> mindestens einmal enthält.</p>
+          <p>
+            Die Zahlenreihe steht durch Kommas getrennt in der 1. Zeile der Eingabe. In der 2. Zeile steht das
+            <code>n</code>, welches die höchste Zahl der Zahlenreihe beschreibt.<br>
+            Wenn eine Zahl fehlt, soll das Programm <code>Ungültig</code> ausgeben. Ansonsten soll das Programm
+            <code>Gültig</code> in die Ausgabe schreiben.
+          </p>
+          <p><b>Hinweis:</b> Zahlen können mehrfach vorkommen.</p>
+        </div>
+        <div class="hard">
+          <p>Schreibe ein Programm:<br>
+            Das Programm soll prüfen, ob eine Zahlenreihe gültig ist. Eine Zahlenreihe ist gültig, wenn bestimmte
+            Bedingungen erfüllt sind.</p>
+          <p>
+            Die Zahlenreihe steht durch Kommas getrennt in der 1. Zeile der Eingabe. In den folgenden Zeilen stehen die
+            Bedingungen. Eine <b>Bedingung</b> besteht aus zwei Zahlen <code>a,b</code>:<br>
+            Sie besagt, dass die <b>Zahl <code>a</code> in der Zahlenreihe genau <code>b</code>-mal enthalten sein
+              muss</b>. Ein Beispiel findest du unter "weitere Hinweise".
+          </p>
+          <p>
+            Damit eine Zahlenreihe gültig ist, müssen alle Bedingungen erfüllt sein.
+            Wenn nicht alle Bedingungen erfüllt sind, soll das Programm <code>Ungültig</code> ausgeben. Ansonsten soll
+            das Programm <code>Gültig</code> in die Ausgabe schreiben.
+          </p>
+          <!-- Hier können Informationen gegeben werden, die unter "weitere Hinweise" angezeigt werden. -->
+          <div class="long">
+            <h2>Weitere Hinweise:</h2>
+            <p>
+              <b>Ein Beispiel:</b>
+            </p>
+            <table>
+              <tr>
+                <td style="padding: 0px 30px;vertical-align: top;">
+                  <p><b>Eingabe:</b></p>
+                  1,1,1<br>
+                  1,3<br>
+                  4,0
+                </td>
+                <td style="padding: 0px 30px;vertical-align: top;">
+                  <p><b>Ausgabe:</b></p>
+                  Gültig
+                </td>
+              </tr>
+            </table><br><br>
+          </div>
+        </div>
+        <!-- Hier können Informationen gegeben werden, die unter "weitere Hinweise" angezeigt werden. -->
+        <div class="long">
+          <hr>
+          <h2>Weitere Hinweise:</h2>
+          <p> Um eine reine Sequenz an Anweisungen oder eine Lösung, die nur auf das Bestehen von Testfällen abzielt, zu
+            vermeiden, stehen maximal vier <img src="../../Bilder/print.svg" />-Bausteine zur Verfügung.
+          </p>
+        </div>
+        <p>
+          <i>Beachte: Dein Programm muss mit allen Testfällen zurechtkommen.</i>
+        </p>
+      </div>
+      <div id="gridContainer"></div>
+      <div id="blocklyLibContent"></div>
+    </div>
+  </div><!-- task -->
+</body>
+
+</html>

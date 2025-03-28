@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   class="blocklySvg"
+   width="207.63541"
+   height="41"
+   id="svg114"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2" />
+  <g
+     class="blocklyWorkspace"
+     id="g114"
+     transform="translate(-16,-510)">
+    <g
+       class="blocklyFlyout"
+       style="display:block"
+       id="g105">
+      <g
+         class="blocklyWorkspace"
+         id="g104">
+        <g
+           class="blocklyBlockCanvas"
+           transform="translate(0,2)"
+           id="g101">
+          <g
+             class="blocklyDraggable"
+             transform="translate(16,508)"
+             id="g44">
+            <path
+               class="blocklyPathDark"
+               transform="translate(1,1)"
+               fill="#5b3084"
+               d="M 0,8 A 8,8 0 0 1 8,0 h 7 l 6,4 h 3 L 30,0 H 40 206.63541 V 36 H 29.5 l -6,4 h -3 l -6,-4 H 8 A 8,8 0 0 1 0,28 Z M 118.15625,5 H 87.989582 v 5 c 0,10 -8,-8 -8,7.5 0,15.5 8,-2.5 8,7.5 v 7 h 30.166668 z"
+               id="path37" />
+            <path
+               class="blocklyPath"
+               fill="#723ca5"
+               d="M 0,8 A 8,8 0 0 1 8,0 h 7 l 6,4 h 3 L 30,0 H 40 206.63541 V 36 H 29.5 l -6,4 h -3 l -6,-4 H 8 A 8,8 0 0 1 0,28 Z M 118.15625,5 H 87.989582 v 5 c 0,10 -8,-8 -8,7.5 0,15.5 8,-2.5 8,7.5 v 7 h 30.166668 z"
+               id="path38" />
+            <g
+               transform="translate(88.989582,6)"
+               id="g43">
+              <path
+                 class="blocklyPathDark"
+                 transform="translate(1,1)"
+                 fill="#b0b9db"
+                 d="M 0,0 H 28.166667 V 25 H 0 V 20 C 0,10 -8,28 -8,12.5 -8,-3 0,15 0,5 Z"
+                 id="path40" />
+              <path
+                 class="blocklyPath"
+                 fill="#b0b9db"
+                 d="M 0,0 H 28.166667 V 25 H 0 V 20 C 0,10 -8,28 -8,12.5 -8,-3 0,15 0,5 Z"
+                 id="path41" />
+              <path
+                 class="blocklyPathLight"
+                 d="m 0.5,0.5 h 27.166667 m 0,0 M 0.5,24.5 v -6 M -6.86,18 q -1.52,-5.5 0,-11 M 0.5,8 V 0.5 H 1"
+                 style="display:none"
+                 id="path42" />
+              <g
+                 class="blocklyEditableText"
+                 transform="translate(10,5)"
+                 id="g42">
+                <rect
+                   rx="4"
+                   ry="4"
+                   x="-5"
+                   y="0"
+                   height="16"
+                   width="18.166668"
+                   id="rect42"
+                   style="fill:#dfe3f1;fill-opacity:1" />
+                <text
+                   class="blocklyText"
+                   y="12.5"
+                   id="text42"
+                   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1">0</text>
+              </g>
+            </g>
+            <text
+               class="blocklyText"
+               y="12.5"
+               transform="translate(10,10)"
+               id="text43"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1">übergebe</text>
+            <text
+               class="blocklyText"
+               y="12.5"
+               transform="translate(128.15625,10)"
+               id="text44"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1">Holzstapel</text>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

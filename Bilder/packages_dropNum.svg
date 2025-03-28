@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   class="blocklySvg"
+   width="171.76042"
+   height="41"
+   id="svg124"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2" />
+  <g
+     class="blocklyWorkspace"
+     id="g124"
+     transform="translate(-16,-669)">
+    <g
+       class="blocklyFlyout"
+       style="display:block"
+       id="g115">
+      <g
+         class="blocklyWorkspace"
+         id="g114">
+        <g
+           class="blocklyBlockCanvas"
+           transform="translate(0,2)"
+           id="g111">
+          <g
+             class="blocklyDraggable"
+             transform="translate(16,667)"
+             id="g53">
+            <path
+               class="blocklyPathDark"
+               transform="translate(1,1)"
+               fill="#5b3084"
+               d="M 0,8 A 8,8 0 0 1 8,0 h 7 l 6,4 h 3 L 30,0 H 40 170.76042 V 36 H 29.5 l -6,4 h -3 l -6,-4 H 8 A 8,8 0 0 1 0,28 Z M 83.895833,5 H 53.729166 v 5 c 0,10 -8,-8 -8,7.5 0,15.5 8,-2.5 8,7.5 v 7 h 30.166667 z"
+               id="path46" />
+            <path
+               class="blocklyPath"
+               fill="#723ca5"
+               d="M 0,8 A 8,8 0 0 1 8,0 h 7 l 6,4 h 3 L 30,0 H 40 170.76042 V 36 H 29.5 l -6,4 h -3 l -6,-4 H 8 A 8,8 0 0 1 0,28 Z M 83.895833,5 H 53.729166 v 5 c 0,10 -8,-8 -8,7.5 0,15.5 8,-2.5 8,7.5 v 7 h 30.166667 z"
+               id="path47" />
+            <g
+               transform="translate(54.729166,6)"
+               id="g52">
+              <path
+                 class="blocklyPathDark"
+                 transform="translate(1,1)"
+                 fill="#b0b9db"
+                 d="M 0,0 H 28.166667 V 25 H 0 V 20 C 0,10 -8,28 -8,12.5 -8,-3 0,15 0,5 Z"
+                 id="path49" />
+              <path
+                 class="blocklyPath"
+                 fill="#b0b9db"
+                 d="M 0,0 H 28.166667 V 25 H 0 V 20 C 0,10 -8,28 -8,12.5 -8,-3 0,15 0,5 Z"
+                 id="path50" />
+              <path
+                 class="blocklyPathLight"
+                 d="m 0.5,0.5 h 27.166667 m 0,0 M 0.5,24.5 v -6 M -6.86,18 q -1.52,-5.5 0,-11 M 0.5,8 V 0.5 H 1"
+                 style="display:none"
+                 id="path51" />
+              <g
+                 class="blocklyEditableText"
+                 transform="translate(10,5)"
+                 id="g51">
+                <rect
+                   rx="4"
+                   ry="4"
+                   x="-5"
+                   y="0"
+                   height="16"
+                   width="18.166668"
+                   id="rect51"
+                   style="fill:#dfe3f1;fill-opacity:1" />
+                <text
+                   class="blocklyText"
+                   y="12.5"
+                   id="text51"
+                   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#020202;fill-opacity:1">0</text>
+              </g>
+            </g>
+            <text
+               class="blocklyText"
+               y="12.5"
+               transform="translate(10,10)"
+               id="text52"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1">lege</text>
+            <text
+               class="blocklyText"
+               y="12.5"
+               transform="translate(93.895833,10)"
+               id="text53"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1">Bücher ab</text>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

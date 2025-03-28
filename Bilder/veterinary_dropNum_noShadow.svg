@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   class="blocklySvg"
+   width="191.96875"
+   height="40"
+   id="svg114"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2" />
+  <g
+     class="blocklyWorkspace"
+     id="g114"
+     transform="translate(-16,-575)">
+    <g
+       class="blocklyFlyout"
+       style="display:block"
+       id="g105">
+      <g
+         class="blocklyWorkspace"
+         id="g104">
+        <g
+           class="blocklyBlockCanvas"
+           transform="translate(0,2)"
+           id="g101">
+          <g
+             class="blocklyDraggable"
+             transform="translate(16,573)"
+             id="g47">
+            <path
+               class="blocklyPathDark"
+               transform="translate(1,1)"
+               fill="#5b3084"
+               d="M 0,8 A 8,8 0 0 1 8,0 h 7 l 6,4 h 3 L 30,0 H 40 190.96875 V 35 H 29.5 l -6,4 h -3 l -6,-4 H 8 A 8,8 0 0 1 0,27 Z M 102.48958,5 H 87.989582 v 5 c 0,10 -8,-8 -8,7.5 0,15.5 8,-2.5 8,7.5 v 6 h 14.499998 z"
+               id="path44" />
+            <path
+               class="blocklyPath"
+               fill="#723ca5"
+               d="M 0,8 A 8,8 0 0 1 8,0 h 7 l 6,4 h 3 L 30,0 H 40 190.96875 V 35 H 29.5 l -6,4 h -3 l -6,-4 H 8 A 8,8 0 0 1 0,27 Z M 102.48958,5 H 87.989582 v 5 c 0,10 -8,-8 -8,7.5 0,15.5 8,-2.5 8,7.5 v 6 h 14.499998 z"
+               id="path45" />
+            <text
+               class="blocklyText"
+               y="12.5"
+               transform="translate(10,10)"
+               id="text46"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1">übergebe</text>
+            <text
+               class="blocklyText"
+               y="12.5"
+               transform="translate(112.48958,10)"
+               id="text47"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1">Holzstapel</text>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

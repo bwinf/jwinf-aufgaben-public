@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   class="blocklySvg"
+   width="113.63718"
+   height="27.5"
+   id="svg86"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2" />
+  <g
+     class="blocklyWorkspace"
+     id="g86"
+     transform="translate(-8.6690649,-118.6)">
+    <g
+       class="blocklyFlyout"
+       style="display:block"
+       id="g77">
+      <g
+         class="blocklyWorkspace"
+         id="g76">
+        <g
+           class="blocklyBlockCanvas"
+           transform="matrix(1.1,0,0,1.1,0,2)"
+           id="g73">
+          <g
+             class="blocklyDraggable"
+             transform="translate(16,106)"
+             id="g10">
+            <path
+               class="blocklyPathDark"
+               transform="translate(1,1)"
+               fill="#226384"
+               d="M 0,0 H 94.1875 V 24 H 0 V 20 C 0,10 -8,28 -8,12.5 -8,-3 0,15 0,5 Z"
+               id="path8" />
+            <path
+               class="blocklyPath"
+               fill="#2b7ca5"
+               d="M 0,0 H 94.1875 V 24 H 0 V 20 C 0,10 -8,28 -8,12.5 -8,-3 0,15 0,5 Z"
+               id="path9" />
+            <path
+               class="blocklyPathLight"
+               stroke="#6ba3c0"
+               d="m 0.5,0.5 h 93.1875 m 0,0 M 0.5,23.5 v -5 M -6.86,18 q -1.52,-5.5 0,-11 M 0.5,8 V 0.5 H 1"
+               id="path10" />
+            <text
+               class="blocklyText"
+               y="12.5"
+               transform="translate(10,5)"
+               id="text10"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.5455px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1">auf Dreieck</text>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

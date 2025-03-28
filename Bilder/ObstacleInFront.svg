@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   class="blocklySvg"
+   width="126.94688"
+   height="27.5"
+   id="svg70"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2" />
+  <g
+     class="blocklyWorkspace"
+     id="g70"
+     transform="translate(-8.8,-593.8)">
+    <g
+       class="blocklyFlyout"
+       style="display:block"
+       id="g61">
+      <g
+         class="blocklyWorkspace"
+         id="g60">
+        <g
+           class="blocklyBlockCanvas"
+           transform="matrix(1.1,0,0,1.1,0,2)"
+           id="g57">
+          <g
+             class="blocklyDraggable"
+             transform="translate(16,538)"
+             id="g38">
+            <path
+               class="blocklyPathDark"
+               transform="translate(1,1)"
+               fill="#226384"
+               d="M 0,0 H 106.40625 V 24 H 0 V 20 C 0,10 -8,28 -8,12.5 -8,-3 0,15 0,5 Z"
+               id="path36" />
+            <path
+               class="blocklyPath"
+               fill="#2b7ca5"
+               d="M 0,0 H 106.40625 V 24 H 0 V 20 C 0,10 -8,28 -8,12.5 -8,-3 0,15 0,5 Z"
+               id="path37" />
+            <text
+               class="blocklyText"
+               y="12.5"
+               transform="translate(10,5)"
+               id="text38"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.5455px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1">vor Hindernis</text>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

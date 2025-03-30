@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <title>Arrows</title>
+   <script>
+      window.stringsLanguage = 'de';
+      window.taskStrings = {};
+   </script>
+   <script class="remove" type="text/javascript"
+      src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js" id="import-modules"></script>
+   <script class="remove" type="text/javascript">
+      var modulesPath = '../../../../_common/modules/'
+      importModules([
+         'jquery-1.7.1', 'JSON-js', 'raphael-2.2.1', 'beaver-task-2.0',
+         'jschannel', 'raphaelFactory-1.0', 'delayFactory-1.0',
+         'simulationFactory-1.0', 'platform-pr', 'buttonsAndMessages',
+         'beav-1.0', 'installationAPI.01', 'miniPlatform', 'conceptDisplay-1.0',
+         'conceptViewer-1.0', 'conceptViewer_css-1.0', 'taskStyles-mobileFirst',
+         'blockly-robot-1.1',
+         'jwinf_css'
+      ]);
+      importLanguageModules('blockly');
+   </script>
+   <script class="remove" type="text/javascript">
+      var json = {
+         "id": "",
+         "language": "de",
+         "version": "01",
+         "authors": "Hannah Rauterberg",
+         "translators": [],
+         "license": "",
+         "taskPathPrefix": "",
+         "modulesPathPrefix": "",
+         "browserSupport": [],
+         "fullFeedback": true,
+         "minWidth": "auto"
+      };
+   </script>
+   <script type="text/javascript" src="task.js"></script>
+</head>
+
+<body onresize="task.displayedSubTask.updateScale()">
+   <!-- Der Einleitungstext für easy und medium ist gleich -->
+   <div id="task">
+      <h1>Arrows</h1>
+      <img src="icon.png" style="display:none" />
+      <div id="tabsContainer"></div>
+      <div id="taskContent">
+         <div id="taskIntro">
+            <!-- Der Einleitungstext für alle Versionen ist gleich -->
+            Programmiere den Roboter:<br>
+            <p>Er soll den Schatz <img src="../../../Bilder/Roboter-Grafiken/chest.png" style="height:40px"> bergen.
+               Dafür muss er dem Weg folgen, den ihm die Pfeile vorgeben.</p>
+            <div class="long" data-lang="blockly">
+               <h2>Weitere Hinweise:</h2>
+               <p>
+                  Der Baustein <img src="../../../Bilder/controls_whileUntil.svg"> bzw. <img
+                     src="../../../Bilder/controls_untilWhile.svg"> wiederholt etwas solange bzw. bis eine Bedingung
+                  erfüllt ist.
+                  Dieser Baustein wird genutzt, wenn man die Anzahl der Wiederholungen im Voraus <b>nicht</b> kennt.
+               </p>
+               <p>
+                  <span class="easy">Hier kennst du die Anzahl der Felder zwischen Roboter und Schatztruhe nicht.</span>
+                  <span class="medium hard">Hier weißt du nicht, wie viele Pfeile in eine Richtung aufeinander
+                     folgen.</span>
+               </p>
+            </div>
+         </div>
+         <div id="gridContainer"></div>
+         <div id="blocklyLibContent"></div>
+      </div>
+
+   </div><!-- task -->
+</body>
+
+</html>

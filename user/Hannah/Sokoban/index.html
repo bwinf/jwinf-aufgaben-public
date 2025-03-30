@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <title>Sokoban</title>
+   <script>
+      window.stringsLanguage = 'de';
+      window.taskStrings = {};
+   </script>
+   <script class="remove" type="text/javascript"
+      src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js" id="import-modules"></script>
+   <script class="remove" type="text/javascript">
+      var modulesPath = '../../../../_common/modules/'
+      importModules([
+         'jquery-1.7.1', 'JSON-js', 'raphael-2.2.1', 'beaver-task-2.0',
+         'jschannel', 'raphaelFactory-1.0', 'delayFactory-1.0',
+         'simulationFactory-1.0', 'platform-pr', 'buttonsAndMessages',
+         'beav-1.0', 'installationAPI.01', 'miniPlatform', 'conceptDisplay-1.0',
+         'conceptViewer-1.0', 'conceptViewer_css-1.0', 'taskStyles-mobileFirst',
+         'blockly-robot-1.1',
+         'jwinf_css'
+      ]);
+      importLanguageModules('blockly');
+
+      // Hier werden ein paar Grundinformationen zu der Aufgabe festgehalten
+   </script>
+   <script class="remove" type="text/javascript">
+      var json = {
+         "id": "",
+         "language": "de",
+         "version": "01",
+         "authors": "Hannah Rauterberg",
+         "translators": [],
+         "license": "",
+         "taskPathPrefix": "",
+         "modulesPathPrefix": "",
+         "browserSupport": [],
+         "fullFeedback": true,
+         "minWidth": "auto"
+      };
+   </script>
+   <script type="text/javascript" src="task.js"></script>
+</head>
+
+<body onresize="task.displayedSubTask.updateScale()">
+   <!-- Der Aufgabenname sowie die verwendeten Bildresourcen -->
+   <div id="task">
+      <h1>Sokoban</h1>
+      <img src="icon.png" style="display:none" />
+
+      <div id="tabsContainer"></div>
+      <div id="taskContent" style="text-align:left;position:relative">
+         <div id="taskIntro">
+            <!-- Der Einleitungstext für easy und medium ist gleich -->
+            <p class="easy medium">
+               Programmiere den Roboter so, dass die Kiste <img src="../../../Bilder/Roboter-Grafiken/box.png"
+                  style="height: 40px;"> auf die Markierung <img src="../../../Bilder/Roboter-Grafiken/marker.png"
+                  style="height: 40px;"> geschoben wird.
+            </p>
+            <!-- Der Einleitungstext für hard -->
+            <p class="hard">
+               Programmiere den Roboter so, dass die Kisten <img src="../../../Bilder/Roboter-Grafiken/box.png"
+                  style="height: 40px;"> auf die Markierungen <img src="../../../Bilder/Roboter-Grafiken/marker.png"
+                  style="height: 40px;"> geschoben werden.
+            </p>
+            <!-- Weiterführende Text für easy -->
+            <div class="easy">
+               Die Zahl vor dem Roboter gibt an, in welcher Spalte die Kiste steht.
+            </div>
+            <!-- Weiterführende Text für medium -->
+            <div class="medium">
+               Die Zahlen vor dem Roboter geben die Koordinaten der Kiste an.
+               <ul>
+                  <li>Die erste Zahl ist die Zeile der Kiste</li>
+                  <li>Die zweite Zahl ist die Spalte der Kiste</li>
+               </ul>
+            </div>
+            <!-- Weiterführende Text für hard -->
+            <div class="hard">
+               Die Zahl vor dem Roboter gibt die Anzahl der Kisten vor.<br />
+               Die weiteren Zahlen in der untersten Reihe geben die Zeilen an, in der sich jeweils eine Kiste befindet.
+               <!-- Beispiel für 'weitere Hinweise' nur bei hard -->
+               <div class=long>
+                  <p>
+                     Beachte den neuen Baustein <img src="../../../Bilder/geherückwärts.svg">
+                  </p>
+               </div>
+            </div>
+            <!-- Abschließender Hinweis für alle Versionen -->
+            <p>
+               <i>Beachte: Dein Programm muss mit allen Testfällen zurechtkommen.</i>
+            </p>
+         </div>
+         <div id="gridContainer"></div>
+         <div id="blocklyLibContent"></div>
+      </div>
+
+   </div><!-- task -->
+</body>
+
+</html>

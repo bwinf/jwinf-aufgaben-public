@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <title>Marbles</title>
+   <script>
+      window.stringsLanguage = 'de';
+      window.taskStrings = {};
+   </script>
+   <script class="remove" type="text/javascript"
+      src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js" id="import-modules"></script>
+   <script class="remove" type="text/javascript">
+      var modulesPath = '../../../../_common/modules/'
+      importModules([
+         'jquery-1.7.1', 'JSON-js', 'raphael-2.2.1', 'beaver-task-2.0',
+         'jschannel', 'raphaelFactory-1.0', 'delayFactory-1.0',
+         'simulationFactory-1.0', 'platform-pr', 'buttonsAndMessages',
+         'beav-1.0', 'installationAPI.01', 'miniPlatform', 'conceptDisplay-1.0',
+         'conceptViewer-1.0', 'conceptViewer_css-1.0', 'taskStyles-mobileFirst',
+         'blockly-robot-1.1',
+         'jwinf_css'
+      ]);
+      importLanguageModules('blockly');
+
+      // Hier werden ein paar Grundinformationen zu der Aufgabe festgehalten
+   </script>
+   <script class="remove" type="text/javascript">
+      var json = {
+         "id": "",
+         "language": "de",
+         "version": "01",
+         "authors": "Hannah Rauterberg",
+         "translators": [],
+         "license": "",
+         "taskPathPrefix": "",
+         "modulesPathPrefix": "",
+         "browserSupport": [],
+         "fullFeedback": true,
+         "minWidth": "auto"
+      };
+   </script>
+   <script>
+      window.stringsLanguage = 'de';
+   </script>
+   <script type="text/javascript" src="task.js"></script>
+</head>
+
+<body onresize="task.displayedSubTask.updateScale()">
+   <!-- Der Aufgabenname sowie die verwendeten Bildresourcen -->
+   <div id="task">
+      <h1>Marbles</h1>
+      <img src="icon.png" style="display:none" />
+
+      <div id="tabsContainer"></div>
+      <div id="taskContent">
+         <div id="taskIntro">
+            <!-- Der Einleitungstext für easy und medium ist gleich -->
+            <p class="easy medium">
+               Programmiere den Roboter so, dass er zu der Murmel <img src="../../../Bilder/Roboter-Grafiken/marble.png"
+                  style="height:40px"> geht, sie aufhebt und in das Loch <img
+                  src="../../../Bilder/Roboter-Grafiken/hole.png" style="height:40px"> legt.
+            </p>
+            <!-- Der Text für hard -->
+            <p class="hard">
+               Programmiere den Roboter so, dass er zu den Murmeln <img
+                  src="../../../Bilder/Roboter-Grafiken/marble.png" style="height:40px"> geht, sie aufhebt und in das
+               Loch <img src="../../../Bilder/Roboter-Grafiken/hole.png" style="height:40px"> legt.
+            </p>
+            <p class="hard">
+               <strong>Achtung!</strong> Der Roboter kann immer nur eine Murmel tragen und jeder Loch kann jeweils nur
+               eine Murmel aufnehmen!
+            </p>
+         </div>
+         <div id="gridContainer"></div>
+         <div id="blocklyLibContent"></div>
+      </div>
+
+   </div><!-- task -->
+</body>
+
+</html>

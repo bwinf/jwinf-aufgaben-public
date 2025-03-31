@@ -1,0 +1,7 @@
+standalone: true
+
+name: "Echo"
+secret: echo
+
+languages:
+  - blockly

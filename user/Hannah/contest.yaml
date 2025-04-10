@@ -1,0 +1,47 @@
+category: public                            # notwendig
+
+name: "Aufgabensammlung von Hannah"         # Titel
+secret: "Roboter-Beispiele"                 # Passwort                      
+language: blockly                           # Möglich ist blockly und python
+duration_minutes: 0                         # Zeitlimit
+
+tasks:                                      # Aufgabensammlung
+  "Arrows":
+    "Arrows": {stars: 4}
+  "Cards":
+    "Cards": {stars: 4}
+  "Castle":
+    "Castle": {stars: 4}
+  "Cones":
+    "Cones": {stars: 4}
+  "Course":
+    "Course": {stars: 4}
+  "Dominoes":
+    "Dominoes": {stars: 4}
+  "Fishing":
+    "Fishing": {stars: 4}
+  "Flowers":
+    "Flowers": {stars: 4}
+  "Gears":
+    "Gears": {stars: 4}
+  "Gems":
+    "Gems": {stars: 4}
+  "Labyrinth":
+    "Labyrinth": {stars: 4}
+  "Laser":
+    "Laser": {stars: 4}
+  "Marbles":
+    "Marbles": {stars: 4}
+  "Objects in Space":
+    "Objects_in_space": {stars: 4}
+  "Packages":
+    "Packages": {stars: 4}
+  "Paint":
+    "Paint": {stars: 4}
+  "Rocket":
+    "Rocket": {stars: 4}
+  "Sokoban":
+    "Sokoban": {stars: 4}
+  "Veterinary":
+    "Veterinary": {stars: 4}
+  

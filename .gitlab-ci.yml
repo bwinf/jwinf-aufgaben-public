@@ -1,12 +1,14 @@
 stages:
   - gitcopy
   - testdeploy
+  - deploy
 
 testdeploy:
   image: 'alpine:latest'
   stage: testdeploy
   only:
     - main
+    - deploy
   script:
     # Setup SSH deploy keys
     - 'which ssh-agent || ( apk add --no-cache openssh-client )'
@@ -23,6 +25,28 @@ testdeploy:
     - sleep 30
     - ssh medald@jim.test.bwinf.de "sudo /bin/systemctl status medal && exit"
     - ssh medald@jim.test.bwinf.de "sudo /bin/systemctl status medalp && exit"
+
+
+deploy:
+  stage: deploy
+  only:
+    - main
+    - deploy
+  script:
+    # Setup SSH deploy keys
+    - 'which ssh-agent || ( apk add --no-cache openssh-client )'
+    - eval $(ssh-agent -s)
+    - echo "$DEPLOY_KEY_JWINF" | ssh-add -
+    - mkdir -p ~/.ssh
+    - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+
+    # Stop server and upload
+    - ssh medald@jwinf.de "cd medal/tasks/jwinf/jwinf-aufgaben ; git pull"
+    - ssh medald@jwinf.de "cd medal/tasks/jwinf/_common/modules ; git pull"
+    - ssh medald@jwinf.de "sudo /bin/systemctl restart medal && exit"
+    - sleep 30
+    - ssh medald@jwinf.de "sudo /bin/systemctl status medal && exit"
+
 
 gitcopy:
   image: bitnami/git

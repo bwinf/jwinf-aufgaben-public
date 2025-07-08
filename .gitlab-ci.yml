@@ -41,7 +41,7 @@ deploy:
     - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
 
     # Stop server and upload
-    - ssh medald@jwinf.de "cd medal/tasks/jwinf/jwinf-aufgaben ; git pull"
+    - ssh medald@jwinf.de "cd medal/tasks/jwinf/jwinf-aufgaben-public ; git pull"
     - ssh medald@jwinf.de "cd medal/tasks/jwinf/_common/modules ; git pull"
     - ssh medald@jwinf.de "sudo /bin/systemctl restart medal && exit"
     - sleep 30

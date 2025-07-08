@@ -1,0 +1,13 @@
+category: public
+
+name: "Beispiel-Aufgabensammlung ZGTM"
+secret: "zgtm"
+duration_minutes: 0
+
+language: blockly
+
+tasks:
+  "In der Bibliothek":
+    "../../beispiel/Roboter-Aufgabe": {stars: 5}
+  "Aufgabe Zwei":
+    "../../beispiel/Text-Aufgabe": {stars: 5}

@@ -1,0 +1,13 @@
+category: public
+
+name: "Hannah's tolle Demonstration"
+secret: "HR_Testschule_7a"
+duration_minutes: 60
+
+language: blockly
+
+tasks:
+  "Aufgabe 1":
+    "../../training/06_EinAusgabe-Einfuehrung/05_TextteileSuchen/": {stars: 4}
+  "Aufgabe 2":
+    "../../training/06_EinAusgabe-Einfuehrung/04_TextteileEntnehmen/": {stars: 4}

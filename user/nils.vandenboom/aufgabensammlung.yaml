@@ -8,6 +8,6 @@ language: blockly
 
 tasks:
   "Solange bis Schatz":
-    "../../jwinf-aufgaben-public/training/03_Wiederholungen-Vertiefung/01_SolangeBis-Schatz/": {stars: 4}
+    "../../training/03_Wiederholungen-Vertiefung/01_SolangeBis-Schatz/": {stars: 4}
   "Aufgabe Zwei":
-    "../../jwinf-aufgaben-public/training/03_Wiederholungen-Vertiefung/03_Ornamente/": {stars: 4}
+    "../../training/03_Wiederholungen-Vertiefung/03_Ornamente/": {stars: 4}

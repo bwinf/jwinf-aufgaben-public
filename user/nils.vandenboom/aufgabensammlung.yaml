@@ -1,0 +1,13 @@
+category: private
+
+name: "Aufgabensammlung 6a"
+secret: "eMa-54321"
+duration_minutes: 0
+
+language: blockly
+
+tasks:
+  "Solange bis Schatz":
+    "../../training/03_Wiederholungen-Vertiefung/01_SolangeBis-Schatz/": {stars: 4}
+  "Aufgabe Zwei":
+    "../../training/03_Wiederholungen-Vertiefung/03_Ornamente/": {stars: 4}

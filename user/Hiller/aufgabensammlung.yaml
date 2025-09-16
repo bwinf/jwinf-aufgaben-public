@@ -1,0 +1,13 @@
+category: public
+
+name: "Beispiel-Aufgabensammlung"
+secret: "DunHil_2526"
+duration_minutes: 0
+
+language: blockly
+
+tasks:
+  "Aufgabe 1":
+    "../../training/01_Grundbausteine-Einfuehrung/01_BausteineZusammensetzen/": {stars: 4}
+  "Aufgabe 2":
+    "../../training/01_Grundbausteine-Einfuehrung/02_Befehlsfolgen-ObjekteImWeltraum/": {stars: 4}

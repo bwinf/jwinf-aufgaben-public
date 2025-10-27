@@ -1,0 +1,13 @@
+category: public
+
+name: "Logische_Operatoren2"
+secret: "Kurs_11_Operatoren2"
+duration_minutes: 10
+
+language: blockly
+
+tasks:
+  "Aufgabe 1":
+    "../../training/07_VariablenLogik-Einfuehrung/03_Dominosteine": {stars: 2}
+  "Aufgabe 2":
+    "../../training/08_VariablenLogik-Uebung/03_RuckSack": {stars: 3}

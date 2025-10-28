@@ -1,0 +1,15 @@
+category: public
+
+name: "Logische_Operatoren"
+secret: "Kurs_11_Operatoren"
+duration_minutes: 10
+
+language: blockly
+
+tasks:
+  "Aufgabe 1":
+    "../../training/07_VariablenLogik-Einfuehrung/03_Dominosteine/": {stars: 4}
+  "Aufgabe 2":
+    "../../training/07_VariablenLogik-Einfuehrung/04_MusterMitVariablen/": {stars: 4}
+
+message: "<h3 class=\'title is-5\'>Wusstest du schon, …</h3><p>… dass du Programme zwischen den verschiedenen Aufgabenversionen <b>kopieren</b> kannst? Nutze dazu einfach das Aufgabenmenü, oben rechts in der Aufgabe, oder die Tastenkürzel Strg+C und Strg+V (Cmd+C und Cmd+V).</p>"

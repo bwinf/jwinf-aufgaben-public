@@ -49,7 +49,7 @@ deploy:
 
 
 gitcopy:
-  image: bitnami/git
+  image: alpine/git
   stage: gitcopy
   only:
     - main

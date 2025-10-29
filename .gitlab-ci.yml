@@ -4,7 +4,7 @@ stages:
   - deploy
 
 testdeploy:
-  image: 'alpine:latest'
+  image: 'alpine'
   stage: testdeploy
   only:
     - main
@@ -28,6 +28,7 @@ testdeploy:
 
 
 deploy:
+  image: 'alpine:latest'
   stage: deploy
   only:
     - main

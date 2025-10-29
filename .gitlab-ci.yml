@@ -49,7 +49,9 @@ deploy:
 
 
 gitcopy:
-  image: alpine/git
+  image: 
+    name: alpine/git
+    entrypoint: [""]
   stage: gitcopy
   only:
     - main

@@ -1,0 +1,7 @@
+
+standalone: true                # notwendig
+name: "Pakete füllen"           # Titel
+secret: "fill-package"          # Passwort
+
+languages:                      # Möglich sind blockly und python
+  - blockly

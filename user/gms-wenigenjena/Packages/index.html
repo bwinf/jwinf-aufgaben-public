@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <title>Packages</title>
+   <script>
+      // Die information 'de' bezieht sich darauf, welche Übersetzungen aus der Bibliothek geladen werden.
+      // In diesem Fall werden alle Blöcke, Blockhilfen etc. auf deutsch angezeigt.
+      window.stringsLanguage = 'de';
+   </script>
+   <!-- Der Pfad unter zu den Modulen muss immer richtig sein. Wenn ein weitere Unterordner angelegt wird, 
+   dann muss im Pfad eine Ebene höher gegangen werden. -->
+   <script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js"
+      id="import-modules"></script>
+   <script class="remove" type="text/javascript">
+      var modulesPath = '../../../../_common/modules/'
+      // Die Bibliotheken werden geladen. Dabei sind die ersten immer gleich.
+      // 'jwinf_css' spezifiziert das für die JwInf-Plattform verwendete Design z.B. den Fuchs und das grün
+      // Davor steht die Aufgaben spezifische Bibliothek. So wird für
+      // Roboteraufgaben: 'blockly-robot-1.1' 
+      // Textaufgaben: 'blockly-printer'
+      // Turtleaufgaben: 'blockly-turtle' geladen.
+      importModules([
+         'jquery-1.7.1', 'JSON-js', 'raphael-2.2.1', 'beaver-task-2.0',
+         'jschannel', 'raphaelFactory-1.0', 'delayFactory-1.0',
+         'simulationFactory-1.0', 'platform-pr', 'buttonsAndMessages',
+         'beav-1.0', 'installationAPI.01', 'miniPlatform', 'conceptDisplay-1.0',
+         'conceptViewer-1.0', 'conceptViewer_css-1.0', 'taskStyles-mobileFirst',
+         'blockly-robot-1.1',
+         'jwinf_css',
+      ]);
+      // Die Standardsprache wird definiert, in diesem Fall Blockly 
+      // Andere Sprachen (wenn vorhanden) können dann mit ?language= (bspw. python) als Suffix in der URL geladen werden.
+      importLanguageModules('blockly');
+   </script>
+   <script class="remove" type="text/javascript">
+      // Hier werden ein paar Grundinformationen zu der Aufgabe festgehalten
+      var json = {
+         "id": "Roboter-Beispiel",
+         "language": "de",
+         "version": "01",
+         "authors": "Hannah Rauterberg",
+         "translators": [],
+         "license": "",
+         "taskPathPrefix": "",
+         "modulesPathPrefix": "",
+         "browserSupport": [],
+         "fullFeedback": true,
+         "minWidth": "auto"
+      };
+   </script>
+   <!-- Hier der Name der Javascript-Datei, welche den Task definiert. -->
+   <script type="text/javascript" src="task.js"></script>
+</head>
+
+<body onresize="task.displayedSubTask.updateScale()">
+   <div id="task">
+      <h1>Packages</h1>
+      <!-- Folgedne Zeile ist notwendig. -->
+      <img src="icon.png" style="display:none" />
+
+      <div id="tabsContainer"></div>
+      <div id="taskContent">
+         <div id="taskIntro">
+            <!-- Alles im taskInto-Container wird für alle Aufgaben angezeigt. Texte für die Versionen kann über class ["easy", "medium", "hard"] definiert werden. -->
+            Programmiere den Roboter:<br>
+            <div class="easy">
+               <p>Er soll alle Bücher <img src="../../../Bilder/Roboter-Grafiken/books.png"
+                     style="height: 40px; vertical-align: bottom;"> in die Kiste <img
+                     src="../../../Bilder/Roboter-Grafiken/cardboard_box.png" style="height: 40px;"> legen.</p>
+               <p><b>Hinweis:</b> Der Roboter kann mehrere Bücher auf einmal tragen. Die Bücher sind immer auf drei
+                  Stapeln vor dem Roboter. Die Kiste ist 5 Schritte vom Roboter entfernt.</p>
+            </div>
+            <div class="medium">
+               <p>Er soll die Kisten <img src="../../../Bilder/Roboter-Grafiken/cardboard_box.png" style="height: 40px;">
+                  mit Büchern <img src="../../../Bilder/Roboter-Grafiken/books.png"
+                     style="height: 40px; vertical-align: bottom;"> befüllen. In jede Kiste passen genau so viele
+                  Bücher, wie im Stapel im Regal darunter liegen.</p>
+
+               <p><b>Hinweis:</b> Der Roboter kann mehrere Bücher auf einmal tragen. Der Roboter kann nicht wieder nach
+                  unten springen, sobald er nach oben gesprungen ist. Die Bücher sind immer auf fünf Stapeln vor dem
+                  Roboter.</p>
+            </div>
+            <div class="hard">
+               <p>Er soll die Kisten <img src="../../../Bilder/Roboter-Grafiken/cardboard_box.png" style="height: 40px;">
+                  mit Büchern <img src="../../../Bilder/Roboter-Grafiken/books.png"
+                     style="height: 40px; vertical-align: bottom;"> befüllen. In jede Kiste sollen die beiden
+                  Bücherstapel gelegt werden, die in den zwei Regalen genau darunter liegen. </p>
+
+               <p><b>Hinweis:</b> Der Roboter kann mehrere Bücher auf einmal tragen. Der Roboter kann nicht wieder nach
+                  unten springen, sobald er nach oben gesprungen ist. Die Bücher im untersten Regal sind immer auf fünf
+                  Stapeln vor dem Roboter. </p>
+            </div>
+            <div class="medium hard">
+               <!-- Hier können Informationen gegeben werden, die unter "weitere Hinweise" angezeigt werden. -->
+               <div class="long">
+                  <hr>
+                  <h2>Weitere Hinweise:</h2>
+                  <p class="medium hard">
+                     Bevor eine Variable verwendet werden kann, muss diese initialisiert werden.<br>
+                     <img src="../../../Bilder/initVar_Liste.svg">
+                  </p>
+               </div>
+            </div>
+            <!-- Schlussinformation für alle Versionen. -->
+            <p>
+               <i>Beachte: Dein Programm muss mit allen Testfällen zurechtkommen.</i>
+            </p>
+
+         </div>
+
+         <div id="gridContainer"></div>
+         <div id="blocklyLibContent"></div>
+      </div>
+   </div><!-- task -->
+</body>
+
+</html>

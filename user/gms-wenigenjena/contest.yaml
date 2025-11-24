@@ -1,0 +1,25 @@
+category: public  # notwendig
+
+name: "Test zum Algorithmen Arbeitsheft"  # Titel
+secret: "gms-wenigenjena-001"  # Passwort                      
+language: blockly  # Möglich ist blockly und python
+duration_minutes: 0  # Zeitlimit (keins gewählt)
+
+# Aufgaben, die gelöst werden sollen
+tasks:
+  "Gruppe A - Aufgabe 1":
+    "./06_Wiederholungen_2S": {stars: 2}
+  "Gruppe A - Aufgabe 2":
+    "./08_BedingteAnweisungen_2S": {stars: 3}
+  "Gruppe A - Aufgabe 3":
+    "./12_Fischen_2S": {stars: 3}
+  "Gruppe A - Aufgabe 4":
+    "./09_Labyrinth_3S": {stars: 4}
+  "Gruppe B - Aufgabe 1":
+    "./07_MusterMalen_2S": {stars: 2}
+  "Gruppe B - Aufgabe 2":
+    "./08_BedingteAnweisungen_2S": {stars: 3}
+  "Gruppe B - Aufgabe 3":
+    "./09_Labyrinth_2S": {stars: 3}
+  "Gruppe B - Aufgabe 4":
+    "./12_Fischen_3S": {stars: 4}

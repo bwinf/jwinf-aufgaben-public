@@ -1,0 +1,17 @@
+category: public
+
+name: "Test 9a"
+secret: "MDG_9a_Test"
+duration_minutes: 0
+
+language: blockly
+
+tasks:
+  "Aufgabe 1":
+    "../../training/05_BedingteAnweisungen-Uebung/01_ZuendeAlleKerzenAn": {stars: 4}
+  "Aufgabe 2":
+    "../../training/01_Grundbausteine-Einfuehrung/08_BedingteAnweisungen": {stars: 4}
+  "Aufgabe 3":
+    "../../training/01_Grundbausteine-Einfuehrung/12_Fischen": {stars: 4}
+  "Aufgabe 4":
+    "../../training/03_Wiederholung-Vertiefung/03_Ornamente": {stars: 4}

@@ -3,7 +3,7 @@ function initTask(subTask) {
       hideSaveOrLoad: true,
       conceptViewer: false,
       contextType: "fishing",
-      maxInstructions: 22,
+      maxInstructions: 10,
       includeBlocks: {
          groupByCategory: false,
          generatedBlocks: {

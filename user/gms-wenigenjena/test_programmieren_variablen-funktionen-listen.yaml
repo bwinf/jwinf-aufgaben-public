@@ -1,0 +1,25 @@
+category: public  # notwendig
+
+name: "Test - Variablen, Funktionen und Listen"  # Titel
+secret: "gms-wenigenjena-002"  # Passwort
+language: blockly  # Blöcke zur Programmierung
+duration_minutes: 0
+
+language: blockly
+
+# Aufgaben
+tasks:
+  "Gruppe A - Aufgabe 1":
+    "../../training/12_Listen-Einfuehrung/03_ListeDurchlaufen": {stars: 4}
+  "Gruppe B - Aufgabe 1":
+    "../../training/12_Listen-Einfuehrung/02_ListeDurchsuchen": {stars: 4}
+  "Gruppe A - Aufgabe 2":
+    "../../training/08_VariablenLogik-Uebung/04_MurmelnFinden": {stars: 4}
+  "Gruppe B - Aufgabe 2":
+    "../../training/08_VariablenLogik-Uebung/05_Fuetterungszeit": {stars: 4}
+  "Gruppe A - Aufgabe 3":
+    "../../training/11_Funktionen-Uebung/02_Kreuz": {stars: 4}
+  "Gruppe B - Aufgabe 3":
+    "../../training/11_Funktionen-Uebung/04_HausDesNikolaus": {stars: 4}
+  "Gruppe A UND B - Aufgabe 4":
+    "../../training/12_Listen-Einfuehrung/06_FelderFaerben": {stars: 4}

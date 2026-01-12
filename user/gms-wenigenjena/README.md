@@ -10,6 +10,9 @@ eigenen Fork dargestellt werden.
 ## Änderungen Pushen und Mergen
 
 ## Aufgaben und Aufgabensequenzen erstellen
+
 - Beim kopieren von Aufgaben aus anderen Ordnern muss der `_common/...` Pfad
-in der `index.html`-Datei angepasst werden. Ansonsten kann die Aufgaben nicht
-lokal getestet werden.
+  in der `index.html`-Datei angepasst werden. Ansonsten kann die Aufgaben nicht
+  lokal getestet werden.
+- Aufgabensequenzen können nicht getestet werden.
+  Dafür müsste [medal](https://git.bwinf.de/bwinf/medal) verwendet werden.

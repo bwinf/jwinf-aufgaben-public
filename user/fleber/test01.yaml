@@ -1,0 +1,14 @@
+category: public                            # notwendig
+
+name: "IuM-Test Klasse 6a"         # Titel
+secret: "IuM_2025-26_JKG-lbr"                          # Passwort
+language: blockly                           # Möglich ist blockly und python
+duration_minutes: 30                         # Zeitlimit
+
+tasks:                                      # Aufgabensammlung
+  "Aufgabe 1":
+    "../../training/01_Grundbausteine-Einfuehrung/02_Befehlsfolgen-ObjekteImWeltraum/": {stars: 4}
+  "Aufgabe 2":
+    "../../training/01_Grundbausteine-Einfuehrung/07_MusterMalen/": {stars: 4}
+  "Aufgabe 3":
+    "../../training/03_Wiederholungen-Vertiefung/02_SolangeBis-Murmeln/": {stars: 4}

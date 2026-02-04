@@ -1,0 +1,19 @@
+category: public
+
+name: "Wiederholungsaufgaben 10d"
+secret: "MDG_10d_Wiederholungsaufgaben"
+duration_minutes: 0
+
+language: blockly
+
+tasks:
+  "Aufgabe 1":
+    "../../training/01_Grundbausteine-Einfuehrung/10_MehrWiederholungen": {stars: 4}
+  "Aufgabe 2":
+    "../../training/01_Grundbausteine-Einfuehrung/08_BedingteAnweisungen": {stars: 4}
+  "Aufgabe 3":
+    "../../training/01_Grundbausteine-Einfuehrung/12_Fischen": {stars: 4}
+  "Aufgabe 4":
+    "../../training/03_Wiederholungen-Vertiefung/03_Ornamente": {stars: 4}
+  "Aufgabe 5":
+    "../../training/08_VariablenLogik-Uebung/01_VariablenRechnen": {stars: 4}

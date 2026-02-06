@@ -1,0 +1,13 @@
+category: public
+
+name: "CDRS Aufgabensammlung 10"
+secret: "CDRS 10"
+duration_minutes: 0
+
+language: blockly
+
+tasks:
+  "In der Bibliothek":
+    "../../Roboter-Aufgabe": {stars: 4}
+  "Aufgabe Zwei":
+    "../../Text-Aufgabe": {stars: 4}

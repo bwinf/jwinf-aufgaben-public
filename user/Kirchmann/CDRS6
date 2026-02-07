@@ -1,0 +1,15 @@
+category: public                                    # notwendig
+
+name: "Test Klasse 6a"                          # Titel
+secret: "CDRS6"                                 # Passwort
+language: blockly                                   # Möglich ist blockly und python
+duration_minutes: 30                                # Zeitlimit
+participation_end: "2026-01-28T12:00:00+01:00"      # Nach dem 28.01., 12:00 nicht mehr zu öffnen
+
+tasks:                                              # Aufgabensammlung
+  "Aufgabe 1":
+    "../../training/01_Grundbausteine-Einfuehrung/02_Befehlsfolgen-ObjekteImWeltraum/": {stars: 4}
+  "Aufgabe 2":
+    "../../training/01_Grundbausteine-Einfuehrung/07_MusterMalen/": {stars: 4}
+  "Aufgabe 3":
+    "../../training/03_Wiederholungen-Vertiefung/02_SolangeBis-Murmeln/": {stars: 4}

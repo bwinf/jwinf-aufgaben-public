@@ -1,0 +1,18 @@
+category: public                                # notwendig
+
+name: "Test Klasse 10"                          # Titel 2026
+secret: "CDRS10"                                # Passwort
+language: blockly                               # Möglich ist blockly und python
+duration_minutes: 40                            # Zeitlimit
+
+
+tasks:                                         # Aufgabensammlung
+  "Aufgabe 1: Alle Murmeln":
+    "../../training/08_VariablenLogik-Uebung/02_AlleMurmeln/": {stars: 4}
+  "Aufgabe 2: Haus malen": 
+    "../../training/01_Grundbausteine-Einfuehrung/13_Abschluss-HausMalen/": {stars: 4}
+  "Aufgabe 3: Buchstaben entnehmen": 
+    "../../training/06_EinAusgabe-Einfuehrung/03_BuchstabenEntnehmen/": {stars: 4}
+  "Aufgabe 4: Bonus Pyton": 
+    "../../training/04_Wiederholungen-Uebung/01_EdelsteineSammeln/": {stars: 4}
+    

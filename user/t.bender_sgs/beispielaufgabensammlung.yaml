@@ -1,0 +1,14 @@
+category: public
+name: "WP7_Test"
+secret: "WP7-SGS-BND"
+duration_minutes: 0
+language: blockly
+tasks:
+  "Aufgabe 1":
+    "../../training/01_Grundbausteine-Einfuehrung/08_BedingteAnweisungen": {stars: 4}
+  "Aufgabe 2":
+    "../../training/05_BedingteAnweisungen-Uebung/01_ZuendeAlleKerzenAn": {stars: 4}
+  "Aufgabe 3":
+    "../../training/05_BedingteAnweisungen-Uebung/02_FindeDasZiel": {stars: 4}
+  "Aufgabe 4":
+    "../../training/05_BedingteAnweisungen-Uebung/05_Plattformen": {stars: 4}

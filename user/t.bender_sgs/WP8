@@ -1,0 +1,18 @@
+category: public
+name: "WP8_Test"
+secret: "WP8-SGS-DUU"
+duration_minutes: 0
+language: blockly
+tasks:
+  "Aufgabe 1":
+    "../../training/08_VariablenLogik-Uebung/02_AlleMurmeln": {stars: 4}
+  "Aufgabe 2":
+    "../../training/05_BedingteAnweisungen-Uebung/02_FindeDasZiel": {stars: 4}
+  "Aufgabe 3":
+    "../../training/05_BedingteAnweisungen-Uebung/03_FindeDenWegZumSee": {stars: 4}
+  "Aufgabe 4":
+    "../../training/01_Grundbausteine-Einfuehrung/05_LichterAnzuenden": {stars: 4}
+  "Aufgabe 5":
+    "../../training/04_Wiederholungen-Uebung/05_MurmelAblegen": {stars: 4}
+  "Aufgabe 6":
+    "../../training/01_Grundbausteine-Einfuehrung/11_Zick-Zack": {stars: 4}

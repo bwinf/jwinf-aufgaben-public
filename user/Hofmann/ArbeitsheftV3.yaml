@@ -1,0 +1,99 @@
+category: public
+
+name: "Arbeitsheft"
+secret: "arbeitsheft"
+duration_minutes: 0
+
+language: blockly
+
+tasks:
+  "Einstieg: Bausteine zusammensetzen":
+    "../../training/01_Grundbausteine-Einfuehrung/01_BausteineZusammensetzen": {stars: 4}
+  "Sequenz: Objekte im Weltraum":
+    "../../training/01_Grundbausteine-Einfuehrung/02_Befehlsfolgen-ObjekteImWeltraum": {stars: 4}
+  "Sequenz: Murmeln":
+    "../../training/01_Grundbausteine-Einfuehrung/03_Befehlsfolgen-Murmeln": {stars: 4}
+  "Sequenz: Plattformen":
+    "../../training/01_Grundbausteine-Einfuehrung/04_Plattformen": {stars: 4}
+  "Sequenz: Lichter anzünden":
+    "../../training/01_Grundbausteine-Einfuehrung/05_LichterAnzuenden": {stars: 4}
+
+
+  "Wiederholung mit fester Anzahl: Murmeln":
+    "../../training/01_Grundbausteine-Einfuehrung/06_Wiederholungen": {stars: 4}
+  "Wiederholung mit fester Anzahl: Muster malen":
+    "../../training/01_Grundbausteine-Einfuehrung/07_MusterMalen": {stars: 4}
+  "Wiederholung mit fester Anzahl: Edelsteine sammeln":
+    "./WdhFA_EdelsteineSammeln_4S": {stars: 4}
+  "Wiederholung mit fester Anzahl: Bring den Fisch zur Insel":
+    "../../training/01_Grundbausteine-Einfuehrung/10_MehrWiederholungen": {stars: 4}
+  "Wiederholung mit fester Anzahl: Leitkegel platzieren":
+    "../../training/04_Wiederholungen-Uebung/03_StraßeSichern": {stars: 4}
+  "Wiederholung mit fester Anzahl: Zick-Zack":
+    "../../training/01_Grundbausteine-Einfuehrung/11_Zick-Zack": {stars: 4}
+
+
+  "Bedingte Anweisung: Auf Markierungen malen":
+    "./BA_BedingteAnweisungen_2-3S": {stars: 3}
+  "Bedingte Anweisung: Feuerholz zum Kamin bringen":
+    "./BA_Plattformen_2S": {stars: 2}
+  "Bedingte Anweisung: Edelsteine und Hindernisse":
+    "./BA_EdelsteineUndHindernisse_2S": {stars: 2}
+  "Bedingte Anweisung: Zünde alle Kerzen an":
+    "./BA_ZuendeAlleKerzenAn_4S": {stars: 4}    
+  "Bedingte Anweisung: Ab um die Hecke":
+    "./BA_Labyrinth_2-3S": {stars: 3}
+  "Bedingte Anweisung: Beheize das Schloss":
+    "../../training/05_BedingteAnweisungen-Uebung/04_BeheizeDasSchloss": {stars: 4}    
+  "Bedingte Anweisung: Finde den Weg zum See":
+    "./BA_FindeDenWegZumSee_2-3S": {stars: 3}
+  "Bedingte Anweisung: Haus malen":
+    "../../training/01_Grundbausteine-Einfuehrung/13_Abschluss-HausMalen": {stars: 4}
+  "Bedingte Anweisung: Fischen":
+    "../../training/01_Grundbausteine-Einfuehrung/12_Fischen": {stars: 4}
+
+
+  "Wiederholung mit Bedingung: Viele Murmeln":
+    "../../training/03_Wiederholungen-Vertiefung/02_SolangeBis-Murmeln": {stars: 4}
+  "Wiederholung mit Bedingung: Finde den Schatz":
+    "../../training/03_Wiederholungen-Vertiefung/01_SolangeBis-Schatz": {stars: 4}    
+  "Wiederholung mit Bedingung: Finde das Ziel":
+    "./WdhMB_FindeDasZiel_2S": {stars: 2}
+
+
+  "Zweiseitig bedingte Anweisung: Ab um die Hecke":
+    "./ZBA_Labyrinth_4S": {stars: 4}
+  "Zweiseitig bedingte Anweisung: Auf Markierungen malen":
+    "./ZBA_BedingteAnweisungen_4S": {stars: 4}
+  "Zweiseitig bedingte Anweisung: Finde das Ziel":
+    "./ZBA_FindeDasZiel_3-4S": {stars: 4}
+  "Zweiseitig bedingte Anweisung: Edelsteine und Hindernisse":
+    "./ZBA_EdelsteineUndHindernisse_3S": {stars: 3}
+
+
+  "Ein-/Ausgabe: Text ausgeben":
+    "../../training/06_EinAusgabe-Einfuehrung/01_TextAusgeben": {stars: 4}
+  "Ein-/Ausgabe: Text verändern":
+    "../../training/06_EinAusgabe-Einfuehrung/02_TextVeraendern": {stars: 4}
+  "Ein-/Ausgabe: Buchstaben entnehmen":
+    "../../training/06_EinAusgabe-Einfuehrung/03_BuchstabenEntnehmen": {stars: 4}
+  "Ein-/Ausgabe: Textteile entnehmen":
+    "../../training/06_EinAusgabe-Einfuehrung/04_TextteileEntnehmen": {stars: 4}
+  "Ein-/Ausgabe: Textteile suchen":
+    "../../training/06_EinAusgabe-Einfuehrung/05_TextteileSuchen": {stars: 4}
+
+
+
+  "Vermischte und schwere Aufgaben: Muster malen mit der Schildkröte":
+    "../../training/04_Wiederholungen-Uebung/02_MusterMalen": {stars: 4}
+  "Vermischte und schwere Aufgaben: Sammle alle Edelsteine":
+    "./VSA_EdelsteineUndHindernisse_4S": {stars: 4}
+  "Vermischte und schwere Aufgaben: Finde den Weg zum See":
+    "./VSA_FindeDenWegZumSee_4S": {stars: 4}
+  "Vermischte und schwere Aufgaben: Plattformen":
+    "./VSA_Plattformen_3-4S": {stars: 4}
+  "Vermischte und schwere Aufgaben mit Variablen: Alle Murmeln":
+    "../../training/08_VariablenLogik-Uebung/02_AlleMurmeln": {stars: 4}
+
+
+message: "<h3 class=\'title is-5\'>Wusstest du schon, …</h3><p>… dass du Programme zwischen den verschiedenen Aufgabenversionen <b>kopieren</b> kannst? Nutze dazu einfach das Aufgabenmenü, oben rechts in der Aufgabe, oder die Tastenkürzel Strg+C und Strg+V (Cmd+C und Cmd+V).</p>"

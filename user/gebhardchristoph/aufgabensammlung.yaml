@@ -1,7 +1,7 @@
 category: public
 
 name: "Aufgabensammlung für Besucher am WGG Tag der offenen Tür"
-secret: "WGG Tag der offenen Tür"
+secret: "WGG_TdoT"
 duration_minutes: 0
 
 language: blockly

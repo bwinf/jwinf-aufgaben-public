@@ -1,0 +1,17 @@
+category: public
+
+name: "Aufgabensammlung für Besucher am WGG Tag der offenen Tür"
+secret: "WGG Tag der offenen Tür"
+duration_minutes: 0
+
+language: blockly
+
+tasks:
+  "Aufgabe 1":
+    "../../training/01_Grundbausteine-Einfuehrung/03_Befehlsfolgen-Murmeln": {stars: 4}
+  "Aufgabe 2":
+    "../../training/01_Grundbausteine-Einfuehrung/04_Plattformen": {stars: 4}
+  "Aufgabe 3":
+    "../../training/01_Grundbausteine-Einfuehrung/06_Wiederholungen": {stars: 4}
+  "Aufgabe 4":
+    "../../training/01_Grundbausteine-Einfuehrung/07_MusterMalen": {stars: 4}

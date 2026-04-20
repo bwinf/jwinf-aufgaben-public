@@ -1,0 +1,27 @@
+category: public
+
+name: "Sammlung Übungsaufgaben"
+secret: "KANT_PR_Uebung1"
+duration_minutes: 0
+team_participation: true
+participation_start: "2026-04-21T00:00:00+01:00
+
+language: blockly
+
+tasks:
+  "Blumen zeichnen":
+    "../../training/10_Funktionen-Einfuehrung/02_Blumen/": {stars: 4}
+  "Formen zeichnen":
+    "../../training/04_Wiederholungen-Uebung/09_Fuenfeck/": {stars: 4}
+  "Bücher sortieren":
+    "../../training/11_Funktionen-Uebung/03_InDerBibliothek/": {stars: 4}
+  "Listen durchlaufen":
+    "../../training/12_Listen-Einfuehrung/03_ListeDurchlaufen/": {stars: 4}
+  "Buchstaben entnehmen":
+    "../../training/06_EinAusgabe-Einfuehrung/3_BuchstabenEntnehmen/": {stars: 4}
+  "Listen aus Text erstellen":
+    "../../training/12_Listen-Einfuehrung/04_TextInListeEinlesen/": {stars: 4}
+  "Palindrome":
+    "../../training/Herausforderung_SchwereAufgaben-Uebung/03_Palindrome/": {stars: 4}
+  "Felder färben":
+    "../../training/05_BedingteAnweisungen-Uebung/07_ZellulaereAutomaten/": {stars: 4}

@@ -4,7 +4,7 @@ name: "Sammlung Übungsaufgaben"
 secret: "KANT_PR_Uebung1"
 duration_minutes: 0
 team_participation: true
-participation_start: "2026-04-21T00:00:00+01:00
+participation_start: "2026-04-21T00:00:00+01:00"
 
 language: blockly
 

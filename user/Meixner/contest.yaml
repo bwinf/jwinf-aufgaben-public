@@ -1,0 +1,16 @@
+category: public                            # notwendig
+
+name: "Kurztest 7b 2526"                    # Titel
+secret: "DHG-7b-2026"                       # Passwort                      
+language: blockly                           # Möglich ist blockly und python
+duration_minutes: 0                         # Zeitlimit
+
+tasks:                                      # Aufgabensammlung
+  "Lichtkegel":
+    "Cones": {stars: 3}
+  "Labyrinth":
+    "Course": {stars: 3}
+  "Cards":
+    "Cards": {stars: 4}
+  "Malen nach Zahlen":
+    "PaintNumbers": {stars: 4}

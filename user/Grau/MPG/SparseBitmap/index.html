@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <title>Sparse Image</title>
+   <script>
+      window.stringsLanguage = 'de';
+   </script>
+   <script class="remove" type="text/javascript"
+      src="../../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js" id="import-modules"></script>
+   <script class="remove" type="text/javascript">
+      var modulesPath = '../../../../../_common/modules/'
+      importModules([
+         'jquery-1.7.1', 'JSON-js', 'raphael-2.2.1', 'beaver-task-2.0',
+         'jschannel', 'raphaelFactory-1.0', 'delayFactory-1.0',
+         'simulationFactory-1.0', 'platform-pr', 'buttonsAndMessages',
+         'beav-1.0', 'installationAPI.01', 'miniPlatform', 'conceptDisplay-1.0',
+         'conceptViewer-1.0', 'conceptViewer_css-1.0', 'taskStyles-mobileFirst',
+         'blockly-robot-1.1',
+         'jwinf_css'
+      ]);
+      importLanguageModules('blockly');
+
+      // Hier werden ein paar Grundinformationen zu der Aufgabe festgehalten
+   </script>
+   <script class="remove" type="text/javascript">
+      var json = {
+         "id": "",
+         "language": "de",
+         "version": "01",
+         "authors": "Leonid Grau",
+         "translators": [],
+         "license": "",
+         "taskPathPrefix": "",
+         "modulesPathPrefix": "",
+         "browserSupport": [],
+         "fullFeedback": true,
+         "minWidth": "auto"
+      };
+   </script>
+   <script type="text/javascript" src="task.js"></script>
+</head>
+
+<body onresize="task.displayedSubTask.updateScale()">
+   <!-- Der Aufgabenname sowie die verwendeten Bildresourcen -->
+   <div id="task">
+      <h1>Sparse Image</h1>
+      <img src="icon.png" style="display:none" />
+
+      <div id="tabsContainer"></div>
+      <div id="taskContent">
+         <div id="taskIntro">
+            <!-- Der Einleitungstext für alle Versionen ist gleich -->
+            <p>
+               Programmiere den Roboter so, dass er alle Markierungen <img
+                  src="../../../../Bilder/Roboter-Grafiken/paint_marker.png"
+                  style="height: 40px; vertical-align: bottom;">
+               übermalt.
+            </p>
+            <p class="basic">
+               Rechts vom Roboter steht ein Koordinatenpaar: Die obere Zahl beschreibt die Zeile, die untere Zahl die
+               Spalte des Feldes, welches markiert werden soll.
+            </p>
+            <p class="easy medium hard">
+               Rechts vom Roboter stehen Koordinatenpaare: Die obere Zahl beschreibt die Zeile, die untere Zahl die
+               Spalte in der das Feld liegt, welches markiert werden soll.
+            </p>
+            <p class="easy medium">
+               Um von einem Koordinatenpaar zum dazugehörigen Feld zu kommen, muss der Roboter nur nach links und unten laufen.
+            </p>
+            <p class="medium hard">
+               Auf dem Feld unterhalb des Roboters steht, wie viele Felder markiert werden sollen.
+            </p>
+            <p class="easy">
+               Es sollen genau 6 Felder markiert werden.
+            </p>
+            <p class="hard">
+               Achtung: Manche Markierungen erreicht der Roboter nur, wenn er nach rechts läuft.
+            </p>
+         </div>
+
+         <div id="gridContainer"></div>
+         <div id="blocklyLibContent"></div>
+      </div>
+
+   </div><!-- task -->
+</body>
+
+</html>

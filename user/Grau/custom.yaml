@@ -1,0 +1,12 @@
+category: public
+
+name: "Persönliche Level Grau"
+secret: "GrauCustom"
+duration_minutes: 0
+
+language: blockly
+
+tasks:
+  "Sparse Bitmap":
+    "./MPG/SparseBitmap": {stars: 4}
+    

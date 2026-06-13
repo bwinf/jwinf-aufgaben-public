@@ -94,18 +94,31 @@ function initTask(subTask) {
     [3, 4],
   ];
 
-  // An welcher Koordinate startet der Roboter?
+  /**
+   * An welcher Koordinate startet der Roboter?
+   * Die Boards sind rechts vom Roboter aufgestellt.
+   * Wird benötigt, damit der Roboter in den ersten Leveln nur nach links laufen muss.
+   */
   const offset = 2
 
+  /**
+   * Erzeugt ein Levelobjekt.
+   * @param {*} pos Koordinatentupel für die Markierungen 
+   * @param {*} showLength Soll die Anzahl an Koordinatentuple unter dem Roboter angezeigt werden?
+   * @param {*} showMarkers Sollen die zu markierenden Felder angezeigt werden?
+   * @returns Objekt mit Tiles und Items
+   */
   function generateLevel(pos, showLength = false, showMarkers = true) {
     var maxX = Math.max(...pos.map((p) => p[1]));
     var maxY = Math.max(...pos.map((p) => p[0]));
-
     var height = Math.max(maxY, 2);
-
     var width = Math.max(pos.length + offset + 1, maxY);
     var tiles = tilesArray(width, height);
 
+    /**
+     * Ohne die Markierungen funktioniert das Level nicht. 
+     * Da das Level in einem Klassenarbeitskontext verwendet wurde, sind die Markierungen aber deaktivierbar.
+     */
     if (showMarkers) {
       for (const p of pos) {
         tiles[p[0] - 1][p[1] - 1] = 2;
@@ -118,10 +131,14 @@ function initTask(subTask) {
     };
   }
 
+  /**
+   * Erzeugt das Array für die Tiles.
+   * In den ersten zwei Zeilen stehen die Koordinatenpaare, dafür werden boards (92) benötigt.
+   */
   function tilesArray(width, height) {
-    var boardLine = [1];
-    var line = [1];
-    for (var i = 1; i < width; i++) {
+    var boardLine = [];
+    var line = [];
+    for (var i = 0; i < width; i++) {
       boardLine.push(92);
       line.push[1];
     }
@@ -132,6 +149,12 @@ function initTask(subTask) {
     return tiles;
   }
 
+  /**
+   * Erzeugt das Array aus Items des Levels
+   * @param {*} pos Koordinatentupel für die Markierungen 
+   * @param {*} showLength Soll die Anzahl an Koordinatentuple unter dem Roboter angezeigt werden?
+   * @returns Das Itemarray
+   */
   function generateCoordinates(pos, showLength) {
     var items = [
       {
@@ -174,7 +197,7 @@ function initTask(subTask) {
     //Version **
     easy: [generateLevel(pos1)],
     //Version ***
-    medium: [generateLevel(pos1, true), generateLevel(pos2, true)],
+    medium: [pos1, pos2].map(p => generateLevel(p, true)),
     // Version ****
     hard: [pos3, pos1, pos2].map(p => generateLevel(p, true)),
   };

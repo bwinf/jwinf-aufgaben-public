@@ -1,7 +1,7 @@
 category: public
 
 name: "2526 Programmiertest 7 WGG"
-secret: "WGG_2526_Test_7"
+secret: "WGG_26_Test_7"
 duration_minutes: 30
 
 language: blockly

@@ -1,6 +1,6 @@
 category: public
 
-name: "2526 Programmiertest 7 WGG "
+name: "2526 Programmiertest 7 WGG"
 secret: "WGG_26_Test_7"
 duration_minutes: 30
 
@@ -10,7 +10,7 @@ tasks:
   "Aufgabe 1":
     "../../training/01_Grundbausteine-Einfuehrung/04_Plattformen/": {stars: 4}
   "Aufgabe 2":
-    "../../training/03_Wiederholunge-Vertiefung/01_SolangeBis-Schatz/": {stars: 4}
+    "../../training/03_Wiederholungen-Vertiefung/01_SolangeBis-Schatz/": {stars: 4}
   "Aufgabe 3":
     "../../training/04_Wiederholungen-Uebung/03_StraßeSichern/": {stars: 4}
   "Aufgabe 4":

@@ -1,0 +1,19 @@
+category: public
+
+name: "2526 Programmiertest_2 7 WGG"
+secret: "WGG_26_Test2_7"
+duration_minutes: 30
+
+language: blockly
+
+tasks:
+  "Aufgabe 1":
+    "../../training/04_Wiederholungen-Uebung/03_StraßeSichern/": {stars: 4}
+  "Aufgabe 2":
+    "../../training/04_Wiederholungen-Uebung/01_EdelsteineSammeln": {stars: 4}
+  "Aufgabe 3":
+    "../../training/05_BedingteAnweisungen-Uebung/05_Plattformen": {stars: 4}
+  "Aufgabe 4":
+    "../../training/05_BedingteAnweisungen-Uebung/04_BeheizeDasSchloss": {stars: 4}
+  "Aufgabe 5":
+    "../../training/05_BedingteAnweisungen-Uebung/06_EdelsteineUndHindernisse": {stars: 4}

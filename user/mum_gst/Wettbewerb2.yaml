@@ -1,0 +1,31 @@
+category: public
+
+name: "Projekttag2026_gst_W2"
+secret: "gst_mum2026_W2"
+duration_minutes: 35
+
+language: blockly
+
+tasks:
+  "Aufgabe 1":
+    "../../training/01_Grundbausteine-Einfuehrung/03_Befehlsfolgen-Murmeln": {stars: 4}
+  "Aufgabe 2":
+    "../../training/03_Wiederholungen-Vertiefung/03_Ornamente": {stars: 4}
+  "Aufgabe 3":
+    "./VSA_Plattformen_3-4S": {stars: 4}
+  "Aufgabe 4":
+    "training/07_VariablenLogik-Einfuehrung/04_MusterMitVariablen": {stars: 4}
+  "Aufgabe 5":
+    "./ZBA_Labyrinth_4S": {stars: 4}
+  "Aufgabe 6":
+    "./WdhFA_EdelsteineSammeln_4S": {stars: 4}
+  "Aufgabe 7":
+    "../../training/08_VariablenLogik-Uebung/04_MurmelnFinden": {stars: 4}
+  "Aufgabe 8":
+    "../../training/05_BedingteAnweisungen-Uebung/06_EdelsteineUndHindernisse": {stars: 4}
+  "Aufgabe 9":
+    "../../training/08_VariablenLogik-Uebung/05_Fuetterungszeit": {stars: 4}
+  "Aufgabe 10":
+    "./VSA_FindeDenWegZumSee_4S": {stars: 4}
+
+

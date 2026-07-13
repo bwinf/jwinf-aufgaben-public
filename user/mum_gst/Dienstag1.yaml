@@ -1,0 +1,57 @@
+category: public
+
+name: "Projekttag2026_gst_Di1"
+secret: "gst_mum2026_Di1"
+duration_minutes: 0
+
+language: blockly
+
+tasks:
+  "Aufgabe 1":
+    "../../training/04_Wiederholungen-Uebung/09_Fuenfeck": {stars: 4}
+  "Aufgabe 2":
+    "../../training/03_Wiederholungen-Vertiefung/02_SolangeBis-Murmeln": {stars: 4}
+  "Aufgabe 3":
+    "../../training/05_BedingteAnweisungen-Uebung/07_ZellulaereAutomaten": {stars: 4}
+  "Aufgabe 4":
+    "../../training/09_EinAusgabe-Uebung/04_Lexikographisch": {stars: 4}
+  "Aufgabe 5":
+    "../../training/07_VariablenLogik-Einfuehrung/01_Texte": {stars: 4}
+  "Aufgabe 6":
+    "../../training/07_VariablenLogik-Einfuehrung/02_LogischeVerknuepfung": {stars: 4}
+  "Aufgabe 7":
+    "../../training/07_VariablenLogik-Einfuehrung/03_Dominosteine": {stars: 4}
+  "Aufgabe 8":
+    "./BA_ZuendeAlleKerzenAn_4S": {stars: 4} 
+  "Aufgabe 9":
+    "./WdhMB_FindeDasZiel_2S": {stars: 2}
+  "Aufgabe 10":
+    "./VSA_EdelsteineUndHindernisse_4S": {stars: 4}
+  "Aufgabe 11":
+    "./ZBA_BedingteAnweisungen_4S": {stars: 4}
+  "Aufgabe 12":
+    "./ZBA_FindeDasZiel_3-4S": {stars: 4}
+  "Aufgabe 13":
+    "./ZBA_EdelsteineUndHindernisse_3S": {stars: 3}
+  "Aufgabe 14":
+    "../../training/08_VariablenLogik-Uebung/01_VariablenRechnen": {stars: 4}
+  "Aufgabe 15":
+    "../../training/08_VariablenLogik-Uebung/02_AlleMurmeln": {stars: 4}
+  "Aufgabe 16":
+    "../../training/08_VariablenLogik-Uebung/03_RuckSack": {stars: 4}
+  "Aufgabe 17":
+    "../../training/10_Funktionen-Einfuehrung/01_WieVerwendeIchFunktionen": {stars: 4}
+  "Aufgabe 18":
+    "../../training/10_Funktionen-Einfuehrung/02_Blumen": {stars: 4}
+  "Aufgabe 19":
+    "../../training/11_Funktionen-Uebung/01_Zahnraeder": {stars: 4}
+  "Aufgabe 16":
+    "../../training/11_Funktionen-Uebung/02_Kreuz": {stars: 4}
+  "Aufgabe 17":
+    "../../training/12_Listen-Einfuehrung/01_ListeErzeugen" : {stars: 4}
+  "Aufgabe 18":
+    "../../training/12_Listen-Einfuehrung/02_ListeDurchsuchen": {stars: 4}
+  "Aufgabe 7":
+    "../../training/12_Listen-Einfuehrung/03_ListeDurchlaufen": {stars: 4}
+  "Aufgabe 7":
+    "../../training/12_Listen-Einfuehrung/04_TextInListeEinlesen": {stars: 4}

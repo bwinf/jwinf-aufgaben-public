@@ -1,0 +1,40 @@
+category: public
+
+name: "Projekttag2026_gst_Mo1"
+secret: "gst_mum2026_Mo1"
+duration_minutes: 0
+
+language: blockly
+
+tasks:
+  "Aufgabe 1":
+    "../../training/01_Grundbausteine-Einfuehrung/01_BausteineZusammensetzen": {stars: 4}
+  "Aufgabe 2":
+    "../../training/02_Schildkroete-Einfuehrung/01_Gehen": {stars: 4}
+  "Aufgabe 3":
+    "../../training/01_Grundbausteine-Einfuehrung/02_Befehlsfolgen-ObjekteImWeltraum": {stars: 4}
+  "Aufgabe 4":
+    "../../training/02_Schildkroete-Einfuehrung/02_Drehen": {stars: 4}
+  "Aufgabe 5":
+    "../../training/01_Grundbausteine-Einfuehrung/04_Plattformen": {stars: 4}
+  "Aufgabe 6":
+    "../../training/01_Grundbausteine-Einfuehrung/06_Wiederholungen": {stars: 4}
+  "Aufgabe 7":
+    "../../training/04_Wiederholungen-Uebung/01_EdelsteineSammeln": {stars: 4}
+  "Aufgabe 8":
+    "../../training/04_Wiederholungen-Uebung/03_StraßeSichern": {stars: 4}
+  "Aufgabe 9":
+    "../../training/04_Wiederholungen-Uebung/06_Schlange": {stars: 4}
+  "Aufgabe 10":
+    "../../training/01_Grundbausteine-Einfuehrung/08_BedingteAnweisungen": {stars: 4}
+  "Aufgabe 11":
+    "../../training/05_BedingteAnweisungen-Uebung/01_ZuendeAlleKerzenAn": {stars: 4}
+  "Aufgabe 12":
+    "../../training/05_BedingteAnweisungen-Uebung/05_Plattformen": {stars: 4}
+  "Aufgabe 13":
+    "../../training/01_Grundbausteine-Einfuehrung/10_MehrWiederholungen": {stars: 4}
+  "Aufgabe 14":
+    "../../training/02_Schildkroete-Einfuehrung/04_Wiederholungen": {stars: 4}
+  "Aufgabe 15":
+    "../../training/02_Schildkroete-Einfuehrung/03_Parameter": {stars: 4}
+

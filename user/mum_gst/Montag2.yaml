@@ -1,0 +1,40 @@
+category: public
+
+name: "Projekttag2026_gst_Mo2"
+secret: "gst_mum2026_Mo2"
+duration_minutes: 0
+
+language: blockly
+
+tasks:
+  "Aufgabe 1":
+    "../../training/04_Wiederholungen-Uebung/04_Schneeflocke": {stars: 4}
+  "Aufgabe 2":
+    "../../training/03_Wiederholungen-Vertiefung/01_SolangeBis-Schatz": {stars: 4}
+  "Aufgabe 3":
+    "../../training/01_Grundbausteine-Einfuehrung/07_MusterMalen": {stars: 4}
+  "Aufgabe 4":
+    "../../training/01_Grundbausteine-Einfuehrung/09_Labyrinth": {stars: 4}
+  "Aufgabe 5":
+    "../../training/05_BedingteAnweisungen-Uebung/03_FindeDenWegZumSee": {stars: 4}
+  "Aufgabe 6":
+    "../../training/06_EinAusgabe-Einfuehrung/01_TextAusgeben": {stars: 4}
+  "Aufgabe 7":
+    "../../training/06_EinAusgabe-Einfuehrung/02_TextVeraendern": {stars: 4}
+  "Aufgabe 8":
+    "../../training/01_Grundbausteine-Einfuehrung/11_Zick-Zack": {stars: 4}
+  "Aufgabe 9":
+    "../../training/09_EinAusgabe-Uebung/01_Gemischt": {stars: 4}
+  "Aufgabe 10":
+    "../../training/09_EinAusgabe-Uebung/02_Gedaechtnis": {stars: 4}
+  "Aufgabe 11":
+    "../../training/01_Grundbausteine-Einfuehrung/12_Fischen": {stars: 4}
+  "Aufgabe 12":
+    "../../training/09_EinAusgabe-Uebung/03_Passwoerter": {stars: 4}
+  "Aufgabe 13":
+    "../../training/01_Grundbausteine-Einfuehrung/10_MehrWiederholungen": {stars: 4}
+  "Aufgabe 14":
+    "../../training/01_Grundbausteine-Einfuehrung/13_Abschluss-HausMalen": {stars: 4}
+  "Aufgabe 15":
+    "../../training/06_EinAusgabe-Einfuehrung/05_TextteileSuchen": {stars: 4}
+

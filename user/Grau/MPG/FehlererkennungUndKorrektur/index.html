@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <title>Fehlererkennung und -korrektur</title>
+   <script>
+      window.stringsLanguage = 'de';
+   </script>
+   <script class="remove" type="text/javascript"
+      src="../../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js" id="import-modules"></script>
+   <script class="remove" type="text/javascript">
+      var modulesPath = '../../../../../_common/modules/'
+      importModules([
+         'jquery-1.7.1', 'JSON-js', 'raphael-2.2.1', 'beaver-task-2.0',
+         'jschannel', 'raphaelFactory-1.0', 'delayFactory-1.0',
+         'simulationFactory-1.0', 'platform-pr', 'buttonsAndMessages',
+         'beav-1.0', 'installationAPI.01', 'miniPlatform', 'conceptDisplay-1.0',
+         'conceptViewer-1.0', 'conceptViewer_css-1.0', 'taskStyles-mobileFirst',
+         'blockly-robot-1.1',
+         'jwinf_css'
+      ]);
+      importLanguageModules('blockly');
+
+      // Hier werden ein paar Grundinformationen zu der Aufgabe festgehalten
+   </script>
+   <script class="remove" type="text/javascript">
+      var json = {
+         "id": "",
+         "language": "de",
+         "version": "01",
+         "authors": "Leonid Grau",
+         "translators": [],
+         "license": "",
+         "taskPathPrefix": "",
+         "modulesPathPrefix": "",
+         "browserSupport": [],
+         "fullFeedback": true,
+         "minWidth": "auto"
+      };
+   </script>
+   <script type="text/javascript" src="task.js"></script>
+</head>
+
+<body onresize="task.displayedSubTask.updateScale()">
+   <!-- Der Aufgabenname sowie die verwendeten Bildresourcen -->
+   <div id="task">
+      <h1>Fehlererkennung und Fehlerkorrektur</h1>
+      <img src="icon.png" style="display:none" />
+
+      <div id="tabsContainer"></div>
+      <div id="taskContent">
+         <div id="taskIntro">
+            <!-- Der Einleitungstext für alle Versionen ist gleich -->
+            <p class="easy medium hard">
+               Rechts vom Roboter steht eine Nachricht, bestehend aus Ziffern zwischen 0 und 9.
+            </p>
+            <p class="medium hard">
+               Die Ziffern sind in einem 4x4-Rechteck angeordnet.
+               Zusätzlich besitzt jede Zeile und Spalte eine Prüfziffer.
+            </p>
+            <p class="easy">
+               Die Nachricht besteht immer aus genau 6 Ziffern, plus eine Prüfziffer.
+            </p>
+            <p class ="easy medium hard">
+               Die Prüfziffer ist dabei diejenige Ziffer zwischen 0 und 9, die die Quersumme zu einer durch 10 teilbaren Zahl ergänzt.
+            </p>
+            <p class = "easy">Falls ein Fehler erkannt wird, soll das Feld hinter der Nachricht angemalt werden.</p>
+            <p class = "medium hard">Der Roboter soll das Feld hinter bzw. unter allen Zeilen und Spalten markieren, in denen ein Fehler erkannt wird.</p>
+            <p class = "hard">Falls alle Fehler in der Nachricht korrigiert werden können, soll der Roboter dies tun.
+               Falls dies nicht möglich ist und die Nachricht Fehler enthält, soll der Roboter das Feld ganz oben links in der Ecke markieren.
+            </p>
+         </div>
+
+         <div id="gridContainer"></div>
+         <div id="blocklyLibContent"></div>
+      </div>
+
+   </div><!-- task -->
+</body>
+
+</html>

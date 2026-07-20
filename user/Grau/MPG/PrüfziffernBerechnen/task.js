@@ -9,10 +9,9 @@ function initTask(subTask) {
     //Gibt an, wie viele Blöcke zur Verfügung stehen
     //Für alle Versionen jeweils 20
     maxInstructions: {
-      basic: 20,
       easy: 40,
-      medium: 60,
-      hard: 80
+      medium: 80,
+      hard: 120
     },
     limitedUses:[
       //{blocks:['set'], nbUses: {easy: 1, medium: 1, hard: 1}}
@@ -55,7 +54,7 @@ function initTask(subTask) {
     },
     checkEndCondition: function (context, lastTurn) {
       if (lastTurn) {
-        console.log(context.items)
+        //Überprüfe, ob die richtigen Zahlen auf den boards stehen
         for (var iRow = 0; iRow < context.tiles.length; iRow++) {
           var row = subTask.data[subTask.level][subTask.iTestCase].tiles[iRow];
           for (var iCol = 0; iCol < row.length; iCol++) {
@@ -130,10 +129,9 @@ function initTask(subTask) {
   ]
   
   
-  
-  
   function generateHardLevel(pos) {
     var level = generateMediumLevel(pos)
+    //Füge Board mit Kantenlängenangabe rechts vom Roboter dazu
     level.initItems.push({
       row: 0,
       col: 1,
@@ -143,7 +141,17 @@ function initTask(subTask) {
     return level
   } 
   
+  /**Erzeuge Nachrichtenquadrat (D) entsprechend der Kreuzsicherung (https://de.wikipedia.org/wiki/Kreuzsicherung)
+     * mit Prüfziffern (P) in jeder Zeile und Spalte
+     * und einem Ring aus leeren Feldern (X) außen herum
+     * X X X X X
+     * X D D P X
+     * X D D P X
+     * X P P P X
+     * X X X X X
+     * */
   function generateMediumLevel(pos) {
+    
     var line = [1];
     var bottom = [1]
     for (var i = 0; i< pos[0].length; i++) {
@@ -167,6 +175,8 @@ function initTask(subTask) {
   
   /**
   * Erzeugt ein Levelobjekt.
+  * Das Feld besteht aus den Datenziffern, einer Prüfziffer und jeweils einem leeren Feld links und rechts.
+  * X D D D D D D P X
   * @returns Objekt mit Tiles und Items
   */
   function generateEasyLevel(pos) {
@@ -182,7 +192,11 @@ function initTask(subTask) {
     };
   }
   
-  
+  /**
+   * Erzeugt die Items für die medium und hard-Maps.
+   * Der Roboter startet oben links, die Datenziffern sind nicht überschreibbar,
+   * die Prüfzifferfelder enthalten leere Boards.
+   */
   function generateValues(pos) {
     var items = [
       {
@@ -210,13 +224,13 @@ function initTask(subTask) {
       })
     } 
     
-    var totalsum = 0
+    var totalsum = 0 // Zur Berechnung der Prüfziffer ganz unten rechts
     for (var j = 0; j < pos.length; j++) {
       var sum = 0;
       for (var i = 0; i < pos.length; i++) {
         sum += pos[i][j]
       }
-      var answer = (10 - sum % 10) % 10
+      var answer = (10 - sum % 10) % 10 // Die letzte Restbildung ist nötig, falls die Summe 0 ist.
       items.push(
         {
           row: pos.length + 1,

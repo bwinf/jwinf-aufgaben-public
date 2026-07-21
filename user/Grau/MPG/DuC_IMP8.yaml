@@ -1,0 +1,13 @@
+category: public
+
+name: "DuC IMP 8"
+secret: "IMP8"
+duration_minutes: 0
+
+language: blockly
+
+tasks:
+  "Prüfziffern berechnen":
+    "PrüfziffernBerechnen": {stars: 4}
+  "Fehler erkennen und korrigieren":
+    "FehlererkennungUndKorrektur": {stars: 4}

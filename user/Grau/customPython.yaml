@@ -1,0 +1,16 @@
+category: public
+
+name: "Persönliche Level Grau"
+secret: "GrauCustom"
+duration_minutes: 0
+
+language: python
+
+tasks:
+  "Sparse Bitmap":
+    "./MPG/SparseBitmap": {stars: 4}
+  "Prüfziffern berechnen":
+    "./MPG/PrüfziffernBerechnen": {stars: 4}
+  "Fehler erkennen und korrigieren":
+    "./MPG/FehlererkennungUndKorrektur": {stars: 4}
+    

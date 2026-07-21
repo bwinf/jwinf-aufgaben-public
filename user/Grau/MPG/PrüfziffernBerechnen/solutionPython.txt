@@ -1,0 +1,79 @@
+%%%%%%easy%%%%%%
+from robot import *
+x = 0
+for i in range(6):
+    rechts()
+    x = x + leseZahl()
+rechts()
+schreibeZahl((10-x%10)%10)
+
+
+
+%%%%%%medium%%%%%%
+from robot import *
+
+def zeileErgaenzen():
+    x = 0
+    for i in range(4):
+        rechts()
+        x += leseZahl()
+    rechts()
+    schreibeZahl((10-x%10)%10)
+    for i in range(5):
+        links()
+
+def spalteErgaenzen():
+    x = 0
+    for i in range(4):
+        unten()
+        x += leseZahl()
+    unten()
+    schreibeZahl((10-x%10)%10)
+    for i in range(5):
+        oben()
+
+for i in range(4):
+    unten()
+    zeileErgaenzen()
+for i in range(4):
+    oben()
+for i in range(5):
+    rechts()
+    spalteErgaenzen()
+   
+%%%%%%hard%%%%%%
+from robot import *
+
+def zeileErgaenzen(n):
+    x = 0
+    for i in range(n):
+        rechts()
+        x += leseZahl()
+    rechts()
+    schreibeZahl((10-x%10)%10)
+    for i in range(n+1):
+        links()
+
+def spalteErgaenzen(n):
+    x = 0
+    for i in range(n):
+        unten()
+        x += leseZahl()
+    unten()
+    schreibeZahl((10-x%10)%10)
+    for i in range(n+1):
+        oben()
+
+rechts()
+n = leseZahl()
+links()
+for i in range(n):
+    unten()
+    zeileErgaenzen(n)
+for i in range(n):
+    oben()
+for i in range(n+1):
+    rechts()
+    spalteErgaenzen(n)
+    
+       

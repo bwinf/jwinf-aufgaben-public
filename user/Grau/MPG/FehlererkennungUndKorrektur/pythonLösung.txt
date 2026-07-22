@@ -1,0 +1,114 @@
+%%%%easy%%%%
+from robot import *
+sum = 0
+for i in range(7):
+    rechts()
+    sum += leseZahl()
+rechts()
+if (sum % 10 != 0):
+    faerbeFeld()
+
+%%%%medium%%%%
+from robot import *
+
+def pruefeZeile():
+    sum = 0
+    for i in range(5):
+        rechts()
+        sum += leseZahl()
+    rechts()
+    if (sum % 10 != 0):
+        faerbeFeld()
+    for i in range(6):
+        links()
+        
+def pruefeSpalte():
+    sum = 0
+    for i in range(5):
+        unten()
+        sum += leseZahl()
+    unten()
+    if (sum % 10 != 0):
+        faerbeFeld()
+    for i in range(6):
+        oben()
+
+
+for i in range(5):
+    unten()
+    pruefeZeile()
+for i in range(5):
+    oben()
+for i in range(5):
+    rechts()
+    pruefeSpalte()
+
+%%%%hard%%%%
+from robot import *
+
+def pruefeZeile():
+    sum = 0
+    for i in range(5):
+        rechts()
+        sum += leseZahl()
+    rechts()
+    if (sum % 10 != 0):
+        faerbeFeld()
+    for i in range(6):
+        links()
+        
+def pruefeSpalte():
+    sum = 0
+    for i in range(5):
+        unten()
+        sum += leseZahl()
+    unten()
+    if (sum % 10 != 0):
+        faerbeFeld()
+    for i in range(6):
+        oben()
+
+def korrigiereFehler(zeile, spalte):
+    while(spalteRoboter() != spalte):
+        rechts()
+    sum = 0
+    for i in range(5):
+        oben()
+        sum += leseZahl()
+    while(zeileRoboter() != zeile):
+        unten()
+    sum -= leseZahl()
+    schreibeZahl((10-sum%10)%10)
+
+def zurueckAufStart():
+    while(zeileRoboter() > 1):
+        oben()
+    while(spalteRoboter() > 1):
+        links()
+
+#Hier beginnt das Programm
+for i in range(5):
+    unten()
+    pruefeZeile()
+for i in range(5):
+    oben()
+for i in range(5):
+    rechts()
+    pruefeSpalte()
+rechts()
+zeilenfehler = []
+for i in range(5):
+    unten()
+    if(farbeAufFeld()):
+        zeilenfehler.append(zeileRoboter())
+unten()
+spaltenfehler = []
+for i in range(5):
+    links()
+    if(farbeAufFeld()):
+        spaltenfehler.append(spalteRoboter())
+if(len(zeilenfehler) == 1 and len(spaltenfehler) == 1):
+    korrigiereFehler(zeilenfehler[0], spaltenfehler[0])
+zurueckAufStart()
+if(len(zeilenfehler) > 1 or len(spaltenfehler) > 1):
+    faerbeFeld()

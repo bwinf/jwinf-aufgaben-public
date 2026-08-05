@@ -2,7 +2,7 @@ category: public                                # notwendig
 
 name: "Test Klasse 10"                          # Titel 2026
 secret: "CDRS10"                                # Passwort
-language: blockly                               # Möglich ist blockly und python
+language: legacy_blockly                               # Möglich ist blockly und python
 duration_minutes: 40                            # Zeitlimit
 
 

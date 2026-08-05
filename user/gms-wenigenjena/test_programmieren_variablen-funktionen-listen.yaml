@@ -2,10 +2,10 @@ category: public  # notwendig
 
 name: "Test - Variablen, Funktionen und Listen"  # Titel
 secret: "gms-wenigenjena-002"  # Passwort
-# language: blockly  # Blöcke zur Programmierung
+# language: legacy_blockly  # Blöcke zur Programmierung
 duration_minutes: 0
 
-language: blockly
+language: legacy_blockly
 
 # Aufgaben
 tasks:

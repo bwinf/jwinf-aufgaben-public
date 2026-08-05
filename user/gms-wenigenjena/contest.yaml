@@ -2,7 +2,7 @@ category: public  # notwendig
 
 name: "Test zum Algorithmen Arbeitsheft"  # Titel
 secret: "gms-wenigenjena-001"  # Passwort                      
-language: blockly  # Möglich ist blockly und python
+language: legacy_blockly  # Möglich ist blockly und python
 duration_minutes: 0  # Zeitlimit (keins gewählt)
 
 # Aufgaben, die gelöst werden sollen

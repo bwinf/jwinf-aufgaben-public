@@ -4,7 +4,7 @@ name: "Persönliche Level Grau"
 secret: "GrauCustom"
 duration_minutes: 0
 
-language: python
+language: legacy_python
 
 tasks:
   "Sparse Bitmap":

@@ -2,7 +2,7 @@ category: public                            # notwendig
 
 name: "Kurztest 7b 2526"                    # Titel
 secret: "DHG-7b-2026"                       # Passwort                      
-language: blockly                           # Möglich ist blockly und python
+language: legacy_blockly                           # Möglich ist blockly und python
 duration_minutes: 0                         # Zeitlimit
 
 tasks:                                      # Aufgabensammlung

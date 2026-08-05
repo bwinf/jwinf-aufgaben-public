@@ -4,7 +4,7 @@ name: "2526 Programmiertest_2 7 WGG"
 secret: "WGG_26_Test2_7"
 duration_minutes: 30
 
-language: blockly
+language: legacy_blockly
 
 tasks:
   "Aufgabe 1":

@@ -2,7 +2,7 @@ category: public                            # notwendig
 
 name: "Aufgabensammlung von Hannah"         # Titel
 secret: "Roboter-Beispiele"                 # Passwort                      
-language: blockly                           # Möglich ist blockly und python
+language: legacy_blockly                           # Möglich ist blockly und python
 duration_minutes: 0                         # Zeitlimit
 
 tasks:                                      # Aufgabensammlung

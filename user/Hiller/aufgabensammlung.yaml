@@ -4,7 +4,7 @@ name: "Beispiel-Aufgabensammlung"
 secret: "DunHil_2526"
 duration_minutes: 0
 
-language: blockly
+language: legacy_blockly
 
 tasks:
   "Aufgabe 1":

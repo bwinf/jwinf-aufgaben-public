@@ -1,0 +1,15 @@
+const pythonCode_03_3 = `from robot import *
+
+for i in range(20):
+    vorwaerts()
+    if vorHindernis():
+        dreheRechts()
+        if vorHindernis():
+            dreheLinks()
+            dreheLinks()
+    else:
+        dreheLinks()
+        if not vorHindernis():
+            vorwaerts()
+        else:
+            dreheRechts()`;

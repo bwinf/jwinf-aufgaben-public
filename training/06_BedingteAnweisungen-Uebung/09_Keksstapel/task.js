@@ -1,0 +1,264 @@
+function initTask(subTask) {
+  subTask.gridInfos = {
+      context: "robot",
+    contextType: "cards",
+    timeoutMinutes: 15, // Nach 15 Minuten warnen
+    hideSaveOrLoad: true,
+    bagSize: 100,
+    languageStrings: {
+      blocklyRobot_lib: {
+        label: {
+          "withdrawObject": "hebe Keks auf",
+          "dropObject": "lege Keks ab",
+          "onSquare": "auf eckigen Keks",
+          "onRound": "auf runden Keks",
+          "onObject": "auf Keks",
+          "onContainer": "auf Behälter",
+        },
+        messages: {
+          emptyBag: "Der Roboter trägt keinen Keks.",
+          failureDropObject: "Der Keks kann hier nicht abgelegt werden.",
+          nothingToLookAt: "An dieser Stelle liegt kein Kekse, der genauer betrachtet werden könnte.",
+          successContainersFilled: "Bravo, der Roboter hat alle Kekse sortiert!",
+          failureContainersFilled: "Einige Kekse sind nicht richtig einsortiert.",
+          failureContainersFilledLess: "Es gibt noch falsch einsortierte Kekse.",
+          failureContainersFilledBag: "Der Roboter muss die Kekse ablegen."
+        }
+      }
+    },
+    maxInstructions: {
+      easy: 10,
+      medium: 25,
+      hard: 20
+    },
+    includeBlocks: {
+      groupByCategory: {
+        easy: false,
+        medium: false,
+        hard: false
+      },
+      generatedBlocks: {
+        robot: {
+          easy: ["east",
+            "withdrawObject", "dropObject",
+            "onObject", 
+          ],
+          medium: ["east","west", "north", "south",
+            "withdrawObject", "dropObject","onObject",
+            "onContainer", 
+          ],
+          hard: ["east","west", "north", "south",
+            "withdrawObject", "dropObject"
+          ]
+        }
+      },
+      standardBlocks: {
+        includeAll: false,
+        wholeCategories: {
+          easy: [],
+          medium: [],
+          hard: []
+        },
+        singleBlocks: {
+          easy: ["controls_repeat", "controls_if"],
+          medium: ["controls_repeat",
+            "controls_if"
+          ],
+          hard: ["controls_repeat"  
+          ]
+        }
+      }
+    },
+    blocklyColourTheme: "bwinf",
+    //Defined here, so that cookies can be outside. Otherwise Include ItemTypes and define that card can be outside
+    checkEndCondition: function (context, lastTurn) {
+      var solved = true;
+
+      var messages = [
+        window.languageStrings.messages.failureContainersFilled,
+        window.languageStrings.messages.failureContainersFilledLess,
+        window.languageStrings.messages.failureContainersFilledBag
+      ];
+      var message = 2;
+      for (var row = 0; row < context.nbRows; row++) {
+        for (var col = 0; col < context.nbCols; col++) {
+
+          var containers = context.getItemsOn(row, col, function (obj) {
+            return (obj.isContainer === true) && (!obj.isFake)
+          });
+          if (containers.length != 0) {
+            var container = containers[0];
+            if (container.containerSize == undefined && container.containerFilter == undefined) {
+              container.containerSize = 1;
+            }
+            var filter;
+            if (container.containerFilter == undefined)
+              filter = function (obj) {
+                return obj.isWithdrawable === true;
+              };
+            else
+              filter = function (obj) {
+                return obj.isWithdrawable === true && container.containerFilter(obj)
+              };
+
+            if (container.containerSize != undefined && context.getItemsOn(row, col, filter).length != container.containerSize) {
+              solved = false;
+              message = Math.min(message, 1);
+            } else if (context.getItemsOn(row, col, filter).length == 0) {
+              solved = false;
+              message = Math.min(message, 0);
+            }
+
+            if (container.containerFilter != undefined) {
+              if (context.hasOn(row, col, function (obj) {
+                  return obj.isWithdrawable === true && !container.containerFilter(obj)
+                })) {
+                solved = false;
+                message = Math.min(message, 0);
+              }
+              for (var item in context.bag) {
+                if (filter(context.bag[item]) && context.infos.ignoreBag === undefined) {
+                  solved = false;
+                  message = Math.min(message, 2);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      if (solved) {
+        context.success = true;
+        throw (window.languageStrings.messages.successContainersFilled);
+      }
+      if (lastTurn) {
+        context.success = false;
+        throw (messages[message]);
+      }
+    }
+  };
+
+  subTask.data = {
+    easy: [
+      // {
+      //   tiles: [
+      //     [1, 16, 17, 18, 1, 1, 1, 1, 4, 2, 3, 1]
+      //   ],
+      //   toPick: 3,
+      //   initItems: [{
+      //     row: 0,
+      //     col: 0,
+      //     type: "robot"
+      //   }]
+      // },
+
+      // {
+      //   tiles: [
+      //     [1, 17, 16, 18, 1, 1, 1, 1, 4, 3, 2,1]
+      //   ],
+      //   toPick: [3],
+      //   initItems: [{
+      //     row: 0,
+      //     col: 0,
+      //     type: "robot"
+      //   }]
+      // },
+      {
+        tiles: [
+          [1, 1, 16, 1, 17, 1, 1, 18, 4, 2, 3,1]
+        ],
+        toPick: [3],
+        initItems: [{
+          row: 0,
+          col: 0,
+          type: "robot"
+        },]
+      },
+    ],
+    
+    medium: [
+      {
+      tiles: [
+        [1, 16, 17, 1, 17, 16, 1],
+        [1, 3, 1, 1, 1, 16, 1],
+        [1, 2, 1, 1, 1, 16, 1],
+        [1, 1, 1, 1, 1, 18, 1],
+        [1, 2, 1, 1, 1, 16, 1],
+        [1, 3, 3, 3, 4, 3, 1]
+      ],
+      initItems: [{
+        row: 0,
+        col: 0,
+        type: "robot"
+      },]
+    },
+    // {
+    //     tiles: [
+    //       [1, 16, 17, 17, 17, 16, 1],
+    //       [1, 3, 1, 1, 1, 1, 1],
+    //       [1, 2, 1, 1, 1, 1, 1],
+    //       [1, 2, 1, 1, 1, 1, 1],
+    //       [1, 2, 1, 1, 1, 1, 1],
+    //       [1, 3, 1, 1, 1, 1, 1]
+    //     ],
+    //     initItems: [{
+    //       row: 0,
+    //       col: 0,
+    //       type: "robot"
+    //     }]
+    //   },
+
+    //   {
+    //     tiles: [
+    //       [1, 1, 1, 1, 16, 16, 1],
+    //       [1, 1, 1, 1, 1, 16, 1],
+    //       [1, 1, 1, 1, 1, 16, 1],
+    //       [1, 1, 1, 1, 1, 18, 1],
+    //       [1, 3, 1, 1, 1, 16, 1],
+    //       [1, 3, 3, 3, 4, 3, 1]
+    //     ],
+    //     initItems: [{
+    //       row: 0,
+    //       col: 0,
+    //       type: "robot"
+    //     }]
+    //   },
+    ],
+
+    hard: [{
+        tiles: [
+          [1, 16, 17, 1, 17, 16, 1, 18, 17, 1, 18, 18, 1],
+          [1, 17, 18, 1, 17, 16, 1, 16, 17, 1, 16, 16, 1],
+          [1, 2, 1, 1, 2, 1, 1, 3, 1, 1, 3, 1, 1],
+          [1, 4, 1, 1, 3, 1, 1, 2, 1, 1, 3, 1, 1],
+          [1, 2, 1, 1, 3, 1, 1, 2, 1, 1, 4, 1, 1],
+          [1, 3, 1, 1, 2, 1, 1, 4, 1, 1, 4, 1, 1]
+
+        ],
+        initItems: [{
+          row: 0,
+          col: 0,
+          type: "robot"
+        }]
+      },
+    ],
+  };
+  initBlocklySubTask(subTask);
+}
+
+window.initBlocklySubTask = function () {};
+window.taskData = {};
+window.taskData.waitInit = function () { initTask(window.taskData); };
+window.taskData.codecastParameters = {
+    language: "de-DE",
+    platform: "blockly",
+    canChangePlatform: false,
+    showStepper: true,
+    showStack: true,
+    showViews: true,
+    showIO: true,
+    controls: { reload: false },
+    hideSettings: true,
+    jwinfMenu: { copyPaste: true, undoRedo: true, svgExport: true }
+};
+

@@ -1,0 +1,17 @@
+from turtle import *
+
+geheSchritte(8)
+dreheRechtsGrad(90)
+geheSchritte(6)
+dreheLinksGrad(126.9)
+geheSchritte(5)
+dreheLinksGrad(106.3)
+geheSchritte(5)
+dreheLinksGrad(73.7)
+geheSchritte(10)
+dreheRechtsGrad(126.9)
+geheSchritte(6)
+dreheRechtsGrad(126.9)
+geheSchritte(10)
+dreheRechtsGrad(143.1)
+geheSchritte(8)

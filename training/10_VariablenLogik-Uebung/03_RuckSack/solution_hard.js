@@ -1,0 +1,12 @@
+const pythonCode_03_3 = `from printer import *
+
+limit = liesGanzzahl()
+summe = 0
+
+while not eingabeEnde():
+    summe = summe + liesGanzzahl()
+    
+if summe<=limit:
+    schreibe("ja")
+else:
+    schreibe("nein")`;

@@ -1,0 +1,19 @@
+from robot import *
+
+rechts()
+feld = []
+for i in range(4):
+    for j in range(7):
+        feld.append(farbeAufFeld())
+        rechts()
+    for j in range(7):
+        links()
+    oben()
+for i in range(3, -1, -1):
+    for j in range(7):
+        if feld[i * 7 + (6 - j)]:
+            faerbeFeld()
+        rechts()
+    for j in range(7):
+        links()
+    oben()

@@ -1,0 +1,107 @@
+function initTask(subTask) {
+   var cellSide = 60;
+   subTask.gridInfos = {
+      context: "robot",
+      hideSaveOrLoad: true,
+      conceptViewer: true,
+      contextType: "paint",
+      //cellSide: cellSide,
+      actionDelay: 200,
+
+      maxInstructions: {
+         easy: 10,
+         medium: 20,
+         hard: 20,
+      },
+      includeBlocks: {
+         groupByCategory: false,
+         generatedBlocks: {
+            robot: { 
+               shared: ["east", "west", "dropObject"],
+               medium: ["north"],
+               hard: ["north", "south"]
+            }
+         },
+         standardBlocks: {
+            includeAll: false,
+            wholeCategories: [],
+            singleBlocks: ["controls_repeat"]
+         },
+         pythonAdditionalFunctions: {
+            shared: ["range"]
+         }
+      },
+      blocklyColourTheme: "bwinf",
+      ignoreInvalidMoves: false,
+      checkEndEveryTurn: false,
+      //checkEndCondition: robotEndConditions.checkMarkersPainted,
+   };
+
+   subTask.data = {
+      easy: [{
+         tiles: [
+            [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+            [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1],
+            [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+         ],
+         initItems: [{
+            row: 1,
+            col: 0,
+            type: "robot"
+         }, ]
+      }],
+      medium: [{
+         tiles: [
+            [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+            [1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1],
+            [1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 1],
+            [1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1],
+            [1, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1],
+            [1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 1],
+            [1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 1, 1],
+            [1, 1, 1, 2, 2, 1, 1, 1, 1, 1, 1, 1],
+            [1, 1, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1],
+            [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+         ],
+         initItems: [{
+            row: 8,
+            col: 0,
+            type: "robot"
+         }, ]
+      }],
+      hard: [{
+         tiles: [
+            [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+            [1, 1, 1, 1, 1, 1, 2, 2, 2, 1, 1, 1, 1, 1, 1],
+            [1, 1, 1, 1, 1, 2, 2, 1, 2, 2, 1, 1, 1, 1, 1],
+            [1, 1, 1, 1, 2, 2, 1, 1, 1, 2, 2, 1, 1, 1, 1],
+            [1, 1, 1, 2, 2, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1],
+            [1, 1, 2, 2, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 1],
+            [1, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1]
+         ],
+         initItems: [{
+            row: 6,
+            col: 0,
+            type: "robot"
+         }, ]
+      }]
+   };
+
+   initBlocklySubTask(subTask);
+}
+
+window.initBlocklySubTask = function () {};
+window.taskData = {};
+window.taskData.waitInit = function () { initTask(window.taskData); };
+window.taskData.codecastParameters = {
+    language: "de-DE",
+    platform: "blockly",
+    canChangePlatform: false,
+    showStepper: true,
+    showStack: false,
+    showViews: true,
+    showIO: true,
+    controls: { reload: false },
+    hideSettings: true,
+    jwinfMenu: { copyPaste: true, undoRedo: true, svgExport: true }
+};

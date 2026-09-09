@@ -1,0 +1,13 @@
+name: "13.05 Stellas Sterne"
+standalone: true
+public_listing: true
+
+languages:
+  - blockly
+  - python
+
+tags:
+  - Turtle
+  - Funktionen
+  - Wiederhole mit fester Anzahl
+  - Variablen

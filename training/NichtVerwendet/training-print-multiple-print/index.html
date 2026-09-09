@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+   <head>
+    <meta charset="utf-8">
+    <title>2016-FR-24-blockly-fill</title>
+      <script>
+        window.stringsLanguage = 'de';
+      </script>
+      <script class="remove" type="text/javascript" src="../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js" id="import-modules"></script>
+      <script class="remove" type="text/javascript">
+        var modulesPath = '../../../_common/modules/';
+        importModules([
+            'jquery-1.7.1', 'JSON-js', 'raphael-2.2.1', 'beaver-task-2.0', 'jschannel', 'raphaelFactory-1.0', 'delayFactory-1.0', 'simulationFactory-1.0',
+            'platform-pr', 'buttonsAndMessages', 'beav-1.0', 'installationAPI.01', 'miniPlatform',
+            'taskStyles-mobileFirst', 'blockly-printer', 'jwinf_css']);
+        // set Blockly as default language when none is specified through ?language=
+        importLanguageModules('blockly');
+      </script>
+      <script class="remove" type="text/javascript">
+       var json = {
+          "id": "test-printer-copy",
+          "language": "de",
+          "version": "de.01",
+          "authors": "Robert Czechowski",
+          "translators": [],
+          "license": "",
+          "taskPathPrefix": "",
+          "modulesPathPrefix": "",
+          "browserSupport": [],
+          "acceptedAnswers": [""],
+          "fullFeedback": true,
+          "minWidth": "auto"
+      };
+      window.stringsLanguage = 'de';
+      </script>
+      <script type="text/javascript" src="printer_task.js"></script>
+      
+   </head>
+   <body onresize="task.displayedSubTask.updateScale()">
+      <div id="task">
+        <h1>Hallo Welt!</h1>
+         <div id="tabsContainer"></div>
+         <div id="taskContent">
+            <div id="taskIntro">
+               <p>
+                  Erstelle ein Programm, das den Text "<code>Hallo Welt!</code>" auf das Ausgabefeld ausgibt. Hänge dazu die passenden Bausteine an den Baustein "Programm".
+               </p>
+               <p>
+                   Links siehts du das Ausgabefeld („Output“) in dem die Ausgabe mit dem Baustein „schreibe“ ausgegeben wird.
+               </p>
+               <p>
+                  Achte darauf, dass die Groß- und Kleinschreibung beachtet werden muss; "<code>hallo welt!</code>" und "<code>HALLO WELT!</code>" werden nicht angenommen, nur "<code>Hallo Welt!</code>" wird als richtig anerkannt. Achte auch darauf, dass du den Text zeichengenau ausgibst. Zwischen "Hallo" und "Welt" steht genau ein Leerzeichen. Hinter "Welt" folgt ein Ausrufezeichen.
+               </p>
+            </div>
+            <div id="gridContainer"></div>
+            <div id="blocklyLibContent"></div>
+         </div>
+      </div><!-- task -->
+   </body>
+</html>
+ 

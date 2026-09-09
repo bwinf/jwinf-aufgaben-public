@@ -1,0 +1,11 @@
+name: "01.02 Befehlsfolgen - Objekte im Weltraum"
+standalone: true
+public_listing: true
+
+languages:
+  - blockly
+  - python
+
+tags:
+  - Roboter
+  - Sequenz

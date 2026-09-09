@@ -1,0 +1,13 @@
+const pythonCode_04_2 = `from robot import *
+
+rechts()
+anzahlSpalten = leseZahl()
+rechts()
+anzahlZeilen = leseZahl()
+for i in range(anzahlSpalten):
+    unten()
+    for j in range(anzahlZeilen):
+        faerbeFeld()
+        rechts()
+    for j in range(anzahlZeilen):
+        links()`;

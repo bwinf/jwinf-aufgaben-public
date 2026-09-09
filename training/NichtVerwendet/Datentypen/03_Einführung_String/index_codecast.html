@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script>window.stringsLanguage='de';window.taskStrings={};</script>
+<script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js" id="import-modules"></script>
+<script class="remove" type="text/javascript">
+var modulesPath = '../../../../_common/modules/';
+importModules(['jquery-1.7.1','JSON-js','raphael-2.2.1','codecast-7.7','jschannel','raphaelFactory-1.0','delayFactory-1.0','simulationFactory-1.0','platform-pr','beav-1.0','installationAPI.01','miniPlatform','taskStyles-mobileFirst','jwinf-codecast_css','jwinf-codecast','conceptDisplay-1.0','conceptViewer-1.0','conceptViewer_css-1.0','blockly-printer']);
+</script>
+<script class="remove" type="text/javascript">
+var json = {
+          "id": "23-DE-02",
+          "language": "de",
+          "version": "de.01",
+          "authors": "Hannah Rauterberg",
+          "translators": [],
+          "license": "",
+          "taskPathPrefix": "",
+          "modulesPathPrefix": "",
+          "browserSupport": [],
+          "acceptedAnswers": [""],
+          "fullFeedback": true,
+          "minWidth": "auto"
+      };
+</script>
+<script type="text/javascript" src="printer_task_codecast.js"></script>
+</head>
+<body id="app">
+<div id="react-container" style="width:100%;height:100vh"></div>
+
+<div id="task" style="display:none"><div id="tabsContainer"></div><div id="taskContent"><div id="gridContainer"></div><div id="blocklyLibContent"></div></div></div>
+<div id="taskIntro" style="display:none">
+               <div class="easy" data-lang="blockly">
+                  <p>Wir haben gelernt, dass es teilweise nötig ist eine Zeichenkette in einen Integer umzuwandeln.
+                     Zum Beispiel, wenn wir mit der Zahl rechnen wollen. Das Umwandeln können wir mit dem Baustein
+                     <img src="ZeichenZuZahl.png"> machen.
+                  </p>
+                  <p>Wenn wir einen Integer in eine Zeichenkette umwandeln wollen, dann können wir das mit
+                     dem Baustein <img src="ZahlZuZeichen.png"> machen.
+                  </p>
+                  <p>
+                     <b>Aufgabe: </b> Kann es auch notwendig sein, eine Zahl wieder in eine Zeichenkette umzuwandeln?
+                     Falls ja, wann und warum?
+                  </p>
+               </div>
+               <div class="easy" data-lang="python">
+                  <p>Wir haben gelernt, dass es teilweise nötig ist eine Zeichenkette in einen Integer umzuwandeln.
+                     Zum Beispiel, wenn wir mit der Zahl rechnen wollen. Das Umwandeln können wir mit der Funktion
+                     <code>int()</code> machen.
+                  </p>
+                  <p>Wenn wir einen Integer in eine Zeichenkette umwandeln wollen, dann können wir das mit
+                     der Funktion <code>str()</code> machen.
+                  </p>
+                  <p>
+                     <b>Aufgabe: </b> Kann es auch notwendig sein, eine Zahl wieder in eine Zeichenkette umzuwandeln?
+                     Falls ja, wann und warum?
+                  </p>
+               </div>
+               <div class="medium"  data-lang="blockly">
+                  <p>
+                    Zeichenketten bieten uns einige Funktionen und Möglichkeiten, die uns Integer nicht bieten.
+                    So können wir zum Beispiel bei einer Zeichenkette auf eine einzelne Stelle zugreifen, einen 
+                    sogenannten <b>Index</b>. 
+                    Oder wir können uns die Länge der Zeichenkette ausgeben. 
+                  </p>
+                  <p>
+                     <b>Aufgabe: </b> Lest die Eingabe ein und gebt die Länge der Zeichenkette, 
+                     sowie die erste und die letzte Ziffer der Zahl aus. Probiert das gleiche,
+                     wenn ihr die Eingabe vorher in einen Integer umwandelt.
+                  </p>
+               </div>
+               <div class="medium"  data-lang="python">
+                  <p>
+                    Zeichenketten bieten uns einige Funktionen und Möglichkeiten, die uns Integer nicht bieten.
+                    So können wir zum Beispiel bei einer Zeichenkette auf eine einzelne Stelle zugreifen, einen 
+                    sogenannten <b>Index</b>. Dies tun wir bei python mit eckigen Klammern <code>[ ]</code>.
+                    Python beginnt dabei immer bei 0 zu zählen! Im folgenden Beispiel 
+                    greifen wir also auf das erste Zeichen "b" zu. 
+<pre data-lang="python">
+   text = "banana"
+   print(text[0])
+</pre>
+                    Oder wir können uns die Länge der Zeichenkette ausgeben mit der Funktion <code>len()</code>.
+                    Auch hier muss die Zeichenkette, die wir messen wollen, in den runden Klammern der Funktion stehen.
+                  </p>
+                  <p>
+                     <b>Aufgabe: </b> Lest die Eingabe ein und gebt die Länge der Zeichenkette, 
+                     sowie die erste und die letzte Stelle aus. Probiert das gleiche,
+                     wenn ihr die Eingabe vorher in einen Integer umwandelt. Wenn ihr mit der Syntax Probleme habt, dann schaut 
+                     bei <b>Weitere Hinweise</b>. Aber probiert es erst einmal selbst!
+                  </p>
+                  <div class="long">
+                     <h2>Weitere Hinweise:</h2>
+<pre data-lang="python">
+   text = readline()
+   print(len(text))
+   print(text[0])
+   print(text[len(text)-1])
+</pre>
+                  </div>
+               </div>
+
+               <div class="hard">
+                  <p>
+                     <b>Aufgabe: </b> Lest die Eingabe ein. 
+                     Alle Ziffern, außer der ersten und der letzen, sollen verdoppelt werden. 
+                     Danach sollen alle Ziffern wieder zu einer Zeichenkette zusammengefügt und ausgegeben werden. 
+                     Wenn ihr keine Idee habt, dann schaut euch <b>Weitere Hinweise</b> an und versucht das 
+                     Beispiel zu verstehen.
+                  </p>
+                  <div class="long" data-lang="python">
+                     <h2>Weitere Hinweise:</h2>
+<pre data-lang="python">
+   text = readline()
+   print(text[0] + str(int(text[1])*2) + str(int(text[2])*2) + text[-1])
+</pre>
+                  </div>
+                  <div class="long" data-lang="blockly">
+                     <h2>Weitere Hinweise:</h2>
+                     <img src="Res.png">
+
+                     <p>
+                        Beachtet, dass Blockly uns viel Arbeit versucht abzunehmen. In anderen Programmiersprache müssten wir den
+                        Integer erst wieder in eine Zeichenkette umwandeln, bevor wir den Text erstellen können.
+                        Blockly erlaubt uns aber auch den Baustein <img src="ZahlZuZeichen.png"> wegzulassen und direkt einen
+                        Integer mit einzufügen.
+                     </p>
+                  </div>
+               </div>
+
+            </div>
+<div id="solution" style="display:none"></div>
+<div id="taskHints" style="display:none"></div>
+</body>
+</html>

@@ -1,12 +1,18 @@
 function initTask(subTask) {
    subTask.gridInfos = {
+      context: "robot",
       conceptViewer: false,
+      //Hier wird der Kontext definiert. Mit dem Kontext werden ItemTypes und Aufgabenspezifische Übersetzungen geladen
       contextType: "gears",
+      //Die BWINF-spezifischen Farben. Bitte in jeder Aufgabendatei laden, da die Blocktypen sonst nicht konsistent eingefärbt sind
+      //(Unsere Farben sind natürlich schöner)
       blocklyColourTheme: "bwinf",
       //Wie viele Plattformen maximal gebaut werden dürfen
       nbPlatforms: 10,
+      //Gibt an, ob die Programme gespeichert und geladen werden können über das Menu auf der rechten Seite.
+      //Für Wettbewerbe immer auf true setzen
       hideSaveOrLoad: true,
-      //Gibt an, wie viele Blöcke für welche Versionen maximal zur Verfügung stehen
+      //Gibt an, wie viele Blöcke für welche Versionen maimal zur Verfügung stehen
       maxInstructions: {
          easy: 16,
          medium: 25,
@@ -56,7 +62,7 @@ function initTask(subTask) {
             col: 0,
             dir: 0,
             type: "robot"
-         }, ]
+         },]
       }],
       //Version ***
       medium: [{
@@ -70,7 +76,7 @@ function initTask(subTask) {
             col: 0,
             dir: 0,
             type: "robot"
-         }, ]
+         },]
       }],
       //Version ****
       hard: [{
@@ -84,16 +90,28 @@ function initTask(subTask) {
             col: 0,
             dir: 0,
             type: "robot"
-         }, ]
+         },]
       }]
    };
 
    initBlocklySubTask(subTask);
-   displayHelper.thresholdEasy = 5000;
-   displayHelper.thresholdMedium = 10000;
 }
 
 //Laden der definierten Informationen
 //2. Parameter: Die Liste gibt an, welche Versionen es gibt
 //3. Parameter: Gibt an bei welcher Version gestartet wird. Bei null wird bei basic gestartet
-initWrapper(initTask, ["easy", "medium", "hard"], null, true);
+window.initBlocklySubTask = function () { };
+window.taskData = window.taskData || {};
+window.taskData.waitInit = function () { initTask(window.taskData); };
+window.taskData.codecastParameters = window.taskData.codecastParameters || {
+   language: "de-DE",
+   platform: "blockly",
+   canChangePlatform: false,
+   showStepper: true,
+   showStack: true,
+   showViews: true,
+   showIO: true,
+   controls: { reload: false },
+   hideSettings: true,
+   jwinfMenu: { copyPaste: true, undoRedo: true, svgExport: true }
+};

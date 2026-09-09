@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script>window.stringsLanguage='de';window.taskStrings={};</script>
+<script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js" id="import-modules"></script>
+<script class="remove" type="text/javascript">
+var modulesPath = '../../../../_common/modules/';
+importModules(['jquery-1.7.1','JSON-js','raphael-2.2.1','codecast-7.7','jschannel','raphaelFactory-1.0','delayFactory-1.0','simulationFactory-1.0','platform-pr','beav-1.0','installationAPI.01','miniPlatform','taskStyles-mobileFirst','jwinf-codecast_css','jwinf-codecast','conceptDisplay-1.0','conceptViewer-1.0','conceptViewer_css-1.0','blockly-turtle']);
+</script>
+<script class="remove" type="text/javascript">
+var json = {
+      "id": "26-DE-06",
+      "language": "de",
+      "version": "de.01",
+      "authors": "Hannah Rauterberg",
+      "translators": [],
+      "license": "",
+      "taskPathPrefix": "",
+      "modulesPathPrefix": "",
+      "browserSupport": [],
+      "acceptedAnswers": [""],
+      "fullFeedback": true,
+      "minWidth": "auto"
+    };
+</script>
+<script type="text/javascript" src="task.js"></script>
+</head>
+<body id="app">
+<div id="react-container" style="width:100%;height:100vh"></div>
+
+<div id="task" style="display:none"><div id="tabsContainer"></div><div id="taskContent"><div id="gridContainer"></div><div id="blocklyLibContent"></div></div></div>
+<div id="taskIntro" style="display:none">
+        Programmiere die Schildkröte:
+        <div class="easy">
+          <p>
+            Die Schildkröte soll das Sechseck nachzeichnen.
+          </p>
+          <p><b>Hinweis:</b> Alle Seiten sind sind 8 Schritte lang.
+            Der Drehwinkel lässt sich aus <code>360°</code> und der Anzahl der Ecken berechnen.
+          </p>
+        </div>
+        <div class="medium">
+          <p>
+            Die Schildkröte soll die Sechsecke nachzeichnen.
+          </p>
+          <p><b>Hinweis:</b> Die Seiten der Sechsecke sind 11, 9, 5 und 2 Schritte lang.
+            Der Drehwinkel lässt sich aus <code>360°</code> und der Anzahl der Ecken berechnen.
+            Um mit
+            der vorgegebenen Anzahl an Bausteinen auszukommen, musst du Funktionen mit Parametern verwenden.
+          </p>
+        </div>
+        <div class="hard">
+          <p>
+            Die Schildkröte soll die Polygone nachzeichnen.
+            Es handelt sich um
+          <ul>
+            <li>ein Zehneck mit 8 Schritten Seitenlänge,</li>
+            <li>ein Sechseck mit 6 Schritten Seitenlänge,</li>
+            <li>ein Viereck mit 5 Schritten Seitenlänge und</li>
+            <li>ein Dreieck mit 5 Schritten Seitenlänge,</li>
+          </ul>
+          </p>
+          <p><b>Hinweis:</b> Die Drehwinkel lassen sich aus <code>360°</code> und der Anzahl der Ecken berechnen. Um mit
+            der vorgegebenen Anzahl an Bausteinen auszukommen, musst du Funktionen mit Parametern verwenden.</p>
+        </div>
+
+        <div class="long">
+          <hr>
+          <h2>Weitere Hinweise:</h2>
+          <div class=" medium hard">
+            Du fügst der Funktion einen Parameter hinzu, indem du auf das blaue Zahnrad klickst und eine Variable von
+            links nach rechts ziehst und der Funktion einfügst. <span class="hard">Du kannst der Funktion mehr als einen
+              Parameter hinzufügen. Ziehe in dem Fall zwei Mal den Baustein <img src="../../../Bilder/function_Parameter.svg"> in die
+              Parameter-Klammer. <b>Dann musst du darauf achten, dass du den Parametern unterschiedliche Namen
+                gibst.</b></span><br>
+            <div class="medium">
+              <img src="../../../Bilder/function_setParameter.svg" style="margin:10px;" /><br>
+              Wenn du die Funktion verwendest, musst du einen Wert für den Parameter angeben: <br>
+              <img src="../../../Bilder/function_useParameter.svg"
+                style="margin: 10px; margin-bottom:-10px; margin-right:80px" /><br>
+            </div>
+            <div class="hard">
+              <img src="../../../Bilder/function_set_multipleParameter.svg" style="margin:10px;" /><br>
+              Wenn du die Funktion verwendest, musst du einen Wert für den Parameter angeben: <br>
+              <img src="../../../Bilder/function_use_multipleParameter.svg"
+                style="margin: 10px; margin-bottom:-10px; margin-right:80px" /><br>
+            </div>
+
+            <hr>
+          </div>
+          <p>
+            Der Drehwinkel ist immer relativ zu der Ausrichtung der Schildkröte:<br>
+            <img src="Winkel.svg">
+          </p>
+
+        </div>
+      </div>
+<div id="solution" style="display:none"></div>
+<div id="taskHints" style="display:none"></div>
+<!-- <script>
+window.loadMediumSolution = function() {
+  var xml = `<xml xmlns="http://www.w3.org/1999/xhtml"><block type="robot_start" id="root0001" deletable="false" movable="false" editable="false" x="0" y="0"><next><block type="procedures_callnoreturn" id="call0001"><mutation name="zeichneSechseck"><arg name="größe"></arg></mutation><value name="ARG0"><block type="math_number" id="num0001"><field name="NUM">11</field></block></value><next><block type="procedures_callnoreturn" id="call0002"><mutation name="zeichneSechseck"><arg name="größe"></arg></mutation><value name="ARG0"><block type="math_number" id="num0002"><field name="NUM">9</field></block></value><next><block type="procedures_callnoreturn" id="call0003"><mutation name="zeichneSechseck"><arg name="größe"></arg></mutation><value name="ARG0"><block type="math_number" id="num0003"><field name="NUM">5</field></block></value><next><block type="procedures_callnoreturn" id="call0004"><mutation name="zeichneSechseck"><arg name="größe"></arg></mutation><value name="ARG0"><block type="math_number" id="num0004"><field name="NUM">2</field></block></value></block></next></block></next></block></next></block></next></block><block type="procedures_defnoreturn" id="def0001" x="400" y="0"><mutation><arg name="größe"></arg></mutation><field name="NAME">zeichneSechseck</field><comment pinned="false" h="80" w="160">Zeichnet ein Sechseck mit gegebener Seitenlänge</comment><statement name="STACK"><block type="controls_repeat_ext" id="rep0001"><value name="TIMES"><shadow type="math_number" id="times0001"><field name="NUM">6</field></shadow></value><statement name="DO"><block type="moveamountvalue_noshadow" id="move0001"><value name="PARAM_0"><shadow type="math_number" id="moveshadow0001"><field name="NUM">0</field></shadow><block type="variables_get" id="getvar0001"><field name="VAR">größe</field></block></value><next><block type="turnleftamountvalue_noround_noshadow" id="turn0001"><value name="PARAM_0"><shadow type="math_number" id="turnshadow0001"><field name="NUM">60</field></shadow></value></block></next></block></statement></block></statement></block><additional>{}</additional></xml>`;
+  var ws = window.Blockly && Blockly.getMainWorkspace && Blockly.getMainWorkspace();
+  if (!ws) {
+    console.error("[loadMediumSolution] Kein Blockly-Workspace gefunden.");
+    return false;
+  }
+  ws.clear();
+  Blockly.Xml.domToWorkspace(Blockly.Xml.textToDom(xml), ws);
+  console.log("[loadMediumSolution] Musterlösung (medium) geladen.");
+  return true;
+};
+(function poll(triesLeft) {
+  var ws = window.Blockly && window.Blockly.getMainWorkspace && window.Blockly.getMainWorkspace();
+  if (ws) {
+    console.log("[loadMediumSolution] Workspace gefunden, lade Lösung automatisch …");
+    window.loadMediumSolution();
+    return;
+  }
+  if (triesLeft <= 0) {
+    console.warn("[loadMediumSolution] Kein Workspace nach Timeout gefunden. Rufe loadMediumSolution() manuell auf, sobald der Editor offen ist.");
+    return;
+  }
+  setTimeout(function() { poll(triesLeft - 1); }, 1000);
+})(30);
+</script> -->
+</body>
+</html>

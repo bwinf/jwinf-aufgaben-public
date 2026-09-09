@@ -1,0 +1,11 @@
+name: "04.02 Transportroboter"
+standalone: true
+public_listing: true
+
+languages:
+  - blockly
+  - python
+
+tags:
+  - Roboter
+  - Bedingte Wiederholung

@@ -8,12 +8,12 @@ language: legacy_blockly
 
 tasks:
   "Aufgabe 1":
-    "../../training/01_Grundbausteine-Einfuehrung/10_MehrWiederholungen": {stars: 4}
+    "../../training/02_Wiederholung_mit_fester_Anzahl_Einfuehrung/03_MehrWiederholungen": {stars: 4}
   "Aufgabe 2":
-    "../../training/01_Grundbausteine-Einfuehrung/08_BedingteAnweisungen": {stars: 4}
+    "../../training/03_Bedingte_Anweisungen_Einfuehrung/01_BedingteAnweisungen": {stars: 4}
   "Aufgabe 3":
-    "../../training/01_Grundbausteine-Einfuehrung/12_Fischen": {stars: 4}
+    "../../training/03_Bedingte_Anweisungen_Einfuehrung/03_Fischen": {stars: 4}
   "Aufgabe 4":
-    "../../training/03_Wiederholungen-Vertiefung/03_Ornamente": {stars: 4}
+    "../../training/09_Wiederholungen_mit_Zählvariable/01_Ornamente": {stars: 4}
   "Aufgabe 5":
-    "../../training/08_VariablenLogik-Uebung/01_VariablenRechnen": {stars: 4}
+    "../../training/10_VariablenLogik-Uebung/01_VariablenRechnen": {stars: 4}

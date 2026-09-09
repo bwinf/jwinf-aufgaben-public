@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script>window.stringsLanguage='de';window.taskStrings={};</script>
+<script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js" id="import-modules"></script>
+<script class="remove" type="text/javascript">
+var modulesPath = '../../../../_common/modules/';
+importModules(['jquery-1.7.1','JSON-js','raphael-2.2.1','codecast-7.7','jschannel','raphaelFactory-1.0','delayFactory-1.0','simulationFactory-1.0','platform-pr','beav-1.0','installationAPI.01','miniPlatform','taskStyles-mobileFirst','jwinf-codecast_css','jwinf-codecast','conceptDisplay-1.0','conceptViewer-2.0','conceptViewer_css-2.0']);
+</script>
+<script class="remove" type="text/javascript">
+var json = {
+      "id": "24-DE-12-Mehr_T-Shirtgrößen",
+      "language": "de",
+      "version": "de.01",
+      "authors": "Annika Petersen",
+      "translators": [],
+      "license": "",
+      "taskPathPrefix": "",
+      "modulesPathPrefix": "",
+      "browserSupport": [],
+      "acceptedAnswers": [""],
+      "fullFeedback": true,
+      "minWidth": "auto"
+    };
+</script>
+<script type="text/javascript" src="printer_task.js"></script>
+</head>
+<body id="app">
+<div id="react-container" style="width:100%;height:100vh"></div>
+
+<div id="task" style="display:none"><div id="tabsContainer"></div><div id="taskContent"><div id="gridContainer"></div><div id="blocklyLibContent"></div></div></div>
+<div id="taskIntro" style="display:none">
+        Schreibe ein Programm:
+        <div class="easy">
+          <p>
+            Das Programm soll eine bestimmte Anzahl von Eingabezeilen ausgeben. Die erste Zeile enthält die Anzahl der
+            nachfolgenden Zeilen, die unverändert in die Ausgabe übernommen werden.
+          </p>
+        </div>
+        <div class="medium">
+          <p>
+            Das Programm soll aus mehreren Eingabezeilen genau eine Zeile ausgeben. Die erste Eingabezeile enthält eine
+            Zeilennummer, die angibt, welche der folgenden Zeilen unverändert ausgegeben werden soll.
+          </p>
+        </div>
+        <div class="hard">
+          <p>
+            Das Programm soll aus mehreren Eingabezeilen einen zusammenhängenden Zeilenbereich ausgeben. Die ersten
+            beiden Eingabezeilen enthalten Startzeilennummer und Endzeilennummer und geben an, welche der folgenden
+            Zeilen (von Startzeile bis Endzeile, einschließlich) unverändert ausgegeben werden sollen.
+          </p>
+        </div>
+        <table class="easy">
+          <tr>
+            <td style="padding: 0px 30px;vertical-align: top;">
+              Eingabe:
+              <pre>
+2
+erste Zeile
+zweite Zeile
+dritte Zeile
+                </pre>
+            </td>
+            <td style="padding: 0px 30px;vertical-align: top;">Ausgabe:
+              <pre>
+erste Zeile
+zweite Zeile
+                </pre>
+            </td>
+          </tr>
+        </table>
+        <table class="medium">
+          <tr>
+            <td style="padding: 0px 30px;vertical-align: top;">
+              Eingabe:
+              <pre>
+2
+erste Zeile
+zweite Zeile
+dritte Zeile
+                </pre>
+            </td>
+            <td style="padding: 0px 30px;vertical-align: top;">Ausgabe:
+              <pre>
+zweite Zeile
+                </pre>
+            </td>
+          </tr>
+        </table>
+        <table class="hard">
+          <tr>
+            <td style="padding: 0px 30px;vertical-align: top;">
+              Eingabe:
+              <pre>
+2
+4
+erste Zeile
+zweite Zeile
+dritte Zeile
+vierte Zeile
+                </pre>
+            </td>
+            <td style="padding: 0px 30px;vertical-align: top;">Ausgabe:
+              <pre>
+zweite Zeile
+dritte Zeile
+vierte Zeile
+                </pre>
+            </td>
+          </tr>
+        </table>
+        <div>
+          <p>
+            <i>Beachte: Dein Programm muss mit allen Testfällen zurechtkommen.</i>
+          </p>
+        </div>
+        <div class="easy medium hard ">
+          <div class="long">
+            <hr>
+            <h2>Weitere Hinweise:</h2>
+            <p>Um die <b><span class="easy">Information zur Anzahl an Zeilen</span><span class="medium">Zeilennummer</span><span class="hard">Startzeilennummer und Endzeilennummer</span></b> einzulesen, musst du den Baustein <img
+                src="../../../Bilder/readInteger.svg" style='vertical-align:top' /> verwenden. Nur dann kann mit der Zahl gerechnet werden.</p>
+          </div>
+          <div class="long">
+            <hr>
+            <h2>Eingeschränkte Bausteine:</h2>
+            <p> Um eine reine Sequenz an Anweisungen oder eine Lösung, die nur auf das Bestehen von Testfällen abzielt,
+              zu
+              vermeiden, stehen
+              maximal drei <img src="../../../Bilder/print.svg" />-Bausteine zur Verfügung.
+            </p>
+          </div>
+        </div>
+      </div>
+<div id="solution" style="display:none"></div>
+<div id="taskHints" style="display:none"></div>
+</body>
+</html>

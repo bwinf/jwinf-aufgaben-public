@@ -1,0 +1,6 @@
+from robot import *
+
+vorwaerts()
+for i in range(8):
+    vorwaerts()
+    platziereLeitkegel()

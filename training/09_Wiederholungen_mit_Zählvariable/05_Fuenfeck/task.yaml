@@ -1,0 +1,12 @@
+name: "09.05 Fünfeck"
+standalone: true
+public_listing: true
+
+languages:
+  - blockly
+  - python
+
+tags:
+  - Turtle
+  - Wiederhole mit fester Anzahl
+  - for-Schleife

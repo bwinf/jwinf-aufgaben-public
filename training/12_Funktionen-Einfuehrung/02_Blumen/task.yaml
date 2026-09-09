@@ -1,0 +1,13 @@
+name: "12.02 Blumen"
+standalone: true
+public_listing: true
+
+languages:
+  - blockly
+  - python
+
+tags:
+  - Turtle
+  - Funktionen
+  - Wiederhole mit fester Anzahl
+  - Variablen

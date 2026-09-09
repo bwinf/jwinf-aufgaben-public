@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Spinnennetz</title>
+  <script>
+    window.stringsLanguage = 'de';
+  </script>
+  <script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js"
+    id="import-modules"></script>
+  <script class="remove" type="text/javascript">
+    var modulesPath = '../../../../_common/modules/';
+    importModules([
+      'jquery-1.7.1', 'JSON-js', 'raphael-2.2.1', 'beaver-task-2.0', 'jschannel', 'raphaelFactory-1.0',
+      'delayFactory-1.0', 'simulationFactory-1.0',
+      'platform-pr', 'buttonsAndMessages', 'beav-1.0', 'installationAPI.01', 'miniPlatform',
+      'taskStyles-mobileFirst', 'blockly-turtle', 'jwinf_css'
+    ]);
+    // set Blockly as default language when none is specified through ?language=
+    importLanguageModules('blockly');
+  </script>
+  <script class="module" type="text/javascript" src="../../../../_common/modules/pemFioi/blocklyTurtle_lib.js"
+    id="blocklyTurtle_lib"></script>
+  <script class="remove" type="text/javascript">
+    var json = {
+      "id": "26-DE-06",
+      "language": "de",
+      "version": "de.01",
+      "authors": "Hannah Rauterberg",
+      "translators": [],
+      "license": "",
+      "taskPathPrefix": "",
+      "modulesPathPrefix": "",
+      "browserSupport": [],
+      "acceptedAnswers": [""],
+      "fullFeedback": true,
+      "minWidth": "auto"
+    };
+  </script>
+  <script type="text/javascript" src="task_legacy.js"></script>
+
+
+</head>
+
+<body onresize="task.displayedSubTask.updateScale()">
+  <div id="task">
+    <h1>Polygone</h1>
+    <div id="tabsContainer"></div>
+    <div id="taskContent">
+      <div id="taskIntro">
+        Programmiere die Schildkröte:
+        <div class="easy">
+          <p>
+            Die Schildkröte soll das Sechseck nachzeichnen.
+          </p>
+          <p><b>Hinweis:</b> Alle Seiten sind sind 8 Schritte lang.
+            Der Drehwinkel lässt sich aus <code>360°</code> und der Anzahl der Ecken berechnen.
+          </p>
+        </div>
+        <div class="medium">
+          <p>
+            Die Schildkröte soll die Sechsecke nachzeichnen.
+          </p>
+          <p><b>Hinweis:</b> Die Seiten der Sechsecke sind 8, 6, 4 und 2 Schritte lang.
+            Der Drehwinkel lässt sich aus <code>360°</code> und der Anzahl der Ecken berechnen.
+          </p>
+        </div>
+        <div class="hard">
+          <p>
+            Die Schildkröte soll die Polygone nachzeichnen.
+            Es handelt sich um
+          <ul>
+            <li>ein Sechseck mit 8 Schritten Seitenlänge,</li>
+            <li>ein Fünfeck mit 6 Schritten Seitenlänge,</li>
+            <li>ein Viereck mit 4 Schritten Seitenlänge und</li>
+            <li>ein Dreieck mit 2 Schritten Seitenlänge,</li>
+          </ul>
+          </p>
+          <p><b>Hinweis:</b> Die Drehwinkel lassen sich aus <code>360°</code> und der Anzahl der Ecken berechnen.</p>
+        </div>
+
+        <div class="long">
+          <hr>
+          <h2>Weitere Hinweise:</h2>
+          <p>
+            Der Drehwinkel ist immer relativ zu der Ausrichtung der Schildkröte:<br>
+            <img src="Winkel.svg">
+          </p>
+
+        </div>
+      </div>
+      <div id="gridContainer"></div>
+      <div id="blocklyLibContent"></div>
+      <div id="hints" style="margin:20px;display:none;">
+      </div>
+    </div>
+  </div><!-- task -->
+</body>
+
+</html>

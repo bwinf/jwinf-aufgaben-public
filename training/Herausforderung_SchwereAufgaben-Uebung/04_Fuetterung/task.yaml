@@ -1,0 +1,14 @@
+name: "Schwere Aufgaben - Fütterung"
+standalone: true
+public_listing: true
+
+languages:
+  - blockly
+
+tags:
+  - Roboter
+  - Liste
+  - Wiederhole mit fester Anzahl
+  - Bedingte Wiederholung
+  - Verzweigungen
+  - Variablen

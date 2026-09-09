@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>training-repeat-nested-if-marbles</title>
+  <script>
+    window.stringsLanguage = 'en';
+  </script>
+  <script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js"
+    id="import-modules"></script>
+  <script class="remove" type="text/javascript">
+    var modulesPath = '../../../../_common/modules/'
+    importModules([
+      'jquery-1.7.1', 'JSON-js', 'raphael-2.2.1', 'beaver-task-2.0', 'jschannel', 'raphaelFactory-1.0', 'delayFactory-1.0', 'simulationFactory-1.0',
+      'platform-pr', 'buttonsAndMessages', 'beav-1.0', 'installationAPI.01', 'miniPlatform', 'conceptDisplay-1.0', 'conceptViewer-1.0', 'conceptViewer_css-1.0',
+      'taskStyles-mobileFirst', 'blockly-robot-1.1', 'jwinf_css'
+    ]);
+    // set Blockly as default language when none is specified through ?language=
+    importLanguageModules('blockly');
+  </script>
+  <script class="remove" type="text/javascript">
+    var json = {
+      "id": "http://castor-informatique.fr/questions/algorea_training/training-repeat-nested-if-marbles/",
+      "language": "fr",
+      "version": "fr.01",
+      "authors": "Mathias Hiron",
+      "translators": [],
+      "license": "",
+      "taskPathPrefix": "",
+      "modulesPathPrefix": "",
+      "browserSupport": [],
+      "fullFeedback": true,
+      "minWidth": "auto"
+    };
+  </script>
+  <script type="text/javascript" src="task_new.js"></script>
+
+</head>
+
+<body onresize="task.displayedSubTask.updateScale()">
+  <div id="task">
+    <h1>Murmeln verschieben</h1>
+    <img src="hole.png" style="display:none" />
+    <img src="marble.png" style="display:none" />
+    <img src="green_robot.png" style="display:none" />
+    <img src="icon.png" style="display:none" />
+
+    <div id="tabsContainer"></div>
+    <div id="taskContent">
+      <div id="taskIntro">
+        Program the robot:
+        <p>
+          The robot must take each fish <img src='fishes.png'
+          width="45" height=auto /> and drop it on an island <img src='island.png'
+          width="45" height=auto />.
+        </p>
+        <p>
+          The number on the signs indicates:
+          <ul>
+            <li>for each island <img src="island.png" style='vertical-align:middle' width="45" height=auto> how many fishes have to be delivered.</li>
+            <li>for each net <img src="net.png" style='vertical-align:middle' width="40" height=auto> how many fishes can be taken from this net.</li>
+          </ul>
+        </p>
+        <p>
+          <b>Hint:</b> The robot can carry only one fish at a time.
+        </p>
+        <div class="easy medium hard">
+          <p>
+            For further instructions please check <b>SHOW DETAILS</b>.
+          </p>
+        </div>
+        <div class="easy medium hard">
+          <div data-lang="blockly">
+            <div class="long">
+              <hr>
+               <h2>Details:</h2>
+                <p>
+                  You can formulate a condition with an <code>if</code>. You can use this to execute a command only under certain conditions. For example, if you use:
+                </p>
+                <p data-lang="blockly">
+                  <img src="if.png " style='vertical-align:middle'>
+                </p>
+                The robot only picks up a fish if it is standing on a field with a fish. <br><br>
+               The robot cannot drop a fish if he is not carrying one.
+              <div class="easy medium hard">
+                <p>
+                  Using the block <img src="auf_fisch.png" style='vertical-align:middle'> you can check if the robot is on a field with a fish.
+                </p>
+                <p>
+                  Using the block <img src="auf_insel.png" style='vertical-align:middle'> you can check if the robot is on a field with an island.
+                </p>
+              </div>
+              <div class="hard">
+                <p>
+                  The robot does not have a sensor to check, wether he is carrying a fish or not. Every row has exactly one island and one fish.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="gridContainer"></div>
+      <div id="blocklyLibContent"></div>
+    </div><!-- task -->
+</body>
+
+</html>

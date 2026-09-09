@@ -1,0 +1,19 @@
+const pythonCode_01_2 = `from robot import *
+
+def einbauen():
+    vorwaerts()
+    vorwaerts()
+    hebeZahnradAuf()
+    rueckwaerts()
+    baueZahnradEin()
+    vorwaerts()
+    
+einbauen()
+vorwaerts()
+vorwaerts()
+einbauen()
+einbauen()
+vorwaerts()
+einbauen()
+vorwaerts()
+einbauen()`;

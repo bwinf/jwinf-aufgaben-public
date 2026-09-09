@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script>window.stringsLanguage='de';window.taskStrings={};</script>
+<script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js" id="import-modules"></script>
+<script class="remove" type="text/javascript">
+var modulesPath = '../../../../_common/modules/';
+importModules(['jquery-1.7.1','JSON-js','raphael-2.2.1','codecast-7.7','jschannel','raphaelFactory-1.0','delayFactory-1.0','simulationFactory-1.0','platform-pr','beav-1.0','installationAPI.01','miniPlatform','taskStyles-mobileFirst','jwinf-codecast_css','jwinf-codecast','conceptDisplay-1.0','conceptViewer-1.0','conceptViewer_css-1.0','blockly-printer']);
+</script>
+<script class="remove" type="text/javascript">
+var json = {
+         "id": "23-DE-02",
+         "language": "de",
+         "version": "de.01",
+         "authors": "Hannah Rauterberg",
+         "translators": [],
+         "license": "",
+         "taskPathPrefix": "",
+         "modulesPathPrefix": "",
+         "browserSupport": [],
+         "acceptedAnswers": [""],
+         "fullFeedback": true,
+         "minWidth": "auto"
+      };
+</script>
+<script type="text/javascript" src="printer_task_codecast.js"></script>
+</head>
+<body id="app">
+<div id="react-container" style="width:100%;height:100vh"></div>
+
+<div id="task" style="display:none"><div id="tabsContainer"></div><div id="taskContent"><div id="gridContainer"></div><div id="blocklyLibContent"></div></div></div>
+<div id="taskIntro" style="display:none">
+            <div class="easy" data-lang="blockly">
+               <p>In Blockly gibt es verschiedene Datentypen.
+                  Einen Datentyp können wir uns als ein Schema vorstellen, um Werte darzustellen.
+                  Einige Bausteine erwarten bestimmte Datentypen und lassen sich mit Bausteinen anderer Typen nicht
+                  kombinieren
+                  oder liefern nicht das Ergebnis zurück, welcher wir eigentlich erwarten.
+               </p>
+               <p>
+                  <b>Aufgabe: </b> Lest die Zahl in der Eingabe ein und erhöht sie um 1.
+                  Schreibt die neue Zahl in die Ausgabe. Was habt ihr erwartet? Was ist passiert?<br>
+                  <b>Achtung:</b> Achtet auf die Fehlermeldung. Diese Version ist nicht lösbar. Wenn ihr euch 
+                  Gedanken gemacht habt, schaut euch die Version<span><svg viewBox="0 0 53.867 53.867" x="0px" y="0px" style="width: 1em; height: 1.5em;"><polygon style="fill:rgb(239, 206, 74);" points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                     10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "></polygon></svg><img></span><span class="u-icon u-icon-2"><svg class="u-svg-content" viewBox="0 0 53.867 53.867" x="0px" y="0px" style="width: 1em; height: 1.5em;"><polygon style="fill:rgb(239, 206, 74);" points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                     10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "></polygon></svg><img></span><span class="u-icon u-icon-3"><svg class="u-svg-content" viewBox="0 0 53.867 53.867" x="0px" y="0px" style="width: 1em; height: 1.5em;"><polygon style="fill:rgb(239, 206, 74);" points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                     10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "></polygon></svg><img></span> an.
+               </p>
+            </div>
+            <div class="easy" data-lang="python">
+               <p>In python gibt es verschiedene <b>Datentypen</b>. Einen Datentyp können wir uns als ein Schema
+                  vorstellen, um Werte darzustellen.
+                  So erwarten einige Funktionen, wie <code>print()</code> oder <code>readline()</code> Funktionen sind, 
+                  bestimmte Datentypen als Parameter.
+                  Dies erkennen wir in der Regel, indem wir eine Fehlermeldung bekommen, meist einen
+                  <code>TypeError</code>,
+                  falls wir falsche Datentypen übergeben.
+               </p>
+               <p>
+                  <b>Aufgabe 1a: </b> Lest die Zahl in der Eingabe mit <code>readline()</code> ein und erhöht sie um 1.
+                  Was ist passiert und warum? Denkt kurz darüber nach und lest dann bei <b>Weitere Hinweise</b> weiter.
+               </p>
+               <div class="long">
+                  <h2>Weitere Hinweise:</h2>
+                  <p>
+                     Die Funktion <code>readline()</code> gibt uns den Datentyp <b>String</b>, oder auch
+                     <b>Zeichenkette</b> genannt,
+                     zurück.
+                     Die 1, die wir versuchen aufzuaddieren, ist eine ganze Zahl, hat also den Datentyp <b>Integer</b>.
+                  </p>
+                  <p>
+                     <b>Aufgabe 1b: </b> Schreibt die 1 in Anführungszeichen.
+                     Führt den Code von erneut aus. Was habt ihr erwartet? Was ist passiert?
+                  </p>
+               </div>
+            </div>
+            <div class="medium" data-lang="blockly">
+               <p>
+                  Der Baustein <img src="liesZeile.png"> gibt uns den Datentyp <b>String</b>, oder auch
+                  <b>Zeichenkette</b> genannt,
+                  zurück.
+                  Wenn wir etwas auf eine Zeichenkette addieren, dann werden die Zeichen aneinandergehängt. Blockly
+                  interpretiert
+                  die 1 also automatisch auch als Zeichenkette.
+                  Ein <code>+</code> steht bei Zeichenketten also für eine Konkatenation.
+               </p>
+               <p>
+                  Wenn wir mit einer Zeichenkette wie gewohnt rechnen wollen, dann müssen wir diese erst in einen
+                  anderen
+                  Datentyp umwandeln. Eine ganze Zahl bezeichnen wir dabei als <b>Integer</b>.
+               </p>
+               <p>
+                  <b>Aufgabe: </b> Wandelt die Zahl in der Eingabe erst von einer Zeichenkette in einen
+                  Integer um, indem ihr den Baustein <img src="ZeichenZuZahl.png"> verwendet. Erhöht dann die Zahl um 1.
+               </p>
+            </div>
+            <div class="medium" data-lang="python">
+               <p>
+                  Die Anführungszeichen zeigen an, dass wir den Datentyp String meinen.
+                  Wenn wir zwei Zeichenkette addieren, dann werden die Zeichen aneinandergehängt.
+                  Ein <code>+</code> steht bei Zeichenketten also für eine Konkatenation.
+                  Wenn wir mit der Zahl rechnen wollen, dann müssen wir die Zeichenkette erst in einen
+                  Integer umwandeln.
+               </p>
+               <p>
+                  <b>Aufgabe 2: </b> Wandelt die Zahl in der Eingabe erst von einer Zeichenkette in einen
+                  Integer um, indem ihr die Funktion <code>int()</code> verwendet. Das, was ihr in eine ganze Zahl wollt,
+                  müsst ihr in die runden Klammern schreiben. Erhöht dann die Zahl um 1.
+               </p>
+            </div>
+
+            <div class="hard" data-lang="blockly">
+               <p>
+                  <b>Aber Vorsicht!</b><br>
+                  Was passiert, wenn wir versuchen etwas in einen Integer zu verwandeln, was gar keine Zahl ist?
+               </p>
+               <p>
+                  <b>Aufgabe: </b> Wandelt die Eingabe von einer Zeichenkette in einen
+                  Integer um. Was passiert? Schaut euch alle Testfälle an.
+               </p>
+               <p>
+                  <b>Merke: </b> Wir sollten uns sicher sein, dass die Zeichenkette auch tatsächlich in eine Zahl
+                  umgewandelt werden kann!
+               </p>
+            </div>
+            <div class="hard" data-lang="python">
+               <p>
+                  <b>Aber Vorsicht!</b><br>
+                  Was passiert, wenn wir versuchen etwas in einen Integer zu verwandeln, was gar keine Zahl ist?
+               </p>
+               <p>
+                  <b>Aufgabe: </b> Wandelt die Eingabe von einer Zeichenkette in einen
+                  Integer um. Was passiert? Schaut euch alle Testfälle an und lest dann bei <b>Weitere Hinweise</b>
+                  weiter.
+               </p>
+               <div class="long">
+                  <h2>Weitere Hinweise:</h2>
+                  <p>
+                     <b>Merke: </b> Wir sollten uns sicher sein, dass die Zeichenkette auch tatsächlich in eine Zahl
+                     umgewandelt werden kann!</p>
+                  <p>
+                     Ein <code>ValueError</code> bedeutet, dass wir zwar den richtigen Datentyp übergeben (eine
+                     Zeichenkette wird erwartet und wir
+                     übergeben eine Zeichenkette), aber, dass das Argument, also die Zeichenkette, nicht den erwarteteten Inhalt hat.</p>
+               </div>
+            </div>
+
+         </div>
+<div id="solution" style="display:none"></div>
+<div id="taskHints" style="display:none"></div>
+</body>
+</html>

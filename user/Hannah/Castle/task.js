@@ -1,5 +1,6 @@
 function initTask(subTask) {
    subTask.gridInfos = {
+      context: "robot",
       conceptViewer: false,
       //Hier wird der Kontext definiert. Mit dem Kontext werden ItemTypes und Aufgabenspezifische Übersetzungen geladen
       contextType: "castle",
@@ -71,7 +72,7 @@ function initTask(subTask) {
             col: 1,
             dir: 0,
             type: "robot"
-         }, ]
+         },]
       }],
       //Version ***
       medium: [{
@@ -89,7 +90,7 @@ function initTask(subTask) {
             col: 1,
             dir: 0,
             type: "robot"
-         }, ]
+         },]
       }],
       //Version ****
       hard: [{
@@ -118,4 +119,18 @@ function initTask(subTask) {
 //Laden der definierten Informationen
 //2. Parameter: Die Liste gibt an, welche Versionen es gibt
 //3. Parameter: Gibt an bei welcher Version gestartet wird. Bei null wird bei basic gestartet
-initWrapper(initTask, ["easy", "medium", "hard"], null, true);
+window.initBlocklySubTask = function () { };
+window.taskData = window.taskData || {};
+window.taskData.waitInit = function () { initTask(window.taskData); };
+window.taskData.codecastParameters = window.taskData.codecastParameters || {
+   language: "de-DE",
+   platform: "blockly",
+   canChangePlatform: false,
+   showStepper: true,
+   showStack: true,
+   showViews: true,
+   showIO: true,
+   controls: { reload: false },
+   hideSettings: true,
+   jwinfMenu: { copyPaste: true, undoRedo: true, svgExport: true }
+};

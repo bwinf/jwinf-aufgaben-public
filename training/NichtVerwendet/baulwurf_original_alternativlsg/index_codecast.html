@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script>window.stringsLanguage='de';window.taskStrings={};</script>
+<script class="remove" type="text/javascript" src="../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js" id="import-modules"></script>
+<script class="remove" type="text/javascript">
+var modulesPath = '../../../_common/modules/';
+importModules(['jquery-1.7.1','JSON-js','raphael-2.2.1','codecast-7.7','jschannel','raphaelFactory-1.0','delayFactory-1.0','simulationFactory-1.0','platform-pr','beav-1.0','installationAPI.01','miniPlatform','taskStyles-mobileFirst','jwinf-codecast_css','jwinf-codecast','conceptDisplay-1.0','conceptViewer-1.0','conceptViewer_css-1.0','blockly-printer']);
+</script>
+<script class="remove" type="text/javascript">
+var json = {
+      "id": "?", //TODO: muss verändert werden - wozu?
+      "language": "de",
+      "version": "de.01",
+      "authors": "Annika Petersen",
+      "translators": [],
+      "license": "",
+      "taskPathPrefix": "",
+      "modulesPathPrefix": "",
+      "browserSupport": [],
+      "acceptedAnswers": [""],
+      "fullFeedback": true,
+      "minWidth": "auto"
+    };
+</script>
+<script type="text/javascript" src="printer_task_codecast.js"></script>
+</head>
+<body id="app">
+<div id="react-container" style="width:100%;height:100vh"></div>
+
+<div id="task" style="display:none"><div id="tabsContainer"></div><div id="taskContent"><div id="gridContainer"></div><div id="blocklyLibContent"></div></div></div>
+<div id="taskIntro" style="display:none">
+        <div>
+        <p><i>Achtung! Das ist eine Alternativlösung zur Baulwurfaufgabe, die du davor bearbeiten solltest.</i></p>
+        <p> Ein Forschungsteam will das Verhalten der Maulwürfe untersuchen, die offenkundig, aber
+          unterirdisch ein großes Feld bevölkern und dort ihre Hügel aufwerfen. Das Team hat das Feld
+          gesichtet und dabei eine sogenannte Hügelkarte erstellt.</p> 
+        <p>Eine Hügelkarte ist in kleine Planquadrate eingeteilt; jedes Planquadrat, auf dem sich ein
+          Hügel befindet, ist mit X markiert. Hier ist ein Ausschnitt dieser Karte: </p>
+        </div>
+
+        <table>
+          <tr>
+            <td>
+      <pre>
+    X   XXX                                        
+        X X                                        
+  X     X X         
+    X   XXX         
+                                     
+      XXX  X          
+      X X    
+X     X X    X
+      XXX            
+              </pre>
+            </td>
+          </tr>
+        </table>
+
+        <div>
+          <p>Beim Betrachten der Karte macht das Forschungsteam eine Entdeckung: Es kann nicht sein, dass dort nur gewöhnliche Maulwürfe leben. Ein
+            Planquadrat mit einem <b>normalen Maulwurfshügel</b> ist nämlich immer <b>rundum von Quadraten ohne Hügel umgeben</b>. </p>
+        </div>
+        <div class = "medium hard">
+          <p>Die Markierungen bilden aber auch wieder dieses Muster: </p>
+          <table>
+            <tr>
+              <td>
+                <pre>
+XXX
+X X
+X X
+XXX
+                </pre>
+              </td>
+            </tr>
+          </table>
+          <p>Im Forschungsteam herrscht große Aufregung: Es muss sich um eine neue Maulwurfsart handeln, die ihre Hügel zu solch rechteckigen Bauen formiert. Die Forscher taufen sie „Baulwürfe“. Ihre Hügel liegen manchmal direkt nebeneinander, überlappen sich aber nie. </p>
+        </div>
+
+        <p>In der Eingabe stehen zwei Zahlen, die angeben wie breit und hoch die Karte ist. Anschließend folgt die Hügelkarte.</p>
+
+        <div class = "easy">
+          <p>Dein Programm soll eine Karte, die 3x3 Felder groß ist, einlesen und prüfen, ob es sich hierbei um einen normalen Maulwurfsbau, umgeben von freien Feldern, handelt. </p>
+          <p>Gib "normaler Maulwurf" aus, falls in der Mitte der Karte ein einzelner Maulwurfsbau ohne benachbarte Baue steht, und sonst "kein Maulwurf". </p>
+        </div>
+
+        <div class="medium">
+          <p> Dein Programm soll die Anzahl aller normalen Maulwurfsbaue bestimmen. Dafür kannst du z.B. durch die Karte laufen und schauen, ob ein markiertes Feld rundherum von freien Feldern umgeben ist. </p>
+        </div>
+
+        <div class = "hard">
+          <p> Dein Programm soll die Anzahl aller Baulwurfsbaue bestimmen. Dazu kannst du schauen, welche Einträge auf der Karte zu Maulwürfen gehören, und wenn du diese ignorierst, feststellen, welche/wie viele "X" demnach zu Baulwurfsbauen gehören.</p>
+          <p> Tipp: Du kannst zum Beispiel über die Karte laufen und alle "X" zählen, aber auch zählen, wie viele einzeln stehende normale Maulwurfshügel auf der Karte sind. Weil jeder Baulwurfsbau aus genau 10 "X" Markierungen besteht, kannst du dir die Anzahl ausrechnen, wenn du weißt wie viele "X" auf der Karte stehen und wie viele Maulwürfe verzeichnet sind.  </p>
+        </div>
+        
+        <p> Unter "weitere Hinweise" findest du <b>Erklärungen</b> zum Arbeiten mit der Karte.</p>
+
+        <div class = "long">
+          <h2>Weitere Hinweise:</h2>
+          <p>Du kannst die Karte als Liste speichern. In der Liste sind die Zeilen der Karte als Einträge gespeichert; jede Zeile kannst du entweder als einfachen Text speichern oder sie alternativ als Liste interpretieren, sodass jede Lücke und jedes X ein eigener Eintrag sind. Dazu kannst du den Baustein <code>Liste aus Text erstellen</code> verwenden. Erinnerung: Wenn du als Trennzeichen "" (gar nichts) angibst, wird jedes Zeichen als neuer Listeneintrag gewertet. </p>
+          <p>Dieser Code würde eine leere Liste erstellen und in diese als ersten (und einzigen) Eintrag eine Liste schreiben, die aus den Buchstaben in der Eingabezeile besteht:</p>
+          <p><img data-lang="blockly" src="listeInListeEinlesen.jpg"/></p>
+        
+          <p> Wenn wir die Karte als Liste von Listen speichern, können wir so auf das Element in der Zeile z und der Spalte s zugreifen: </p>
+          <p><img src="getEntryListOfLists.jpg"></p>
+          <p>Für die Karte gespeichert als Liste von Texten sähe das so aus:</p>
+          <p><img src="getEntryListOfTexts.jpg"></p>
+          
+          <div>
+            <p>Um auf Nachbarfelder eines Eintrags in der Karte zuzugreifen, können wir nach Belieben bei dem Zeilen- und/oder Spaltenindex 1 addieren oder subtrahieren. Allerdings muss man hier aufpassen, dass nicht Nachbarzellen von Zellen, die schon am Rand der Karte liegen, nicht mehr auf der Karte abgebildet sind.</p>
+            <p>Bevor wir also auf Nachbarn zugreifen, sollten wir also prüfen, ob diese Nachbarzellen noch in der Karte liegen. Das ist genau dann der Fall, wenn der Zeilen- und Spaltenindex jeweils echt größer als 0 sind sowie der Zeilenindex kleinergleich der Höhe, der Spaltenindex kleinergleich der Breite der Karte sind. Das können wir zum Beispiel so prüfen:</p>
+            <p><img src = "istEintragInKarte.jpg"></p>
+          </div> 
+
+          <div class = "medium hard">
+            <p>Wenn wir über eine Liste laufen und jeden Eintrag genau einmal anschauen wollen, bietet sich eine Schleife an. Da wir Zeilen und Spalten jeweils durchlaufen wollen, nehmen wir daher das folgende Konstrukt:</p>
+            <p><img src = "iterate2dList.jpg"></p>
+            <p>Die Zeile wird von 1 bis zur Höhe der Karte durchgezählt; damit schauen wir uns jede Zeile nacheinander an. In dieser Schleife steckt dann die zweite Schleife. Diese zählt in der Laufvariable "spalte" von 1 bis zur Breite der Karte die aktuelle Spalte.</p>
+            <p>In der Schleife könnten wir jetzt zum Beispiel den aktuellen Eintrag in der Karte an der Stelle "zeile", "spalte" auslesen oder uns z.B. überlegen, ob dort ein Baulwurf leben könnte. </p>
+          </div>
+
+          <div class = "hard">
+            <p>Algorithmisch könntest du zum Beispiel ungefähr so vorgehen: Setze eine Varible BaulwurfXAnzahl auf 0. Für jedes Feld in der Karte prüfe, ob es ein "X" ist. Falls es sich nicht um einen einzelnen Maulwurf handelt, muss es Teil eines Baulwurfbaus sein, erhöhe also BaulwurfXAnzahl um 1. Weil jeder Bau aus 10 "X" besteht, musst du diesen Wert nur noch durch 10 teilen. </p> 
+          </div>
+        </div>
+        
+        <div>
+        </div>
+      </div>
+<div id="solution" style="display:none"></div>
+<div id="taskHints" style="display:none"></div>
+</body>
+</html>

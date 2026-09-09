@@ -1,0 +1,12 @@
+name: "03.01 Bedingte Anweisungen"
+standalone: true
+public_listing: true
+
+languages:
+  - blockly
+  - python
+
+tags:
+  - Roboter
+  - Verzweigungen
+  - Wiederhole mit fester Anzahl

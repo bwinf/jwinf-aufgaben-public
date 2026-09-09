@@ -2,25 +2,16 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <title>Muster Malen</title>
-  <script>
-    window.stringsLanguage = 'de';
-  </script>
-  <script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js"
-    id="import-modules"></script>
-  <script class="remove" type="text/javascript">
-    var modulesPath = '../../../../_common/modules/'
-    importModules([
-      'jquery-1.7.1', 'JSON-js', 'raphael-2.2.1', 'beaver-task-2.0', 'jschannel', 'raphaelFactory-1.0', 'delayFactory-1.0', 'simulationFactory-1.0',
-      'platform-pr', 'buttonsAndMessages', 'beav-1.0', 'installationAPI.01', 'miniPlatform', 'conceptDisplay-1.0', 'conceptViewer-1.0', 'conceptViewer_css-1.0',
-      'taskStyles-mobileFirst', 'blockly-robot-1.1', 'jwinf_css'
-    ]);
-    // set Blockly as default language when none is specified through ?language=
-    importLanguageModules('blockly');
-  </script>
-  <script class="remove" type="text/javascript">
-    var json = {
+   <meta charset="utf-8">
+   <script>window.stringsLanguage = 'de'; window.taskStrings = {};</script>
+   <script class="remove" type="text/javascript"
+      src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js" id="import-modules"></script>
+   <script class="remove" type="text/javascript">
+      var modulesPath = '../../../../_common/modules/';
+      importModules(['jquery-1.7.1', 'JSON-js', 'raphael-2.2.1', 'codecast-7.7', 'jschannel', 'raphaelFactory-1.0', 'delayFactory-1.0', 'simulationFactory-1.0', 'platform-pr', 'beav-1.0', 'installationAPI.01', 'miniPlatform', 'taskStyles-mobileFirst', 'jwinf-codecast_css', 'jwinf-codecast', 'conceptDisplay-1.0', 'conceptViewer-2.0', 'conceptViewer_css-2.0', 'blockly-robot-1.1', 'createAlgoreaInstructions-1.0', 'algoreaInstructionsStrings']);
+   </script>
+   <script class="remove" type="text/javascript">
+      var json = {
       "id": "http://castor-informatique.fr/questions/algorea_training/training-repeat-paint/",
       "language": "fr",
       "version": "fr.01",
@@ -33,19 +24,21 @@
       "fullFeedback": true,
       "minWidth": "auto"
     };
-  </script>
-  <script type="text/javascript" src="task.js"></script>
-
+   </script>
+   <script type="text/javascript" src="task.js"></script>
 </head>
 
-<body onresize="task.displayedSubTask.updateScale()">
-  <div id="task">
-    <h1>Muster Malen</h1>
-    <img src="icon.png" style="display:none" />
-
-    <div id="tabsContainer"></div>
-    <div id="taskContent">
-      <div id="taskIntro">
+<body id="app">
+   <div id="react-container" style="width:100%;height:100vh"></div>
+   <img src="icon.png" style="display:none" />
+   <div id="task" style="display:none">
+      <div id="tabsContainer"></div>
+      <div id="taskContent">
+         <div id="gridContainer"></div>
+         <div id="blocklyLibContent"></div>
+      </div>
+   </div>
+   <div id="taskIntro" style="display:none">
         Programmiere den Roboter:
         <p>
           Der Roboter soll die markierten Felder <img src="../../../Bilder/Roboter-Grafiken/paint_marker.png" style="vertical-align: middle; height: 40px;"> färben.
@@ -105,11 +98,8 @@
           </div>
         </div>
       </div>
-      <div id="gridContainer"></div>
-      <div id="blocklyLibContent"></div>
-    </div>
-
-  </div><!-- task -->
+   <div id="solution" style="display:none"></div>
+   <div id="taskHints" style="display:none"></div>
 </body>
 
 </html>

@@ -1,0 +1,13 @@
+name: "13.03 In der Bibliothek"
+standalone: true
+public_listing: true
+
+languages:
+  - blockly
+  - python
+
+tags:
+  - Roboter
+  - Funktionen
+  - Wiederhole mit fester Anzahl
+  - Variablen

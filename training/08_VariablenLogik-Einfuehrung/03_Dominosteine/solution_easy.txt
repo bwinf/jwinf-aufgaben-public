@@ -1,0 +1,6 @@
+from robot import *
+
+for i in range(5):
+    vorwaerts()
+    hebeDominosteinAuf()
+    vorwaerts()

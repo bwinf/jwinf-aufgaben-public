@@ -1,0 +1,11 @@
+name: "07.05 Textteile suchen"
+standalone: true
+public_listing: true
+
+languages:
+  - blockly
+  - python
+
+tags:
+  - Text
+  - Bedingte Wiederholung

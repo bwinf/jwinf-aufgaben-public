@@ -1,0 +1,29 @@
+from robot import *
+
+def einbauenVorne():
+    hebeZahnradAuf()
+    vorwaerts()
+    vorwaerts()
+    baueZahnradEin()
+    
+def einbauenHinten():
+    vorwaerts()
+    hebeZahnradAuf()
+    rueckwaerts()
+    rueckwaerts()
+    baueZahnradEin()
+    vorwaerts()
+    vorwaerts()
+    
+vorwaerts()
+einbauenVorne()
+vorwaerts()
+vorwaerts()
+einbauenHinten()
+vorwaerts()
+einbauenVorne()
+einbauenHinten()
+vorwaerts()
+einbauenVorne()
+rueckwaerts()
+einbauenVorne()

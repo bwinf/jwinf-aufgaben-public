@@ -1,7 +1,8 @@
 function initTask(subTask) {
    subTask.gridInfos = {
+      context: "robot",
       hideSaveOrLoad: true,
-      conceptViewer: false,
+      conceptViewer: true,
       contextType: "course",
       actionDelay: 200,
       maxInstructions: 6,
@@ -47,5 +48,20 @@ function initTask(subTask) {
    initBlocklySubTask(subTask);
 }
 
-initWrapper(initTask, ["hard"], "hard", true);
+window.initBlocklySubTask = function () {};
+window.taskData = window.taskData || {};
+window.taskData.waitInit = function () { initTask(window.taskData); };
+window.taskData.codecastParameters = window.taskData.codecastParameters || {
+    language: "de-DE",
+    platform: "blockly",
+    canChangePlatform: false,
+    showStepper: true,
+    showStack: false,
+    showViews: true,
+    showIO: true,
+    controls: { reload: false },
+    hideSettings: true,
+    jwinfMenu: { copyPaste: true, undoRedo: true, svgExport: true }
+};
+
 

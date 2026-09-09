@@ -8,10 +8,10 @@ language: legacy_blockly
 
 tasks:
   "Aufgabe 1":
-    "../../training/05_BedingteAnweisungen-Uebung/01_ZuendeAlleKerzenAn": {stars: 4}
+    "../../training/06_BedingteAnweisungen-Uebung/01_ZuendeAlleKerzenAn": {stars: 4}
   "Aufgabe 2":
-    "../../training/01_Grundbausteine-Einfuehrung/08_BedingteAnweisungen": {stars: 4}
+    "../../training/03_Bedingte_Anweisungen_Einfuehrung/01_BedingteAnweisungen": {stars: 4}
   "Aufgabe 3":
-    "../../training/01_Grundbausteine-Einfuehrung/12_Fischen": {stars: 4}
+    "../../training/03_Bedingte_Anweisungen_Einfuehrung/03_Fischen": {stars: 4}
   "Aufgabe 4":
-    "../../training/03_Wiederholungen-Vertiefung/03_Ornamente": {stars: 4}
+    "../../training/09_Wiederholungen_mit_Zählvariable/01_Ornamente": {stars: 4}

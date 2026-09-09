@@ -1,5 +1,6 @@
 function initTask(subTask) {
    subTask.gridInfos = {
+      context: "robot",
       conceptViewer: false, // Nicht für deutsche Plattform übersetzt.
       timeoutMinutes: 15, // Nach 15 Minuten wird eine Warnung angezeigt.
       // Hier wird der Kontext definiert. Mit dem Kontext werden ItemTypes und Aufgabenspezifische Übersetzungen geladen.
@@ -68,8 +69,8 @@ function initTask(subTask) {
             singleBlocks: {
                shared: [],
                easy: ["controls_repeat", "math_number", "math_arithmetic"],
-               medium: ["controls_repeat", "math_number", "math_arithmetic", "lists_create_with_empty", "lists_setIndex_insert_last", "lists_setIndex", "lists_getIndex"],
-               hard: ["controls_repeat", "math_number", "math_arithmetic", "lists_create_with_empty", "lists_setIndex_insert_last", "lists_setIndex", "lists_getIndex", "lists_length"],
+               medium: ["controls_repeat", "math_number", "math_arithmetic", "lists_create_with_empty", "lists_setIndex", "lists_getIndex"],
+               hard: ["controls_repeat", "math_number", "math_arithmetic", "lists_create_with_empty", "lists_setIndex", "lists_getIndex", "lists_length"],
             }
          },
          // Falls nicht selbst Variablen definiert werden sollen, sondern Variablen
@@ -700,12 +701,24 @@ function initTask(subTask) {
    };
 
    initBlocklySubTask(subTask);
-   displayHelper.thresholdEasy = 5000;
-   displayHelper.thresholdMedium = 10000;
 }
 
 // Laden der definierten Informationen
 // 2. Parameter: Die Liste gibt an, welche Versionen es gibt
 // 3. Parameter: Gibt an bei welcher Version gestartet wird.
 // initWrapper(initTask, ["basic", "easy", "medium", "hard"], "basic", true);
-initWrapper(initTask, ["easy", "medium", "hard"], null, true);
+window.initBlocklySubTask = function () {};
+window.taskData = window.taskData || {};
+window.taskData.waitInit = function () { initTask(window.taskData); };
+window.taskData.codecastParameters = window.taskData.codecastParameters || {
+    language: "de-DE",
+    platform: "blockly",
+    canChangePlatform: false,
+    showStepper: true,
+    showStack: false,
+    showViews: true,
+    showIO: true,
+    controls: { reload: false },
+    hideSettings: true,
+    jwinfMenu: { copyPaste: true, undoRedo: true, svgExport: true }
+};

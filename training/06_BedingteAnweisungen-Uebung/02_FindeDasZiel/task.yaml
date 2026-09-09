@@ -1,0 +1,12 @@
+name: "06.02 Finde das Ziel"
+standalone: true
+public_listing: true
+
+languages:
+  - blockly
+  - python
+
+tags:
+  - Roboter
+  - Verzweigungen
+  - Bedingte Wiederholung

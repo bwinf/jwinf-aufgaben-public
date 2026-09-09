@@ -1,0 +1,14 @@
+name: "15.02 Fische ausliefern"
+standalone: true
+public_listing: true
+
+languages:
+  - blockly
+  - python
+
+tags:
+  - Roboter
+  - Liste
+  - Variablen
+  - Wiederhole mit fester Anzahl
+  - Verzweigungen

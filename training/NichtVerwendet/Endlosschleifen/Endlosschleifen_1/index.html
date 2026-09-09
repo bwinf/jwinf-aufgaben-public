@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <title>Übung-Endlosschleifen-1</title>
+   <script>
+      // Die information 'de' bezieht sich darauf, welche Übersetzungen aus der Bibliothek geladen werden.
+      // In diesem Fall werden alle Blöcke, Blockhilfen etc. auf deutsch angezeigt.
+      window.stringsLanguage = 'de';
+      window.taskStrings = {};
+   </script>
+   <script class="remove" type="text/javascript" src="../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js"
+      id="import-modules"></script>
+   <script class="remove" type="text/javascript">
+      var modulesPath = '../../../_common/modules/'
+      // Die Bibliotheken werden geladen. Dabei sind die ersten immer gleich.
+      // 'jwinf_css' spezifiziert das für die JwInf-Plattform verwendete Design z.B. den Fuchs und das grün
+      // Davor steht die Aufgaben spezifische Bibliothek. So wird für
+      // Roboteraufgaben: 'blockly-robot-1.1' 
+      // Textaufgaben: 'blockly-printer'
+      // Turtleaufgaben: 'blockly-turtle' geladen.
+      importModules([
+         'jquery-1.7.1', 'JSON-js', 'raphael-2.2.1', 'beaver-task-2.0',
+         'jschannel', 'raphaelFactory-1.0', 'delayFactory-1.0',
+         'simulationFactory-1.0', 'platform-pr', 'buttonsAndMessages',
+         'beav-1.0', 'installationAPI.01', 'miniPlatform', 'conceptDisplay-1.0',
+         'conceptViewer-1.0', 'conceptViewer_css-1.0', 'taskStyles-mobileFirst',
+         'blockly-robot-1.1',
+         'jwinf_css'
+      ]);
+      // Die Standardsprache wird definiert, in diesem Fall Blockly 
+      // Andere Sprachen (wenn vorhanden) können dann mit ?language= als Suffix in der URL geladen werden.
+      importLanguageModules('blockly');
+
+      // Hier werden ein paar Grundinformationen zu der Aufgabe festgehalten
+   </script>
+   <script class="remove" type="text/javascript">
+      var json = {
+         "id": "",
+         "language": "de",
+         "version": "de.01",
+         "authors": "Jakob Schilke",
+         "translators": [],
+         "license": "",
+         "taskPathPrefix": "",
+         "modulesPathPrefix": "",
+         "browserSupport": [],
+         "fullFeedback": true,
+         "minWidth": "auto"
+      };
+   </script>
+   <script type="text/javascript" src="task.js"></script>
+</head>
+
+<body onresize="task.displayedSubTask.updateScale()">
+   <!-- Der Einleitungstext für easy und medium ist gleich -->
+   <div id="task">
+      <h1>Endlosschleifen 1</h1>
+      <img src="icon.png" style="display:none" />
+      <img src="box.png" style="display:none" />
+      <img src="red_robot.png" style="display:none" />
+      <img src="rightArrow.png" style="display:none" />
+      <img src="leftArrow.png" style="display:none" />
+      <img src="topArrow.png" style="display:none" />
+      <img src="bottomArrow.png" style="display:none" />
+      <div id="tabsContainer"></div>
+      <div id="taskContent">
+         <div id="taskIntro">
+            <!-- Der Einleitungstext für alle Versionen ist gleich -->
+            Programmiere den Roboter:<br>
+            <p>Der Roboter soll den Schatz bergen.</p>
+
+            <div class="easy"><b>Hinweis: </b>Der Roboter startet immer auf einem Pfeil nach rechts und fährt anfangs
+               immer vorwärts.
+            </div>
+
+            <div class="medium"><b>Hinweis: </b>Der Roboter startet immer auf einem Pfeil nach rechts und fährt anfangs
+               immer vorwärts. Diesmal muss eine Endlosschleife verwendet werden. --> Erklärung
+            </div>
+
+            <div class="hard">
+               Jetzt schauen wir uns eine schwierigere Aufgabe an: Es geht darum, dass die Pfeile die Richtungen weisen, in die der 
+               Roboter immer bis zum nächsten Pfeil laufen soll.
+            </div>
+         </div>
+         <div id="gridContainer"></div>
+         <div id="blocklyLibContent"></div>
+      </div>
+
+   </div><!-- task -->
+</body>
+
+</html>

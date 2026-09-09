@@ -1,0 +1,10 @@
+const pythonCode_02_2 = `from robot import *
+
+for i in range(8):
+    rechts()
+    for j in range(i+1):
+        oben()
+    hebeMurmelAuf()
+    for j in range(i+1):
+        unten()
+    legeMurmelAb()`;

@@ -1,0 +1,13 @@
+name: "15.05 Buchverschlüsselung"
+standalone: true
+public_listing: true
+
+languages:
+  - blockly
+  - python
+
+tags:
+  - Liste
+  - Text
+  - Variablen
+  - Verzweigungen

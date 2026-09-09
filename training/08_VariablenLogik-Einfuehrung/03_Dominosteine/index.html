@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script>window.stringsLanguage='de';window.taskStrings={};</script>
+<script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js" id="import-modules"></script>
+<script class="remove" type="text/javascript">
+var modulesPath = '../../../../_common/modules/';
+importModules(['jquery-1.7.1','JSON-js','raphael-2.2.1','codecast-7.7','jschannel','raphaelFactory-1.0','delayFactory-1.0','simulationFactory-1.0','platform-pr','beav-1.0','installationAPI.01','miniPlatform','taskStyles-mobileFirst','jwinf-codecast_css','jwinf-codecast','conceptDisplay-1.0','conceptViewer-2.0','conceptViewer_css-2.0','blockly-robot-1.1','createAlgoreaInstructions-1.0','algoreaInstructionsStrings']);
+</script>
+<script class="remove" type="text/javascript">
+var json = {
+         "id": "",
+         "language": "de",
+         "version": "de.01",
+         "authors": "Hannah Rauterberg",
+         "translators": [],
+         "license": "",
+         "taskPathPrefix": "",
+         "modulesPathPrefix": "",
+         "browserSupport": [],
+         "fullFeedback": true,
+         "minWidth": "auto"
+      };
+</script>
+<script type="text/javascript" src="task.js"></script>
+</head>
+<body id="app">
+<div id="react-container" style="width:100%;height:100vh"></div>
+<img src="icon.png" style="display:none" />
+<div id="task" style="display:none"><div id="tabsContainer"></div><div id="taskContent"><div id="gridContainer"></div><div id="blocklyLibContent"></div></div></div>
+<div id="taskIntro" style="display:none">
+            Programmiere den Roboter:<br>
+            <!-- Weiterführende Text für easy und medium -->
+            <div class="easy medium">
+               <p>Der Roboter soll alle Dominosteine mit zwei blauen Quadraten <img
+                     src="../../../Bilder/Roboter-Grafiken/BB.png" style="height: 40px;"> einsammeln.
+            </div>
+            <!-- Weiterführende Text für medium -->
+            <div class="medium">
+               Bitte schau dir vorab die Erläuterungen<span data-lang="blockly"> der Bausteine</span> unter <b>"weitere
+                  Hinweise"</b> an.
+            </div>
+            <!-- Weiterführende Text für hard -->
+            <div class="hard"> Der Roboter soll
+               <p>
+               <ul>
+                  <li>in der oberen Reihe Dominosteine mit zwei blauen Quadraten <img
+                        src="../../../Bilder/Roboter-Grafiken/BB.png" style="height: 40px;">,</li>
+                  <li>in der mittleren Reihe Dominosteine mit zwei orangefarbenen Sternen <img
+                        src="../../../Bilder/Roboter-Grafiken/OO.png" style="height: 40px;">,</li>
+                  <li>in der unteren Reihe Dominosteine mit zwei grünen Kreuzen <img
+                        src="../../../Bilder/Roboter-Grafiken/GG.png" style="height: 40px;">,</li>
+               </ul>
+               einsammeln.
+               </p>
+            </div>
+            <div class="medium hard">
+               <div class="long">
+                  <hr>
+                  <h2>Weitere Hinweise:</h2>
+                  Ein Dominostein besteht immer aus zwei Symbolen:
+                  <ul>
+                     <li>Dieser Dominostein <img src="../../../Bilder/Roboter-Grafiken/OO.png"
+                           style="height: 40px; vertical-align: bottom;"> hat zwei orangene
+                        Sterne. Somit ist die Bedingung
+                        <img data-lang="blockly" src="../../../Bilder/Domino_aufGelbemStern.svg"> <code
+                           data-lang="python">aufStern()</code> <code>True</code>.
+                     </li>
+
+                     <li>Dieser Dominostein <img src="../../../Bilder/Roboter-Grafiken/GB.png"
+                           style="height: 40px;vertical-align: bottom;"> hat ein blaues
+                        Quadrat und ein grünes Kreuz. Also ist sowohl die Bedingung
+                        <img data-lang="blockly" src="../../../Bilder/Domino_aufBlauemQuadrat.svg"><code
+                           data-lang="python">aufQuadrat()</code> , als auch die Bedingung <img data-lang="blockly"
+                           src="../../../Bilder/Domino_aufGruenemKreuz.svg"> <code data-lang="python">aufKreuz()</code>
+                        <code>True</code>.
+                     </li>
+                  </ul>
+
+                  <p>Um nur die korrekten Steine aufzuheben musst du die Bedingungen geschickt ineinander schachteln.
+                     Zum Beispiel beschreibt diese Bedingung exakt den Stein mit zwei orangenen Sternen:<br>
+                     <img data-lang="blockly" src="falls_stern2.svg" style="vertical-align:middle">
+                  <pre data-lang="python">
+if aufStern() and not aufQuadrat() and not aufKreuz():
+   hebeDominosteinAuf()
+</pre>
+                  </p>
+               </div>
+            </div>
+         </div>
+<div id="solution" style="display:none"></div>
+<div id="taskHints" style="display:none"></div>
+</body>
+</html>

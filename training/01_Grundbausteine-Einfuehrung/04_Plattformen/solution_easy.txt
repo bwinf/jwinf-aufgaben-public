@@ -1,0 +1,9 @@
+from robot import *
+
+spring()
+vorwaerts()
+hebeZahnradAuf()
+vorwaerts()
+vorwaerts()
+vorwaerts()
+baueZahnradEin()

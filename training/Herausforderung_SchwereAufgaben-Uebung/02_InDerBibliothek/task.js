@@ -1,5 +1,6 @@
 function initTask(subTask) {
    subTask.gridInfos = {
+      context: "robot",
       conceptViewer: false,
       //Hier wird der Kontext definiert. Mit dem Kontext werden ItemTypes und Aufgabenspezifische Übersetzungen geladen
       contextType: "packages",
@@ -155,40 +156,40 @@ function initTask(subTask) {
             [1, 8, 7, 7, 7, 8, 1, 1, 1, 1, 1],
          ],
          initItems: [{
-                  row: 8,
-                  col: 3,
-                  dir: 0,
-                  type: "robot"
-               },
-               {
-                  row: 2,
-                  col: 7,
-                  type: "box",
-                  containerSize: 6
-               },
-               {
-                  row: 4,
-                  col: 6,
-                  type: "box",
-                  containerSize: 3
-               },
-               {
-                  row: 6,
-                  col: 5,
-                  type: "box",
-                  containerSize: 1
-               },
-               {
-                  row: 8,
-                  col: 4,
-                  type: "box",
-                  containerSize: 4
-               }
-            ].concat(initArray(8, {
-               row: 2,
-               col: 5,
-               type: "books_outside"
-            }))
+            row: 8,
+            col: 3,
+            dir: 0,
+            type: "robot"
+         },
+         {
+            row: 2,
+            col: 7,
+            type: "box",
+            containerSize: 6
+         },
+         {
+            row: 4,
+            col: 6,
+            type: "box",
+            containerSize: 3
+         },
+         {
+            row: 6,
+            col: 5,
+            type: "box",
+            containerSize: 1
+         },
+         {
+            row: 8,
+            col: 4,
+            type: "box",
+            containerSize: 4
+         }
+         ].concat(initArray(8, {
+            row: 2,
+            col: 5,
+            type: "books_outside"
+         }))
             .concat(initArray(3, {
                row: 4,
                col: 4,
@@ -219,40 +220,40 @@ function initTask(subTask) {
             [1, 8, 7, 7, 7, 8, 1, 1, 1, 1, 1],
          ],
          initItems: [{
-                  row: 8,
-                  col: 3,
-                  dir: 0,
-                  type: "robot"
-               },
-               {
-                  row: 2,
-                  col: 7,
-                  type: "box",
-                  containerSize: 2
-               },
-               {
-                  row: 4,
-                  col: 6,
-                  type: "box",
-                  containerSize: 5
-               },
-               {
-                  row: 6,
-                  col: 5,
-                  type: "box",
-                  containerSize: 12
-               },
-               {
-                  row: 8,
-                  col: 4,
-                  type: "box",
-                  containerSize: 7
-               }
-            ].concat(initArray(13, {
-               row: 2,
-               col: 5,
-               type: "books_outside"
-            }))
+            row: 8,
+            col: 3,
+            dir: 0,
+            type: "robot"
+         },
+         {
+            row: 2,
+            col: 7,
+            type: "box",
+            containerSize: 2
+         },
+         {
+            row: 4,
+            col: 6,
+            type: "box",
+            containerSize: 5
+         },
+         {
+            row: 6,
+            col: 5,
+            type: "box",
+            containerSize: 12
+         },
+         {
+            row: 8,
+            col: 4,
+            type: "box",
+            containerSize: 7
+         }
+         ].concat(initArray(13, {
+            row: 2,
+            col: 5,
+            type: "books_outside"
+         }))
             .concat(initArray(5, {
                row: 4,
                col: 4,
@@ -282,70 +283,70 @@ function initTask(subTask) {
             [1, 8, 7, 7, 7, 7, 7, 7, 7, 7, 8, 1],
          ],
          initItems: [{
-                  row: 6,
-                  col: 4,
-                  dir: 0,
-                  type: "robot"
-               },
-               {
-                  row: 2,
-                  col: 5,
-                  type: "box",
-                  containerSize: 1
-               },
-               {
-                  row: 2,
-                  col: 6,
-                  type: "box",
-                  containerSize: 4
-               },
-               {
-                  row: 2,
-                  col: 7,
-                  type: "box",
-                  containerSize: 3
-               },
-               {
-                  row: 4,
-                  col: 5,
-                  type: "box",
-                  containerSize: 2
-               },
-               {
-                  row: 4,
-                  col: 6,
-                  type: "box",
-                  containerSize: 3
-               },
-               {
-                  row: 4,
-                  col: 7,
-                  type: "box",
-                  containerSize: 2
-               },
-               {
-                  row: 6,
-                  col: 5,
-                  type: "box",
-                  containerSize: 2
-               },
-               {
-                  row: 6,
-                  col: 6,
-                  type: "box",
-                  containerSize: 1
-               },
-               {
-                  row: 6,
-                  col: 7,
-                  type: "box",
-                  containerSize: 1
-               }
-            ].concat(initArray(9, {
-               row: 2,
-               col: 3,
-               type: "books_outside"
-            }))
+            row: 6,
+            col: 4,
+            dir: 0,
+            type: "robot"
+         },
+         {
+            row: 2,
+            col: 5,
+            type: "box",
+            containerSize: 1
+         },
+         {
+            row: 2,
+            col: 6,
+            type: "box",
+            containerSize: 4
+         },
+         {
+            row: 2,
+            col: 7,
+            type: "box",
+            containerSize: 3
+         },
+         {
+            row: 4,
+            col: 5,
+            type: "box",
+            containerSize: 2
+         },
+         {
+            row: 4,
+            col: 6,
+            type: "box",
+            containerSize: 3
+         },
+         {
+            row: 4,
+            col: 7,
+            type: "box",
+            containerSize: 2
+         },
+         {
+            row: 6,
+            col: 5,
+            type: "box",
+            containerSize: 2
+         },
+         {
+            row: 6,
+            col: 6,
+            type: "box",
+            containerSize: 1
+         },
+         {
+            row: 6,
+            col: 7,
+            type: "box",
+            containerSize: 1
+         }
+         ].concat(initArray(9, {
+            row: 2,
+            col: 3,
+            type: "books_outside"
+         }))
             .concat(initArray(8, {
                row: 4,
                col: 3,
@@ -369,70 +370,70 @@ function initTask(subTask) {
             [1, 8, 7, 7, 7, 7, 7, 7, 7, 7, 8, 1],
          ],
          initItems: [{
-                  row: 6,
-                  col: 4,
-                  dir: 0,
-                  type: "robot"
-               },
-               {
-                  row: 2,
-                  col: 5,
-                  type: "box",
-                  containerSize: 3
-               },
-               {
-                  row: 2,
-                  col: 6,
-                  type: "box",
-                  containerSize: 4
-               },
-               {
-                  row: 2,
-                  col: 7,
-                  type: "box",
-                  containerSize: 6
-               },
-               {
-                  row: 4,
-                  col: 5,
-                  type: "box",
-                  containerSize: 1
-               },
-               {
-                  row: 4,
-                  col: 6,
-                  type: "box",
-                  containerSize: 1
-               },
-               {
-                  row: 4,
-                  col: 7,
-                  type: "box",
-                  containerSize: 1
-               },
-               {
-                  row: 6,
-                  col: 5,
-                  type: "box",
-                  containerSize: 5
-               },
-               {
-                  row: 6,
-                  col: 6,
-                  type: "box",
-                  containerSize: 9
-               },
-               {
-                  row: 6,
-                  col: 7,
-                  type: "box",
-                  containerSize: 2
-               }
-            ].concat(initArray(14, {
-               row: 2,
-               col: 3,
-               type: "books_outside"
-            }))
+            row: 6,
+            col: 4,
+            dir: 0,
+            type: "robot"
+         },
+         {
+            row: 2,
+            col: 5,
+            type: "box",
+            containerSize: 3
+         },
+         {
+            row: 2,
+            col: 6,
+            type: "box",
+            containerSize: 4
+         },
+         {
+            row: 2,
+            col: 7,
+            type: "box",
+            containerSize: 6
+         },
+         {
+            row: 4,
+            col: 5,
+            type: "box",
+            containerSize: 1
+         },
+         {
+            row: 4,
+            col: 6,
+            type: "box",
+            containerSize: 1
+         },
+         {
+            row: 4,
+            col: 7,
+            type: "box",
+            containerSize: 1
+         },
+         {
+            row: 6,
+            col: 5,
+            type: "box",
+            containerSize: 5
+         },
+         {
+            row: 6,
+            col: 6,
+            type: "box",
+            containerSize: 9
+         },
+         {
+            row: 6,
+            col: 7,
+            type: "box",
+            containerSize: 2
+         }
+         ].concat(initArray(14, {
+            row: 2,
+            col: 3,
+            type: "books_outside"
+         }))
             .concat(initArray(4, {
                row: 4,
                col: 3,
@@ -457,70 +458,70 @@ function initTask(subTask) {
             [1, 8, 7, 7, 7, 7, 7, 7, 7, 8, 1, 1],
          ],
          initItems: [{
-                  row: 6,
-                  col: 4,
-                  dir: 0,
-                  type: "robot"
-               },
-               {
-                  row: 2,
-                  col: 6,
-                  type: "box",
-                  containerSize: 1
-               },
-               {
-                  row: 2,
-                  col: 7,
-                  type: "box",
-                  containerSize: 4
-               },
-               {
-                  row: 2,
-                  col: 5,
-                  type: "box",
-                  containerSize: 3
-               },
-               {
-                  row: 4,
-                  col: 5,
-                  type: "box",
-                  containerSize: 3
-               },
-               {
-                  row: 4,
-                  col: 6,
-                  type: "box",
-                  containerSize: 3
-               },
-               {
-                  row: 4,
-                  col: 7,
-                  type: "box",
-                  containerSize: 1
-               },
-               {
-                  row: 6,
-                  col: 5,
-                  type: "box",
-                  containerSize: 3
-               },
-               {
-                  row: 6,
-                  col: 6,
-                  type: "box",
-                  containerSize: 2
-               },
-               {
-                  row: 6,
-                  col: 7,
-                  type: "box",
-                  containerSize: 4
-               },
-            ].concat(initArray(9, {
-               row: 2,
-               col: 3,
-               type: "books_outside"
-            }))
+            row: 6,
+            col: 4,
+            dir: 0,
+            type: "robot"
+         },
+         {
+            row: 2,
+            col: 6,
+            type: "box",
+            containerSize: 1
+         },
+         {
+            row: 2,
+            col: 7,
+            type: "box",
+            containerSize: 4
+         },
+         {
+            row: 2,
+            col: 5,
+            type: "box",
+            containerSize: 3
+         },
+         {
+            row: 4,
+            col: 5,
+            type: "box",
+            containerSize: 3
+         },
+         {
+            row: 4,
+            col: 6,
+            type: "box",
+            containerSize: 3
+         },
+         {
+            row: 4,
+            col: 7,
+            type: "box",
+            containerSize: 1
+         },
+         {
+            row: 6,
+            col: 5,
+            type: "box",
+            containerSize: 3
+         },
+         {
+            row: 6,
+            col: 6,
+            type: "box",
+            containerSize: 2
+         },
+         {
+            row: 6,
+            col: 7,
+            type: "box",
+            containerSize: 4
+         },
+         ].concat(initArray(9, {
+            row: 2,
+            col: 3,
+            type: "books_outside"
+         }))
             .concat(initArray(10, {
                row: 4,
                col: 3,
@@ -544,70 +545,70 @@ function initTask(subTask) {
             [1, 8, 7, 7, 7, 7, 7, 7, 7, 8, 1, 1],
          ],
          initItems: [{
-                  row: 6,
-                  col: 4,
-                  dir: 0,
-                  type: "robot"
-               },
-               {
-                  row: 2,
-                  col: 6,
-                  type: "box",
-                  containerSize: 3
-               },
-               {
-                  row: 2,
-                  col: 7,
-                  type: "box",
-                  containerSize: 3
-               },
-               {
-                  row: 2,
-                  col: 5,
-                  type: "box",
-                  containerSize: 3
-               },
-               {
-                  row: 4,
-                  col: 5,
-                  type: "box",
-                  containerSize: 4
-               },
-               {
-                  row: 4,
-                  col: 6,
-                  type: "box",
-                  containerSize: 5
-               },
-               {
-                  row: 4,
-                  col: 7,
-                  type: "box",
-                  containerSize: 6
-               },
-               {
-                  row: 6,
-                  col: 5,
-                  type: "box",
-                  containerSize: 8
-               },
-               {
-                  row: 6,
-                  col: 6,
-                  type: "box",
-                  containerSize: 1
-               },
-               {
-                  row: 6,
-                  col: 7,
-                  type: "box",
-                  containerSize: 2
-               },
-            ].concat(initArray(9, {
-               row: 2,
-               col: 3,
-               type: "books_outside"
-            }))
+            row: 6,
+            col: 4,
+            dir: 0,
+            type: "robot"
+         },
+         {
+            row: 2,
+            col: 6,
+            type: "box",
+            containerSize: 3
+         },
+         {
+            row: 2,
+            col: 7,
+            type: "box",
+            containerSize: 3
+         },
+         {
+            row: 2,
+            col: 5,
+            type: "box",
+            containerSize: 3
+         },
+         {
+            row: 4,
+            col: 5,
+            type: "box",
+            containerSize: 4
+         },
+         {
+            row: 4,
+            col: 6,
+            type: "box",
+            containerSize: 5
+         },
+         {
+            row: 4,
+            col: 7,
+            type: "box",
+            containerSize: 6
+         },
+         {
+            row: 6,
+            col: 5,
+            type: "box",
+            containerSize: 8
+         },
+         {
+            row: 6,
+            col: 6,
+            type: "box",
+            containerSize: 1
+         },
+         {
+            row: 6,
+            col: 7,
+            type: "box",
+            containerSize: 2
+         },
+         ].concat(initArray(9, {
+            row: 2,
+            col: 3,
+            type: "books_outside"
+         }))
             .concat(initArray(12, {
                row: 4,
                col: 3,
@@ -622,12 +623,25 @@ function initTask(subTask) {
    };
 
    initBlocklySubTask(subTask);
-   displayHelper.thresholdEasy = 5000;
-   displayHelper.thresholdMedium = 10000;
 }
 
 //Laden der definierten Informationen
 //2. Parameter: Die Liste gibt an, welche Versionen es gibt
 //3. Parameter: Gibt an bei welcher Version gestartet wird.
 // initWrapper(initTask, ["basic", "easy", "medium", "hard"], "basic", true);
-initWrapper(initTask, ["easy", "medium", "hard"], null, true);
+window.initBlocklySubTask = function () { };
+window.taskData = window.taskData || {};
+window.taskData.waitInit = function () { initTask(window.taskData); };
+window.taskData.codecastParameters = window.taskData.codecastParameters || {
+   language: "de-DE",
+   platform: "blockly",
+   canChangePlatform: false,
+   showStepper: true,
+   showStack: true,
+   showViews: true,
+   showIO: true,
+   controls: { reload: false },
+   hideSettings: true,
+   jwinfMenu: { copyPaste: true, undoRedo: true, svgExport: true }
+};
+window.taskData.codecastParameters.showStack = true;

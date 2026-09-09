@@ -1,0 +1,10 @@
+name: "07.02 Text verändern"
+standalone: true
+public_listing: true
+
+languages:
+  - blockly
+  - python
+
+tags:
+  - Text

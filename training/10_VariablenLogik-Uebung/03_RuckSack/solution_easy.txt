@@ -1,0 +1,5 @@
+from printer import *
+
+summe = liesGanzzahl()
+summe = summe + liesGanzzahl()
+schreibe(summe)

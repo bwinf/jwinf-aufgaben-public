@@ -1,0 +1,13 @@
+name: "15.03 Buchstaben-Chaos"
+standalone: true
+public_listing: true
+
+languages:
+  - blockly
+  - python
+
+tags:
+  - Liste
+  - Text
+  - Variablen
+  - for-Schleife

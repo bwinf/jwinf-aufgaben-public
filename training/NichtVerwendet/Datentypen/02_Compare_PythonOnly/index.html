@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+   <head>
+    <meta charset="utf-8">
+    <title>Vergleiche</title>
+      <script>
+        window.stringsLanguage = 'de';
+      </script>
+      <script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js" id="import-modules"></script>
+      <script class="remove" type="text/javascript">
+        var modulesPath = '../../../../_common/modules/';
+        importModules([
+            'jquery-1.7.1', 'JSON-js', 'raphael-2.2.1', 'beaver-task-2.0', 'jschannel', 'raphaelFactory-1.0', 'delayFactory-1.0', 'simulationFactory-1.0',
+            'platform-pr', 'buttonsAndMessages', 'beav-1.0', 'installationAPI.01', 'miniPlatform',
+            'taskStyles-mobileFirst', 'blockly-printer', 'jwinf_css']);
+        // set Blockly as default language when none is specified through ?language=
+        importLanguageModules('python');
+      </script>
+      <script class="remove" type="text/javascript">
+       var json = {
+          "id": "23-DE-02",
+          "language": "de",
+          "version": "de.01",
+          "authors": "Hannah Rauterberg",
+          "translators": [],
+          "license": "",
+          "taskPathPrefix": "",
+          "modulesPathPrefix": "",
+          "browserSupport": [],
+          "acceptedAnswers": [""],
+          "fullFeedback": true,
+          "minWidth": "auto"
+      };
+      window.stringsLanguage = 'de';
+      </script>
+      <script type="text/javascript" src="printer_task.js"></script>
+      
+   </head>
+   <body onresize="task.displayedSubTask.updateScale()">
+      <div id="task">
+        <h1>Vergleiche</h1>
+
+         <div id="tabsContainer"></div>
+         <div id="taskContent">
+            <div id="taskIntro">
+               <div class="easy" data-lang="python">
+                  <p>Wir haben bisher zwei Datentypen kennen gelernt: <b>Strings</b> wie <code>"1"</code> oder auch <code>"banane"</code>
+                     und <b>Integer</b> wie <code>1</code> oder <code>42</code>.
+                     In dieser Aufgabe schauen wir uns Vergleiche genauer an.
+                  </p>
+                  <p>
+                     <b>Aufgabe: </b> Prüft, ob in der Eingabe eine 0 steht. Dies könnte ihr mit dem Operator <code>==</code> tun.
+                     Worauf müsst ihr achten? 
+                     Denkt kurz darüber nach und lest dann bei <b>Weitere Hinweise</b> weiter.
+                  </p>
+                  <div class = "long">
+                     <h2>Weitere Hinweise:</h2>
+                     Das Programm könnte folgt aussehen:
+<pre data-lang="python">
+   print(readline() == "0")
+</pre>
+                     <p>
+                        Aber warum? <br><br>Die Funktion <code>readline()</code> gibt uns, wie wir wissen, einen String zurück.
+                        Wenn wir <code>readline() == 0</code> schreiben, dann vergleichen wir einen String mit einem Integer.
+                        Auch wenn das für uns gleich aussehen mag, sind das zwei komplett unterschiedliche Dinge!
+                     </p>
+                     <p><b>Merke:</b> Zwei unterschiedliche Datentypen sind niemals gleich.</p>
+                     <p>Je nachdem, was wir eigentlich haben wollen, müssen wir also den Rückgabewert von der Funktion
+                        <code>readline()</code> in einen Integer umwandeln und mit der 0 vergleichen, oder die "0" als String schreiben.
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div id="gridContainer"></div>
+            <div id="blocklyLibContent"></div>
+         </div>
+      </div><!-- task -->
+   </body>
+</html>
+ 

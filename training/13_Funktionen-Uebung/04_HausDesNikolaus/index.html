@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script>window.stringsLanguage='de';window.taskStrings={};</script>
+<script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js" id="import-modules"></script>
+<script class="remove" type="text/javascript">
+var modulesPath = '../../../../_common/modules/';
+importModules(['jquery-1.7.1','JSON-js','raphael-2.2.1','codecast-7.7','jschannel','raphaelFactory-1.0','delayFactory-1.0','simulationFactory-1.0','platform-pr','beav-1.0','installationAPI.01','miniPlatform','taskStyles-mobileFirst','jwinf-codecast_css','jwinf-codecast','conceptDisplay-1.0','conceptViewer-2.0','conceptViewer_css-2.0','blockly-turtle']);
+</script>
+<script class="remove" type="text/javascript">
+var json = {
+      "id": "test-turtle-square",
+      "language": "de",
+      "version": "de.01",
+      "authors": "Robert Czechowski, Wolfgang Pohl, nach einer Idee von ???",
+      "translators": [],
+      "license": "",
+      "taskPathPrefix": "",
+      "modulesPathPrefix": "",
+      "browserSupport": [],
+      "acceptedAnswers": [""],
+      "fullFeedback": true,
+      "minWidth": "auto"
+    };
+</script>
+<script type="text/javascript" src="task.js"></script>
+</head>
+<body id="app">
+<div id="react-container" style="width:100%;height:100vh"></div>
+
+<div id="task" style="display:none"><div id="tabsContainer"></div><div id="taskContent"><div id="gridContainer"></div><div id="blocklyLibContent"></div></div></div>
+<div id="taskIntro" style="display:none">
+        Programmiere die Schildkröte:<br>
+        <div class="easy">
+          <p>
+            Die Schildkröte soll das Haus des Nikolaus zeichnen.
+          </p>
+        </div>
+        <div class="medium">
+          <p>
+            Die Schildkröte soll das Haus des Nikolaus mehrfach zeichnen.
+          </p>
+          <p>
+            <b>Hinweis: </b>Definiere dazu eine Funktion, die das Haus zeichnet und verwende diese.
+          </p>
+        </div>
+        <div class="hard">
+          <p>
+            Die Schildkröte soll das Haus des Nikolaus mehrfach in verschiedenen Größen zeichnen.
+          </p>
+          <p>
+            <b>Hinweis: </b> Definiere dazu eine parametrisierte Funktion, die das Haus in Abhängigkeit von einem Parameter in verschiedenen
+            Größen zeichnet und verwende diese.
+          </p>
+          <div data-lang="blockly" class="long">
+            <hr>
+            <h2>Weitere Hinweise:</h2>
+            <p>
+              Um eine parametriesierte Funktion zu erstellen, füge zu einer Funktion über die Einstellungen (Zahnrad-Icon) einen Parameter hinzu:
+            </p>
+            <img src="../../../Bilder/function_setParameter.svg" />
+            <p>
+
+              Um eine parametriesierte Funktion zu verwenden musst du dann den Parameter angeben:
+            </p>
+            <img src="../../../Bilder/function_useParameter.svg" />
+          </div>
+          <div data-lang="python" class="long">
+            <hr>
+            <h2>Weitere Hinweise:</h2>
+            <p>
+              Schreibe und verwende eine Funktion, die das Haus zeichnet und für die Größe einen Parameter verwendet.<br>
+              Diesen kannst du in den Klammern der Funktion angeben: <code>def etwasTun(x): </code>
+            </p>
+            <p>
+
+              Wenn du die Funktion verwendest, musst du einen Wert für den Parameter angeben: <code> etwasTun(3)</code>
+            </p>
+          </div>
+        </div>
+      </div>
+<div id="solution" style="display:none"></div>
+<div id="taskHints" style="display:none"></div>
+</body>
+</html>

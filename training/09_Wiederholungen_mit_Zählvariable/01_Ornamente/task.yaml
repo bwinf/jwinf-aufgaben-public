@@ -1,0 +1,11 @@
+name: "09.01 Ornamente"
+standalone: true
+public_listing: true
+
+languages:
+  - blockly
+  - python
+
+tags:
+  - Turtle
+  - for-Schleife

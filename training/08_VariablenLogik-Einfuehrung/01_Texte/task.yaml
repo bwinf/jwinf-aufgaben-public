@@ -1,0 +1,12 @@
+name: "08.01 Texte"
+standalone: true
+public_listing: true
+
+languages:
+  - blockly
+  - python
+
+tags:
+  - Text
+  - Verzweigungen
+  - Variablen

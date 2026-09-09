@@ -1,0 +1,12 @@
+name: "08.05 Spinnennetz"
+standalone: true
+public_listing: true
+
+languages:
+  - blockly
+  - python
+
+tags:
+  - Turtle
+  - Variablen
+  - Wiederhole mit fester Anzahl

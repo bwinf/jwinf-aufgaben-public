@@ -1,5 +1,6 @@
 function initTask(subTask) {
   subTask.gridInfos = {
+    context: "printer",
     hideSaveOrLoad: true,
     actionDelay: 200,
 
@@ -19,7 +20,7 @@ function initTask(subTask) {
     blocklyColourTheme: "bwinf",
     maxInstructions: 24,
     checkEndEveryTurn: true,
-    checkEndCondition: function(context, lastTurn) {
+    checkEndCondition: function (context, lastTurn) {
       if (!lastTurn) return;
 
       // throws, if something is wrong …
@@ -29,7 +30,7 @@ function initTask(subTask) {
       context.success = true;
       throw (window.languageStrings.messages.outputCorrect);
     },
-    computeGrade: function(context, message) {
+    computeGrade: function (context, message) {
       var rate = 0;
       if (context.success) {
         rate = 1;
@@ -47,25 +48,41 @@ function initTask(subTask) {
 
   subTask.data = {
     easy: [{
-        input: "2\n",
-        output: "0\n1\n",
-      },
-      {
-        input: "4\n",
-        output: "0\n1\n1\n2\n",
-      },
-      {
-        input: "8\n",
-        output: "0\n1\n1\n2\n3\n5\n8\n13\n",
-      },
-      {
-        input: "40\n",
-        output: "0\n1\n1\n2\n3\n5\n8\n13\n21\n34\n55\n89\n144\n233\n377\n610\n987\n1597\n2584\n4181\n6765\n10946\n17711\n28657\n46368\n75025\n121393\n196418\n317811\n514229\n832040\n1346269\n2178309\n3524578\n5702887\n9227465\n14930352\n24157817\n39088169\n63245986\n",
-      },
+      input: "2\n",
+      output: "0\n1\n",
+    },
+    {
+      input: "4\n",
+      output: "0\n1\n1\n2\n",
+    },
+    {
+      input: "8\n",
+      output: "0\n1\n1\n2\n3\n5\n8\n13\n",
+    },
+    {
+      input: "40\n",
+      output: "0\n1\n1\n2\n3\n5\n8\n13\n21\n34\n55\n89\n144\n233\n377\n610\n987\n1597\n2584\n4181\n6765\n10946\n17711\n28657\n46368\n75025\n121393\n196418\n317811\n514229\n832040\n1346269\n2178309\n3524578\n5702887\n9227465\n14930352\n24157817\n39088169\n63245986\n",
+    },
     ],
   };
 
   initBlocklySubTask(subTask);
 }
 
-initWrapper(initTask, null, null);
+window.initBlocklySubTask = function () { };
+window.taskData = window.taskData || {};
+window.taskData.waitInit = function () { initTask(window.taskData); };
+window.taskData.codecastParameters = window.taskData.codecastParameters || {
+  language: "de-DE",
+  platform: "blockly",
+  canChangePlatform: false,
+  showStepper: true,
+  showStack: true,
+  showViews: true,
+  showIO: true,
+  controls: { reload: false },
+  hideSettings: true,
+  jwinfMenu: { copyPaste: true, undoRedo: true, svgExport: true }
+};
+window.taskData.codecastParameters.showStack = true;
+

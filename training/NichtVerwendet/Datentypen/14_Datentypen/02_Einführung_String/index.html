@@ -1,23 +1,15 @@
 <!doctype html>
 <html>
-   <head>
-    <meta charset="utf-8">
-    <title>Integer und Strings</title>
-      <script>
-        window.stringsLanguage = 'de';
-      </script>
-      <script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js" id="import-modules"></script>
-      <script class="remove" type="text/javascript">
-        var modulesPath = '../../../../_common/modules/';
-        importModules([
-            'jquery-1.7.1', 'JSON-js', 'raphael-2.2.1', 'beaver-task-2.0', 'jschannel', 'raphaelFactory-1.0', 'delayFactory-1.0', 'simulationFactory-1.0',
-            'platform-pr', 'buttonsAndMessages', 'beav-1.0', 'installationAPI.01', 'miniPlatform',
-            'taskStyles-mobileFirst', 'blockly-printer', 'jwinf_css']);
-        // set Blockly as default language when none is specified through ?language=
-        importLanguageModules('blockly');
-      </script>
-      <script class="remove" type="text/javascript">
-       var json = {
+<head>
+<meta charset="utf-8">
+<script>window.stringsLanguage='de';window.taskStrings={};</script>
+<script class="remove" type="text/javascript" src="../../../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js" id="import-modules"></script>
+<script class="remove" type="text/javascript">
+var modulesPath = '../../../../../../_common/modules/';
+importModules(['jquery-1.7.1','JSON-js','raphael-2.2.1','codecast-7.7','jschannel','raphaelFactory-1.0','delayFactory-1.0','simulationFactory-1.0','platform-pr','beav-1.0','installationAPI.01','miniPlatform','taskStyles-mobileFirst','jwinf-codecast_css','jwinf-codecast','conceptDisplay-1.0','conceptViewer-1.0','conceptViewer_css-1.0','blockly-printer']);
+</script>
+<script class="remove" type="text/javascript">
+var json = {
           "id": "23-DE-02",
           "language": "de",
           "version": "de.01",
@@ -31,24 +23,21 @@
           "fullFeedback": true,
           "minWidth": "auto"
       };
-      </script>
-      <script type="text/javascript" src="printer_task.js"></script>
-      
-   </head>
-   <body onresize="task.displayedSubTask.updateScale()">
-      <div id="task">
-        <h1>Integer und Strings</h1>
+</script>
+<script type="text/javascript" src="printer_task.js"></script>
+</head>
+<body id="app">
+<div id="react-container" style="width:100%;height:100vh"></div>
 
-         <div id="tabsContainer"></div>
-         <div id="taskContent">
-            <div id="taskIntro">
+<div id="task" style="display:none"><div id="tabsContainer"></div><div id="taskContent"><div id="gridContainer"></div><div id="blocklyLibContent"></div></div></div>
+<div id="taskIntro" style="display:none">
                <div class="easy" data-lang="blockly">
                   <p>Wir haben gelernt, dass es teilweise nötig ist eine Zeichenkette in einen Integer umzuwandeln.
                      Zum Beispiel, wenn wir mit der Zahl rechnen wollen. Das Umwandeln können wir mit dem Baustein
-                     <img src="../../../Bilder/string_to_int.svg" style='vertical-align: middle'> machen.
+                     <img src="ZeichenZuZahl.png"> machen.
                   </p>
                   <p>Wenn wir einen Integer in eine Zeichenkette umwandeln wollen, dann können wir das mit
-                     dem Baustein <img src="../../../Bilder/int_to_string.svg" style='vertical-align: middle'> machen.
+                     dem Baustein <img src="ZahlZuZeichen.png"> machen.
                   </p>
                   <p>
                      <b>Aufgabe: </b> Kann es auch notwendig sein, eine Zahl wieder in eine Zeichenkette umzuwandeln?
@@ -134,17 +123,14 @@
                      <p>
                         Beachtet, dass Blockly uns viel Arbeit versucht abzunehmen. In anderen Programmiersprache müssten wir den
                         Integer erst wieder in eine Zeichenkette umwandeln, bevor wir den Text erstellen können.
-                        Blockly erlaubt uns aber auch den Baustein <img src="../../../Bilder/int_to_string.svg" style='vertical-align: middle'> wegzulassen und direkt einen
+                        Blockly erlaubt uns aber auch den Baustein <img src="ZahlZuZeichen.png"> wegzulassen und direkt einen
                         Integer mit einzufügen.
                      </p>
                   </div>
                </div>
 
             </div>
-            <div id="gridContainer"></div>
-            <div id="blocklyLibContent"></div>
-         </div>
-      </div><!-- task -->
-   </body>
+<div id="solution" style="display:none"></div>
+<div id="taskHints" style="display:none"></div>
+</body>
 </html>
- 

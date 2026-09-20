@@ -1,11 +1,12 @@
 function initTask(subTask) {
    subTask.gridInfos = {
+      context: "printer",
       hideSaveOrLoad: true,
       actionDelay: 200,
       includeBlocks: {
          groupByCategory: false,
          generatedBlocks: {
-             printer: ["print"],
+            printer: ["print"],
          },
          standardBlocks: {
             includeAll: false,
@@ -16,17 +17,17 @@ function initTask(subTask) {
       maxInstructions: 22,
       checkEndEveryTurn: true,
       blocklyColourTheme: "bwinf",
-      checkEndCondition: function(context, lastTurn) {
-          if (!lastTurn) return;
+      checkEndCondition: function (context, lastTurn) {
+         if (!lastTurn) return;
 
-          // throws, if something is wrong …
-          context.checkOutputHelper();
+         // throws, if something is wrong …
+         context.checkOutputHelper();
 
-          // Seems like everything is okay: Right number of lines and all lines match …
-          context.success = true;
-         throw(window.languageStrings.messages.outputCorrect);
+         // Seems like everything is okay: Right number of lines and all lines match …
+         context.success = true;
+         throw (window.languageStrings.messages.outputCorrect);
       },
-      computeGrade: function(context, message) {
+      computeGrade: function (context, message) {
          var rate = 0;
          if (context.success) {
             rate = 1;
@@ -54,5 +55,20 @@ function initTask(subTask) {
    initBlocklySubTask(subTask);
 }
 
-initWrapper(initTask, null, null, true);
+window.initBlocklySubTask = function () { };
+window.taskData = window.taskData || {};
+window.taskData.waitInit = function () { initTask(window.taskData); };
+window.taskData.codecastParameters = window.taskData.codecastParameters || {
+   language: "de-DE",
+   platform: "blockly",
+   canChangePlatform: false,
+   showStepper: true,
+   showStack: true,
+   showViews: true,
+   showIO: true,
+   controls: { reload: false },
+   hideSettings: true,
+   jwinfMenu: { copyPaste: true, undoRedo: true, svgExport: true }
+};
+
 

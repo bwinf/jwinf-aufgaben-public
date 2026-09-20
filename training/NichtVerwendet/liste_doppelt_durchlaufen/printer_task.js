@@ -1,5 +1,6 @@
 function initTask(subTask) {
   subTask.gridInfos = {
+    context: "printer",
     timeoutMinutes: 60, // Nach 60 Minuten warnen
     hideSaveOrLoad: false,
     actionDelay: 200,
@@ -7,10 +8,10 @@ function initTask(subTask) {
       groupByCategory: true,
       generatedBlocks: {
         printer: {
-          basic:  [],
-          easy:   ["eof"],
+          basic: [],
+          easy: ["eof"],
           medium: ["eof"],
-          hard:   ["eof"],
+          hard: ["eof"],
           shared: ["print", "read"],
         },
       },
@@ -18,11 +19,11 @@ function initTask(subTask) {
         includeAll: false,
         wholeCategories: ["variables", "functions"],
 
-        singleBlocks: { 
-          basic:  [], //shared reichen aus...
-          easy:   ["lists_setIndex"],
+        singleBlocks: {
+          basic: [], //shared reichen aus...
+          easy: ["lists_setIndex"],
           medium: ["lists_setIndex", "controls_forEach"],
-          hard:   ["lists_setIndex", "controls_forEach"],
+          hard: ["lists_setIndex", "controls_forEach"],
           shared: ["lists_split", "text_length", "text_charAt_noShadow", "lists_create_with_empty", "controls_untilWhile", "controls_if", "logic_compare", "logic_operation", "math_number", "controls_for", "math_arithmetic", "text", "lists_getIndex", "lists_length"]
         },
       },
@@ -40,7 +41,7 @@ function initTask(subTask) {
     checkEndEveryTurn: false,
     showIfMutator: true,
     blocklyColourTheme: "bwinf",
-    checkEndCondition: function(context, lastTurn) {
+    checkEndCondition: function (context, lastTurn) {
       if (!lastTurn) return;
 
       // throws, if something is wrong …
@@ -50,7 +51,7 @@ function initTask(subTask) {
       context.success = true;
       throw (window.languageStrings.messages.outputCorrect);
     },
-    computeGrade: function(context, message) {
+    computeGrade: function (context, message) {
       var rate = 0;
       if (context.success) {
         rate = 1;
@@ -68,19 +69,19 @@ function initTask(subTask) {
 
   subTask.data = {
     basic: [{
-      input: " ? B? B  ?  \n", 
+      input: " ? B? B  ?  \n",
       output: "1\n",
-    }, 
+    },
     {
-      input: " B?B ?B? ? B B? \n", 
+      input: " B?B ?B? ? B B? \n",
       output: "4\n",
-    }, 
+    },
     {
-      input: " ? ? ? ? BBB ? \n", 
+      input: " ? ? ? ? BBB ? \n",
       output: "0\n",
     },
     {
-      input: " ?B??B??B? ?B \n", 
+      input: " ?B??B??B? ?B \n",
       output: "7\n",
     }],
     easy: [{
@@ -102,15 +103,15 @@ function initTask(subTask) {
     medium: [{
       input: "  B   B \n   ? ?  \n  ?  B  \n B   ?  \n ??  ?  \n ?? ?BB \n ??B    \nB      B\n",
       output: "6\n",
-    }, 
+    },
     {
       input: "  BB    \nB    B  \n B ?? B \n B  ??  \n  ???  B\nB  ?  B \n B  B   \n    BB  \n",
       output: "0\n",
-    }, 
+    },
     {
       input: "     B  \n   B??? \n  ??  B \n ?   ?  \n  ??B   \n BB  ?  \n   B?   \n      B \n",
       output: "7\n",
-    }, 
+    },
     {
       input: " B BB   \n  ?  B  \nB ? ?B  \n B   B  \nB  ?? BB\n BB  ?  \n ? ?  B \n   BBB  \n",
       output: "3\n",
@@ -136,4 +137,19 @@ function initTask(subTask) {
     initBlocklySubTask(subTask);
 }
 
-initWrapper(initTask, ["basic", "easy", "medium", "hard"], null);
+window.initBlocklySubTask = function () { };
+window.taskData = window.taskData || {};
+window.taskData.waitInit = function () { initTask(window.taskData); };
+window.taskData.codecastParameters = window.taskData.codecastParameters || {
+  language: "de-DE",
+  platform: "blockly",
+  canChangePlatform: false,
+  showStepper: true,
+  showStack: true,
+  showViews: true,
+  showIO: true,
+  controls: { reload: false },
+  hideSettings: true,
+  jwinfMenu: { copyPaste: true, undoRedo: true, svgExport: true }
+};
+

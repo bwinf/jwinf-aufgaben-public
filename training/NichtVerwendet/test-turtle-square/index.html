@@ -1,24 +1,15 @@
 <!doctype html>
 <html>
-   <head>
-    <meta charset="utf-8">
-    <title>2016-FR-24-blockly-fill</title>
-      <script>
-        window.stringsLanguage = 'de';
-      </script>
-      <script class="remove" type="text/javascript" src="../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js" id="import-modules"></script>
-      <script class="remove" type="text/javascript">
-        var modulesPath = '../../../_common/modules/';
-        importModules([
-            'jquery-1.7.1', 'JSON-js', 'raphael-2.2.1', 'beaver-task-2.0', 'jschannel', 'raphaelFactory-1.0', 'delayFactory-1.0', 'simulationFactory-1.0',
-            'platform-pr', 'buttonsAndMessages', 'beav-1.0', 'installationAPI.01', 'miniPlatform',
-            'taskStyles-mobileFirst', 'blockly-turtle', 'jwinf_css']);
-        // set Blockly as default language when none is specified through ?language=
-        importLanguageModules('blockly');
-      </script>
-
-      <script class="remove" type="text/javascript">
-       var json = {
+<head>
+<meta charset="utf-8">
+<script>window.stringsLanguage='de';window.taskStrings={};</script>
+<script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js" id="import-modules"></script>
+<script class="remove" type="text/javascript">
+var modulesPath = '../../../../_common/modules/';
+importModules(['jquery-1.7.1','JSON-js','raphael-2.2.1','codecast-7.7','jschannel','raphaelFactory-1.0','delayFactory-1.0','simulationFactory-1.0','platform-pr','beav-1.0','installationAPI.01','miniPlatform','taskStyles-mobileFirst','jwinf-codecast_css','jwinf-codecast','conceptDisplay-1.0','conceptViewer-1.0','conceptViewer_css-1.0','blockly-turtle']);
+</script>
+<script class="remove" type="text/javascript">
+var json = {
           "id": "test-turtle-square",
           "language": "de",
           "version": "de.01",
@@ -32,55 +23,20 @@
           "fullFeedback": true,
           "minWidth": "auto"
       };
-      var strings = {
-         moreThan100Moves: "Vous avez cependant fait plus de 100 déplacements.",
-         notAllCellsPainted: "Das sieht noch nicht ganz richtig aus. Versuch es noch einmal!",
-         allCellsPainted: "Sehr gut! Du hast die Zeichnung richtig nachgemacht."
-      };
-        function provideBlocklyColours() {
-          return {
-            categories: {
-               logic: 100,
-               loops: 180,
-               math: 220,
-               text: 250,
-               lists: 60,
-               colour: 310,
-               variables: 340,
-               functions: 20,
-               _default: 280,
-            },
-            blocks: {},
-          };
-        }
-      </script>
-      <script type="text/javascript" src="turtle_task.js"></script>
-      <link rel="stylesheet" type="text/css" href="../bwinf.css">
-   </head>
-   <body onresize="task.displayedSubTask.updateScale()">
-      <div id="task">
-         <h1>Muster malen</h1>
+</script>
+<script type="text/javascript" src="turtle_task.js"></script>
+</head>
+<body id="app">
+<div id="react-container" style="width:100%;height:100vh"></div>
 
-         <div id="tabsContainer"></div>
-         <div id="taskContent">
-            <div id="taskIntro">
+<div id="task" style="display:none"><div id="tabsContainer"></div><div id="taskContent"><div id="gridContainer"></div><div id="blocklyLibContent"></div></div></div>
+<div id="taskIntro" style="display:none">
                Im Kasten siehst du eine Schildkröte in einem Kasten der mit Sand gefüllt ist. Wenn die Schildkröte sich bewegt, hinterlässt sie mit ihrem Brustpanzer im Sand eine Spur.
                Du kannst die Schildkröte steuern und damit Striche in den Sand malen.
                <p>
                Kannst du die hellgrau vorgegebene Zeichnung mit der Schildkröte nachzeichnen?
             </div>
-            <div id="gridContainer"></div>
-            <div id="blocklyLibContent"></div>
-            <div id="hints" style="margin:20px;display:none;">
-              <p><b>Beschreibung der Befehle:</b></p>
-               <ul>
-                  <li><b>gehe:</b> Bewegt die Schildkröte vorwärts</li>
-                  <li><b>drehe nach links:</b> Dreht die Schildkröte um 90° gegen den Uhrzeigersinn</li>
-                  <li><b>drehe nach rechts:</b> Dreht die Schildkröte um 90° im Uhrzeigersinn</li>
-               </ul>
-            </div>
-         </div>
-      </div><!-- task -->
-   </body>
+<div id="solution" style="display:none"></div>
+<div id="taskHints" style="display:none"></div>
+</body>
 </html>
- 

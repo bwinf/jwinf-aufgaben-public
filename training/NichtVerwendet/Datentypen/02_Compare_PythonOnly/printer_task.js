@@ -1,5 +1,6 @@
 function initTask(subTask) {
    subTask.gridInfos = {
+      context: "printer",
       hideSaveOrLoad: false,
       actionDelay: 200,
       includeBlocks: {
@@ -7,14 +8,14 @@ function initTask(subTask) {
          generatedBlocks: {
             printer: {
                easy: ["print", "read", "convToInt"],
- },
+            },
          },
          standardBlocks: {
             includeAll: false,
             wholeCategories: [],
             singleBlocks: {
                easy: ["math_number", "logic_compare"],
-},
+            },
          },
          variables: [],
          variablesOnlyBlocks: {
@@ -54,13 +55,27 @@ function initTask(subTask) {
 
    subTask.data = {
       easy: [{
-            input: "0\n",
-            output: "true\n",
-         },
+         input: "0\n",
+         output: "true\n",
+      },
       ],
    };
 
    initBlocklySubTask(subTask);
 }
 
-initWrapper(initTask, ["easy"], null);
+window.initBlocklySubTask = function () { };
+window.taskData = window.taskData || {};
+window.taskData.waitInit = function () { initTask(window.taskData); };
+window.taskData.codecastParameters = window.taskData.codecastParameters || {
+   language: "de-DE",
+   platform: "blockly",
+   canChangePlatform: false,
+   showStepper: true,
+   showStack: true,
+   showViews: true,
+   showIO: true,
+   controls: { reload: false },
+   hideSettings: true,
+   jwinfMenu: { copyPaste: true, undoRedo: true, svgExport: true }
+};

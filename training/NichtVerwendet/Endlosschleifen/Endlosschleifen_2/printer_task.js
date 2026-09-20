@@ -1,5 +1,6 @@
 function initTask(subTask) {
   subTask.gridInfos = {
+    context: "printer",
     timeoutMinutes: 15,
     hideSaveOrLoad: true,
     actionDelay: 200,
@@ -89,13 +90,13 @@ function initTask(subTask) {
     hard: [{
       input: "1\n2\n3\n0\n4\n0\n5\n6\n7\n0\n8\n9\n",
       output: "3",
-    },{
+    }, {
       input: "2\n3\n5\n0\n7\n1\n0\n2\n2\n3\n1\n0\n5\n",
       output: "5",
-    },{
+    }, {
       input: "19\n23\n0\n6\n11\n4\n0\n3\n13\n7\n0\n18\n9\n3\n0\n15\n0\n27\n",
       output: "2",
-    },{
+    }, {
       input: "1\n12\n0\n8\n4\n0\n15\n6\n0\n13\n8\n0\n7\n",
       output: "8",
     },
@@ -105,4 +106,19 @@ function initTask(subTask) {
     initBlocklySubTask(subTask);
 }
 
-initWrapper(initTask, ["easy", "medium", "hard"], null);
+window.initBlocklySubTask = function () { };
+window.taskData = window.taskData || {};
+window.taskData.waitInit = function () { initTask(window.taskData); };
+window.taskData.codecastParameters = window.taskData.codecastParameters || {
+  language: "de-DE",
+  platform: "blockly",
+  canChangePlatform: false,
+  showStepper: true,
+  showStack: true,
+  showViews: true,
+  showIO: true,
+  controls: { reload: false },
+  hideSettings: true,
+  jwinfMenu: { copyPaste: true, undoRedo: true, svgExport: true }
+};
+

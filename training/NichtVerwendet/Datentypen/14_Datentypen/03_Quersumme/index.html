@@ -1,23 +1,15 @@
 <!doctype html>
 <html>
-   <head>
-    <meta charset="utf-8">
-    <title>Quersumme</title>
-      <script>
-        window.stringsLanguage = 'de';
-      </script>
-      <script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js" id="import-modules"></script>
-      <script class="remove" type="text/javascript">
-        var modulesPath = '../../../../_common/modules/';
-        importModules([
-            'jquery-1.7.1', 'JSON-js', 'raphael-2.2.1', 'beaver-task-2.0', 'jschannel', 'raphaelFactory-1.0', 'delayFactory-1.0', 'simulationFactory-1.0',
-            'platform-pr', 'buttonsAndMessages', 'beav-1.0', 'installationAPI.01', 'miniPlatform',
-            'taskStyles-mobileFirst', 'blockly-printer', 'jwinf_css']);
-        // set Blockly as default language when none is specified through ?language=
-        importLanguageModules('blockly');
-      </script>
-      <script class="remove" type="text/javascript">
-       var json = {
+<head>
+<meta charset="utf-8">
+<script>window.stringsLanguage='de';window.taskStrings={};</script>
+<script class="remove" type="text/javascript" src="../../../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js" id="import-modules"></script>
+<script class="remove" type="text/javascript">
+var modulesPath = '../../../../../../_common/modules/';
+importModules(['jquery-1.7.1','JSON-js','raphael-2.2.1','codecast-7.7','jschannel','raphaelFactory-1.0','delayFactory-1.0','simulationFactory-1.0','platform-pr','beav-1.0','installationAPI.01','miniPlatform','taskStyles-mobileFirst','jwinf-codecast_css','jwinf-codecast','conceptDisplay-1.0','conceptViewer-1.0','conceptViewer_css-1.0','blockly-printer']);
+</script>
+<script class="remove" type="text/javascript">
+var json = {
           "id": "23-DE-02",
           "language": "de",
           "version": "de.01",
@@ -31,18 +23,14 @@
           "fullFeedback": true,
           "minWidth": "auto"
       };
-      window.stringsLanguage = 'de';
-      </script>
-      <script type="text/javascript" src="printer_task.js"></script>
-      
-   </head>
-   <body onresize="task.displayedSubTask.updateScale()">
-      <div id="task">
-        <h1>Quersumme berechnen</h1>
+</script>
+<script type="text/javascript" src="printer_task.js"></script>
+</head>
+<body id="app">
+<div id="react-container" style="width:100%;height:100vh"></div>
 
-         <div id="tabsContainer"></div>
-         <div id="taskContent">
-            <div id="taskIntro">
+<div id="task" style="display:none"><div id="tabsContainer"></div><div id="taskContent"><div id="gridContainer"></div><div id="blocklyLibContent"></div></div></div>
+<div id="taskIntro" style="display:none">
                Schreibe ein Programm:
                <div class="easy">
                   <p>Das Programm soll die Zahl aus dem Eingabefeld einlesen und die Quersumme berechnen.
@@ -95,10 +83,7 @@ Eingabe:
 </td></tr></table>
 
             </div>
-            <div id="gridContainer"></div>
-            <div id="blocklyLibContent"></div>
-         </div>
-      </div><!-- task -->
-   </body>
+<div id="solution" style="display:none"></div>
+<div id="taskHints" style="display:none"></div>
+</body>
 </html>
- 

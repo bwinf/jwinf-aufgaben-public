@@ -1,5 +1,6 @@
 function initTask(subTask) {
    subTask.gridInfos = {
+      context: "printer",
       hideSaveOrLoad: false,
       actionDelay: 200,
       includeBlocks: {
@@ -60,23 +61,23 @@ function initTask(subTask) {
       easy: [{
          input: "42\n",
          output: "43\n",
-      }, ],
+      },],
       medium: [{
          input: "42\n",
          output: "43\n",
-      }, ],
+      },],
       hard: [{
-            input: "banana\n",
-         },
-         {
-            input: "a\n",
-         },
-         {
-            input: "42zz\n",
-         },
-         {
-            input: "z42\n",
-         },
+         input: "banana\n",
+      },
+      {
+         input: "a\n",
+      },
+      {
+         input: "42zz\n",
+      },
+      {
+         input: "z42\n",
+      },
       ],
 
    };
@@ -84,4 +85,18 @@ function initTask(subTask) {
    initBlocklySubTask(subTask);
 }
 
-initWrapper(initTask, ["easy", "medium", "hard"], null);
+window.initBlocklySubTask = function () { };
+window.taskData = window.taskData || {};
+window.taskData.waitInit = function () { initTask(window.taskData); };
+window.taskData.codecastParameters = window.taskData.codecastParameters || {
+   language: "de-DE",
+   platform: "blockly",
+   canChangePlatform: false,
+   showStepper: true,
+   showStack: true,
+   showViews: true,
+   showIO: true,
+   controls: { reload: false },
+   hideSettings: true,
+   jwinfMenu: { copyPaste: true, undoRedo: true, svgExport: true }
+};

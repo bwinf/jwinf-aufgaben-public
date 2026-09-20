@@ -1,5 +1,6 @@
 function initTask(subTask) {
   subTask.gridInfos = {
+    context: "robot",
     conceptViewer: false,
     timeoutMinutes: 15, // Nach 15 Minuten warnen
     //Hier wird der Kontext definiert. Mit dem Kontext werden ItemTypes und Aufgabenspezifische Übersetzungen geladen
@@ -31,7 +32,7 @@ function initTask(subTask) {
       bottomArrow: { num: 7, img: imgPath + "bottomArrow.png", side: 60, forwardsBottom: true, zOrder: 0 },
       marker: { num: 2, img: imgPath + "paint_marker.png", side: 60, isContainer: true, containerFilter: function (item) { return item.type === "paint"; }, zOrder: 0 },
       paint: { img: imgPath + "paint.png", side: 60, isWithdrawable: true, isColor: true, zOrder: 1 },
-      obstacle: { num: 8, img: imgPath+"grey_brick_wall.png", side: 60, isObstacle: true, zOrder: 1 }
+      obstacle: { num: 8, img: imgPath + "grey_brick_wall.png", side: 60, isObstacle: true, zOrder: 1 }
     },
     showIfMutator: true,
 
@@ -195,11 +196,23 @@ function initTask(subTask) {
   };
 
   initBlocklySubTask(subTask);
-  displayHelper.thresholdEasy = 5000;
-  displayHelper.thresholdMedium = 10000;
 }
 
 //Laden der definierten Informationen
 //2. Parameter: Die Liste gibt an, welche Versionen es gibt
 //3. Parameter: Gibt an bei welcher Version gestartet wird. Bei null wird bei basic gestartet
-initWrapper(initTask, ["easy", "medium", "hard"], null, false);
+window.initBlocklySubTask = function () { };
+window.taskData = window.taskData || {};
+window.taskData.waitInit = function () { initTask(window.taskData); };
+window.taskData.codecastParameters = window.taskData.codecastParameters || {
+  language: "de-DE",
+  platform: "blockly",
+  canChangePlatform: false,
+  showStepper: true,
+  showStack: true,
+  showViews: true,
+  showIO: true,
+  controls: { reload: false },
+  hideSettings: true,
+  jwinfMenu: { copyPaste: true, undoRedo: true, svgExport: true }
+};

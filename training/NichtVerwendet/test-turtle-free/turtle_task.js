@@ -1,5 +1,6 @@
 function initTask(subTask) {
    subTask.gridInfos = {
+      context: "turtle",
       hideSaveOrLoad: false,
       actionDelay: 200,
       includeBlocks: {
@@ -9,22 +10,22 @@ function initTask(subTask) {
          },
          standardBlocks: {
             includeAll: false,
-            wholeCategories: [ "loops", "logic", "math", "colour", "variables"],
+            wholeCategories: ["loops", "logic", "math", "colour", "variables"],
             singleBlocks: {},
          },
       },
       overlayFileName: "grid5.png",
       turtleStepSize: 5,
-      maxInstructions:  Infinity,
+      maxInstructions: Infinity,
       blocklyColourTheme: "bwinf",
       checkEndEveryTurn: false,
-      checkEndCondition: function(context, lastTurn) {
+      checkEndCondition: function (context, lastTurn) {
          if (lastTurn) {
             context.success = true;
-            throw("Sehr schön!");
+            throw ("Sehr schön!");
          }
       },
-      computeGrade: function(context, message) {
+      computeGrade: function (context, message) {
          var rate = 0;
          if (context.success) {
             rate = 1;
@@ -42,13 +43,28 @@ function initTask(subTask) {
 
    subTask.data = {
       easy: [{
-          drawSolution : function(turtle) {},
-         }],
+         drawSolution: function (turtle) { },
+      }],
 
    };
 
    initBlocklySubTask(subTask);
 }
 
-initWrapper(initTask, null, null, true);
+window.initBlocklySubTask = function () { };
+window.taskData = window.taskData || {};
+window.taskData.waitInit = function () { initTask(window.taskData); };
+window.taskData.codecastParameters = window.taskData.codecastParameters || {
+   language: "de-DE",
+   platform: "blockly",
+   canChangePlatform: false,
+   showStepper: true,
+   showStack: true,
+   showViews: true,
+   showIO: true,
+   controls: { reload: false },
+   hideSettings: true,
+   jwinfMenu: { copyPaste: true, undoRedo: true, svgExport: true }
+};
+
 

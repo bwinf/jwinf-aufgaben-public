@@ -1,34 +1,35 @@
 function initTask(subTask) {
    subTask.gridInfos = {
+      context: "printer",
       hideSaveOrLoad: true,
       actionDelay: 200,
       includeBlocks: {
          groupByCategory: false,
          generatedBlocks: {
-             printer: {easy:["print", "read"],medium:["print", "read", "eof"],hard:["print", "read", "readInteger"]},
+            printer: { easy: ["print", "read"], medium: ["print", "read", "eof"], hard: ["print", "read", "readInteger"] },
          },
          standardBlocks: {
             includeAll: false,
             wholeCategories: [],
-            singleBlocks: {easy:["controls_repeat"],medium:["controls_whileUntil", "logic_negate"],hard:["controls_repeat_ext"]},
+            singleBlocks: { easy: ["controls_repeat"], medium: ["controls_whileUntil", "logic_negate"], hard: ["controls_repeat_ext"] },
          },
-         variables: {hard:['Anzahl Zeilen']},
+         variables: { hard: ['Anzahl Zeilen'] },
          variablesOnlyBlocks: ['set', 'get'],
       },
       maxInstructions: 22,
       checkEndEveryTurn: false,
       blocklyColourTheme: "bwinf",
-      checkEndCondition: function(context, lastTurn) {
-          if (!lastTurn) return;
+      checkEndCondition: function (context, lastTurn) {
+         if (!lastTurn) return;
 
-          // throws, if something is wrong …
-          context.checkOutputHelper();
+         // throws, if something is wrong …
+         context.checkOutputHelper();
 
-          // Seems like everything is okay: Right number of lines and all lines match …
-          context.success = true;
-         throw(window.languageStrings.messages.outputCorrect);
+         // Seems like everything is okay: Right number of lines and all lines match …
+         context.success = true;
+         throw (window.languageStrings.messages.outputCorrect);
       },
-      computeGrade: function(context, message) {
+      computeGrade: function (context, message) {
          var rate = 0;
          if (context.success) {
             rate = 1;
@@ -79,12 +80,12 @@ function initTask(subTask) {
             output: "Erste Zeile\nZweite Zeile\nDritte Zeile\n",
          },
          {
-             input: "4\nWovon Klagen\nDurchgang Zustimmen\nKriegen Ratten\nInsbesondere Winkel\n",
-             output: "Wovon Klagen\nDurchgang Zustimmen\nKriegen Ratten\nInsbesondere Winkel\n",
+            input: "4\nWovon Klagen\nDurchgang Zustimmen\nKriegen Ratten\nInsbesondere Winkel\n",
+            output: "Wovon Klagen\nDurchgang Zustimmen\nKriegen Ratten\nInsbesondere Winkel\n",
          },
          {
-             input: "5\nErste Zeile\nZweite Zeile\nDritte Zeile\nVierte Zeile\nFünfte Zeile\n",
-             output: "Erste Zeile\nZweite Zeile\nDritte Zeile\nVierte Zeile\nFünfte Zeile\n",
+            input: "5\nErste Zeile\nZweite Zeile\nDritte Zeile\nVierte Zeile\nFünfte Zeile\n",
+            output: "Erste Zeile\nZweite Zeile\nDritte Zeile\nVierte Zeile\nFünfte Zeile\n",
          },
       ],
    };
@@ -92,5 +93,20 @@ function initTask(subTask) {
    initBlocklySubTask(subTask);
 }
 
-initWrapper(initTask, ["easy", "medium", "hard"], null);
-   
+window.initBlocklySubTask = function () { };
+window.taskData = window.taskData || {};
+window.taskData.waitInit = function () { initTask(window.taskData); };
+window.taskData.codecastParameters = window.taskData.codecastParameters || {
+   language: "de-DE",
+   platform: "blockly",
+   canChangePlatform: false,
+   showStepper: true,
+   showStack: true,
+   showViews: true,
+   showIO: true,
+   controls: { reload: false },
+   hideSettings: true,
+   jwinfMenu: { copyPaste: true, undoRedo: true, svgExport: true }
+};
+
+

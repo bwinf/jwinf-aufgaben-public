@@ -1,5 +1,6 @@
 function initTask(subTask) {
    subTask.gridInfos = {
+      context: "turtle",
       hideSaveOrLoad: true,
       actionDelay: 200,
       includeBlocks: {
@@ -18,7 +19,7 @@ function initTask(subTask) {
       maxInstructions: 10,
       blocklyColourTheme: "bwinf",
       checkEndEveryTurn: false,
-      checkEndCondition: function(context, lastTurn) {
+      checkEndCondition: function (context, lastTurn) {
          if (lastTurn) {
             var userImage = context.turtle.invisibleTurtle.drawingContext.getImageData(0, 0, 300, 300);
             var solutionImage = context.turtle.invisibleSolutionTurtle.drawingContext.getImageData(0, 0, 300, 300);
@@ -37,20 +38,20 @@ function initTask(subTask) {
                else
                   empty++;
             }
-            
-            if (delta < Math.min(fill,empty) * 0.1) {
+
+            if (delta < Math.min(fill, empty) * 0.1) {
                context.success = true;
                console.log("good");
-               throw(strings.allCellsPainted);
+               throw (strings.allCellsPainted);
             }
             else {
                console.log("bad");
-               throw(strings.notAllCellsPainted);
+               throw (strings.notAllCellsPainted);
             }
             console.log("very bad");
          }
       },
-      computeGrade: function(context, message) {
+      computeGrade: function (context, message) {
          var rate = 0;
          if (context.success) {
             rate = 1;
@@ -69,19 +70,34 @@ function initTask(subTask) {
    subTask.data = {
       easy: [
          {
-            drawSolution : function(turtle) {turtle.move(2);turtle.turn(90);turtle.move(2);},
-         }     
+            drawSolution: function (turtle) { turtle.move(2); turtle.turn(90); turtle.move(2); },
+         }
       ],
       medium: [{
-         drawSolution : function(turtle) {turtle.move(2);turtle.turn(90);turtle.move(2);turtle.turn(90);turtle.move(2);turtle.turn(90);turtle.move(2);},
+         drawSolution: function (turtle) { turtle.move(2); turtle.turn(90); turtle.move(2); turtle.turn(90); turtle.move(2); turtle.turn(90); turtle.move(2); },
       }],
       hard: [{
-         drawSolution : function(turtle) {turtle.move(1);turtle.turn(90);turtle.move(1);turtle.turn(-90);turtle.move(1);turtle.turn(90);turtle.move(1);turtle.turn(90);turtle.move(1);},
+         drawSolution: function (turtle) { turtle.move(1); turtle.turn(90); turtle.move(1); turtle.turn(-90); turtle.move(1); turtle.turn(90); turtle.move(1); turtle.turn(90); turtle.move(1); },
       }]
    };
 
    initBlocklySubTask(subTask);
 }
 
-initWrapper(initTask, ["easy", "medium", "hard"], null);
-   
+window.initBlocklySubTask = function () { };
+window.taskData = window.taskData || {};
+window.taskData.waitInit = function () { initTask(window.taskData); };
+window.taskData.codecastParameters = window.taskData.codecastParameters || {
+   language: "de-DE",
+   platform: "blockly",
+   canChangePlatform: false,
+   showStepper: true,
+   showStack: true,
+   showViews: true,
+   showIO: true,
+   controls: { reload: false },
+   hideSettings: true,
+   jwinfMenu: { copyPaste: true, undoRedo: true, svgExport: true }
+};
+
+

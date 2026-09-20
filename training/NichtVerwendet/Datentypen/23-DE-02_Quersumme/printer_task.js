@@ -1,5 +1,6 @@
 function initTask(subTask) {
    subTask.gridInfos = {
+      context: "printer",
       hideSaveOrLoad: true,
       actionDelay: 200,
       includeBlocks: {
@@ -17,7 +18,7 @@ function initTask(subTask) {
             singleBlocks: {
                easy: ["text_charAt", "math_arithmetic", "controls_for", "text_length", "math_number"],
                medium: ["logic_compare", "text_charAt", "math_arithmetic", "controls_for", "text_length", "math_number", "controls_whileUntil"],
-               hard: ["math_number_property","controls_if_else","text_charAt", "math_arithmetic", "controls_for", "text_length", "math_number"]
+               hard: ["math_number_property", "controls_if_else", "text_charAt", "math_arithmetic", "controls_for", "text_length", "math_number"]
             },
          },
          variables: ["Zahl", "Quersumme", "i"],
@@ -58,51 +59,65 @@ function initTask(subTask) {
 
    subTask.data = {
       easy: [{
-            input: "456\n",
-            output: "15\n",
-         },
-         {
-            input: "23004\n",
-            output: "9\n",
-         },
-         {
-            input: "123456789\n",
-            output: "45\n",
-         },
-         {
-            input: "99858\n",
-            output: "39\n",
-         },
+         input: "456\n",
+         output: "15\n",
+      },
+      {
+         input: "23004\n",
+         output: "9\n",
+      },
+      {
+         input: "123456789\n",
+         output: "45\n",
+      },
+      {
+         input: "99858\n",
+         output: "39\n",
+      },
       ],
       medium: [{
-            input: "63257\n",
-            output: "5\n",
-         },
-         {
-            input: "37\n",
-            output: "1\n",
-         },
-         {
-            input: "36\n",
-            output: "9\n",
-         },
+         input: "63257\n",
+         output: "5\n",
+      },
+      {
+         input: "37\n",
+         output: "1\n",
+      },
+      {
+         input: "36\n",
+         output: "9\n",
+      },
       ],
       hard: [{
-            input: "7894265\n",
-            output: "9\n",
-         },
-         {
-            input: "239476827\n",
-            output: "-14\n",
-         },
-         {
-            input: "764258\n",
-            output: "14\n",
-         },
+         input: "7894265\n",
+         output: "9\n",
+      },
+      {
+         input: "239476827\n",
+         output: "-14\n",
+      },
+      {
+         input: "764258\n",
+         output: "14\n",
+      },
       ],
    };
 
    initBlocklySubTask(subTask);
 }
 
-initWrapper(initTask, ["easy", "medium", "hard"], null);
+window.initBlocklySubTask = function () { };
+window.taskData = window.taskData || {};
+window.taskData.waitInit = function () { initTask(window.taskData); };
+window.taskData.codecastParameters = window.taskData.codecastParameters || {
+   language: "de-DE",
+   platform: "blockly",
+   canChangePlatform: false,
+   showStepper: true,
+   showStack: true,
+   showViews: true,
+   showIO: true,
+   controls: { reload: false },
+   hideSettings: true,
+   jwinfMenu: { copyPaste: true, undoRedo: true, svgExport: true }
+};

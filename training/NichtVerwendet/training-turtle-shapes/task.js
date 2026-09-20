@@ -1,19 +1,20 @@
 function initTask(subTask) {
    subTask.gridInfos = {
+      context: "turtle",
       hideSaveOrLoad: true,
       actionDelay: 200,
       includeBlocks: {
          groupByCategory: false,
          generatedBlocks: {
-            easy: {turtle: ["moveamountvalue", "turnleft", "turnright", "penup", "pendown"], },
-            medium: {turtle: ["moveamountvalue", "turnleftamountvalue_moreoptions", "turnrightamountvalue_moreoptions", "penup", "pendown"]},
-            hard: {turtle: ["moveamountvalue", "turnleftamountvalue_moreoptions", "turnrightamountvalue_moreoptions", "penup", "pendown"]},
+            easy: { turtle: ["moveamountvalue", "turnleft", "turnright", "penup", "pendown"], },
+            medium: { turtle: ["moveamountvalue", "turnleftamountvalue_moreoptions", "turnrightamountvalue_moreoptions", "penup", "pendown"] },
+            hard: { turtle: ["moveamountvalue", "turnleftamountvalue_moreoptions", "turnrightamountvalue_moreoptions", "penup", "pendown"] },
          },
          standardBlocks: {
             includeAll: false,
             wholeCategories: [],
             singleBlocks: {
-                easy: [],
+               easy: [],
                medium: ["controls_repeat"],
                hard: ["controls_repeat"],
             },
@@ -21,10 +22,10 @@ function initTask(subTask) {
       },
       overlayFileName: "grid5.png",
       turtleStepSize: 5,
-      maxInstructions:  {easy: 100, medium: 100, hard: 100},
+      maxInstructions: { easy: 100, medium: 100, hard: 100 },
       blocklyColourTheme: "bwinf",
       checkEndEveryTurn: false,
-      checkEndCondition: function(context, lastTurn) {
+      checkEndCondition: function (context, lastTurn) {
          if (lastTurn) {
             var userImage = context.turtle.invisibleTurtle.drawingContext.getImageData(0, 0, 300, 300);
             var solutionImage = context.turtle.invisibleSolutionTurtle.drawingContext.getImageData(0, 0, 300, 300);
@@ -43,18 +44,18 @@ function initTask(subTask) {
                else
                   empty++;
             }
-            
-            if (delta < Math.min(fill,empty) * 0.1) {
+
+            if (delta < Math.min(fill, empty) * 0.1) {
                context.success = true;
-               throw(window.languageStrings.messages.paintingCorrect);
+               throw (window.languageStrings.messages.paintingCorrect);
             }
             else {
                context.success = false;
-               throw(window.languageStrings.messages.paintingWrong);
+               throw (window.languageStrings.messages.paintingWrong);
             }
          }
       },
-      computeGrade: function(context, message) {
+      computeGrade: function (context, message) {
          var rate = 0;
          if (context.success) {
             rate = 1;
@@ -72,20 +73,36 @@ function initTask(subTask) {
 
    subTask.data = {
       easy: [{
-          drawSolution : function(turtle) { turtle.stop_painting(); turtle.move(2); turtle.turn(90); turtle.start_painting(); turtle.move(2); turtle.turn(90); turtle.move(4);  turtle.turn(90); turtle.move(4); turtle.turn(90); turtle.move(4); turtle.turn(90); turtle.move(2);},
+         drawSolution: function (turtle) { turtle.stop_painting(); turtle.move(2); turtle.turn(90); turtle.start_painting(); turtle.move(2); turtle.turn(90); turtle.move(4); turtle.turn(90); turtle.move(4); turtle.turn(90); turtle.move(4); turtle.turn(90); turtle.move(2); },
       }],
       medium: [{
-          drawSolution : function(turtle) { turtle.stop_painting(); turtle.move(2); turtle.turn(180);  turtle.start_painting(); turtle.turn(18); turtle.move(4); turtle.turn(216); turtle.move(4); turtle.turn(216); turtle.move(4); turtle.turn(216); turtle.move(4); turtle.turn(216); turtle.move(4);},
+         drawSolution: function (turtle) { turtle.stop_painting(); turtle.move(2); turtle.turn(180); turtle.start_painting(); turtle.turn(18); turtle.move(4); turtle.turn(216); turtle.move(4); turtle.turn(216); turtle.move(4); turtle.turn(216); turtle.move(4); turtle.turn(216); turtle.move(4); },
       }],
       hard: [{
-          drawSolution : function(turtle) { turtle.stop_painting(); turtle.move(2); turtle.turn(180);  turtle.start_painting(); turtle.turn(30); turtle.move(4); turtle.turn(240); turtle.move(4); turtle.turn(240); turtle.move(4);
-              turtle.stop_painting();  turtle.turn(210); turtle.move(1); turtle.turn(90); turtle.move(2); turtle.turn(180); turtle.start_painting(); turtle.turn(60); turtle.move(4); turtle.turn(240); turtle.move(4); turtle.turn(240); turtle.move(4);
-          }//turtle.turn(240); turtle.move(4); turtle.turn(216); turtle.move(4);},
+         drawSolution: function (turtle) {
+            turtle.stop_painting(); turtle.move(2); turtle.turn(180); turtle.start_painting(); turtle.turn(30); turtle.move(4); turtle.turn(240); turtle.move(4); turtle.turn(240); turtle.move(4);
+            turtle.stop_painting(); turtle.turn(210); turtle.move(1); turtle.turn(90); turtle.move(2); turtle.turn(180); turtle.start_painting(); turtle.turn(60); turtle.move(4); turtle.turn(240); turtle.move(4); turtle.turn(240); turtle.move(4);
+         }//turtle.turn(240); turtle.move(4); turtle.turn(216); turtle.move(4);},
       },],
    };
 
    initBlocklySubTask(subTask);
 }
 
-initWrapper(initTask, ["easy", "medium", "hard"], null);
-   
+window.initBlocklySubTask = function () { };
+window.taskData = window.taskData || {};
+window.taskData.waitInit = function () { initTask(window.taskData); };
+window.taskData.codecastParameters = window.taskData.codecastParameters || {
+   language: "de-DE",
+   platform: "blockly",
+   canChangePlatform: false,
+   showStepper: true,
+   showStack: true,
+   showViews: true,
+   showIO: true,
+   controls: { reload: false },
+   hideSettings: true,
+   jwinfMenu: { copyPaste: true, undoRedo: true, svgExport: true }
+};
+
+

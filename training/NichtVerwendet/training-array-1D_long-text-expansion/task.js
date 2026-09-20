@@ -1,5 +1,6 @@
 function initTask(subTask) {
    subTask.gridInfos = {
+      context: "robot",
       contextType: "paint",
       showLabels: true,
       maxInstructions: {
@@ -36,72 +37,85 @@ function initTask(subTask) {
       easy: [
          {
             tiles: [
-                   [1, 4, 1, 4, 4, 1, 1, 4, 1, 4, 4, 4, 1, 4, 4, 1],
-                   [1, 3, 4, 3, 3, 4, 4, 3, 4, 3, 3, 3, 4, 3, 3, 1]
-               ],
+               [1, 4, 1, 4, 4, 1, 1, 4, 1, 4, 4, 4, 1, 4, 4, 1],
+               [1, 3, 4, 3, 3, 4, 4, 3, 4, 3, 3, 3, 4, 3, 3, 1]
+            ],
             initItems: [
-                  { row: 0, col: 0, type: "red_robot" }
-               ]
+               { row: 0, col: 0, type: "red_robot" }
+            ]
          },
          {
             tiles: [
-                   [1, 1, 4, 4, 4, 1, 4, 1, 4, 4, 1, 4, 1, 1, 4, 1],
-                   [1, 4, 3, 3, 3, 4, 3, 4, 3, 3, 4, 3, 4, 4, 3, 1]
-               ],
+               [1, 1, 4, 4, 4, 1, 4, 1, 4, 4, 1, 4, 1, 1, 4, 1],
+               [1, 4, 3, 3, 3, 4, 3, 4, 3, 3, 4, 3, 4, 4, 3, 1]
+            ],
             initItems: [
-                  { row: 0, col: 0, type: "red_robot" }
-               ]
+               { row: 0, col: 0, type: "red_robot" }
+            ]
          }
       ],
       medium: [
          {
             tiles: [
-                   [1, 4, 1, 4, 4, 1, 1, 4, 1, 4, 4, 4, 1, 4, 4, 1],
-                   [1, 3, 3, 4, 3, 3, 3, 4, 3, 4, 4, 3, 3, 4, 3, 1]
-               ],
+               [1, 4, 1, 4, 4, 1, 1, 4, 1, 4, 4, 4, 1, 4, 4, 1],
+               [1, 3, 3, 4, 3, 3, 3, 4, 3, 4, 4, 3, 3, 4, 3, 1]
+            ],
             initItems: [
-                  { row: 0, col: 0, type: "red_robot" }
-               ]
+               { row: 0, col: 0, type: "red_robot" }
+            ]
          },
          {
             tiles: [
-                   [1, 1, 4, 4, 4, 1, 4, 1, 4, 4, 1, 4, 1, 1, 4, 1],
-                   [1, 3, 4, 4, 3, 4, 3, 3, 4, 3, 4, 3, 3, 3, 4, 1]
-               ],
+               [1, 1, 4, 4, 4, 1, 4, 1, 4, 4, 1, 4, 1, 1, 4, 1],
+               [1, 3, 4, 4, 3, 4, 3, 3, 4, 3, 4, 3, 3, 3, 4, 1]
+            ],
             initItems: [
-                  { row: 0, col: 0, type: "red_robot" }
-               ]
+               { row: 0, col: 0, type: "red_robot" }
+            ]
          }
       ],
       hard: [
          {
             tiles: [
-                   [1, 4, 1, 4, 4, 4, 1, 1, 1, 1, 4, 1, 1, 4, 4, 1],
-                   [1, 4, 4, 1, 4, 1, 1, 1, 4, 1, 4, 1, 4, 1, 4, 1],
-                   [1, 4, 1, 4, 1, 1, 4, 1, 4, 4, 4, 1, 1, 4, 1, 1],
-                   [1, 3, 4, 3, 3, 4, 4, 4, 3, 4, 3, 4, 4, 3, 3, 1]
-               ],
+               [1, 4, 1, 4, 4, 4, 1, 1, 1, 1, 4, 1, 1, 4, 4, 1],
+               [1, 4, 4, 1, 4, 1, 1, 1, 4, 1, 4, 1, 4, 1, 4, 1],
+               [1, 4, 1, 4, 1, 1, 4, 1, 4, 4, 4, 1, 1, 4, 1, 1],
+               [1, 3, 4, 3, 3, 4, 4, 4, 3, 4, 3, 4, 4, 3, 3, 1]
+            ],
             initItems: [
-                  { row: 0, col: 0, type: "red_robot" }
-               ]
+               { row: 0, col: 0, type: "red_robot" }
+            ]
          },
          {
             tiles: [
-                   [1, 1, 1, 1, 4, 1, 1, 4, 4, 4, 1, 4, 4, 4, 1, 1],
-                   [1, 4, 1, 4, 1, 4, 1, 4, 4, 4, 1, 4, 1, 1, 1, 1],
-                   [1, 4, 4, 4, 1, 1, 4, 1, 4, 1, 4, 1, 1, 4, 1, 1],
-                   [1, 3, 4, 3, 4, 4, 4, 3, 3, 3, 4, 3, 4, 3, 4, 1]
-               ],
+               [1, 1, 1, 1, 4, 1, 1, 4, 4, 4, 1, 4, 4, 4, 1, 1],
+               [1, 4, 1, 4, 1, 4, 1, 4, 4, 4, 1, 4, 1, 1, 1, 1],
+               [1, 4, 4, 4, 1, 1, 4, 1, 4, 1, 4, 1, 1, 4, 1, 1],
+               [1, 3, 4, 3, 4, 4, 4, 3, 3, 3, 4, 3, 4, 3, 4, 1]
+            ],
             initItems: [
-                  { row: 0, col: 0, type: "red_robot" }
-               ]
+               { row: 0, col: 0, type: "red_robot" }
+            ]
          }
       ]
    };
 
    initBlocklySubTask(subTask);
-   displayHelper.thresholdEasy = 5000;
-   displayHelper.thresholdMedium = 10000;
 }
 
-initWrapper(initTask, ["easy", "medium", "hard"], null, true);
+window.initBlocklySubTask = function () { };
+window.taskData = window.taskData || {};
+window.taskData.waitInit = function () { initTask(window.taskData); };
+window.taskData.codecastParameters = window.taskData.codecastParameters || {
+   language: "de-DE",
+   platform: "blockly",
+   canChangePlatform: false,
+   showStepper: true,
+   showStack: true,
+   showViews: true,
+   showIO: true,
+   controls: { reload: false },
+   hideSettings: true,
+   jwinfMenu: { copyPaste: true, undoRedo: true, svgExport: true }
+};
+

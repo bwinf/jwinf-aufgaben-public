@@ -4,7 +4,7 @@ name: "Wiederholungsaufgaben 10d"
 secret: "MDG_10d_Wiederholungsaufgaben"
 duration_minutes: 0
 
-language: legacy_blockly
+language: blockly
 
 tasks:
   "Aufgabe 1":

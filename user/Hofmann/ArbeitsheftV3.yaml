@@ -4,7 +4,7 @@ name: "Arbeitsheft"
 secret: "arbeitsheft"
 duration_minutes: 0
 
-language: legacy_blockly
+language: blockly
 
 tasks:
   "Einstieg: Bausteine zusammensetzen":

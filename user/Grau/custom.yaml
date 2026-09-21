@@ -4,7 +4,7 @@ name: "Persönliche Level Grau"
 secret: "GrauCustom"
 duration_minutes: 0
 
-language: legacy_blockly
+language: blockly
 
 tasks:
   "Sparse Bitmap":

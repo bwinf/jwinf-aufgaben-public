@@ -2,7 +2,7 @@ category: public
 name: "WP7_Test"
 secret: "WP7-SGS-BND"
 duration_minutes: 0
-language: legacy_blockly
+language: blockly
 tasks:
   "Aufgabe 1":
     "../../training/03_Bedingte_Anweisungen_Einfuehrung/01_BedingteAnweisungen": {stars: 4}

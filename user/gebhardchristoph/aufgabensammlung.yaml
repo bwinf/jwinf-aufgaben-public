@@ -4,7 +4,7 @@ name: "Aufgabensammlung für Besucher am WGG Tag der offenen Tür"
 secret: "WGG_TdoT"
 duration_minutes: 0
 
-language: legacy_blockly
+language: blockly
 
 tasks:
   "Aufgabe 1":

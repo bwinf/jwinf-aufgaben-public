@@ -5,7 +5,7 @@ secret: "gms-wenigenjena-002"  # Passwort
 # language: legacy_blockly  # Blöcke zur Programmierung
 duration_minutes: 0
 
-language: legacy_blockly
+language: blockly
 
 # Aufgaben
 tasks:

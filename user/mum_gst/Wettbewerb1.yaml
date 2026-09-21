@@ -4,7 +4,7 @@ name: "Projekttag2026_gst_W1"
 secret: "gst_mum2026_W1"
 duration_minutes: 35
 
-language: legacy_blockly
+language: blockly
 
 tasks:
   "Aufgabe 1":

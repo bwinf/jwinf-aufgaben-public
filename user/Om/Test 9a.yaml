@@ -4,7 +4,7 @@ name: "Test 9a"
 secret: "MDG_9a_Test"
 duration_minutes: 0
 
-language: legacy_blockly
+language: blockly
 
 tasks:
   "Aufgabe 1":

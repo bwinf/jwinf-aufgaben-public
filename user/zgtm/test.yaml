@@ -4,7 +4,7 @@ name: "Beispiel-Aufgabensammlung ZGTM"
 secret: "zgtm"
 duration_minutes: 0
 
-language: legacy_blockly
+language: blockly
 
 tasks:
   "In der Bibliothek":

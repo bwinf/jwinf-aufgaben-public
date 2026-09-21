@@ -4,7 +4,7 @@ name: "Aufgabensammlung 6a"
 secret: "eMa-54321"
 duration_minutes: 0
 
-language: legacy_blockly
+language: blockly
 
 tasks:
   "Solange bis Schatz":

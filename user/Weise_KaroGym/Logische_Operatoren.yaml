@@ -4,7 +4,7 @@ name: "Logische_Operatoren"
 secret: "Kurs_11_Operatoren"
 duration_minutes: 10
 
-language: legacy_blockly
+language: blockly
 
 tasks:
   "Aufgabe 1":

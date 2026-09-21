@@ -1,8 +1,12 @@
 function initTask(subTask) {
    subTask.gridInfos = {
+      context: "robot",
       conceptViewer: false,
       //Hier wird der Kontext definiert. Mit dem Kontext werden ItemTypes und Aufgabenspezifische Übersetzungen geladen
       contextType: "dominoes",
+
+      //Die BWINF-spezifischen Farben. Bitte in jeder Aufgabendatei laden, da die Blocktypen sonst nicht konsistent eingefärbt sind
+      //(Unsere Farben sind natürlich schöner)
       blocklyColourTheme: "bwinf",
       //Gibt an, wie viele Blöcke für welche Versionen maimal zur Verfügung stehen
       maxInstructions: {
@@ -15,14 +19,16 @@ function initTask(subTask) {
       hideSaveOrLoad: true,
       //Hier kann angegeben werden, welche Blöcke für die Aufgabe zur Verfügung stehen.
       includeBlocks: {
-
+         //Bei true werden die Blöcke nach Kategorien gruppiert. 
+         //Dies kann Sinn ergebene, wenn sehr viele Blöcke zur Verfügung stehen.
+         //Dies ist notwendig, wenn Funktionen oder Variablen (zum selber erstellen/nicht vordefiniert) benutzt werden.
          groupByCategory: false,
          //Alle Roboter spezifischen Blocks, welche für die Version jeweils genutzt werden.
          //Blöcke bei shared werden für alle Versionen angezeigt
          generatedBlocks: {
             robot: {
                medium: ["onStar", "onCross", "onSquare", "left", "right"],
-               hard: ["onStar", "onCross", "onSquare", "left", "right", ],
+               hard: ["onStar", "onCross", "onSquare", "left", "right",],
                shared: ["forward", "withdrawObject"]
             }
          },
@@ -64,62 +70,62 @@ function initTask(subTask) {
          //Definieren, wo der Roboter starten soll
          //dir: Definiert in welche Richtung der Roboter bei Start schaut
          initItems: [{
-               row: 1,
-               col: 0,
-               dir: 0,
-               type: "robot"
-            },
-            //Hier werden die entsprechenden Dominosteine auf die Felder gelegt
-            {
-               row: 1,
-               col: 1,
-               type: "BB"
-            },
-            {
-               row: 1,
-               col: 2,
-               type: "GO"
-            },
-            {
-               row: 1,
-               col: 3,
-               type: "BB"
-            },
-            {
-               row: 1,
-               col: 4,
-               type: "OO"
-            },
-            {
-               row: 1,
-               col: 5,
-               type: "BB"
-            },
-            {
-               row: 1,
-               col: 6,
-               type: "GO"
-            },
-            {
-               row: 1,
-               col: 7,
-               type: "BB"
-            },
-            {
-               row: 1,
-               col: 8,
-               type: "OG"
-            },
-            {
-               row: 1,
-               col: 9,
-               type: "BB"
-            },
-            {
-               row: 1,
-               col: 10,
-               type: "GG"
-            }
+            row: 1,
+            col: 0,
+            dir: 0,
+            type: "robot"
+         },
+         //Hier werden die entsprechenden Dominosteine auf die Felder gelegt
+         {
+            row: 1,
+            col: 1,
+            type: "BB"
+         },
+         {
+            row: 1,
+            col: 2,
+            type: "GO"
+         },
+         {
+            row: 1,
+            col: 3,
+            type: "BB"
+         },
+         {
+            row: 1,
+            col: 4,
+            type: "OO"
+         },
+         {
+            row: 1,
+            col: 5,
+            type: "BB"
+         },
+         {
+            row: 1,
+            col: 6,
+            type: "GO"
+         },
+         {
+            row: 1,
+            col: 7,
+            type: "BB"
+         },
+         {
+            row: 1,
+            col: 8,
+            type: "OG"
+         },
+         {
+            row: 1,
+            col: 9,
+            type: "BB"
+         },
+         {
+            row: 1,
+            col: 10,
+            type: "GG"
+         }
 
          ]
       }],
@@ -134,56 +140,56 @@ function initTask(subTask) {
 
          ],
          initItems: [{
-               row: 3,
-               col: 0,
-               dir: 0,
-               type: "robot"
-            },
-            {
-               row: 3,
-               col: 8,
-               type: "BB"
-            },
-            {
-               row: 2,
-               col: 9,
-               type: "BB"
-            },
-            {
-               row: 1,
-               col: 10,
-               type: "BB"
-            },
-            {
-               row: 3,
-               col: 9,
-               type: "OO"
-            },
-            {
-               row: 3,
-               col: 10,
-               type: "OO"
-            },
-            {
-               row: 2,
-               col: 8,
-               type: "GO"
-            },
-            {
-               row: 2,
-               col: 10,
-               type: "OB"
-            },
-            {
-               row: 1,
-               col: 8,
-               type: "OG"
-            },
-            {
-               row: 1,
-               col: 9,
-               type: "BG"
-            }
+            row: 3,
+            col: 0,
+            dir: 0,
+            type: "robot"
+         },
+         {
+            row: 3,
+            col: 8,
+            type: "BB"
+         },
+         {
+            row: 2,
+            col: 9,
+            type: "BB"
+         },
+         {
+            row: 1,
+            col: 10,
+            type: "BB"
+         },
+         {
+            row: 3,
+            col: 9,
+            type: "OO"
+         },
+         {
+            row: 3,
+            col: 10,
+            type: "OO"
+         },
+         {
+            row: 2,
+            col: 8,
+            type: "GO"
+         },
+         {
+            row: 2,
+            col: 10,
+            type: "OB"
+         },
+         {
+            row: 1,
+            col: 8,
+            type: "OG"
+         },
+         {
+            row: 1,
+            col: 9,
+            type: "BG"
+         }
          ]
       }],
       //Version ****
@@ -196,171 +202,183 @@ function initTask(subTask) {
             [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
          ],
          initItems: [{
-               row: 1,
-               col: 0,
-               dir: 0,
-               type: "robot"
-            },
-            {
-               row: 1,
-               col: 1,
-               type: "BB"
-            },
-            {
-               row: 1,
-               col: 2,
-               type: "OB"
-            },
-            {
-               row: 1,
-               col: 3,
-               type: "GO"
-            },
-            {
-               row: 1,
-               col: 4,
-               type: "BB"
-            },
-            {
-               row: 1,
-               col: 5,
-               type: "BB"
-            },
-            {
-               row: 1,
-               col: 6,
-               type: "OG"
-            },
-            {
-               row: 1,
-               col: 7,
-               type: "BB"
-            },
-            {
-               row: 1,
-               col: 8,
-               type: "OG"
-            },
-            {
-               row: 1,
-               col: 9,
-               type: "BB"
-            },
-            {
-               row: 1,
-               col: 10,
-               type: "OG"
-            },
-            {
-               row: 2,
-               col: 1,
-               type: "OB"
-            },
-            {
-               row: 2,
-               col: 2,
-               type: "OO"
-            },
-            {
-               row: 2,
-               col: 3,
-               type: "BO"
-            },
-            {
-               row: 2,
-               col: 4,
-               type: "GB"
-            },
-            {
-               row: 2,
-               col: 5,
-               type: "OO"
-            },
-            {
-               row: 2,
-               col: 6,
-               type: "OG"
-            },
-            {
-               row: 2,
-               col: 7,
-               type: "OO"
-            },
-            {
-               row: 2,
-               col: 8,
-               type: "BO"
-            },
-            {
-               row: 2,
-               col: 9,
-               type: "GB"
-            },
-            {
-               row: 2,
-               col: 10,
-               type: "OG"
-            },
-            {
-               row: 3,
-               col: 1,
-               type: "OG"
-            },
-            {
-               row: 3,
-               col: 2,
-               type: "GG"
-            },
-            {
-               row: 3,
-               col: 3,
-               type: "GG"
-            },
-            {
-               row: 3,
-               col: 4,
-               type: "GG"
-            },
-            {
-               row: 3,
-               col: 5,
-               type: "GG"
-            },
-            {
-               row: 3,
-               col: 6,
-               type: "GG"
-            },
-            {
-               row: 3,
-               col: 7,
-               type: "BO"
-            },
-            {
-               row: 3,
-               col: 8,
-               type: "GG"
-            },
-            {
-               row: 3,
-               col: 9,
-               type: "GO"
-            },
-            {
-               row: 3,
-               col: 10,
-               type: "GG"
-            }
+            row: 1,
+            col: 0,
+            dir: 0,
+            type: "robot"
+         },
+         {
+            row: 1,
+            col: 1,
+            type: "BB"
+         },
+         {
+            row: 1,
+            col: 2,
+            type: "OB"
+         },
+         {
+            row: 1,
+            col: 3,
+            type: "GO"
+         },
+         {
+            row: 1,
+            col: 4,
+            type: "BB"
+         },
+         {
+            row: 1,
+            col: 5,
+            type: "BB"
+         },
+         {
+            row: 1,
+            col: 6,
+            type: "OG"
+         },
+         {
+            row: 1,
+            col: 7,
+            type: "BB"
+         },
+         {
+            row: 1,
+            col: 8,
+            type: "OG"
+         },
+         {
+            row: 1,
+            col: 9,
+            type: "BB"
+         },
+         {
+            row: 1,
+            col: 10,
+            type: "OG"
+         },
+         {
+            row: 2,
+            col: 1,
+            type: "OB"
+         },
+         {
+            row: 2,
+            col: 2,
+            type: "OO"
+         },
+         {
+            row: 2,
+            col: 3,
+            type: "BO"
+         },
+         {
+            row: 2,
+            col: 4,
+            type: "GB"
+         },
+         {
+            row: 2,
+            col: 5,
+            type: "OO"
+         },
+         {
+            row: 2,
+            col: 6,
+            type: "OG"
+         },
+         {
+            row: 2,
+            col: 7,
+            type: "OO"
+         },
+         {
+            row: 2,
+            col: 8,
+            type: "BO"
+         },
+         {
+            row: 2,
+            col: 9,
+            type: "GB"
+         },
+         {
+            row: 2,
+            col: 10,
+            type: "OG"
+         },
+         {
+            row: 3,
+            col: 1,
+            type: "OG"
+         },
+         {
+            row: 3,
+            col: 2,
+            type: "GG"
+         },
+         {
+            row: 3,
+            col: 3,
+            type: "GG"
+         },
+         {
+            row: 3,
+            col: 4,
+            type: "GG"
+         },
+         {
+            row: 3,
+            col: 5,
+            type: "GG"
+         },
+         {
+            row: 3,
+            col: 6,
+            type: "GG"
+         },
+         {
+            row: 3,
+            col: 7,
+            type: "BO"
+         },
+         {
+            row: 3,
+            col: 8,
+            type: "GG"
+         },
+         {
+            row: 3,
+            col: 9,
+            type: "GO"
+         },
+         {
+            row: 3,
+            col: 10,
+            type: "GG"
+         }
          ]
       }]
    };
 
    initBlocklySubTask(subTask);
-   displayHelper.thresholdEasy = 5000;
-   displayHelper.thresholdMedium = 10000;
 }
 
 //Laden der definierten Informationen
 //2. Parameter: Die Liste gibt an, welche Versionen es gibt
 //3. Parameter: Gibt an bei welcher Version gestartet wird. Bei null wird bei basic gestartet
-initWrapper(initTask, ["easy", "medium", "hard"], null, true);
+window.initBlocklySubTask = function () { };
+window.taskData = window.taskData || {};
+window.taskData.waitInit = function () { initTask(window.taskData); };
+window.taskData.codecastParameters = window.taskData.codecastParameters || {
+   language: "de-DE",
+   platform: "blockly",
+   canChangePlatform: false,
+   showStepper: true,
+   showStack: true,
+   showViews: true,
+   showIO: true,
+   controls: { reload: false },
+   hideSettings: true,
+   jwinfMenu: { copyPaste: true, undoRedo: true, svgExport: true }
+};

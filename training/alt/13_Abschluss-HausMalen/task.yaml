@@ -1,0 +1,12 @@
+name: "01.13 Haus Malen"
+standalone: true
+public_listing: true
+
+languages:
+  - blockly
+  - python
+
+tags:
+  - Roboter
+  - Verzweigungen
+  - Wiederhole mit fester Anzahl

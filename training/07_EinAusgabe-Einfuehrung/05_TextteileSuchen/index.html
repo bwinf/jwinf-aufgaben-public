@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script>window.stringsLanguage='de';window.taskStrings={};</script>
+<script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js" id="import-modules"></script>
+<script class="remove" type="text/javascript">
+var modulesPath = '../../../../_common/modules/';
+importModules(['jquery-1.7.1','JSON-js','raphael-2.2.1','codecast-7.7','jschannel','raphaelFactory-1.0','delayFactory-1.0','simulationFactory-1.0','platform-pr','beav-1.0','installationAPI.01','miniPlatform','taskStyles-mobileFirst','jwinf-codecast_css','jwinf-codecast','conceptDisplay-1.0','conceptViewer-2.0','conceptViewer_css-2.0']);
+</script>
+<script class="remove" type="text/javascript">
+var json = {
+      "id": "text_index_of",
+      "language": "de",
+      "version": "de.01",
+      "authors": "Katharina Schuster",
+      "translators": [],
+      "license": "",
+      "taskPathPrefix": "",
+      "modulesPathPrefix": "",
+      "browserSupport": [],
+      "acceptedAnswers": [""],
+      "fullFeedback": true,
+      "minWidth": "auto"
+    };
+</script>
+<script type="text/javascript" src="printer_task.js"></script>
+</head>
+<body id="app">
+<div id="react-container" style="width:100%;height:100vh"></div>
+
+<div id="task" style="display:none"><div id="tabsContainer"></div><div id="taskContent"><div id="gridContainer"></div><div id="blocklyLibContent"></div></div></div>
+<div id="taskIntro" style="display:none">
+        Schreibe ein Programm:<br>
+        <div class="easy">
+          <p>
+            Das Programm soll eine Textzeile einlesen und das erste Auftreten von <code>we</code> suchen.
+            <span data-lang="blockly">Es soll die Position ausgeben.</span><span data-lang="python">Es soll ausgeben, wo
+              der Textausschnitt steht, wenn wir bei 1 anfangen zu zählen. Also die Position +1.</span>
+          </p>
+          <p data-lang="python">
+            Um nach Textteilen zu suchen kann in python entweder <code>find()</code> oder <code>index()</code> verwendet
+            werden. Beide Funktionen werden an der Zeichenkette selber aufgerufen, also z.B.
+            <code>"Hallo".find("a")</code>. Beide geben die Position des ersten Auftretens zurück. Falls die
+            Zeichenkette <b>nicht</b> gefunden wird, dann gibt <code>find()</code> eine <b>-1</b> zurück und
+            <code>index()</code> einen <code>ValueError</code>.
+          </p>
+          <div class="long" data-lang="blockly">
+            <hr>
+            <h2>Weitere Hinweise:</h2>
+            <p>
+              Mit dem Baustein <img src="../../../Bilder/text_indexOf.svg"> wird das erste oder letzte Auftreten eines
+              Suchbegriffs gesucht.
+              Es wird die Position des Suchbegriffs zurück gegeben. Falls der Begriff nicht gefunden wurde, wird 0
+              zurück gegeben.
+            </p>
+            <p>
+              Über den kleinen Pfeil, können dir verschiedenen Optionen ausgewählt werden.
+            </p>
+          </div>
+        </div>
+        <div class="medium">
+          <p>
+            Das Programm soll eine Textzeile einlesen und das letzte Auftreten von <code>we</code> suchen. <span data-lang="blockly">Es soll
+              die Position ausgeben.</span><span data-lang="python">Es soll ausgeben, wo
+              der Textausschnitt steht, wenn wir bei 1 anfangen zu zählen. Also die Position +1.</span>
+          </p>
+          <p data-lang="python">
+            Die Funktion <code>rfind()</code> steht für <b>reverse find</b> und sucht den Textteil von hinten beginned. Sonst kann die Funktion genauso wie <code>find()</code> verwendet werden.
+          </p>
+          <!--<p data-lang="python">
+            Wir können den Funktionen <code>find()</code> oder <code>index()</code> einen zweiten Parameter übergeben:
+            Wo wir anfangen sollen zu suchen. Um das zweite Auftreten zu finden müssen wir also zwei Mal suchen: Einmal
+            von vorne und einmal ab der Position, wo der Textteil schon einmal gefunden wurde.
+          </p>-
+          <p data-lang="python">
+            <b>Du brauchst eine Variable, um dir Informationen zwischen zu speichern. Eine Einführung findest du bei
+              "Variablen und Logik" - eventuell musst du zu dieser Aufgabe zurück kehren.</b>
+          </p>-->
+        </div>
+        <div class="hard">
+          <p>
+            Das Programm soll die Textzeilen einlesen und abwechselnd die Position des ersten und letzten
+            <code>e</code>'s ausgeben.
+          </p>
+          <p>
+            <b>Hinweis: </b>Es steht immer eine gerade Anzahl Wörter in der Eingabe.
+          </p>
+        </div>
+      </div>
+<div id="solution" style="display:none"></div>
+<div id="taskHints" style="display:none"></div>
+</body>
+</html>

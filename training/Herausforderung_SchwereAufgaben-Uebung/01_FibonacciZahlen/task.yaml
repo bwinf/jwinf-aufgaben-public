@@ -1,0 +1,11 @@
+name: "Schwere Aufgaben - Fibonacci"
+standalone: true
+public_listing: true
+
+languages:
+  - blockly
+
+tags:
+  - Text
+  - Wiederhole mit fester Anzahl
+  - Variablen

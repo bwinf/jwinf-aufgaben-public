@@ -1,0 +1,21 @@
+const pythonCode_04_3 = `from robot import *
+
+vorwaerts()
+bauePlattformOben()
+spring()
+hebeZahnradAuf()
+dreheUm()
+bauePlattformVorne()
+vorwaerts()
+vorwaerts()
+baueZahnradEin()
+vorwaerts()
+vorwaerts()
+hebeZahnradAuf()
+bauePlattformOben()
+spring()
+bauePlattformVorne()
+vorwaerts()
+bauePlattformVorne()
+vorwaerts()
+baueZahnradEin()`;

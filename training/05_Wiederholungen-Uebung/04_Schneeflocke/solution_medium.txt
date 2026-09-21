@@ -1,0 +1,18 @@
+from turtle import *
+
+for i in range(3):
+    geheSchritte(4)
+    dreheLinksGrad(45)
+    for j in range(3):
+        geheSchritte(4)
+        dreheLinksGrad(30)
+        for k in range(3):
+            geheSchritte(4)
+            geheZurueckSchritte(4)
+            dreheRechtsGrad(30)
+        dreheLinksGrad(60)
+        geheZurueckSchritte(4)
+        dreheRechtsGrad(45)
+    dreheLinksGrad(90)
+    geheZurueckSchritte(4)
+    dreheLinksGrad(120)

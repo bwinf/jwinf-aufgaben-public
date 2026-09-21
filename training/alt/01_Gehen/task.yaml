@@ -1,0 +1,11 @@
+name: "02.01 Gehen"
+standalone: true
+public_listing: true
+
+languages:
+  - blockly
+  - python
+
+tags:
+  - Turtle
+  - Sequenz

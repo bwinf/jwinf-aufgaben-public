@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Buchstaben-Chaos</title>
+  <script>
+    window.stringsLanguage = 'de';
+  </script>
+  <script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js"
+    id="import-modules"></script>
+  <script class="remove" type="text/javascript">
+    var modulesPath = '../../../../_common/modules/';
+    importModules([
+      'jquery-1.7.1', 'JSON-js', 'raphael-2.2.1',
+      'beaver-task-2.0', 'jschannel', 'raphaelFactory-1.0',
+      'delayFactory-1.0', 'simulationFactory-1.0',
+      'platform-pr', 'buttonsAndMessages', 'beav-1.0',
+      'installationAPI.01', 'miniPlatform',
+      'taskStyles-mobileFirst', 'blockly-printer', 'jwinf_css'
+    ]);
+    // set Blockly as default language when none is specified through ?language=
+    importLanguageModules('blockly');
+  </script>
+  <script class="remove" type="text/javascript">
+    var json = {
+      "id": "23-DE-01-Klang-Code",
+      "language": "de",
+      "version": "de.01",
+      "authors": "Katharina Schuster",
+      "translators": [],
+      "license": "",
+      "taskPathPrefix": "",
+      "modulesPathPrefix": "",
+      "browserSupport": [],
+      "acceptedAnswers": [""],
+      "fullFeedback": true,
+      "minWidth": "auto"
+    };
+
+    window.stringsLanguage = 'de';
+    var strings = {
+      moreThan100Moves: "Du hast mehr als 100 Schritte gebraucht.",
+      notAllCellsPainted: "Das hat noch nicht ganz geklappt. Versuch es noch einmal!",
+      allCellsPainted: "Bravo! Du hast die Zeilen richtig ausgegeben!"
+    };
+  </script>
+  <script type="text/javascript" src="printer_task_legacy.js"></script>
+
+</head>
+
+<body onresize="task.displayedSubTask.updateScale()">
+  <div id="task">
+    <h1>Anagramm-Überprüfung</h1>
+
+    <div id="tabsContainer"></div>
+    <div id="taskContent">
+      <div id="taskIntro">
+        <div class="easy">
+          <p>
+            Schreibe ein Programm:<br>
+            Das Programm soll <code>true</code> in die Ausgabe schreiben, falls die beiden Zeichenketten in der Eingabe gleich lang sind, sonst soll es <code>false</code> in die Ausgabe schreiben.
+          </p>
+          <p><b>Hinweis:</b> Unter "Weitere Hinweise" findest du Erklärungen zu den Bausteinen <button type="button"
+              style="background-color: white; border-radius: 4px; border: 1px solid #4a90e2"
+              onclick="quickAlgoInterface.toggleMoreDetails();"><img src="../../../Bilder/bulb.svg"
+                style="max-width:18px; vertical-align: middle;"></button>.</p>
+          <!-- <p><b>Hinweis:</b>  Wandle jede Zeichenkette in eine Liste von Zeichen um und überprüfe, ob beide Zeichenketten die gleiche Länge haben. Es werden nur kleine Buchstaben verwendet.</p> -->
+        </div>
+        <div class="medium">
+          <p>
+            Schreibe ein Programm:<br>
+            In der Eingabe stehen untereinander zwei Zeichenketten bestehend aus Kleinbuchstaben. Das Programm soll überprüfen, ob die Zeichenketten die gleiche Länge haben und ob der erste Buchstabe der ersten Zeichenkette
+            in der zweiten Zeichenkette vorkommt.
+            Das Programm soll <code>true</code> in die Ausgabe schreiben, wenn beide Bedingungen erfüllt sind; andernfalls
+            <code>false</code>.
+          </p>
+          <p><b>Hinweis:</b> Unter "Weitere Hinweise" findest du Erklärungen zu den Bausteinen <button type="button"
+              style="background-color: white; border-radius: 4px; border: 1px solid #4a90e2"
+              onclick="quickAlgoInterface.toggleMoreDetails();"><img src="../../../Bilder/bulb.svg"
+                style="max-width:18px; vertical-align: middle;"></button>.</p>
+        </div>
+        <div class="hard">
+          <p>
+            Schreibe ein Programm:<br>
+            In der Eingabe stehen untereinander zwei Zeichenketten bestehend aus Kleinbuchstaben. Das Programm soll überprüfen, ob die beiden Zeichenketten Anagramme sind, das heißt ob sie die gleichen Buchstaben in unterschiedlicher
+            Reihenfolge enthalten.<br>
+          </p>
+          <p> 
+            <b>Beispiel:</b> sahne und hasen
+          </p>
+          <p>
+            Das Programm soll <code>true</code> in die Ausgabe schreiben, wenn es sich um Anagramme handelt; andernfalls
+            <code>false</code>.
+          </p>
+          <p><b>Hinweis:</b> Unter "Weitere Hinweise" findest du Erklärungen zu den Bausteinen <button type="button"
+              style="background-color: white; border-radius: 4px; border: 1px solid #4a90e2"
+              onclick="quickAlgoInterface.toggleMoreDetails();"><img src="../../../Bilder/bulb.svg"
+                style="max-width:18px; vertical-align: middle;"></button>.</p>
+        </div>
+
+        <div data-lang="blockly" class="long">
+
+            <h2>Eingeschränkte Bausteine:</h2>
+            <p> Um eine reine Sequenz an Anweisungen oder eine Lösung, die nur auf das Bestehen von Testfällen abzielt,
+              zu
+              vermeiden, stehen
+              maximal vier <img src="../../../Bilder/print.svg" />-Bausteine und maximal vier <img src="../../../Bilder/logic_compare.svg">-Bausteine zur Verfügung.
+            </p>
+
+          <hr>
+          <h2>Weitere Hinweise:</h2>
+
+          <p>Mit dem Baustein <img src="../../../Bilder/lists_split.svg"> wird ein Text an den vorgegebenen Trennzeichen
+            in eine Liste aufgeteilt. Wenn du ein Wort in die Buchstaben aufteilen willst, dann musst das Trennzeichen leer lassen.
+            Steht in der Eingabe bspw. <code>juno</code>, dann schreibt folgender Code in die Variable <code>Buchstabe</code> eine Liste mit dem Inhalt <code>j, u, n, o</code>
+          </p>
+
+          <p class="medium hard">Die Bausteine <img src="../../../Bilder/text_indexOf.svg" /> und <img src="../../../Bilder/lists_indexOf.svg" />
+            geben <code>0</code> zurück, falls der gesuchte Text bzw. das
+            gesuchte Element nicht gefunden wird.
+          </p>
+
+        </div>
+
+        <p><i>Beachte: Dein Programm muss mit allen Testfällen zurechtkommen.</i></p>
+      </div>
+      <div id="gridContainer"></div>
+      <div id="blocklyLibContent"></div>
+    </div>
+  </div><!-- task -->
+</body>
+
+</html>

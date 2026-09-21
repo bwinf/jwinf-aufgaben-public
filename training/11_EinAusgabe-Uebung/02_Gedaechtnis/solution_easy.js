@@ -1,0 +1,6 @@
+const pythonCode_02_1 = `from printer import *
+
+zeile = lies()
+schreibe(zeile.lower())
+schreibe(zeile)
+schreibe(zeile.upper())`;

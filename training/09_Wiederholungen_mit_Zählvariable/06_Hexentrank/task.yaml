@@ -1,0 +1,12 @@
+name: "09.06 Hexentrank"
+standalone: true
+public_listing: true
+
+languages:
+  - blockly
+  - python
+
+tags:
+  - Roboter
+  - Wiederhole mit fester Anzahl
+  - for-Schleife

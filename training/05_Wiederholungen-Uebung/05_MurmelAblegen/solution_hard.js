@@ -1,0 +1,11 @@
+const pythonCode_05_3 = `from robot import *
+
+while not aufMurmel():
+    rechts()
+hebeMurmelAuf()
+while not gitterrandRechts():
+    rechts()
+links()
+while not aufLoch():
+    oben()
+legeMurmelAb()`;

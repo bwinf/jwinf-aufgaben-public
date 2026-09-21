@@ -1,0 +1,12 @@
+name: "06.03 Finde den Weg zum See"
+standalone: true
+public_listing: true
+
+languages:
+  - blockly
+  - python
+
+tags:
+  - Roboter
+  - Verzweigungen
+  - Wiederhole mit fester Anzahl

@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Einführung in Listen</title>
+  <script>
+    window.stringsLanguage = 'en';
+  </script>
+  <script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js"
+    id="import-modules"></script>
+  <script class="remove" type="text/javascript">
+    var modulesPath = '../../../../_common/modules/'
+    importModules([
+      'jquery-1.7.1', 'JSON-js', 'raphael-2.2.1', 'beaver-task-2.0', 'jschannel', 'raphaelFactory-1.0', 'delayFactory-1.0', 'simulationFactory-1.0',
+      'platform-pr', 'buttonsAndMessages', 'beav-1.0', 'installationAPI.01', 'miniPlatform',
+      'taskStyles-mobileFirst', 'blockly-robot-1.1', 'jwinf_css'
+    ]);
+    // set Blockly as default language when none is specified through ?language=
+    importLanguageModules('blockly');
+  </script>
+  <script class="remove" type="text/javascript">
+    var json = {
+      "id": "http://castor-informatique.fr/questions/algorea_training/training-array-1D",
+      "language": "fr",
+      "version": "fr.01",
+      "authors": "Mathias Hiron",
+      "translators": [],
+      "license": "",
+      "taskPathPrefix": "",
+      "modulesPathPrefix": "",
+      "browserSupport": [],
+      "acceptedAnswers": [""],
+      "fullFeedback": true,
+      "minWidth": "auto"
+    };
+  </script>
+  <script type="text/javascript" src="task_new.js"></script>
+</head>
+
+<body onresize="task.displayedSubTask.updateScale()">
+  <div id="task">
+    <h1>Wie verwende ich Listen?</h1>
+    <img src="green_robot.png" style="display:none" />
+    <img src="paint.png" style="display:none" />
+    <img src="marker.png" style="display:none" />
+    <img src="icon.png" style="display:none" />
+
+    <div id="tabsContainer"></div>
+    <div id="taskContent" style="text-align:left;position:relative">
+      <div id="taskIntro">
+        Program the robot:<br>
+        <p>The robot must paint the marked fields <img src='marker.png' width="35" height=auto />.</p>
+        <p class="easy">
+          Each marked field is below a <span
+            style="color:#146c6e">painted</span> field <img src='paint.png' width="25" height=auto />.
+        </p>
+        <p class="medium">
+          The second row equals the first row but swapped from left to right.
+          The field in row 2 column 2 is marked, if the field in row 1 column 15 is <span style="color:#146c6e">painted</span>; the field in row 2 column 3 is marked, if the field in row 1 column 14 is <span style="color:#146c6e">painted</span>; and so on.
+        </p>
+        <p class="hard">
+          A field in row 4 is marked, if among the other fields in the same column more fields are <span style="color:#146c6e">painted</span>
+          <img src='paint.png' width="25" height=auto /> than not <img src='unpainted.png' width="25" height=auto />. 
+        </p>
+        <p class="easy medium hard"></p>
+          <b>Hint:</b> The robot cannot move up. </p>
+        <div class="easy medium">
+        <div class="long">
+          <h2>Details:</h2>
+          <hr>
+          <div class="easy">
+            <p>
+              Your program must therefore remember which fields are marked in the first line and then use this memory to determine which fields should be coloured in the second line.
+              A possible procedure is described here:
+            </p>
+            <p>
+              For example, you can create one variable per cell to store the sensor values:
+            </p>
+            <img data-lang="blockly" src="nolist_read_blockly.png" />
+            <p>A truth value (Boolean) is stored in the variables. If the field is coloured, the variable has the value <code>True</code>. If the field is not coloured, the variable has the value <code>False</code>.
+              You could then read the corresponding variable for each field in the second line to determine whether the field should be coloured.
+            </p>
+            <img data-lang="blockly" src="nolist_write_blockly.png" />
+            <p>
+              Instead of storing 15 different variables for each of the 15 fields in front of the robot, the robot should use a list to remember whether the field is coloured or not. A list is a data structure that can contain several elements. The elements are numbered consecutively, starting with 1. We start by creating a list with 16 times the element False, which we assign to a variable:
+            </p>
+            <img data-lang="blockly" src="list_init_blockly.png" />
+            <p>
+              The values can then be stored as elements in the list by specifying their number and the value you want to store at the position with that number.
+            </p>
+            <p>
+              Here we want to store the sensor value for each of the 15 fields in front of the robot. Therefore, a sensor that specifies the number of the robot's column on the grid is used as the position number in the list. The <code>on paint</code> returns <code>True</code> if there is colour on the field and <code>False</code> if there is no colour on the field. For each column, we save the information in the list:
+            </p>
+            <img data-lang="blockly" src="list_write_blockly.png" />
+            <p>
+              As soon as the robot is in the second row, it can read the saved values from the list again. If <code>True</code> has been saved in the list, the field must be painted:
+            </p>
+            <img data-lang="blockly" src="list_read_blockly.png" />
+          </div>
+          <div class="medium">
+            <p>
+              Your program must perform calculations with the column positions.
+            </p>
+          </div>
+        </div>
+      </div>
+        <p>
+          <i>Note: Your program must be able to handle all test cases.</i>
+        </p>
+      </div>
+      <div id="gridContainer"></div>
+      <div id="blocklyLibContent"></div>
+    </div>
+
+  </div><!-- task -->
+</body>
+
+</html>

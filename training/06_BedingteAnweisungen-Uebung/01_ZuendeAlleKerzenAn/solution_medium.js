@@ -1,0 +1,7 @@
+const pythonCode_01_2 = `from robot import *
+
+for i in range(4):
+    oben()
+for i in range(5):
+    rechts()
+    zuendeKerzeAn()`;

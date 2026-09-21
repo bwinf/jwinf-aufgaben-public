@@ -1,0 +1,11 @@
+name: "05.03 Straße sichern"
+standalone: true
+public_listing: true
+
+languages:
+  - blockly
+  - python
+
+tags:
+  - Roboter
+  - Wiederhole mit fester Anzahl

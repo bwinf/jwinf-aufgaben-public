@@ -1,5 +1,6 @@
 function initTask(subTask) {
    subTask.gridInfos = {
+      context: "robot",
       conceptViewer: false,
       timeoutMinutes: 15, // Nach 15 Minuten warnen
       //Hier wird der Kontext definiert. Mit dem Kontext werden ItemTypes und Aufgabenspezifische Übersetzungen geladen
@@ -107,54 +108,54 @@ function initTask(subTask) {
          //Definieren, wo der Roboter starten soll
          //dir: Gibt an, in welche Richtung der Roboter bei Start schaut
          initItems: [{
-                  row: 1,
-                  col: 0,
-                  dir: 0,
-                  type: "robot"
-               },
-               //Legt einen Biber in den Biber-Container und sag
-               //wie viel Holz der Biber bestellt (containerSize:)
-               //row und col muss mit dem Biber oben (7)
-               //übereinstimmen
-               {
-                  row: 3,
-                  col: 1,
-                  type: "beaver",
-                  containerSize: 3
-               },
-               {
-                  row: 3,
-                  col: 2,
-                  type: "beaver",
-                  containerSize: 1
-               },
-               {
-                  row: 3,
-                  col: 3,
-                  type: "beaver",
-                  containerSize: 4
-               },
-               {
-                  row: 3,
-                  col: 4,
-                  type: "beaver",
-                  containerSize: 5
-               },
-               {
-                  row: 3,
-                  col: 5,
-                  type: "beaver",
-                  containerSize: 2
-               }
-               //Hier wird in alle Holzcontainer Holz gefüllt
-               //Die erste Zahl (3) gibt an, wie viele Holzscheite
-               //row und col muss mit dem zu füllenden Holzcontainer oben (6)
-               //übereinstimmen
-            ].concat(initArray(3, {
-               row: 1,
-               col: 1,
-               type: "wood_outside"
-            }))
+            row: 1,
+            col: 0,
+            dir: 0,
+            type: "robot"
+         },
+         //Legt einen Biber in den Biber-Container und sag
+         //wie viel Holz der Biber bestellt (containerSize:)
+         //row und col muss mit dem Biber oben (7)
+         //übereinstimmen
+         {
+            row: 3,
+            col: 1,
+            type: "beaver",
+            containerSize: 3
+         },
+         {
+            row: 3,
+            col: 2,
+            type: "beaver",
+            containerSize: 1
+         },
+         {
+            row: 3,
+            col: 3,
+            type: "beaver",
+            containerSize: 4
+         },
+         {
+            row: 3,
+            col: 4,
+            type: "beaver",
+            containerSize: 5
+         },
+         {
+            row: 3,
+            col: 5,
+            type: "beaver",
+            containerSize: 2
+         }
+            //Hier wird in alle Holzcontainer Holz gefüllt
+            //Die erste Zahl (3) gibt an, wie viele Holzscheite
+            //row und col muss mit dem zu füllenden Holzcontainer oben (6)
+            //übereinstimmen
+         ].concat(initArray(3, {
+            row: 1,
+            col: 1,
+            type: "wood_outside"
+         }))
             .concat(initArray(1, {
                row: 1,
                col: 2,
@@ -178,996 +179,1009 @@ function initTask(subTask) {
       }],
       //Version *** 
       medium: [{
-            //Testfall 1
-            tiles: [
-               [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4],
-               [4, 1, 6, 6, 6, 6, 6, 6, 6, 6, 6, 1, 4],
-               [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 1, 4],
-               [4, 1, 6, 6, 6, 6, 6, 6, 6, 6, 6, 1, 4],
-               [4, 1, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4],
-               [4, 1, 7, 7, 7, 7, 7, 7, 7, 7, 7, 1, 4],
-               [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4]
-            ],
-            initItems: [{
-                     row: 1,
-                     col: 1,
-                     dir: 0,
-                     type: "robot"
-                  },
-                  {
-                     row: 5,
-                     col: 8,
-                     type: "beaver",
-                     containerSize: 3
-                  },
-                  {
-                     row: 5,
-                     col: 9,
-                     type: "beaver",
-                     containerSize: 4
-                  },
-                  {
-                     row: 5,
-                     col: 10,
-                     type: "beaver",
-                     containerSize: 5
-                  },
-                  {
-                     row: 5,
-                     col: 3,
-                     type: "beaver",
-                     containerSize: 5
-                  },
-                  {
-                     row: 5,
-                     col: 4,
-                     type: "beaver",
-                     containerSize: 3
-                  },
-                  {
-                     row: 5,
-                     col: 5,
-                     type: "beaver",
-                     containerSize: 6
-                  },
-                  {
-                     row: 5,
-                     col: 7,
-                     type: "beaver",
-                     containerSize: 7
-                  },
-                  {
-                     row: 5,
-                     col: 6,
-                     type: "beaver",
-                     containerSize: 5
-                  },
-                  {
-                     row: 5,
-                     col: 2,
-                     type: "beaver",
-                     containerSize: 8
-                  },
-               ].concat(initArray(3, {
-                  row: 1,
-                  col: 8,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(1, {
-                  row: 1,
-                  col: 9,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(4, {
-                  row: 1,
-                  col: 10,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(5, {
-                  row: 1,
-                  col: 3,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(2, {
-                  row: 1,
-                  col: 4,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(6, {
-                  row: 1,
-                  col: 5,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(7, {
-                  row: 1,
-                  col: 7,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(4, {
-                  row: 1,
-                  col: 6,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(8, {
-                  row: 1,
-                  col: 2,
-                  type: "wood_outside"
-               }))
-
-               .concat(initArray(1, {
-                  row: 3,
-                  col: 8,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(4, {
-                  row: 3,
-                  col: 9,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(5, {
-                  row: 3,
-                  col: 10,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(2, {
-                  row: 3,
-                  col: 3,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(3, {
-                  row: 3,
-                  col: 4,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(4, {
-                  row: 3,
-                  col: 5,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(6, {
-                  row: 3,
-                  col: 7,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(5, {
-                  row: 3,
-                  col: 6,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(3, {
-                  row: 3,
-                  col: 2,
-                  type: "wood_outside"
-               }))
+         //Testfall 1
+         tiles: [
+            [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4],
+            [4, 1, 6, 6, 6, 6, 6, 6, 6, 6, 6, 1, 4],
+            [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 1, 4],
+            [4, 1, 6, 6, 6, 6, 6, 6, 6, 6, 6, 1, 4],
+            [4, 1, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4],
+            [4, 1, 7, 7, 7, 7, 7, 7, 7, 7, 7, 1, 4],
+            [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4]
+         ],
+         initItems: [{
+            row: 1,
+            col: 1,
+            dir: 0,
+            type: "robot"
          },
-         //Testfall 2
          {
-            tiles: [
-               [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4],
-               [4, 1, 6, 6, 6, 6, 6, 6, 6, 6, 6, 1, 4],
-               [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 1, 4],
-               [4, 1, 6, 6, 6, 6, 6, 6, 6, 6, 6, 1, 4],
-               [4, 1, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4],
-               [4, 1, 7, 7, 7, 7, 7, 7, 7, 7, 7, 1, 4],
-               [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4]
-            ],
-            initItems: [{
-                     row: 1,
-                     col: 1,
-                     dir: 0,
-                     type: "robot"
-                  },
-                  {
-                     row: 5,
-                     col: 2,
-                     type: "beaver",
-                     containerSize: 3
-                  },
-                  {
-                     row: 5,
-                     col: 3,
-                     type: "beaver",
-                     containerSize: 4
-                  },
-                  {
-                     row: 5,
-                     col: 4,
-                     type: "beaver",
-                     containerSize: 5
-                  },
-                  {
-                     row: 5,
-                     col: 5,
-                     type: "beaver",
-                     containerSize: 5
-                  },
-                  {
-                     row: 5,
-                     col: 6,
-                     type: "beaver",
-                     containerSize: 3
-                  },
-                  {
-                     row: 5,
-                     col: 7,
-                     type: "beaver",
-                     containerSize: 6
-                  },
-                  {
-                     row: 5,
-                     col: 8,
-                     type: "beaver",
-                     containerSize: 7
-                  },
-                  {
-                     row: 5,
-                     col: 9,
-                     type: "beaver",
-                     containerSize: 5
-                  },
-                  {
-                     row: 5,
-                     col: 10,
-                     type: "beaver",
-                     containerSize: 8
-                  },
-               ].concat(initArray(3, {
-                  row: 1,
-                  col: 2,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(1, {
-                  row: 1,
-                  col: 3,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(4, {
-                  row: 1,
-                  col: 4,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(5, {
-                  row: 1,
-                  col: 5,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(2, {
-                  row: 1,
-                  col: 6,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(6, {
-                  row: 1,
-                  col: 7,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(7, {
-                  row: 1,
-                  col: 8,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(4, {
-                  row: 1,
-                  col: 9,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(8, {
-                  row: 1,
-                  col: 10,
-                  type: "wood_outside"
-               }))
+            row: 5,
+            col: 8,
+            type: "beaver",
+            containerSize: 3
+         },
+         {
+            row: 5,
+            col: 9,
+            type: "beaver",
+            containerSize: 4
+         },
+         {
+            row: 5,
+            col: 10,
+            type: "beaver",
+            containerSize: 5
+         },
+         {
+            row: 5,
+            col: 3,
+            type: "beaver",
+            containerSize: 5
+         },
+         {
+            row: 5,
+            col: 4,
+            type: "beaver",
+            containerSize: 3
+         },
+         {
+            row: 5,
+            col: 5,
+            type: "beaver",
+            containerSize: 6
+         },
+         {
+            row: 5,
+            col: 7,
+            type: "beaver",
+            containerSize: 7
+         },
+         {
+            row: 5,
+            col: 6,
+            type: "beaver",
+            containerSize: 5
+         },
+         {
+            row: 5,
+            col: 2,
+            type: "beaver",
+            containerSize: 8
+         },
+         ].concat(initArray(3, {
+            row: 1,
+            col: 8,
+            type: "wood_outside"
+         }))
+            .concat(initArray(1, {
+               row: 1,
+               col: 9,
+               type: "wood_outside"
+            }))
+            .concat(initArray(4, {
+               row: 1,
+               col: 10,
+               type: "wood_outside"
+            }))
+            .concat(initArray(5, {
+               row: 1,
+               col: 3,
+               type: "wood_outside"
+            }))
+            .concat(initArray(2, {
+               row: 1,
+               col: 4,
+               type: "wood_outside"
+            }))
+            .concat(initArray(6, {
+               row: 1,
+               col: 5,
+               type: "wood_outside"
+            }))
+            .concat(initArray(7, {
+               row: 1,
+               col: 7,
+               type: "wood_outside"
+            }))
+            .concat(initArray(4, {
+               row: 1,
+               col: 6,
+               type: "wood_outside"
+            }))
+            .concat(initArray(8, {
+               row: 1,
+               col: 2,
+               type: "wood_outside"
+            }))
 
-               .concat(initArray(1, {
-                  row: 3,
-                  col: 2,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(4, {
-                  row: 3,
-                  col: 3,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(5, {
-                  row: 3,
-                  col: 4,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(2, {
-                  row: 3,
-                  col: 5,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(3, {
-                  row: 3,
-                  col: 6,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(4, {
-                  row: 3,
-                  col: 7,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(6, {
-                  row: 3,
-                  col: 8,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(5, {
-                  row: 3,
-                  col: 9,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(3, {
-                  row: 3,
-                  col: 10,
-                  type: "wood_outside"
-               }))
-         }
+            .concat(initArray(1, {
+               row: 3,
+               col: 8,
+               type: "wood_outside"
+            }))
+            .concat(initArray(4, {
+               row: 3,
+               col: 9,
+               type: "wood_outside"
+            }))
+            .concat(initArray(5, {
+               row: 3,
+               col: 10,
+               type: "wood_outside"
+            }))
+            .concat(initArray(2, {
+               row: 3,
+               col: 3,
+               type: "wood_outside"
+            }))
+            .concat(initArray(3, {
+               row: 3,
+               col: 4,
+               type: "wood_outside"
+            }))
+            .concat(initArray(4, {
+               row: 3,
+               col: 5,
+               type: "wood_outside"
+            }))
+            .concat(initArray(6, {
+               row: 3,
+               col: 7,
+               type: "wood_outside"
+            }))
+            .concat(initArray(5, {
+               row: 3,
+               col: 6,
+               type: "wood_outside"
+            }))
+            .concat(initArray(3, {
+               row: 3,
+               col: 2,
+               type: "wood_outside"
+            }))
+      },
+      //Testfall 2
+      {
+         tiles: [
+            [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4],
+            [4, 1, 6, 6, 6, 6, 6, 6, 6, 6, 6, 1, 4],
+            [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 1, 4],
+            [4, 1, 6, 6, 6, 6, 6, 6, 6, 6, 6, 1, 4],
+            [4, 1, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4],
+            [4, 1, 7, 7, 7, 7, 7, 7, 7, 7, 7, 1, 4],
+            [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4]
+         ],
+         initItems: [{
+            row: 1,
+            col: 1,
+            dir: 0,
+            type: "robot"
+         },
+         {
+            row: 5,
+            col: 2,
+            type: "beaver",
+            containerSize: 3
+         },
+         {
+            row: 5,
+            col: 3,
+            type: "beaver",
+            containerSize: 4
+         },
+         {
+            row: 5,
+            col: 4,
+            type: "beaver",
+            containerSize: 5
+         },
+         {
+            row: 5,
+            col: 5,
+            type: "beaver",
+            containerSize: 5
+         },
+         {
+            row: 5,
+            col: 6,
+            type: "beaver",
+            containerSize: 3
+         },
+         {
+            row: 5,
+            col: 7,
+            type: "beaver",
+            containerSize: 6
+         },
+         {
+            row: 5,
+            col: 8,
+            type: "beaver",
+            containerSize: 7
+         },
+         {
+            row: 5,
+            col: 9,
+            type: "beaver",
+            containerSize: 5
+         },
+         {
+            row: 5,
+            col: 10,
+            type: "beaver",
+            containerSize: 8
+         },
+         ].concat(initArray(3, {
+            row: 1,
+            col: 2,
+            type: "wood_outside"
+         }))
+            .concat(initArray(1, {
+               row: 1,
+               col: 3,
+               type: "wood_outside"
+            }))
+            .concat(initArray(4, {
+               row: 1,
+               col: 4,
+               type: "wood_outside"
+            }))
+            .concat(initArray(5, {
+               row: 1,
+               col: 5,
+               type: "wood_outside"
+            }))
+            .concat(initArray(2, {
+               row: 1,
+               col: 6,
+               type: "wood_outside"
+            }))
+            .concat(initArray(6, {
+               row: 1,
+               col: 7,
+               type: "wood_outside"
+            }))
+            .concat(initArray(7, {
+               row: 1,
+               col: 8,
+               type: "wood_outside"
+            }))
+            .concat(initArray(4, {
+               row: 1,
+               col: 9,
+               type: "wood_outside"
+            }))
+            .concat(initArray(8, {
+               row: 1,
+               col: 10,
+               type: "wood_outside"
+            }))
+
+            .concat(initArray(1, {
+               row: 3,
+               col: 2,
+               type: "wood_outside"
+            }))
+            .concat(initArray(4, {
+               row: 3,
+               col: 3,
+               type: "wood_outside"
+            }))
+            .concat(initArray(5, {
+               row: 3,
+               col: 4,
+               type: "wood_outside"
+            }))
+            .concat(initArray(2, {
+               row: 3,
+               col: 5,
+               type: "wood_outside"
+            }))
+            .concat(initArray(3, {
+               row: 3,
+               col: 6,
+               type: "wood_outside"
+            }))
+            .concat(initArray(4, {
+               row: 3,
+               col: 7,
+               type: "wood_outside"
+            }))
+            .concat(initArray(6, {
+               row: 3,
+               col: 8,
+               type: "wood_outside"
+            }))
+            .concat(initArray(5, {
+               row: 3,
+               col: 9,
+               type: "wood_outside"
+            }))
+            .concat(initArray(3, {
+               row: 3,
+               col: 10,
+               type: "wood_outside"
+            }))
+      }
       ],
       //Version ****
       hard: [{
-            //Testfall 1
-            tiles: [
-               [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4],
-               [4, 1, 6, 6, 6, 6, 6, 6, 6, 6, 6, 1, 4],
-               [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 1, 4],
-               [4, 1, 6, 6, 6, 6, 6, 6, 6, 6, 6, 1, 4],
-               [4, 1, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4],
-               [4, 1, 6, 6, 6, 6, 6, 6, 6, 6, 6, 1, 4],
-               [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 1, 4],
-               [4, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 1, 4],
-               [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4]
-            ],
-            initItems: [{
-                     row: 1,
-                     col: 1,
-                     dir: 0,
-                     type: "robot"
-                  },
-                  {
-                     row: 7,
-                     col: 8,
-                     type: "beaver",
-                     containerSize: 2
-                  },
-                  {
-                     row: 7,
-                     col: 9,
-                     type: "beaver",
-                     containerSize: 3
-                  },
-                  {
-                     row: 7,
-                     col: 10,
-                     type: "beaver",
-                     containerSize: 2
-                  },
-                  {
-                     row: 7,
-                     col: 3,
-                     type: "beaver",
-                     containerSize: 5
-                  },
-                  {
-                     row: 7,
-                     col: 4,
-                     type: "beaver",
-                     containerSize: 3
-                  },
-                  {
-                     row: 7,
-                     col: 5,
-                     type: "beaver",
-                     containerSize: 7
-                  },
-                  {
-                     row: 7,
-                     col: 6,
-                     type: "beaver",
-                     containerSize: 2
-                  },
-                  {
-                     row: 7,
-                     col: 7,
-                     type: "beaver",
-                     containerSize: 6
-                  },
-                  {
-                     row: 7,
-                     col: 2,
-                     type: "beaver",
-                     containerSize: 4
-                  },
-
-                  {
-                     row: 7,
-                     col: 1,
-                     type: "beaver",
-                     containerSize: 70
-                  }
-               ].concat(initArray(3, {
-                  row: 1,
-                  col: 8,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(1, {
-                  row: 1,
-                  col: 9,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(4, {
-                  row: 1,
-                  col: 10,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(5, {
-                  row: 1,
-                  col: 3,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(2, {
-                  row: 1,
-                  col: 4,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(7, {
-                  row: 1,
-                  col: 5,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(1, {
-                  row: 1,
-                  col: 6,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(3, {
-                  row: 1,
-                  col: 7,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(9, {
-                  row: 1,
-                  col: 2,
-                  type: "wood_outside"
-               }))
-
-               .concat(initArray(1, {
-                  row: 3,
-                  col: 8,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(4, {
-                  row: 3,
-                  col: 9,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(2, {
-                  row: 3,
-                  col: 10,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(6, {
-                  row: 3,
-                  col: 3,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(3, {
-                  row: 3,
-                  col: 4,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(9, {
-                  row: 3,
-                  col: 5,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(2, {
-                  row: 3,
-                  col: 6,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(8, {
-                  row: 3,
-                  col: 7,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(4, {
-                  row: 3,
-                  col: 2,
-                  type: "wood_outside"
-               }))
-
-               .concat(initArray(2, {
-                  row: 5,
-                  col: 8,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(3, {
-                  row: 5,
-                  col: 9,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(1, {
-                  row: 5,
-                  col: 10,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(4, {
-                  row: 5,
-                  col: 3,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(4, {
-                  row: 5,
-                  col: 4,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(2, {
-                  row: 5,
-                  col: 5,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(5, {
-                  row: 5,
-                  col: 6,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(6, {
-                  row: 5,
-                  col: 7,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(3, {
-                  row: 5,
-                  col: 2,
-                  type: "wood_outside"
-               }))
+         //Testfall 1
+         tiles: [
+            [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4],
+            [4, 1, 6, 6, 6, 6, 6, 6, 6, 6, 6, 1, 4],
+            [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 1, 4],
+            [4, 1, 6, 6, 6, 6, 6, 6, 6, 6, 6, 1, 4],
+            [4, 1, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4],
+            [4, 1, 6, 6, 6, 6, 6, 6, 6, 6, 6, 1, 4],
+            [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 1, 4],
+            [4, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 1, 4],
+            [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4]
+         ],
+         initItems: [{
+            row: 1,
+            col: 1,
+            dir: 0,
+            type: "robot"
          },
-         //Testfall 2
          {
-            tiles: [
-               [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4],
-               [4, 1, 6, 6, 6, 6, 6, 6, 6, 6, 6, 1, 4],
-               [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 1, 4],
-               [4, 1, 6, 6, 6, 6, 6, 6, 6, 6, 6, 1, 4],
-               [4, 1, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4],
-               [4, 1, 6, 6, 6, 6, 6, 6, 6, 6, 6, 1, 4],
-               [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 1, 4],
-               [4, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 1, 4],
-               [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4]
-            ],
-            initItems: [{
-                     row: 1,
-                     col: 1,
-                     dir: 0,
-                     type: "robot"
-                  },
-                  {
-                     row: 7,
-                     col: 2,
-                     type: "beaver",
-                     containerSize: 2
-                  },
-                  {
-                     row: 7,
-                     col: 3,
-                     type: "beaver",
-                     containerSize: 3
-                  },
-                  {
-                     row: 7,
-                     col: 4,
-                     type: "beaver",
-                     containerSize: 2
-                  },
-                  {
-                     row: 7,
-                     col: 5,
-                     type: "beaver",
-                     containerSize: 5
-                  },
-                  {
-                     row: 7,
-                     col: 6,
-                     type: "beaver",
-                     containerSize: 3
-                  },
-                  {
-                     row: 7,
-                     col: 7,
-                     type: "beaver",
-                     containerSize: 7
-                  },
-                  {
-                     row: 7,
-                     col: 8,
-                     type: "beaver",
-                     containerSize: 2
-                  },
-                  {
-                     row: 7,
-                     col: 9,
-                     type: "beaver",
-                     containerSize: 6
-                  },
-                  {
-                     row: 7,
-                     col: 10,
-                     type: "beaver",
-                     containerSize: 4
-                  },
-
-                  {
-                     row: 7,
-                     col: 1,
-                     type: "beaver",
-                     containerSize: 70
-                  }
-               ].concat(initArray(3, {
-                  row: 1,
-                  col: 2,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(1, {
-                  row: 1,
-                  col: 3,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(4, {
-                  row: 1,
-                  col: 4,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(5, {
-                  row: 1,
-                  col: 5,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(2, {
-                  row: 1,
-                  col: 6,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(7, {
-                  row: 1,
-                  col: 7,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(1, {
-                  row: 1,
-                  col: 8,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(3, {
-                  row: 1,
-                  col: 9,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(9, {
-                  row: 1,
-                  col: 10,
-                  type: "wood_outside"
-               }))
-
-               .concat(initArray(1, {
-                  row: 3,
-                  col: 2,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(4, {
-                  row: 3,
-                  col: 3,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(2, {
-                  row: 3,
-                  col: 4,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(6, {
-                  row: 3,
-                  col: 5,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(3, {
-                  row: 3,
-                  col: 6,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(9, {
-                  row: 3,
-                  col: 7,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(2, {
-                  row: 3,
-                  col: 8,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(8, {
-                  row: 3,
-                  col: 9,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(4, {
-                  row: 3,
-                  col: 10,
-                  type: "wood_outside"
-               }))
-
-               .concat(initArray(2, {
-                  row: 5,
-                  col: 2,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(3, {
-                  row: 5,
-                  col: 3,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(1, {
-                  row: 5,
-                  col: 4,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(4, {
-                  row: 5,
-                  col: 5,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(4, {
-                  row: 5,
-                  col: 6,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(2, {
-                  row: 5,
-                  col: 7,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(5, {
-                  row: 5,
-                  col: 8,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(6, {
-                  row: 5,
-                  col: 9,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(3, {
-                  row: 5,
-                  col: 10,
-                  type: "wood_outside"
-               }))
+            row: 7,
+            col: 8,
+            type: "beaver",
+            containerSize: 2
          },
-         //Testfall 3
          {
-            tiles: [
-               [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4],
-               [4, 1, 6, 6, 6, 6, 6, 6, 6, 6, 6, 1, 4],
-               [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 1, 4],
-               [4, 1, 6, 6, 6, 6, 6, 6, 6, 6, 6, 1, 4],
-               [4, 1, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4],
-               [4, 1, 6, 6, 6, 6, 6, 6, 6, 6, 6, 1, 4],
-               [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 1, 4],
-               [4, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 1, 4],
-               [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4]
-            ],
-            initItems: [{
-                     row: 1,
-                     col: 1,
-                     dir: 0,
-                     type: "robot"
-                  },
-                  {
-                     row: 7,
-                     col: 2,
-                     type: "beaver",
-                     containerSize: 5
-                  },
-                  {
-                     row: 7,
-                     col: 3,
-                     type: "beaver",
-                     containerSize: 6
-                  },
-                  {
-                     row: 7,
-                     col: 4,
-                     type: "beaver",
-                     containerSize: 2
-                  },
-                  {
-                     row: 7,
-                     col: 5,
-                     type: "beaver",
-                     containerSize: 5
-                  },
-                  {
-                     row: 7,
-                     col: 6,
-                     type: "beaver",
-                     containerSize: 5
-                  },
-                  {
-                     row: 7,
-                     col: 7,
-                     type: "beaver",
-                     containerSize: 6
-                  },
-                  {
-                     row: 7,
-                     col: 8,
-                     type: "beaver",
-                     containerSize: 6
-                  },
-                  {
-                     row: 7,
-                     col: 9,
-                     type: "beaver",
-                     containerSize: 4
-                  },
-                  {
-                     row: 7,
-                     col: 10,
-                     type: "beaver",
-                     containerSize: 5
-                  },
+            row: 7,
+            col: 9,
+            type: "beaver",
+            containerSize: 3
+         },
+         {
+            row: 7,
+            col: 10,
+            type: "beaver",
+            containerSize: 2
+         },
+         {
+            row: 7,
+            col: 3,
+            type: "beaver",
+            containerSize: 5
+         },
+         {
+            row: 7,
+            col: 4,
+            type: "beaver",
+            containerSize: 3
+         },
+         {
+            row: 7,
+            col: 5,
+            type: "beaver",
+            containerSize: 7
+         },
+         {
+            row: 7,
+            col: 6,
+            type: "beaver",
+            containerSize: 2
+         },
+         {
+            row: 7,
+            col: 7,
+            type: "beaver",
+            containerSize: 6
+         },
+         {
+            row: 7,
+            col: 2,
+            type: "beaver",
+            containerSize: 4
+         },
 
-                  {
-                     row: 7,
-                     col: 1,
-                     type: "beaver",
-                     containerSize: 89
-                  }
-               ].concat(initArray(4, {
-                  row: 1,
-                  col: 2,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(7, {
-                  row: 1,
-                  col: 3,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(2, {
-                  row: 1,
-                  col: 4,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(9, {
-                  row: 1,
-                  col: 5,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(5, {
-                  row: 1,
-                  col: 6,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(6, {
-                  row: 1,
-                  col: 7,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(3, {
-                  row: 1,
-                  col: 8,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(2, {
-                  row: 1,
-                  col: 9,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(5, {
-                  row: 1,
-                  col: 10,
-                  type: "wood_outside"
-               }))
-
-               .concat(initArray(5, {
-                  row: 3,
-                  col: 2,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(6, {
-                  row: 3,
-                  col: 3,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(7, {
-                  row: 3,
-                  col: 4,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(5, {
-                  row: 3,
-                  col: 5,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(2, {
-                  row: 3,
-                  col: 6,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(1, {
-                  row: 3,
-                  col: 7,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(7, {
-                  row: 3,
-                  col: 8,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(4, {
-                  row: 3,
-                  col: 9,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(8, {
-                  row: 3,
-                  col: 10,
-                  type: "wood_outside"
-               }))
-
-               .concat(initArray(9, {
-                  row: 5,
-                  col: 2,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(2, {
-                  row: 5,
-                  col: 3,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(1, {
-                  row: 5,
-                  col: 4,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(2, {
-                  row: 5,
-                  col: 5,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(6, {
-                  row: 5,
-                  col: 6,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(9, {
-                  row: 5,
-                  col: 7,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(6, {
-                  row: 5,
-                  col: 8,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(8, {
-                  row: 5,
-                  col: 9,
-                  type: "wood_outside"
-               }))
-               .concat(initArray(2, {
-                  row: 5,
-                  col: 10,
-                  type: "wood_outside"
-               }))
+         {
+            row: 7,
+            col: 1,
+            type: "beaver",
+            containerSize: 70
          }
+         ].concat(initArray(3, {
+            row: 1,
+            col: 8,
+            type: "wood_outside"
+         }))
+            .concat(initArray(1, {
+               row: 1,
+               col: 9,
+               type: "wood_outside"
+            }))
+            .concat(initArray(4, {
+               row: 1,
+               col: 10,
+               type: "wood_outside"
+            }))
+            .concat(initArray(5, {
+               row: 1,
+               col: 3,
+               type: "wood_outside"
+            }))
+            .concat(initArray(2, {
+               row: 1,
+               col: 4,
+               type: "wood_outside"
+            }))
+            .concat(initArray(7, {
+               row: 1,
+               col: 5,
+               type: "wood_outside"
+            }))
+            .concat(initArray(1, {
+               row: 1,
+               col: 6,
+               type: "wood_outside"
+            }))
+            .concat(initArray(3, {
+               row: 1,
+               col: 7,
+               type: "wood_outside"
+            }))
+            .concat(initArray(9, {
+               row: 1,
+               col: 2,
+               type: "wood_outside"
+            }))
+
+            .concat(initArray(1, {
+               row: 3,
+               col: 8,
+               type: "wood_outside"
+            }))
+            .concat(initArray(4, {
+               row: 3,
+               col: 9,
+               type: "wood_outside"
+            }))
+            .concat(initArray(2, {
+               row: 3,
+               col: 10,
+               type: "wood_outside"
+            }))
+            .concat(initArray(6, {
+               row: 3,
+               col: 3,
+               type: "wood_outside"
+            }))
+            .concat(initArray(3, {
+               row: 3,
+               col: 4,
+               type: "wood_outside"
+            }))
+            .concat(initArray(9, {
+               row: 3,
+               col: 5,
+               type: "wood_outside"
+            }))
+            .concat(initArray(2, {
+               row: 3,
+               col: 6,
+               type: "wood_outside"
+            }))
+            .concat(initArray(8, {
+               row: 3,
+               col: 7,
+               type: "wood_outside"
+            }))
+            .concat(initArray(4, {
+               row: 3,
+               col: 2,
+               type: "wood_outside"
+            }))
+
+            .concat(initArray(2, {
+               row: 5,
+               col: 8,
+               type: "wood_outside"
+            }))
+            .concat(initArray(3, {
+               row: 5,
+               col: 9,
+               type: "wood_outside"
+            }))
+            .concat(initArray(1, {
+               row: 5,
+               col: 10,
+               type: "wood_outside"
+            }))
+            .concat(initArray(4, {
+               row: 5,
+               col: 3,
+               type: "wood_outside"
+            }))
+            .concat(initArray(4, {
+               row: 5,
+               col: 4,
+               type: "wood_outside"
+            }))
+            .concat(initArray(2, {
+               row: 5,
+               col: 5,
+               type: "wood_outside"
+            }))
+            .concat(initArray(5, {
+               row: 5,
+               col: 6,
+               type: "wood_outside"
+            }))
+            .concat(initArray(6, {
+               row: 5,
+               col: 7,
+               type: "wood_outside"
+            }))
+            .concat(initArray(3, {
+               row: 5,
+               col: 2,
+               type: "wood_outside"
+            }))
+      },
+      //Testfall 2
+      {
+         tiles: [
+            [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4],
+            [4, 1, 6, 6, 6, 6, 6, 6, 6, 6, 6, 1, 4],
+            [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 1, 4],
+            [4, 1, 6, 6, 6, 6, 6, 6, 6, 6, 6, 1, 4],
+            [4, 1, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4],
+            [4, 1, 6, 6, 6, 6, 6, 6, 6, 6, 6, 1, 4],
+            [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 1, 4],
+            [4, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 1, 4],
+            [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4]
+         ],
+         initItems: [{
+            row: 1,
+            col: 1,
+            dir: 0,
+            type: "robot"
+         },
+         {
+            row: 7,
+            col: 2,
+            type: "beaver",
+            containerSize: 2
+         },
+         {
+            row: 7,
+            col: 3,
+            type: "beaver",
+            containerSize: 3
+         },
+         {
+            row: 7,
+            col: 4,
+            type: "beaver",
+            containerSize: 2
+         },
+         {
+            row: 7,
+            col: 5,
+            type: "beaver",
+            containerSize: 5
+         },
+         {
+            row: 7,
+            col: 6,
+            type: "beaver",
+            containerSize: 3
+         },
+         {
+            row: 7,
+            col: 7,
+            type: "beaver",
+            containerSize: 7
+         },
+         {
+            row: 7,
+            col: 8,
+            type: "beaver",
+            containerSize: 2
+         },
+         {
+            row: 7,
+            col: 9,
+            type: "beaver",
+            containerSize: 6
+         },
+         {
+            row: 7,
+            col: 10,
+            type: "beaver",
+            containerSize: 4
+         },
+
+         {
+            row: 7,
+            col: 1,
+            type: "beaver",
+            containerSize: 70
+         }
+         ].concat(initArray(3, {
+            row: 1,
+            col: 2,
+            type: "wood_outside"
+         }))
+            .concat(initArray(1, {
+               row: 1,
+               col: 3,
+               type: "wood_outside"
+            }))
+            .concat(initArray(4, {
+               row: 1,
+               col: 4,
+               type: "wood_outside"
+            }))
+            .concat(initArray(5, {
+               row: 1,
+               col: 5,
+               type: "wood_outside"
+            }))
+            .concat(initArray(2, {
+               row: 1,
+               col: 6,
+               type: "wood_outside"
+            }))
+            .concat(initArray(7, {
+               row: 1,
+               col: 7,
+               type: "wood_outside"
+            }))
+            .concat(initArray(1, {
+               row: 1,
+               col: 8,
+               type: "wood_outside"
+            }))
+            .concat(initArray(3, {
+               row: 1,
+               col: 9,
+               type: "wood_outside"
+            }))
+            .concat(initArray(9, {
+               row: 1,
+               col: 10,
+               type: "wood_outside"
+            }))
+
+            .concat(initArray(1, {
+               row: 3,
+               col: 2,
+               type: "wood_outside"
+            }))
+            .concat(initArray(4, {
+               row: 3,
+               col: 3,
+               type: "wood_outside"
+            }))
+            .concat(initArray(2, {
+               row: 3,
+               col: 4,
+               type: "wood_outside"
+            }))
+            .concat(initArray(6, {
+               row: 3,
+               col: 5,
+               type: "wood_outside"
+            }))
+            .concat(initArray(3, {
+               row: 3,
+               col: 6,
+               type: "wood_outside"
+            }))
+            .concat(initArray(9, {
+               row: 3,
+               col: 7,
+               type: "wood_outside"
+            }))
+            .concat(initArray(2, {
+               row: 3,
+               col: 8,
+               type: "wood_outside"
+            }))
+            .concat(initArray(8, {
+               row: 3,
+               col: 9,
+               type: "wood_outside"
+            }))
+            .concat(initArray(4, {
+               row: 3,
+               col: 10,
+               type: "wood_outside"
+            }))
+
+            .concat(initArray(2, {
+               row: 5,
+               col: 2,
+               type: "wood_outside"
+            }))
+            .concat(initArray(3, {
+               row: 5,
+               col: 3,
+               type: "wood_outside"
+            }))
+            .concat(initArray(1, {
+               row: 5,
+               col: 4,
+               type: "wood_outside"
+            }))
+            .concat(initArray(4, {
+               row: 5,
+               col: 5,
+               type: "wood_outside"
+            }))
+            .concat(initArray(4, {
+               row: 5,
+               col: 6,
+               type: "wood_outside"
+            }))
+            .concat(initArray(2, {
+               row: 5,
+               col: 7,
+               type: "wood_outside"
+            }))
+            .concat(initArray(5, {
+               row: 5,
+               col: 8,
+               type: "wood_outside"
+            }))
+            .concat(initArray(6, {
+               row: 5,
+               col: 9,
+               type: "wood_outside"
+            }))
+            .concat(initArray(3, {
+               row: 5,
+               col: 10,
+               type: "wood_outside"
+            }))
+      },
+      //Testfall 3
+      {
+         tiles: [
+            [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4],
+            [4, 1, 6, 6, 6, 6, 6, 6, 6, 6, 6, 1, 4],
+            [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 1, 4],
+            [4, 1, 6, 6, 6, 6, 6, 6, 6, 6, 6, 1, 4],
+            [4, 1, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4],
+            [4, 1, 6, 6, 6, 6, 6, 6, 6, 6, 6, 1, 4],
+            [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 1, 4],
+            [4, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 1, 4],
+            [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4]
+         ],
+         initItems: [{
+            row: 1,
+            col: 1,
+            dir: 0,
+            type: "robot"
+         },
+         {
+            row: 7,
+            col: 2,
+            type: "beaver",
+            containerSize: 5
+         },
+         {
+            row: 7,
+            col: 3,
+            type: "beaver",
+            containerSize: 6
+         },
+         {
+            row: 7,
+            col: 4,
+            type: "beaver",
+            containerSize: 2
+         },
+         {
+            row: 7,
+            col: 5,
+            type: "beaver",
+            containerSize: 5
+         },
+         {
+            row: 7,
+            col: 6,
+            type: "beaver",
+            containerSize: 5
+         },
+         {
+            row: 7,
+            col: 7,
+            type: "beaver",
+            containerSize: 6
+         },
+         {
+            row: 7,
+            col: 8,
+            type: "beaver",
+            containerSize: 6
+         },
+         {
+            row: 7,
+            col: 9,
+            type: "beaver",
+            containerSize: 4
+         },
+         {
+            row: 7,
+            col: 10,
+            type: "beaver",
+            containerSize: 5
+         },
+
+         {
+            row: 7,
+            col: 1,
+            type: "beaver",
+            containerSize: 89
+         }
+         ].concat(initArray(4, {
+            row: 1,
+            col: 2,
+            type: "wood_outside"
+         }))
+            .concat(initArray(7, {
+               row: 1,
+               col: 3,
+               type: "wood_outside"
+            }))
+            .concat(initArray(2, {
+               row: 1,
+               col: 4,
+               type: "wood_outside"
+            }))
+            .concat(initArray(9, {
+               row: 1,
+               col: 5,
+               type: "wood_outside"
+            }))
+            .concat(initArray(5, {
+               row: 1,
+               col: 6,
+               type: "wood_outside"
+            }))
+            .concat(initArray(6, {
+               row: 1,
+               col: 7,
+               type: "wood_outside"
+            }))
+            .concat(initArray(3, {
+               row: 1,
+               col: 8,
+               type: "wood_outside"
+            }))
+            .concat(initArray(2, {
+               row: 1,
+               col: 9,
+               type: "wood_outside"
+            }))
+            .concat(initArray(5, {
+               row: 1,
+               col: 10,
+               type: "wood_outside"
+            }))
+
+            .concat(initArray(5, {
+               row: 3,
+               col: 2,
+               type: "wood_outside"
+            }))
+            .concat(initArray(6, {
+               row: 3,
+               col: 3,
+               type: "wood_outside"
+            }))
+            .concat(initArray(7, {
+               row: 3,
+               col: 4,
+               type: "wood_outside"
+            }))
+            .concat(initArray(5, {
+               row: 3,
+               col: 5,
+               type: "wood_outside"
+            }))
+            .concat(initArray(2, {
+               row: 3,
+               col: 6,
+               type: "wood_outside"
+            }))
+            .concat(initArray(1, {
+               row: 3,
+               col: 7,
+               type: "wood_outside"
+            }))
+            .concat(initArray(7, {
+               row: 3,
+               col: 8,
+               type: "wood_outside"
+            }))
+            .concat(initArray(4, {
+               row: 3,
+               col: 9,
+               type: "wood_outside"
+            }))
+            .concat(initArray(8, {
+               row: 3,
+               col: 10,
+               type: "wood_outside"
+            }))
+
+            .concat(initArray(9, {
+               row: 5,
+               col: 2,
+               type: "wood_outside"
+            }))
+            .concat(initArray(2, {
+               row: 5,
+               col: 3,
+               type: "wood_outside"
+            }))
+            .concat(initArray(1, {
+               row: 5,
+               col: 4,
+               type: "wood_outside"
+            }))
+            .concat(initArray(2, {
+               row: 5,
+               col: 5,
+               type: "wood_outside"
+            }))
+            .concat(initArray(6, {
+               row: 5,
+               col: 6,
+               type: "wood_outside"
+            }))
+            .concat(initArray(9, {
+               row: 5,
+               col: 7,
+               type: "wood_outside"
+            }))
+            .concat(initArray(6, {
+               row: 5,
+               col: 8,
+               type: "wood_outside"
+            }))
+            .concat(initArray(8, {
+               row: 5,
+               col: 9,
+               type: "wood_outside"
+            }))
+            .concat(initArray(2, {
+               row: 5,
+               col: 10,
+               type: "wood_outside"
+            }))
+      }
       ]
    };
 
    initBlocklySubTask(subTask);
-   displayHelper.thresholdEasy = 5000;
-   displayHelper.thresholdMedium = 10000;
 }
 
 //Laden der definierten Informationen
 //2. Parameter: Die Liste gibt an, welche Versionen es gibt
 //3. Parameter: Gibt an bei welcher Version gestartet wird. Bei null wird bei basic gestartet
-initWrapper(initTask, ["easy", "medium", "hard"], null, true);
+window.initBlocklySubTask = function () { };
+window.taskData = window.taskData || {};
+window.taskData.waitInit = function () { initTask(window.taskData); };
+window.taskData.codecastParameters = window.taskData.codecastParameters || {
+   language: "de-DE",
+   platform: "blockly",
+   canChangePlatform: false,
+   showStepper: true,
+   showStack: true,
+   showViews: true,
+   showIO: true,
+   controls: { reload: false },
+   hideSettings: true,
+   jwinfMenu: { copyPaste: true, undoRedo: true, svgExport: true }
+};
+window.taskData.codecastParameters.showStack = true;

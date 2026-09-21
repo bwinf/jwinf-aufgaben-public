@@ -1,0 +1,11 @@
+name: "13.01 Zahnräder"
+standalone: true
+public_listing: true
+
+languages:
+  - blockly
+  - python
+
+tags:
+  - Roboter
+  - Funktionen

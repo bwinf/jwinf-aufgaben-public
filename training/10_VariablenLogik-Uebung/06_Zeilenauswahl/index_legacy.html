@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Zeilenauswalh</title>
+  <script>
+    window.stringsLanguage = 'de';
+  </script>
+  <script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js"
+    id="import-modules"></script>
+  <script class="remove" type="text/javascript">
+    var modulesPath = '../../../../_common/modules/';
+    importModules([
+      'jquery-1.7.1', 'JSON-js', 'raphael-2.2.1', 'beaver-task-2.0', 'jschannel', 'raphaelFactory-1.0',
+      'delayFactory-1.0', 'simulationFactory-1.0',
+      'platform-pr', 'buttonsAndMessages', 'beav-1.0', 'installationAPI.01', 'miniPlatform',
+      'taskStyles-mobileFirst', 'blockly-printer', 'jwinf_css'
+    ]);
+    // set Blockly as default language when none is specified through ?language=
+    importLanguageModules('blockly');
+  </script>
+  <script class="remove" type="text/javascript">
+    var json = {
+      "id": "24-DE-12-Mehr_T-Shirtgrößen",
+      "language": "de",
+      "version": "de.01",
+      "authors": "Annika Petersen",
+      "translators": [],
+      "license": "",
+      "taskPathPrefix": "",
+      "modulesPathPrefix": "",
+      "browserSupport": [],
+      "acceptedAnswers": [""],
+      "fullFeedback": true,
+      "minWidth": "auto"
+    };
+    window.stringsLanguage = 'de';
+  </script>
+  <script type="text/javascript" src="printer_task_legacy.js"></script>
+</head>
+
+<body onresize="task.displayedSubTask.updateScale()">
+  <div id="task">
+    <h1>Zeilenauswahl</h1>
+
+    <div id="tabsContainer"></div>
+    <div id="taskContent">
+      <div id="taskIntro">
+        Schreibe ein Programm:
+        <div class="easy">
+          <p>
+            Das Programm soll eine bestimmte Anzahl von Eingabezeilen ausgeben. Die erste Zeile enthält die Anzahl der
+            nachfolgenden Zeilen <button type="button" style="background-color: white; border-radius: 4px; border: 1px solid #4a90e2"  onclick="quickAlgoInterface.toggleMoreDetails();"><img src="../../../Bilder/bulb.svg" style="max-width:18px; vertical-align: middle;"></button>, die unverändert in die Ausgabe übernommen werden.
+          </p>
+        </div>
+        <div class="medium">
+          <p>
+            Das Programm soll aus mehreren Eingabezeilen genau eine Zeile ausgeben. Die erste Eingabezeile enthält eine
+            Zeilennummer <button type="button" style="background-color: white; border-radius: 4px; border: 1px solid #4a90e2"  onclick="quickAlgoInterface.toggleMoreDetails();"><img src="../../../Bilder/bulb.svg" style="max-width:18px; vertical-align: middle;"></button>, die angibt, welche der folgenden Zeilen unverändert ausgegeben werden soll.
+          </p>
+        </div>
+        <div class="hard">
+          <p>
+            Das Programm soll aus mehreren Eingabezeilen einen zusammenhängenden Zeilenbereich ausgeben. Die ersten
+            beiden Eingabezeilen enthalten Startzeilennummer und Endzeilennummer <button type="button" style="background-color: white; border-radius: 4px; border: 1px solid #4a90e2"  onclick="quickAlgoInterface.toggleMoreDetails();"><img src="../../../Bilder/bulb.svg" style="max-width:18px; vertical-align: middle;"></button> und geben an, welche der folgenden
+            Zeilen (von Startzeile bis Endzeile, einschließlich) unverändert ausgegeben werden sollen.
+          </p>
+        </div>
+        <table class="easy">
+          <tr>
+            <td style="padding: 0px 30px;vertical-align: top;">
+              Eingabe:
+              <pre>
+2
+erste Zeile
+zweite Zeile
+dritte Zeile
+                </pre>
+            </td>
+            <td style="padding: 0px 30px;vertical-align: top;">Ausgabe:
+              <pre>
+erste Zeile
+zweite Zeile
+                </pre>
+            </td>
+          </tr>
+        </table>
+        <table class="medium">
+          <tr>
+            <td style="padding: 0px 30px;vertical-align: top;">
+              Eingabe:
+              <pre>
+2
+erste Zeile
+zweite Zeile
+dritte Zeile
+                </pre>
+            </td>
+            <td style="padding: 0px 30px;vertical-align: top;">Ausgabe:
+              <pre>
+zweite Zeile
+                </pre>
+            </td>
+          </tr>
+        </table>
+        <table class="hard">
+          <tr>
+            <td style="padding: 0px 30px;vertical-align: top;">
+              Eingabe:
+              <pre>
+2
+4
+erste Zeile
+zweite Zeile
+dritte Zeile
+vierte Zeile
+                </pre>
+            </td>
+            <td style="padding: 0px 30px;vertical-align: top;">Ausgabe:
+              <pre>
+zweite Zeile
+dritte Zeile
+vierte Zeile
+                </pre>
+            </td>
+          </tr>
+        </table>
+        <div>
+          <p>
+            <i>Beachte: Dein Programm muss mit allen Testfällen zurechtkommen.</i>
+          </p>
+        </div>
+        <div class="easy medium hard ">
+          <div class="long">
+            <hr>
+            <h2>Weitere Hinweise:</h2>
+            <p>Um die <b><span class="easy">Information zur Anzahl an Zeilen</span><span class="medium">Zeilennummer</span><span class="hard">Startzeilennummer und Endzeilennummer</span></b> einzulesen, musst du den Baustein <img
+                src="../../../Bilder/readInteger.svg" style='vertical-align:top' /> verwenden. Nur dann kann mit der Zahl gerechnet werden.</p>
+          </div>
+          <div class="long">
+            <hr>
+            <h2>Eingeschränkte Bausteine:</h2>
+            <p> Um eine reine Sequenz an Anweisungen oder eine Lösung, die nur auf das Bestehen von Testfällen abzielt,
+              zu
+              vermeiden, stehen
+              maximal drei <img src="../../../Bilder/print.svg" />-Bausteine zur Verfügung.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="gridContainer"></div>
+      <div id="blocklyLibContent"></div>
+    </div>
+  </div><!-- task -->
+</body>
+
+</html>

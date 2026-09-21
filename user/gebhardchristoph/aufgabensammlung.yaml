@@ -12,6 +12,6 @@ tasks:
   "Aufgabe 2":
     "../../training/01_Grundbausteine-Einfuehrung/04_Plattformen": {stars: 4}
   "Aufgabe 3":
-    "../../training/01_Grundbausteine-Einfuehrung/06_Wiederholungen": {stars: 4}
+    "../../training/02_Wiederholung_mit_fester_Anzahl_Einfuehrung/01_Wiederholungen": {stars: 4}
   "Aufgabe 4":
-    "../../training/01_Grundbausteine-Einfuehrung/07_MusterMalen": {stars: 4}
+    "../../training/02_Wiederholung_mit_fester_Anzahl_Einfuehrung/02_MusterMalen": {stars: 4}

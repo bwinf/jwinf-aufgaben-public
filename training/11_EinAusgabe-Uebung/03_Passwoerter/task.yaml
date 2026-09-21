@@ -1,0 +1,12 @@
+name: "11.03 Passwörter"
+standalone: true
+public_listing: true
+
+languages:
+  - blockly
+  - python
+
+tags:
+  - Text
+  - Verzweigungen
+  - Variablen

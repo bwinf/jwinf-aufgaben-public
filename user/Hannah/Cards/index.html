@@ -1,32 +1,19 @@
 <!doctype html>
 <html>
-
 <head>
-  <meta charset="utf-8">
-  <title>Cards</title>
-  <script>
-    window.stringsLanguage = 'de';
-  </script>
-  <script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js"
-    id="import-modules"></script>
-  <script class="remove" type="text/javascript">
-    var modulesPath = '../../../../_common/modules/'
-    importModules(['jquery-1.7.1', 'JSON-js', 'raphael-2.2.1',
-      'beaver-task-2.0', 'jschannel', 'raphaelFactory-1.0',
-      'delayFactory-1.0', 'simulationFactory-1.0', 'platform-pr',
-      'buttonsAndMessages', 'beav-1.0', 'installationAPI.01',
-      'miniPlatform', 'conceptViewer-1.0',
-      'conceptViewer_css-1.0', 'taskStyles-mobileFirst',
-      'blockly-robot-1.1', 'jwinf_css'
-    ]);
-    importLanguageModules('blockly');
-  </script>
-  <script class="remove" type="text/javascript">
-    var json = {
+<meta charset="utf-8">
+<script>window.stringsLanguage='de';window.taskStrings={};</script>
+<script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js" id="import-modules"></script>
+<script class="remove" type="text/javascript">
+var modulesPath = '../../../../_common/modules/';
+importModules(['jquery-1.7.1','JSON-js','raphael-2.2.1','codecast-7.7','jschannel','raphaelFactory-1.0','delayFactory-1.0','simulationFactory-1.0','platform-pr','beav-1.0','installationAPI.01','miniPlatform','taskStyles-mobileFirst','jwinf-codecast_css','jwinf-codecast','conceptDisplay-1.0','conceptViewer-1.0','conceptViewer_css-1.0','blockly-robot-1.1','createAlgoreaInstructions-1.0','algoreaInstructionsStrings']);
+</script>
+<script class="remove" type="text/javascript">
+var json = {
       "id": "",
       "language": "de",
-      "version": "01",
-      "authors": "Michael Pesch, Hannah Rauterberg",
+      "version": "21-DE-18",
+      "authors": "Michael Pesch",
       "translators": [],
       "license": "",
       "taskPathPrefix": "",
@@ -35,18 +22,14 @@
       "fullFeedback": true,
       "minWidth": "auto"
     };
-  </script>
-  <script type="text/javascript" src="task.js"></script>
+</script>
+<script type="text/javascript" src="task.js"></script>
 </head>
-
-<body onresize="task.displayedSubTask.updateScale()">
-  <div id="task">
-    <h1>Cards</h1>
-    <img src="icon.png" style="display:none" />
-
-    <div id="tabsContainer"></div>
-    <div id="taskContent" style="text-align:left;position:relative">
-      <div id="taskIntro">
+<body id="app">
+<div id="react-container" style="width:100%;height:100vh"></div>
+<img src="icon.png" style="display:none" />
+<div id="task" style="display:none"><div id="tabsContainer"></div><div id="taskContent"><div id="gridContainer"></div><div id="blocklyLibContent"></div></div></div>
+<div id="taskIntro" style="display:none">
         <div class="easy">
           Programmiere den Roboter:<br>
           <p>
@@ -57,29 +40,23 @@
         <div class="medium">
           Programmiere den Roboter:<br>
           <p>
-            Der Roboter mag nur runde Kekse. Alle anderen sortiert er aus. Der Roboter soll jeden eckigen Keks in den
-            Behältern darunter ablegen.
+            Der Roboter mag nur runde Kekse. Alle anderen sortiert er aus. Der Roboter soll jeden eckigen Keks in den Behältern darunter ablegen.
           </p>
         </div>
         <div class="hard">
           Programmiere den Roboter:<br>
           <p>
-            Der Roboter soll die eckigen Kekse in den Behältern darunter ablegen und die runden Kekse in den Behältern
-            darüber.
+            Der Roboter soll die eckigen Kekse in den Behältern darunter ablegen und die runden Kekse in den Behältern darüber.
           </p>
         </div>
         <p>
-          <b>Hinweis: </b>Der Roboter muss 10 Felder gehen, um ans Ende zu kommen.
+          Der Roboter muss 10 Felder gehen, um ans Ende zu kommen.
         </p>
         <p>
           <i>Beachte: Dein Programm muss mit allen Testfällen zurechtkommen.</i>
         </p>
       </div>
-      <div id="gridContainer"></div>
-      <div id="blocklyLibContent"></div>
-    </div>
-
-  </div><!-- task -->
+<div id="solution" style="display:none"></div>
+<div id="taskHints" style="display:none"></div>
 </body>
-
 </html>

@@ -1,29 +1,15 @@
 <!doctype html>
 <html>
-
 <head>
-   <meta charset="utf-8">
-   <title>Plattformen</title>
-   <script>
-      window.stringsLanguage = 'de';
-      window.taskStrings = {};
-   </script>
-   <script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js"
-      id="import-modules"></script>
-   <script class="remove" type="text/javascript">
-      var modulesPath = '../../../../_common/modules/'
-      importModules([
-         'jquery-1.7.1', 'JSON-js', 'raphael-2.2.1', 'beaver-task-2.0', 'jschannel', 'raphaelFactory-1.0',
-         'delayFactory-1.0', 'simulationFactory-1.0',
-         'platform-pr', 'buttonsAndMessages', 'beav-1.0', 'installationAPI.01', 'miniPlatform',
-         'conceptDisplay-1.0', 'conceptViewer-1.0', 'conceptViewer_css-1.0',
-         'taskStyles-mobileFirst', 'blockly-robot-1.1', 'jwinf_css'
-      ]);
-      // set Blockly as default language when none is specified through ?language=
-      importLanguageModules('blockly');
-   </script>
-   <script class="remove" type="text/javascript">
-      var json = {
+<meta charset="utf-8">
+<script>window.stringsLanguage='de';window.taskStrings={};</script>
+<script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js" id="import-modules"></script>
+<script class="remove" type="text/javascript">
+var modulesPath = '../../../../_common/modules/';
+importModules(['jquery-1.7.1','JSON-js','raphael-2.2.1','codecast-7.7','jschannel','raphaelFactory-1.0','delayFactory-1.0','simulationFactory-1.0','platform-pr','beav-1.0','installationAPI.01','miniPlatform','taskStyles-mobileFirst','jwinf-codecast_css','jwinf-codecast','conceptDisplay-1.0','conceptViewer-2.0','conceptViewer_css-2.0','blockly-robot-1.1','createAlgoreaInstructions-1.0','algoreaInstructionsStrings']);
+</script>
+<script class="remove" type="text/javascript">
+var json = {
          "id": "training-plattformen-if",
          "language": "de",
          "version": "de.01",
@@ -36,22 +22,17 @@
          "fullFeedback": true,
          "minWidth": "auto"
       };
-   </script>
-   <script type="text/javascript" src="task.js"></script>
+</script>
+<script type="text/javascript" src="task.js"></script>
 </head>
-
-<body onresize="task.displayedSubTask.updateScale()">
-   <div id="task">
-      <h1>Plattformen</h1>
-      <img src="icon.png" style="display:none" />
-
-      <div id="tabsContainer"></div>
-      <div id="taskContent" style="text-align:left;position:relative">
-         <div id="taskIntro">
+<body id="app">
+<div id="react-container" style="width:100%;height:100vh"></div>
+<img src="icon.png" style="display:none" />
+<div id="task" style="display:none"><div id="tabsContainer"></div><div id="taskContent"><div id="gridContainer"></div><div id="blocklyLibContent"></div></div></div>
+<div id="taskIntro" style="display:none">
             Programmiere den Roboter:<br>
             <p>Der Roboter soll alle Zahnräder <img src="../../../Bilder/Roboter-Grafiken/wheel.png" style="vertical-align: middle; height: 40px;"> in die Maschine <img src="../../../Bilder/Roboter-Grafiken/gears.png" style="vertical-align: middle; height: 40px;"> einsetzen.</p>
             <div class="easy">
-               <p>Bitte schau dir vorab die <b data-lang="blockly">Erläuterungen der Bausteine</b> <b data-lang="python">Erläuterungen der Funktionen</b> unter "weitere Hinweise" an.</p>
                <div class="long" data-lang="blockly">
                   <hr>
                   <h2>Weitere Hinweise:</h2>
@@ -64,7 +45,6 @@
                </div>
             </div>
             <div class="medium hard">
-               <p>Bitte schau dir vorab die <b data-lang="blockly">Erläuterungen der Bausteine</b> <b data-lang="python">Erläuterungen der Funktionen</b> unter "weitere Hinweise" an.</p>
                <div class="long" data-lang="blockly">
                   <h2>Weitere Hinweise:</h2>
                   Mit der Aktion
@@ -78,19 +58,27 @@
                      <img data-lang="blockly" src="../../../Bilder/bauePlattformVorne.svg" style='vertical-align:middle' />
                   </div>
                   kann der Roboter vor sich eine Plattform bauen, sofern dort nicht schon eine ist.
+
+                  <div class="hard">
+                     Mit der Aktion
+                     <div style="display: inline-block; padding-top: 20px; margin-right: 5px;">
+                        <img data-lang="blockly" src="../../../Bilder/bauePlattformOben.svg" style='vertical-align:middle' />
+                     </div>
+                     kann der Roboter über sich eine Plattform bauen, sofern dort nicht schon eine ist.
+                  </div>
+
                </div>
                <div class="long" data-lang="python">
                   <h2>Weitere Hinweise:</h2>
                   Mit der Funktion <code>spring()</code> kann der Roboter eine Ebene höher springen, falls sich über ihm eine Plattform befindet.<br>
                   Mit der Funktion <code>bauePlattformVorne()</code> kann der Roboter vor sich eine Plattform bauen, sofern dort nicht schon eine ist.
+                  <div class="hard">
+                     Mit der Funktion <code>bauePlattformOben()</code> kann der Roboter über sich eine Plattform bauen, sofern dort nicht schon eine ist.
+                  </div>
                </div>
             </div>
          </div>
-         <div id="gridContainer"></div>
-         <div id="blocklyLibContent"></div>
-      </div>
-
-   </div><!-- task -->
+<div id="solution" style="display:none"></div>
+<div id="taskHints" style="display:none"></div>
 </body>
-
 </html>

@@ -1,0 +1,17 @@
+const pythonCode_01_2 = `from robot import *
+
+l = [0]*12
+
+for i in range(12):
+    rechts()
+    if farbeAufFeld():
+        l[i] = 1
+
+for i in range(12):
+    links()
+    
+oben()
+for i in range(12):
+    rechts()
+    if l[i]==1:
+        faerbeFeld()`;

@@ -1,0 +1,10 @@
+from robot import *
+
+rechts()
+rechts()
+rechts()
+rechts()
+hebeMurmelAuf()
+links()
+links()
+legeMurmelAb()

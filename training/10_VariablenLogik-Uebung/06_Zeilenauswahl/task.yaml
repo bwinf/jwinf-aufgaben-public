@@ -1,0 +1,12 @@
+name: "10.06 Zeilenauswahl"
+standalone: true
+public_listing: true
+
+languages:
+  - blockly
+  - python
+
+tags:
+  - Text
+  - Variablen
+  - Verzweigungen

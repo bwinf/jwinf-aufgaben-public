@@ -1,0 +1,20 @@
+const pythonCode_03_3 = `from robot import *
+
+for i in range(10):
+    vorwaerts()
+    if aufQuadrat() and not aufKreuz() and not aufStern():
+        hebeDominosteinAuf()
+dreheRechts()
+vorwaerts()
+dreheRechts()
+for i in range(10):
+    vorwaerts()
+    if aufStern() and not aufKreuz() and not aufQuadrat():
+        hebeDominosteinAuf()
+dreheLinks()
+vorwaerts()
+dreheLinks()
+for i in range(10):
+    vorwaerts()
+    if aufKreuz() and not aufQuadrat() and not aufStern():
+        hebeDominosteinAuf()`;

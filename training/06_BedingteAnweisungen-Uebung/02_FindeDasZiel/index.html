@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script>window.stringsLanguage='de';window.taskStrings={};</script>
+<script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js" id="import-modules"></script>
+<script class="remove" type="text/javascript">
+var modulesPath = '../../../../_common/modules/';
+importModules(['jquery-1.7.1','JSON-js','raphael-2.2.1','codecast-7.7','jschannel','raphaelFactory-1.0','delayFactory-1.0','simulationFactory-1.0','platform-pr','beav-1.0','installationAPI.01','miniPlatform','taskStyles-mobileFirst','jwinf-codecast_css','jwinf-codecast','conceptDisplay-1.0','conceptViewer-2.0','conceptViewer_css-2.0','blockly-robot-1.1','createAlgoreaInstructions-1.0','algoreaInstructionsStrings']);
+</script>
+<script class="remove" type="text/javascript">
+var json = {
+      "id": "http://castor-informatique.fr/questions/algorea_2017_2_a/2017-FR-07-platforms-marbles",
+      "language": "de",
+      "version": "de.01",
+      "authors": "Mathias Hiron",
+      "translators": ["Robert Czechowski", "Wolfgang Pohl"],
+      "license": "",
+      "taskPathPrefix": "",
+      "modulesPathPrefix": "",
+      "browserSupport": [],
+      "fullFeedback": true,
+      "minWidth": "auto"
+    };
+</script>
+<script type="text/javascript" src="task.js"></script>
+</head>
+<body id="app">
+<div id="react-container" style="width:100%;height:100vh"></div>
+<img src="icon.png" style="display:none" />
+<div id="task" style="display:none"><div id="tabsContainer"></div><div id="taskContent"><div id="gridContainer"></div><div id="blocklyLibContent"></div></div></div>
+<div id="taskIntro" style="display:none">
+        Programmiere den Roboter:<br>
+        <div class="easy">
+          <p>
+            Der Roboter soll das Feld mit der roten Flagge <img src='../../../Bilder/Roboter-Grafiken/flag.png'
+            style="height: 40px;"/> erreichen. 
+          </p>
+          <p>
+            Die rote Flagge befindet sich immer in einer Lücke über dem Gang.
+          </p>
+        </div>
+        <div class="medium">
+          <p>
+            Der Roboter soll das Feld mit der roten Flagge <img src='../../../Bilder/Roboter-Grafiken/flag.png'
+            style="height: 40px;"/> erreichen.
+          </p>
+          <p>
+            Die rote Flagge befindet sich immer in einer Lücke über <b>oder</b> unter dem Gang.
+          </p>
+          <p>
+          </p>
+        </div>
+        <div class="hard">
+          <p>
+            Der Roboter soll das Feld mit der roten Flagge <img src='../../../Bilder/Roboter-Grafiken/flag.png'
+            style="height: 40px;"/> erreichen.
+          </p>
+          <p>
+            Es gibt mehrere Lücken über und unter dem Gang. Die rote Flagge befindet sich in einer davon.
+          </p>
+          <p>
+          </p>
+        </div>
+      </div>
+<div id="solution" style="display:none"></div>
+<div id="taskHints" style="display:none"></div>
+</body>
+</html>

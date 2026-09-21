@@ -1,0 +1,13 @@
+name: "Schwere Aufgaben - In der Bibliothek"
+standalone: true
+public_listing: true
+
+languages:
+  - blockly
+
+tags:
+  - Roboter
+  - Funktionen
+  - Wiederhole mit fester Anzahl
+  - Verzweigungen
+  - Variablen

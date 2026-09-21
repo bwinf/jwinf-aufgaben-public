@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>23-DE-12_Keksstapel</title>
+  <script>
+    window.stringsLanguage = 'de';
+  </script>
+  <script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js"
+    id="import-modules"></script>
+  <script class="remove" type="text/javascript">
+    var modulesPath = '../../../../_common/modules/'
+    importModules(['jquery-1.7.1', 'JSON-js', 'raphael-2.2.1',
+      'beaver-task-2.0', 'jschannel', 'raphaelFactory-1.0',
+      'delayFactory-1.0', 'simulationFactory-1.0', 'platform-pr',
+      'buttonsAndMessages', 'beav-1.0', 'installationAPI.01',
+      'miniPlatform', 'conceptViewer-1.0',
+      'conceptViewer_css-1.0', 'taskStyles-mobileFirst',
+      'blockly-robot-1.1', 'jwinf_css'
+    ]);
+    // set Blockly as default language when none is specified through ?language=
+    importLanguageModules('blockly');
+  </script>
+  <script class="remove" type="text/javascript">
+    var json = {
+      "id": "",
+      "language": "de",
+      "version": "21-DE-18",
+      "authors": "Hannah Rauterberg",
+      "translators": [],
+      "license": "",
+      "taskPathPrefix": "",
+      "modulesPathPrefix": "",
+      "browserSupport": [],
+      "fullFeedback": true,
+      "minWidth": "auto"
+    };
+  </script>
+  <script type="text/javascript" src="task_legacy.js"></script>
+</head>
+
+<body onresize="task.displayedSubTask.updateScale()">
+  <div id="task">
+    <h1>Hexentrank</h1>
+    <img src="icon.png" style="display:none" />
+
+    <div id="tabsContainer"></div>
+    <div id="taskContent" style="text-align:left;position:relative">
+      <div id="taskIntro">
+        Programmiere den Roboter:<br>
+        <p>Bei der Zubereitung eines Hexentranks müssen die Zutaten <img src="mouse.svg" width="30px">, <img
+            src="leaf.svg" width="30px">, <img src="butterfly.svg" width="30px">, <img src="frog.svg" width="30px">,
+          <img src="bat.svg" width="30px"> in der richtigen Anzahl und der richtigen Reihenfolge in den Kessel <img
+            src="chauldron.svg" width="50px">gegeben werden.</p>
+        <div class="easy">
+          <p>
+            Der Roboter soll Hexe Fibonacci helfen und von <b>rechts nach links</b> jeweils <b>genau eine Zutat</b> in
+            den Kessel werfen.
+          </p>
+          <p><b>Hinweis:</b> Der Roboter kann mehrere Zutaten auf einmal transportieren. In dem Fall legt er die Zutat
+            zuerst ab, die er als letztes aufgesammelt hat.</p>
+        </div>
+
+        <div class="medium">
+          <p>
+            Der Roboter soll Hexe Fibonacci helfen und von <b>rechts nach links</b> die Zutaten in den Kessel werfen. Dabei
+            muss er von der ersten Zutat genau eine hinzufügen. Von der jeweils nächsten dann immer doppelt so viele wie
+            von der vorherigen <button type="button"
+              style="background-color: white; border-radius: 4px; border: 1px solid #4a90e2"
+              onclick="quickAlgoInterface.toggleMoreDetails();"><img src="../../../Bilder/bulb.svg"
+                style="max-width:18px; vertical-align: middle;"></button>.
+          </p>
+          <p><b>Hinweis:</b> Der Roboter kann mehrere Zutaten auf einmal transportieren. In dem Fall legt er die Zutat
+            zuerst ab, die er als letztes aufgesammelt hat.</p>
+          <div class="long">
+            <hr>
+            <h2>Weitere Hinweise:</h2>
+            Wir empfehlen die Schrittgeschwindigkeit des Roboters hoch zu stellen <img src="Geschwindigkeit.png"> da das
+            Aufheben der Zutaten sonst relativ lange dauern kann.
+          </div>
+        </div>
+        <div class="hard">
+          <p>
+            Der Roboter soll Hexe Fibonacci helfen und von <b>rechts nach links</b> die Zutaten in den Kessel werfen. Von der
+            1. und 2. Zutat muss er jeweils genau eine hinzufügen. Von jeder weiteren Zutat muss er dann immer so viele
+            hinzufügen wie von den beiden vorherigen zusammen.
+          </p>
+          <p><b>Hinweis:</b> Der Roboter kann mehrere Zutaten auf einmal transportieren. In dem Fall legt er die Zutat
+            zuerst ab, die er als letztes aufgesammelt hat.</p>
+        </div>
+        <div class="long">
+          <h2>Weitere Hinweise:</h2>
+          <p> Um eine reine Sequenz an Anweisungen oder eine Lösung, die nur auf das Bestehen von Testfällen abzielt, zu
+            vermeiden, stehen maximal zwei <img src="hebeZutatAuf.svg" />-Bausteine zur Verfügung.
+          </p>
+        </div>
+      </div>
+      <div id="gridContainer"></div>
+      <div id="blocklyLibContent"></div>
+    </div>
+
+  </div><!-- task -->
+</body>
+
+</html>

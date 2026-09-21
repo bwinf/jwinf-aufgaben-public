@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 235.14999 73.70002"
+   version="1.1"
+   class="blocklySvg"
+   width="235.14999"
+   height="73.70002"
+   id="svg47"
+   sodipodi:docname="svgexport-6.svg"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview47"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.2548701"
+     inkscape:cx="145.03493"
+     inkscape:cy="88.056921"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g47" />
+  <defs
+     id="defs2" />
+  <g
+     class="blocklyWorkspace"
+     id="g47"
+     transform="translate(-315.59999,-220.29997)">
+    <g
+       class="blocklyBlockCanvas"
+       transform="matrix(1.1,0,0,1.1,207.40833,7)"
+       id="g41">
+      <g
+         class="blocklyDraggable"
+         transform="translate(98.356051,193.90908)"
+         id="g40">
+        <path
+           class="blocklyPathDark"
+           transform="translate(1,1)"
+           fill="#678f17"
+           d="M 0,8 A 8,8 0 0 1 8,0 h 7 l 6,4 h 3 l 6,-4 h 64 v 5 c 0,10 -8,-8 -8,7.5 0,15.5 8,-2.5 8,7.5 v 4 0 l -6,4 h -3 l -6,-4 h -7 a 8,8 0 0 0 -8,8 v 12 a 8,8 0 0 0 8,8 H 94 V 62 H 29.5 l -6,4 h -3 l -6,-4 H 8 A 8,8 0 0 1 0,54 Z"
+           id="path31" />
+        <path
+           class="blocklyPath"
+           fill="#81b31d"
+           d="M 0,8 A 8,8 0 0 1 8,0 h 7 l 6,4 h 3 l 6,-4 h 64 v 5 c 0,10 -8,-8 -8,7.5 0,15.5 8,-2.5 8,7.5 v 4 0 l -6,4 h -3 l -6,-4 h -7 a 8,8 0 0 0 -8,8 v 12 a 8,8 0 0 0 8,8 H 94 V 62 H 29.5 l -6,4 h -3 l -6,-4 H 8 A 8,8 0 0 1 0,54 Z"
+           id="path32" />
+        <path
+           class="blocklyPathLight"
+           stroke="#a7ca61"
+           d="M 0.5,7.5 A 7.5,7.5 0 0 1 8,0.5 h 7 l 6,4 h 3 l 6,-4 h 63.5 m 0,0 M 89,19.3 92.68,17.2 m 0.82,7.3 M 65.989592,50.010408 A 8.5,8.5 0 0 0 72,52.5 H 93.5 M 2.6966991,59.303301 A 7.5,7.5 0 0 1 0.5,54 V 8"
+           fill="none"
+           id="path33" />
+        <text
+           class="blocklyText"
+           y="12.5"
+           transform="translate(10,5)"
+           fill="#ffffff"
+           id="text33"
+		   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.5455px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1">falls</text>
+        <text
+           class="blocklyText"
+           y="12.5"
+           transform="translate(10,29)"
+           fill="#ffffff"
+           id="text34"
+		   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.5455px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1">mache</text>
+        <g
+           class="blocklyDraggable"
+           transform="translate(95)"
+           id="g36">
+          <path
+             class="blocklyPathDark"
+             transform="translate(1,1)"
+             fill="#226384"
+             d="M 0,0 H 117.77273 V 24 H 0 V 20 C 0,10 -8,28 -8,12.5 -8,-3 0,15 0,5 Z"
+             id="path34" />
+          <path
+             class="blocklyPath"
+             fill="#2b7ca5"
+             d="M 0,0 H 117.77273 V 24 H 0 V 20 C 0,10 -8,28 -8,12.5 -8,-3 0,15 0,5 Z"
+             id="path35" />
+          <path
+             class="blocklyPathLight"
+             stroke="#6ba3c0"
+             d="m 0.5,0.5 h 116.77273 m 0,0 M 0.5,23.5 v -5 M -6.86,18 q -1.52,-5.5 0,-11 M 0.5,8 V 0.5 H 1"
+             fill="none"
+             id="path36" />
+          <text
+             class="blocklyText"
+             y="12.5"
+             transform="translate(10,5)"
+             fill="#ffffff"
+             id="text36"
+			 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.5455px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1">auf Markierung</text>
+        </g>
+        <g
+           class="blocklyDraggable"
+           transform="translate(65,25)"
+           id="g39">
+          <path
+             class="blocklyPathDark"
+             transform="translate(1,1)"
+             fill="#5b3084"
+             d="M 0,8 A 8,8 0 0 1 8,0 h 7 l 6,4 h 3 L 30,0 H 86 V 24 H 29.5 l -6,4 h -3 l -6,-4 H 8 A 8,8 0 0 1 0,16 Z"
+             id="path37" />
+          <path
+             class="blocklyPath"
+             fill="#723ca5"
+             d="M 0,8 A 8,8 0 0 1 8,0 h 7 l 6,4 h 3 L 30,0 H 86 V 24 H 29.5 l -6,4 h -3 l -6,-4 H 8 A 8,8 0 0 1 0,16 Z"
+             id="path38" />
+          <path
+             class="blocklyPathLight"
+             stroke="#9c77c0"
+             d="M 0.5,7.5 A 7.5,7.5 0 0 1 8,0.5 h 7 l 6,4 h 3 l 6,-4 h 55.5 m 0,0 M 2.6966991,21.303301 A 7.5,7.5 0 0 1 0.5,16 V 8"
+             fill="none"
+             id="path39" />
+          <text
+             class="blocklyText"
+             y="12.5"
+             transform="translate(10,5)"
+             fill="#ffffff"
+             id="text39"
+			 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.5455px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1">färbe Feld</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

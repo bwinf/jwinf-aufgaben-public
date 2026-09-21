@@ -1,15 +1,24 @@
 function initTask(subTask) {
    subTask.gridInfos = {
+      context: "robot",
       conceptViewer: false,
       //Hier wird der Kontext definiert. Mit dem Kontext werden ItemTypes und Aufgabenspezifische Übersetzungen geladen
       contextType: "paint",
+      //Hier könnte man "Norden, Osten Süden, Westen" einblenden, dies tun wir aber bei der
+      //JwInf-Plattform eher nicht, da die Blöcke auch eh mit
+      //"oben, rechts, unten, links" übersetzt sind.
       showCardinals: false,
+      //Die BWINF-spezifischen Farben. Bitte in jeder Aufgabendatei laden, da die Blocktypen sonst nicht konsistent eingefärbt sind
+      //(Unsere Farben sind natürlich schöner)
       blocklyColourTheme: "bwinf",
       //Gibt an, wie viele Blöcke zur Verfügung stehen
       //Für alle Versionen jeweils 20
       maxInstructions: 20,
       //Hier kann angegeben werden, welche Blöcke für die Aufgabe zur Verfügung stehen.
       includeBlocks: {
+         //Bei true werden die Blöcke nach Kategorien gruppiert. 
+         //Dies kann Sinn ergebene, wenn sehr viele Blöcke zur Verfügung stehen.
+         //Dies ist notwendig, wenn Funktionen oder Variablen (zum selber erstellen/nicht vordefiniert) benutzt werden.
          groupByCategory: false,
          //Alle Roboter spezifischen Blocks, welche für die Version jeweils genutzt werden.
          generatedBlocks: {
@@ -86,10 +95,22 @@ function initTask(subTask) {
    };
 
    initBlocklySubTask(subTask);
-   displayHelper.thresholdEasy = 5000;
-   displayHelper.thresholdMedium = 10000;
 }
 //Laden der definierten Informationen
 //2. Parameter: Die Liste gibt an, welche Versionen es gibt
 //3. Parameter: Gibt an bei welcher Version gestartet wird. Bei null wird bei basic gestartet
-initWrapper(initTask, ["easy", "medium", "hard"], "easy", true);
+window.initBlocklySubTask = function () { };
+window.taskData = window.taskData || {};
+window.taskData.waitInit = function () { initTask(window.taskData); };
+window.taskData.codecastParameters = window.taskData.codecastParameters || {
+   language: "de-DE",
+   platform: "blockly",
+   canChangePlatform: false,
+   showStepper: true,
+   showStack: true,
+   showViews: true,
+   showIO: true,
+   controls: { reload: false },
+   hideSettings: true,
+   jwinfMenu: { copyPaste: true, undoRedo: true, svgExport: true }
+};

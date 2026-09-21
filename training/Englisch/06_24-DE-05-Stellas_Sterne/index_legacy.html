@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Stellas Sterne</title>
+  <script>
+    window.stringsLanguage = 'en';
+  </script>
+  <script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js" id="import-modules"></script>
+  <script class="remove" type="text/javascript">
+    var modulesPath = '../../../../_common/modules/';
+    importModules([
+      'jquery-1.7.1', 'JSON-js', 'raphael-2.2.1', 'beaver-task-2.0', 'jschannel', 'raphaelFactory-1.0', 'delayFactory-1.0', 'simulationFactory-1.0',
+      'platform-pr', 'buttonsAndMessages', 'beav-1.0', 'installationAPI.01', 'miniPlatform',
+      'taskStyles-mobileFirst', 'blockly-turtle', 'jwinf_css'
+    ]);
+    // set Blockly as default language when none is specified through ?language=
+    importLanguageModules('blockly');
+  </script>
+  <script class="module" type="text/javascript" src="../../../../_common/modules/pemFioi/blocklyTurtle_lib.js" id="blocklyTurtle_lib"></script>
+  <script class="remove" type="text/javascript">
+    var json = {
+      "id": "22-DE-19-Stellas_Sterne",
+      "language": "de",
+      "version": "de.01",
+      "authors": "Frank Schwichtenberg",
+      "translators": [],
+      "license": "",
+      "taskPathPrefix": "",
+      "modulesPathPrefix": "",
+      "browserSupport": [],
+      "acceptedAnswers": [""],
+      "fullFeedback": true,
+      "minWidth": "auto"
+    };
+  </script>
+  <script type="text/javascript" src="task_legacy.js"></script>
+
+
+</head>
+
+<body onresize="task.displayedSubTask.updateScale()">
+  <div id="task">
+    <h1>Sterne</h1>
+    <div id="tabsContainer"></div>
+    <div id="taskContent">
+      <div id="taskIntro">
+        Juno and Juna describe their stars with two numbers, e.g. 5:2. The first number indicates the number of points. The second number determines whether, from each point, a connecting line is drawn to the nearest point (1), to the second nearest point (2), and so on. Here you can see some of the stars:<br>
+        <img src="Stern.png" width="50%"><br><br>
+        <div class="easy">
+          <p>Program the turtle:<br>
+          The turtle must draw a <b>5:2-Star</b> with line length 10 steps. 
+          </p>
+          <p><b>Hint:</b> The „star numbers“ determine the turning angle of the turtle. For a 5:2-Star the turtle has to turn <img src='drehenv2.png' style="vertical-align: middle; height: 60px; width: auto"/> degrees (°). It is recommended that the turtle draws the blue line first.</p>
+        </div>
+        <div class="medium">
+          <p>Program the turtle:<br>
+            The turtle must draw two <b>8:3-Stars</b>. One star has an line length of 10 steps and one star has an line length of 5 steps.
+            </p>
+            <p><b>Hint:</b> The „star numbers“ determine the turning angle of the turtle. For a 5:2-Star the turtle has to turn <img src='drehenv2.png' style="vertical-align: middle; height: 60px; width: auto"/>degrees (°).</p>
+            <p>
+            Use functions to get by with the permitted number of blocks. For further instructions concerning functions and parameters please check <b>SHOW DETAILS</b>. It is recommended that the turtle draws the blue line first.</p>
+            <div class="long">
+              <h2>Details:</h2>
+              <hr>
+              <p>
+                You can add a parameter to the function by clicking on the gear symbol:<br>
+                <img src="create_parametrised_function.png" style="margin:10px;" />
+              </p>
+              <p>
+                When using the function you have to pass a parameter:<br>
+                <img src="use_parametrised_function.png" style="margin:10px;" /><br>
+            </div>
+        </div>
+        <div class="hard">
+          <p>Program the turtle:<br>
+            The turtle must draw <b>Stars 9:4, 15:4 and 5:2</b>. All stars have an line length of 10 steps.
+            </p>
+            <p><b>Hint:</b> The „star numbers“ determine the turning angle of the turtle. For a 5:2-Star the turtle has to turn <img src='drehenv2.png' style="vertical-align: middle; height: 60px; width: auto"/> degrees (°).</p>
+            <p>
+              Use functions to get by with the permitted number of blocks. For further instructions concerning functions and parameters please check <b>SHOW DETAILS</b>. It is recommended that the turtle draws the blue line first.</p>
+            </p>
+            <div class="long">
+              <h2>Details:</h2>
+              <hr>
+              <p>
+                You can add a parameter to a function by clicking on the gear symbol:<br>
+                <img src="create_parametrised_function.png" style="margin:10px;" /><br>
+                To add two parameters add <img src='Varx.png' style="vertical-align: middle;"/> twice into the function block. You need to rename at least one variable.
+              </p>
+              <p>
+                When using the function you have to pass a parameter:<br>
+                <img src="use_parametrised_function.png" style="margin:10px;" /><br>
+            </div>
+        </div>
+
+      </div>
+      <div id="gridContainer"></div>
+      <div id="blocklyLibContent"></div>
+    </div>
+  </div><!-- task -->
+</body>
+
+</html>

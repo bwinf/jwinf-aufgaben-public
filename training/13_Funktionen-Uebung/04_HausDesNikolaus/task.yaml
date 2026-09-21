@@ -1,0 +1,10 @@
+name: "13.04 Haus des Nikolaus"
+standalone: true
+public_listing: true
+
+languages:
+  - blockly
+  - python
+
+tags:
+  - Sequenz

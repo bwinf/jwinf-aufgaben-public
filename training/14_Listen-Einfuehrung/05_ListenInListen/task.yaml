@@ -1,0 +1,14 @@
+name: "14.05 Listen in Listen"
+standalone: true
+public_listing: true
+
+languages:
+  - blockly
+  - python
+
+tags:
+  - Text
+  - Liste
+  - forEach-Schleife
+  - for-Schleife
+  - Variablen

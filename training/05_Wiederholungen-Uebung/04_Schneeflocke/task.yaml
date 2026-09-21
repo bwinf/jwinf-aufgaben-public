@@ -1,0 +1,11 @@
+name: "05.04 Schneeflocke"
+standalone: true
+public_listing: true
+
+languages:
+  - blockly
+  - python
+
+tags:
+  - Turtle
+  - Wiederhole mit fester Anzahl

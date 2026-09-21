@@ -1,5 +1,7 @@
 function initTask(subTask) {
   subTask.gridInfos = {
+    context: "turtle",
+    conceptViewer: false,
     hideSaveOrLoad: false, // Speichern und Laden von Lösungen möglich.
     timeoutMinutes: 10, // Nach 10 Minuten wird eine Warnung angezeigt.
     includeBlocks: {
@@ -206,8 +208,20 @@ function initTask(subTask) {
   };
 
   initBlocklySubTask(subTask);
-  // displayHelper.thresholdEasy = 120;
-  // displayHelper.thresholdMedium = 240;
 }
 // Laden der definierten Informationen
-initWrapper(initTask, ["easy", "medium", "hard"], null);
+window.initBlocklySubTask = function () {};
+window.taskData = {};
+window.taskData.waitInit = function () { initTask(window.taskData); };
+window.taskData.codecastParameters = {
+    language: "de-DE",
+    platform: "blockly",
+    canChangePlatform: false,
+    showStepper: true,
+    showStack: true,
+    showViews: true,
+    showIO: true,
+    controls: { reload: false },
+    hideSettings: true,
+    jwinfMenu: { copyPaste: true, undoRedo: true, svgExport: true }
+};

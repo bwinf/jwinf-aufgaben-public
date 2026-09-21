@@ -1,0 +1,8 @@
+from turtle import *
+
+for i in range(3):
+    dreheLinks90Grad()
+for i in range(4):
+    gehe()
+    gehe()
+    dreheLinks90Grad()

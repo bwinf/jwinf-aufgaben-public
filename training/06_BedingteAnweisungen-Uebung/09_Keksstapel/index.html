@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script>window.stringsLanguage='de';window.taskStrings={};</script>
+<script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js" id="import-modules"></script>
+<script class="remove" type="text/javascript">
+var modulesPath = '../../../../_common/modules/';
+importModules(['jquery-1.7.1','JSON-js','raphael-2.2.1','codecast-7.7','jschannel','raphaelFactory-1.0','delayFactory-1.0','simulationFactory-1.0','platform-pr','beav-1.0','installationAPI.01','miniPlatform','taskStyles-mobileFirst','jwinf-codecast_css','jwinf-codecast','conceptDisplay-1.0','conceptViewer-1.0','conceptViewer_css-1.0','blockly-robot-1.1','createAlgoreaInstructions-1.0','algoreaInstructionsStrings']);
+</script>
+<script class="remove" type="text/javascript">
+var json = {
+      "id": "",
+      "language": "de",
+      "version": "21-DE-18",
+      "authors": "Michael Pesch",
+      "translators": [],
+      "license": "",
+      "taskPathPrefix": "",
+      "modulesPathPrefix": "",
+      "browserSupport": [],
+      "fullFeedback": true,
+      "minWidth": "auto"
+    };
+</script>
+<script type="text/javascript" src="task.js"></script>
+</head>
+<body id="app">
+<div id="react-container" style="width:100%;height:100vh"></div>
+<img src="icon.png" style="display:none" />
+<div id="task" style="display:none"><div id="tabsContainer"></div><div id="taskContent"><div id="gridContainer"></div><div id="blocklyLibContent"></div></div></div>
+<div id="taskIntro" style="display:none">
+        Programmiere den Roboter:
+        <div>
+          <p>
+            Der Roboter kann mehrere Kekse nach dem <b>LIFO-Prinzip</b> aufheben und wieder ablegen. LIFO steht für "Last In First Out". Für den Roboter bedeutet das: <b>Den letzten Keks den er aufgehoben hat, legt er als ersten Keks wieder ab.</b>
+          </p>
+        </div>
+          
+        <div class="easy">
+          <p>Der Roboter soll jeden Keks (<img src="card_roundDotted.png", width="25px">, <img src="card_triangleDotted.png", width="25px">, <img src="card_squareDotted.png", width="25px">) im passenden Behälter (<img src="round_empty.png", width="25px">, <img src="triangle_empty.png", width="25px">, <img src="square_empty.png", width="25px">) ablegen. 
+          </p>
+        <p>
+          <b>Hinweis: </b>Der Roboter kann nicht wieder nach links gehen. Der Roboter kann mehrere Kekse auf einmal tragen.
+        </p>
+        <!-- <p>
+          <i>Beachte: Dein Programm muss mit allen Testfällen zurechtkommen.</i>
+        </p> -->
+        </div>
+        <div class="medium">
+          <p>Der Roboter soll jeden Keks (<img src="card_roundDotted.png", width="25px">, <img src="card_triangleDotted.png", width="25px">, <img src="card_squareDotted.png", width="25px">) in einem passenden und noch leeren Behälter (<img src="round_empty.png", width="25px">, <img src="triangle_empty.png", width="25px">, <img src="square_empty.png", width="25px">) ablegen. 
+          </p>
+          <p><b>Hinweis: </b>Der Roboter kann mehrere Kekse auf einmal tragen.</p>
+        <!-- <p>
+          <i>Beachte: Dein Programm muss mit allen Testfällen zurechtkommen.</i>
+        </p> -->
+        </div>
+        <div class="hard">
+          <p>
+            Der Roboter soll jeden Keks (<img src="card_roundDotted.png", width="25px">, <img src="card_triangleDotted.png", width="25px">, <img src="card_squareDotted.png", width="25px">) in einem passenden und noch leeren Behälter (<img src="round_empty.png", width="25px">, <img src="triangle_empty.png", width="25px">, <img src="square_empty.png", width="25px">) ablegen.
+          </p>
+          <p><b>Hinweis: </b>Der Roboter kann mehrere Kekse auf einmal tragen.</p>
+        </div>
+
+      </div>
+<div id="solution" style="display:none"></div>
+<div id="taskHints" style="display:none"></div>
+</body>
+</html>

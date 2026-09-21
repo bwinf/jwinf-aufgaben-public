@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script>window.stringsLanguage='de';window.taskStrings={};</script>
+<script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js" id="import-modules"></script>
+<script class="remove" type="text/javascript">
+var modulesPath = '../../../../_common/modules/';
+importModules(['jquery-1.7.1','JSON-js','raphael-2.2.1','codecast-7.7','jschannel','raphaelFactory-1.0','delayFactory-1.0','simulationFactory-1.0','platform-pr','beav-1.0','installationAPI.01','miniPlatform','taskStyles-mobileFirst','jwinf-codecast_css','jwinf-codecast','conceptDisplay-1.0','conceptViewer-1.0','conceptViewer_css-1.0','blockly-robot-1.1','createAlgoreaInstructions-1.0','algoreaInstructionsStrings']);
+</script>
+<script class="remove" type="text/javascript">
+var json = {
+         "id": "",
+         "language": "de",
+         "version": "de.01",
+         "authors": "Hannah Rauterberg",
+         "translators": [],
+         "license": "",
+         "taskPathPrefix": "",
+         "modulesPathPrefix": "",
+         "browserSupport": [],
+         "fullFeedback": true,
+         "minWidth": "auto"
+      };
+</script>
+<script type="text/javascript" src="task.js"></script>
+</head>
+<body id="app">
+<div id="react-container" style="width:100%;height:100vh"></div>
+<img src="icon.png" style="display:none" />
+<div id="task" style="display:none"><div id="tabsContainer"></div><div id="taskContent"><div id="gridContainer"></div><div id="blocklyLibContent"></div></div></div>
+<div id="taskIntro" style="display:none">
+            Programmiere den Roboter:<br>
+            Der Roboter steht auf einem Gitter. Auf einem der Felder steht eine graue Tafel <img src='grey.png'
+               width="15" height=auto />.
+            <div class="easy">
+               <p>
+                  Rechts vom Roboter steht eine Zahl. Die Zahl sagt, wie viele Schritte die graue Tafel entfernt ist.
+               </p>
+               <p>
+                  Der Roboter soll auf die Tafel die <b>Anzahl der Züge</b> schreiben, die benötigt werden, um
+                  die Tafel zu erreichen. Ein Schritt nach rechts zählt als ein Zug. Der Startpunkt
+                  für die Zählung ist das Zahlenfeld <img src='orange.png' width="15" height=auto />.
+               </p>
+            </div>
+            <div class="medium">
+               <p>
+                  Rechts neben dem Roboter stehen zwei Zahlen auf zwei Feldern. Die linke Zahl beschreibt, wie viele
+                  <b>Schritte nach rechts</b> die graue Tafel entfernt ist. Die rechte Zahl beschreibt die
+                  <b>Schritte nach oben</b>.
+               </p>
+               <p>
+                  Der Roboter soll auf die Tafel die <b>Anzahl der Züge</b> schreiben, die mindestens benötigt werden,
+                  um
+                  die Tafel zu erreichen. Ein Schritt nach rechts oder oben zählt als ein
+                  Zug. Der Startpunkt für die Zählung ist
+                  das rechte Zahlenfeld <img src='orange.png' width="15" height=auto />.
+               </p>
+               <div class="long">
+                  <hr>
+                  <h2>Weitere Hinweise:</h2>
+                  <img src="Beispiel_diagSchritt_medium.svg">
+               </div>
+            </div>
+            <div class="hard">
+               <p>
+                  Rechts neben dem Roboter stehen zwei Zahlen auf zwei Feldern. Die linke Zahl beschreibt, wie viele
+                  <b>Schritte nach rechts</b> die graue Tafel entfernt ist. Die rechte Zahl beschreibt die
+                  <b>Schritte nach oben</b>.
+               </p>
+               <p>
+                  Der Roboter soll auf die Tafel die <b>Anzahl der Züge</b> schreiben, die mindestens benötigt
+                  werden, um
+                  die Tafel zu erreichen.
+                  Ein Schritt nach rechts, oben oder <b>diagonal</b> (also ein Feld nach rechts und eines nach oben)
+                  zählt als ein
+                  Zug.
+                  Der Startpunkt für die Zählung ist
+                  das rechte Zahlenfeld <img src='orange.png' width="15" height=auto />.
+
+
+               </p>
+               <div class="long">
+                  <hr>
+                  <h2>Weitere Hinweise:</h2>
+                  <img src="Beispiel_diagSchritt.svg">
+               </div>
+            </div>
+            <div class="hard ">
+               <div class="long">
+                  <hr>
+                  <h2>Eingeschränkte Bausteine:</h2>
+                  <p> Um eine reine Sequenz an Anweisungen oder eine Lösung, die nur auf das Bestehen von Testfällen
+                     abzielt, zu vermeiden, stehen nur zwei <img src="../../../Bilder/Number_write.svg" />-Baustein zur
+                     Verfügung.
+                  </p>
+               </div>
+            </div>
+            <div class="hard">
+               <div class="long">
+                  <hr>
+                  <h2>Fallunterscheidung:</h2>
+                  <p>Du kannst der <img src="../../../Bilder/controls_if_Zahnrad.svg" /> über das blaue Zahnrad weitere Fälle
+                     hinzufügen (oder entfernen), indem du sie vom linken grauen Kasten zum rechten weißen Kasten
+                     hinzufügst (oder aus dem weißen Kasten heraus ziehst):<br>
+                     <img src="../../../Bilder/ifMutator.svg" />
+                  </p>
+               </div>
+            </div>
+         </div>
+<div id="solution" style="display:none"></div>
+<div id="taskHints" style="display:none"></div>
+</body>
+</html>

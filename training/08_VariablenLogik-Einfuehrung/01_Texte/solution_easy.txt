@@ -1,0 +1,4 @@
+from printer import *
+
+text = input()
+print(text[-1])

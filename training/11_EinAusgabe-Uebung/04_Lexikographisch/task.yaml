@@ -1,0 +1,13 @@
+name: "11.04 Lexikographisch"
+standalone: true
+public_listing: true
+
+languages:
+  - blockly
+  - python
+
+tags:
+  - Text
+  - Verzweigungen
+  - Bedingte Wiederholung
+  - Variablen

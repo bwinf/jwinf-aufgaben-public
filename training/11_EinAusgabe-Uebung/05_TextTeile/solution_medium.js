@@ -1,0 +1,7 @@
+const pythonCode_05_2 = `from printer import *
+
+text = input()
+anfang = text.find(" ")
+ende = text.find(" ", anfang + 1)
+
+print(text[anfang+1:ende])`;

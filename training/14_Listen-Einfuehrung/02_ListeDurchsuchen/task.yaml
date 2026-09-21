@@ -1,0 +1,14 @@
+name: "14.02 Liste durchsuchen"
+standalone: true
+public_listing: true
+
+languages:
+  - blockly
+  - python
+
+tags:
+  - Text
+  - Liste
+  - Bedingte Wiederholung
+  - Variablen
+

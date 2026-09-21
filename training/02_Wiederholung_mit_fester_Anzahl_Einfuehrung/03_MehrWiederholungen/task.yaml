@@ -1,0 +1,11 @@
+name: "02.03 Wiederholungen.Inseln"
+standalone: true
+public_listing: true
+
+languages:
+  - blockly
+  - python
+
+tags:
+  - Roboter
+  - Wiederhole mit fester Anzahl

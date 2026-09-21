@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script>window.stringsLanguage='de';window.taskStrings={};</script>
+<script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js" id="import-modules"></script>
+<script class="remove" type="text/javascript">
+var modulesPath = '../../../../_common/modules/';
+importModules(['jquery-1.7.1','JSON-js','raphael-2.2.1','codecast-7.7','jschannel','raphaelFactory-1.0','delayFactory-1.0','simulationFactory-1.0','platform-pr','beav-1.0','installationAPI.01','miniPlatform','taskStyles-mobileFirst','jwinf-codecast_css','jwinf-codecast','conceptDisplay-1.0','conceptViewer-1.0','conceptViewer_css-1.0','blockly-turtle']);
+</script>
+<script class="remove" type="text/javascript">
+var json = {
+      "id": "22-DE-19-Stellas_Sterne",
+      "language": "de",
+      "version": "de.01",
+      "authors": "Frank Schwichtenberg",
+      "translators": [],
+      "license": "",
+      "taskPathPrefix": "",
+      "modulesPathPrefix": "",
+      "browserSupport": [],
+      "acceptedAnswers": [""],
+      "fullFeedback": true,
+      "minWidth": "auto"
+    };
+</script>
+<script type="text/javascript" src="task.js"></script>
+</head>
+<body id="app">
+<div id="react-container" style="width:100%;height:100vh"></div>
+
+<div id="task" style="display:none"><div id="tabsContainer"></div><div id="taskContent"><div id="gridContainer"></div><div id="blocklyLibContent"></div></div></div>
+<div id="taskIntro" style="display:none">
+        Juno und Juna beschreiben ihre Sterne immer mit zwei Zahlen, z.B. 5:2.
+        Die 1. Zahl gibt die Anzahl der Spitzen an. 
+        Die 2. Zahl legt fest, ob Verbindungslinien immer zur nächsten Spitze gezeichnet werden (dann ist es eine 1) oder nur zur zweitnächsten (dann ist es eine 2) usw. Hier siehst du einige der Sterne:<br>
+        <img src="Stern.png" width="50%"><br><br>
+        <div class="easy">
+          <p>Programmiere die Schildkröte:<br>
+          Die Schildkröte soll einen <b>5:2-Stern</b> mit Kantenlänge von 10 Schritten malen. 
+          </p>
+          <p><b>Hinweis:</b> Um wie viel Grad sich die Schildkröte drehen muss ist abhängig von beiden Zahlen. Für einen 5:2-Stern müsste sie sich also um <img src='drehenv2.png' style="vertical-align: middle; height: 60px; width: auto"/>° drehen. Die Schildkröte sollte die blaue Kante jeweils zuerst zeichnen.</p>
+        </div>
+        <div class="medium">
+          <p>Programmiere die Schildkröte:<br>
+            Die Schildkröte soll zwei <b>8:3-Sterne</b> malen. Ein Stern soll eine Kantenlänge von 10 Schritten haben und ein Stern eine Kantenlänge von 5 Schritten.  
+            </p>
+            <p><b>Hinweis:</b> Um wie viel Grad sich die Schildkröte drehen muss ist abhängig von beiden Zahlen. Für einen 5:2-Stern müsste sie sich also um <img src='drehenv2.png' style="vertical-align: middle; height: 60px; width: auto"/>° drehen.</p> 
+            <p>
+            Nutze Funktionen um mit der erlaubten Anzahl von Bausteinen auszukommen. Funktionen und Parameter werden unter <b>"weitere Hinweise"</b> erklärt. Die Schildkröte sollte die blaue Kante jeweils zuerst zeichnen.</p>
+            <div class="long">
+              <h2>Weitere Hinweise:</h2>
+              <p>
+                Du kannst einer Funktion Parameter hinzufügen, indem du das Zahnrad anklickst:<br>
+                <img src="create_parametrised_function.png" style="margin:10px;" />
+              </p>
+              <p>
+                Wenn du die Funktion verwendest, musst du einen Wert für den Parameter angeben:<br>
+                <img src="use_parametrised_function.png" style="margin:10px;" /><br>
+            </div>
+        </div>
+        <div class="hard">
+          <p>Programmiere die Schildkröte:<br>
+            Die Schildkröte soll die <b>Sterne 9:4, 15:4 und 5:2</b> malen. Alle Sterne sollen eine Kantenlänge von 10 Schritten haben.
+            </p>
+            <p><b>Hinweis:</b> Um wie viel Grad sich die Schildkröte drehen muss ist abhängig von beiden Zahlen. Für einen 5:2-Stern müsste sie sich also um <img src='drehenv2.png' style="vertical-align: middle; height: 60px; width: auto"/>° drehen.</p> 
+            <p>
+              Nutze Funktionen um mit der erlaubten Anzahl von Bausteinen auszukommen. Funktionen und Parameter werden unter <b>"weitere Hinweise"</b> erklärt. Die Schildkröte sollte die blaue Kante jeweils zuerst zeichnen.</p>
+            </p>
+            <div class="long">
+              <h2>Weitere Hinweise:</h2>
+              <p>
+                Du kannst einer Funktion Parameter hinzufügen, indem du das Zahnrad anklickst:<br>
+                <img src="create_parametrised_function.png" style="margin:10px;" /><br>
+                Um der Funktion zwei Parameter hinzuzufügen, ziehe <img src='Varx.png' style="vertical-align: middle;"/> zwei Mal in die Parameter-Klammer. Du musst mindestens einen der Parameter umbenennen.
+              </p>
+              <p>
+                Wenn du die Funktion verwendest, musst du einen Wert für den Parameter angeben:<br>
+                <img src="use_parametrised_function.png" style="margin:10px;" /><br>
+            </div>
+        </div>
+
+      </div>
+<div id="solution" style="display:none"></div>
+<div id="taskHints" style="display:none"></div>
+</body>
+</html>

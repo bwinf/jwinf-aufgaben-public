@@ -1,0 +1,6 @@
+from printer import *
+
+if lies() == "korrektpferd":
+    schreibe("Richtiges Passwort")
+else:
+    schreibe("Falsches Passwort")

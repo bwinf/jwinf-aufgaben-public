@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Buchverschlüsselung</title>
+  <script>
+    window.stringsLanguage = 'de';
+  </script>
+  <script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js"
+    id="import-modules"></script>
+  <script class="remove" type="text/javascript">
+    var modulesPath = '../../../../_common/modules/';
+    importModules([
+      'jquery-1.7.1', 'JSON-js', 'raphael-2.2.1',
+      'beaver-task-2.0', 'jschannel', 'raphaelFactory-1.0',
+      'delayFactory-1.0', 'simulationFactory-1.0',
+      'platform-pr', 'buttonsAndMessages', 'beav-1.0',
+      'installationAPI.01', 'miniPlatform',
+      'taskStyles-mobileFirst', 'blockly-printer', 'jwinf_css'
+    ]);
+    // set Blockly as default language when none is specified through ?language=
+    importLanguageModules('blockly');
+  </script>
+  <script class="remove" type="text/javascript">
+    var json = {
+      "id": "22-DE-06-Bucherschluesselung",
+      "language": "de",
+      "version": "de.01",
+      "authors": "Robert Steffens",
+      "translators": [],
+      "license": "",
+      "taskPathPrefix": "",
+      "modulesPathPrefix": "",
+      "browserSupport": [],
+      "acceptedAnswers": [""],
+      "fullFeedback": true,
+      "minWidth": "auto"
+    };
+
+    window.stringsLanguage = 'de';
+    var strings = {
+      moreThan100Moves: "Du hast mehr als 100 Schritte gebraucht.",
+      notAllCellsPainted: "Das hat noch nicht ganz geklappt. Versuch es noch einmal!",
+      allCellsPainted: "Bravo! Du hast die Zeilen richtig ausgegeben!"
+    };
+  </script>
+  <script type="text/javascript" src="printer_task_legacy.js"></script>
+
+</head>
+
+<body onresize="task.displayedSubTask.updateScale()">
+  <div id="task">
+    <h1>Buchverschlüsselung</h1>
+
+    <div id="tabsContainer"></div>
+    <div id="taskContent">
+      <div id="taskIntro">
+        <p>Schreibe ein Programm:<br>
+          Ein Text wurde mit dem Verfahren "Buchverschlüsselung" verschlüsselt. Das Programm soll den Text wieder
+          entschlüsseln.</p>
+        <div class="easy">
+          <p>
+            Bei der Buchverschlüsselung ersetzt der Absender die Buchstaben des Textes durch ihre Position (z.B. "42.
+            Buchstabe") in einem Buch. Zur Entschlüsselung benötigt der Empfänger die Positionsangaben als Schlüssel, um
+            die im Buch gefundenen Buchstaben wieder zu einem Text zusammen zu setzen.<br><br>
+
+            In der ersten Zeile der Eingabe steht der Teil des Buches, auf den sich die Positionsangaben in den
+            folgenden
+            Zeilen beziehen.
+            Das Programm soll den entschlüsselten Text in einer Zeile ausgeben.<br><br>
+            Hinweis: Bevor du eine Variable benutzen kannst, musst du ihr einen Wert zuweisen.
+          </p>
+        </div>
+        <div class="medium">
+          <p>
+          Bei der Buchverschlüsselung ersetzt der Absender die Buchstaben des Textes durch ihre Position (z.B. "42.
+          Buchstabe") in einem Buch. Zur Entschlüsselung benötigt der Empfänger die Positionsangaben als Schlüssel, um
+          die im Buch gefundenen Buchstaben wieder zu einem Text zusammen zu setzen.<br><br>
+
+          In der ersten Zeile der Eingabe stehen die Positionsangaben durch Kommata getrennt.
+          In der zweiten Zeile steht der Teil des Buches, auf den sich die Positionsangaben beziehen.
+          Das Programm soll den entschlüsselten Text in einer Zeile ausgeben.
+        </p>
+        </div>
+        <div class="hard">
+          <p>
+            Bei dieser Buchverschlüsselung ersetzt der Absender die Buchstaben des Textes durch ihre Position (z.B. "1.
+            Zeile, 42.
+            Buchstabe") in einem Buch. Zur Entschlüsselung benötigt der Empfänger die Positionsangaben als Schlüssel, um
+            die im Buch gefundenen Buchstaben wieder zu einem Text zusammen zu setzen.<br><br>
+
+            In der ersten Zeile der Eingabe stehen die Positionsangaben durch Kommata getrennt.
+            Diese besteht diesmal aus zwei Teilen:
+            Zuerst die Textzeile, dann die Position in dieser Textzeile.
+            In den folgenden Zeilen steht der Teil des Buches, auf den sich die Positionsangaben beziehen.
+            Das Programm soll den entschlüsselten Text in einer Zeile ausgeben.<br><br>
+            
+            Hinweis: Bevor du eine Liste mit Werten füllen kannst, musst du eine leere Liste erzeugen. Ein Beispiel für
+            die
+            Positionsangaben findest du unter <b>"weitere Hinweise".</b>
+          </p>
+          <div class="long">
+            <p>
+              <b>Beispiel:</b>
+              <!--<pre>
+  <small><em>Eingabe:</em></small>                                   <small><em>Ausgabe:</em></small>
+  2,5,2,8,1,26,2,22        &darr;1,26            lieb
+  Pflaumen ist lecker und gesund.           
+  Pomelo ist aber auch beliebt.
+   2,5&uarr;  &uarr;2,8          &uarr;2,22                		
+	          </pre>-->
+              <br><img src='Buchverschlüsselung.png' width="450" height=auto />
+            </p>
+          </div>
+        </div>
+
+        <p><i>Beachte: Dein Programm muss mit allen Testfällen zurechtkommen.</i></p>
+      </div>
+      <div id="gridContainer"></div>
+      <div id="blocklyLibContent"></div>
+    </div>
+  </div><!-- task -->
+</body>
+
+</html>

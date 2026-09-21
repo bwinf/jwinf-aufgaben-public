@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script>window.stringsLanguage='de';window.taskStrings={};</script>
+<script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js" id="import-modules"></script>
+<script class="remove" type="text/javascript">
+var modulesPath = '../../../../_common/modules/';
+importModules(['jquery-1.7.1','JSON-js','raphael-2.2.1','codecast-7.7','jschannel','raphaelFactory-1.0','delayFactory-1.0','simulationFactory-1.0','platform-pr','beav-1.0','installationAPI.01','miniPlatform','taskStyles-mobileFirst','jwinf-codecast_css','jwinf-codecast','conceptDisplay-1.0','conceptViewer-1.0','conceptViewer_css-1.0','blockly-printer']);
+</script>
+<script class="remove" type="text/javascript">
+var json = {
+      "id": "?", //TODO: muss verändert werden - wozu?
+      "language": "de",
+      "version": "de.01",
+      "authors": "Annika Petersen",
+      "translators": [],
+      "license": "",
+      "taskPathPrefix": "",
+      "modulesPathPrefix": "",
+      "browserSupport": [],
+      "acceptedAnswers": [""],
+      "fullFeedback": true,
+      "minWidth": "auto"
+    };
+</script>
+<script type="text/javascript" src="printer_task.js"></script>
+</head>
+<body id="app">
+<div id="react-container" style="width:100%;height:100vh"></div>
+
+<div id="task" style="display:none"><div id="tabsContainer"></div><div id="taskContent"><div id="gridContainer"></div><div id="blocklyLibContent"></div></div></div>
+<div id="taskIntro" style="display:none">
+        Schreibe ein Programm: 
+        <div>
+          <p>Das Programm soll eine Schatzkarte als Liste einlesen und zählen, wie viele Schätze höchstens gefunden werden können.</p> 
+          <p>Nur an Stellen, die mit "?" markiert sind, kann ein Schatz gefunden werden. Die Stellen, die mit "B" markiert sind, sind Bäume. Jeder Schatz liegt direkt neben (mindestens) einem Baum vergraben. Unter einem Baum können mehrere Schätze vergraben sein. An restlichen Stellen " " kann kein Schatz gefunden werden. </p>
+        </div>
+
+        <div class="basic">
+          <p> Die Karte besteht aus einer Zeile. Wir wissen, dass am Rand der Karte (ganz links und rechts außen) keine Schätze vergraben sein können. </p>
+        </div>
+
+        <div class = "easy">
+          <p>Die Karte besteht aus drei Zeilen. Nur in der mittleren Zeile sind mögliche Positionen von Schätzen ("?"). Außerdem stehen keine "?" am Rand der Karte. </p>
+        </div>
+
+        <div class="medium hard">
+          <p> Die Karte besteht jetzt aus jeweils 8 Zeilen und Spalten, in denen überall Schätze liegen können. </p>
+          <p> Lese die Karte in eine große (Gesamt-)Liste ein: Die Zeilen sollen nacheinander in der Liste stehen. Jede Zeile enthält selbst als Liste alle Positionen in dieser Reihe (also " ", "?" oder "B").</p>
+        </div>
+        <div class = "medium">
+          <p> Am Rand der Karte befinden sich keine "?"-Markierungen. </p> 
+        </div>
+
+        <div class = "hard">
+          <p> Nun können sich auch am Rand mögliche Schätze ("?") befinden. </p>
+        </div>
+       
+        <p>Gib die maximale Anzahl an Schätzen aus, die gefunden werden kann. </p>
+
+        <p> Unter "weitere Hinweise" findest du <b>Erklärungen</b> zum Arbeiten mit der Karte und Ideen für deinen Algorithmus.</p>
+        <div class = "long">
+          <h2>Weitere Hinweise:</h2>
+          <p>Du kannst die Karte als Liste speichern, in der du als Einträge die Zeilen der Karte speicherst. Entweder kannst du diese als Text speichern, oder als Liste aus Zeichen " ", "?" und "B". Falls du letztere Möglichkeit wählst, bietet sich der Baustein <code>Liste aus Text erstellen</code> an. Dieser wandelt einen Text in eine Liste um, wenn du als Trennzeichen "" (nichts) angibst, wird jedes Zeichen ein eigener Eintrag der Liste. </p>
+          <p>Zum Beispiel könntest du so die erste Zeile der Karte einlesen:</p>
+          <p><img src="listeInListeEinlesen.jpg"></p>
+
+          <div class = "easy medium hard">
+            <p>Auf das Element in Zeile z, Spalte s in einer Liste von Listen greifen wir so zu:</p> 
+            <p><img src="liste_verschachtelt_get_z_s.jpg"></p>
+            <p> ...der Codeblock, der hier oben in der Mitte steckt, holt uns übrigens die gesamte Zeile z: </p>
+            <p><img src="liste_verschachtelt_get_z.jpg"></p>
+            <p>Wenn man die Karte jedoch als Liste, in der Texte gespeichert sind, umsetzt, kann man sich den Eintrag in Zeile z, Spalte s so holen:</p>
+            <p><img src="getEntryListOfTexts.jpg"></p>
+          </div>
+          
+          <p>Um auf Nachbarfelder eines Eintrags in der Karte zuzugreifen, können wir nach Belieben bei dem Zeilen- und/oder Spaltenindex 1 addieren oder subtrahieren. </p>
+            
+          <div class = "hard">            
+              <p>Allerdings muss man hier aufpassen, dass die Nachbarn von Einträgen, die selbst am Rand der Karte liegen, nicht mehr auf der Karte abgebildet sind.</p>
+              <p>Bevor wir also auf Nachbarn zugreifen, sollten wir also prüfen, ob diese Nachbarzellen noch in der Karte liegen. Das ist genau dann der Fall, wenn der Zeilen- und Spaltenindex jeweils echt größer als 0 sind sowie der Zeilenindex kleinergleich der Höhe, der Spaltenindex kleinergleich der Breite der Karte sind. Das können wir zum Beispiel so prüfen:</p>
+              <p><img src = "istEintragInKarte.jpg"></p>
+          </div> 
+
+          <p>Eine Liste kann man von links nach rechts durchlaufen, beispielsweise mit einer Schleife der folgenden Form:</p>
+          <p><img src = "iterate1dList.jpg"></p>
+          <div class = "easy medium hard">
+            <p>Wenn die Liste zweidimensional wird, also eine Liste von Listen ist, kann man für jede Zeile alle Spalten durchlaufen: </p>
+            <p><img src = "iterate2dList.jpg"></p>
+          </div>
+
+          Algorithmisch könntest du so vorgehen: 
+          <div class = "basic">
+            Setze eine Variable anzahlSchaetze auf 0. Dann gehe von links nach rechts durch die Karte. Falls der Eintrag ein "?" ist, kannst du prüfen, ob der Eintrag davor oder danach ein "B" ist. Falls ja, ist dort ein Schatz und du kannst die Variable erhöhen, sonst nicht. Wenn du die Liste komplett durchgegangen bist, ist das die gesuchte Anzahl.
+          </div>
+          <div class = "easy">
+            Gehe durch die mittlere Zeile der Karte. Für jedes "?", das du findest, musst du prüfen, ob links, rechts, oben oder unten ein Baum steht - falls ja, erhöhe eine Variable um 1. Diese Variable kannst du am Ende ausgeben. 
+          </div>
+          <div class = "medium hard">
+            Gehe durch die gesamte Karte zeilen- und spaltenweise durch (wie das geht, siehe oben). Für jedes "?", das du findest, musst du prüfen, ob links, rechts, oben oder unten ein Baum steht - falls ja, erhöhe eine Variable um 1. Diese Variable kannst du am Ende ausgeben. 
+          </div>
+          <div class = "hard">
+            Du musst beachten, dass es am Rand ggf. nicht Nachbarn in jede Richtung gibt, prüfe also vorher, ob du überhaupt in alle Richtungen nach Bäumen suchen kannst. 
+          </div>
+        </div>
+        
+        <div>
+        </div>
+      </div>
+<div id="solution" style="display:none"></div>
+<div id="taskHints" style="display:none"></div>
+</body>
+</html>

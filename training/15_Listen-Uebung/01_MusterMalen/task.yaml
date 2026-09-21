@@ -1,0 +1,15 @@
+name: "15.01 Muster malen"
+standalone: true
+public_listing: true
+
+languages:
+  - blockly
+  - python
+
+tags:
+  - Roboter
+  - Liste
+  - for-Schleife
+  - Wiederhole mit fester Anzahl
+  - Verzweigungen
+  - Variablen

@@ -1,0 +1,4 @@
+from printer import *
+
+zeile = lies()
+schreibe("Hallo " + zeile + " HALLO " + zeile.upper())

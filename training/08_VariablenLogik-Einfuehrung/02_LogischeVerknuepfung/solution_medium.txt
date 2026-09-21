@@ -1,0 +1,10 @@
+from robot import *
+
+for i in range(10):
+    for j in range(10):
+        rechts()
+    oben()
+    for j in range(10):
+        links()
+        if spalteRoboter()<zeileRoboter() and (spalteRoboter()<5 or spalteRoboter()>7):
+            faerbeFeld()

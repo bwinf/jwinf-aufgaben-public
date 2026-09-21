@@ -2,38 +2,16 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <title>Prüfung</title>
-  <script>
-    // Die information 'de' bezieht sich darauf, welche Übersetzungen aus der Bibliothek geladen werden.
-    // In diesem Fall werden alle Blöcke, Blockhilfen etc. auf deutsch angezeigt.
-    window.stringsLanguage = 'de';
-  </script>
-  <!-- Der Pfad unter zu den Modulen muss immer richtig sein. Wenn ein weitere Unterordner angelegt wird, 
-   dann muss im Pfad eine Ebene höher gegangen werden. -->
-  <script class="remove" type="text/javascript" src="../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js"
-    id="import-modules"></script>
-  <script class="remove" type="text/javascript">
-    var modulesPath = '../../../_common/modules/';
-    importModules([
-      // Die Bibliotheken werden geladen. Dabei sind die ersten immer gleich.
-      // 'jwinf_css' spezifiziert das für die JwInf-Plattform verwendete Design z.B. den Fuchs und das grün
-      // Davor steht die Aufgaben spezifische Bibliothek. So wird für
-      // Roboteraufgaben: 'blockly-robot-1.1' 
-      // Textaufgaben: 'blockly-printer'
-      // Turtleaufgaben: 'blockly-turtle' geladen.
-      'jquery-1.7.1', 'JSON-js', 'raphael-2.2.1', 'beaver-task-2.0', 'jschannel', 'raphaelFactory-1.0',
-      'delayFactory-1.0', 'simulationFactory-1.0',
-      'platform-pr', 'buttonsAndMessages', 'beav-1.0', 'installationAPI.01', 'miniPlatform',
-      'taskStyles-mobileFirst', 'blockly-printer', 'jwinf_css'
-    ]);
-    // Die Standardsprache wird definiert, in diesem Fall Blockly 
-    // Andere Sprachen (wenn vorhanden) können dann mit ?language= (bspw. python) als Suffix in der URL geladen werden.
-    importLanguageModules('blockly');
-    // Hier werden ein paar Grundinformationen zu der Aufgabe festgehalten
-  </script>
-  <script class="remove" type="text/javascript">
-    var json = {
+   <meta charset="utf-8">
+   <script>window.stringsLanguage = 'de'; window.taskStrings = {};</script>
+   <script class="remove" type="text/javascript"
+      src="../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js" id="import-modules"></script>
+   <script class="remove" type="text/javascript">
+      var modulesPath = '../../../_common/modules/';
+      importModules(['jquery-1.7.1', 'JSON-js', 'raphael-2.2.1', 'codecast-7.7', 'jschannel', 'raphaelFactory-1.0', 'delayFactory-1.0', 'simulationFactory-1.0', 'platform-pr', 'beav-1.0', 'installationAPI.01', 'miniPlatform', 'taskStyles-mobileFirst', 'jwinf-codecast_css', 'jwinf-codecast', 'conceptDisplay-1.0', 'conceptViewer-2.0', 'conceptViewer_css-2.0']);
+   </script>
+   <script class="remove" type="text/javascript">
+      var json = {
       // Hier werden ein paar Grundinformationen zu der Aufgabe festgehalten
       "id": "Text-Beispiel",
       "language": "de",
@@ -48,19 +26,20 @@
       "fullFeedback": true,
       "minWidth": "auto"
     };
-  </script>
-  <!-- Hier der Name der Javascript-Datei, welche den Task definiert. -->
-  <script type="text/javascript" src="printer_task.js"></script>
-
+   </script>
+   <script type="text/javascript" src="printer_task.js"></script>
 </head>
 
-<body onresize="task.displayedSubTask.updateScale()">
-  <div id="task">
-    <h1>Prüfung</h1>
-
-    <div id="tabsContainer"></div>
-    <div id="taskContent">
-      <div id="taskIntro">
+<body id="app">
+   <div id="react-container" style="width:100%;height:100vh"></div>
+   <div id="task" style="display:none">
+      <div id="tabsContainer"></div>
+      <div id="taskContent">
+         <div id="gridContainer"></div>
+         <div id="blocklyLibContent"></div>
+      </div>
+   </div>
+   <div id="taskIntro" style="display:none">
         <!-- Alles im taskInto-Container wird für alle Aufgaben angezeigt. Texte für die Versionen kann über class ["easy", "medium", "hard"] definiert werden. -->
         <div class="easy">
           <p>
@@ -134,10 +113,8 @@
           <i>Beachte: Dein Programm muss mit allen Testfällen zurechtkommen.</i>
         </p>
       </div>
-      <div id="gridContainer"></div>
-      <div id="blocklyLibContent"></div>
-    </div>
-  </div><!-- task -->
+   <div id="solution" style="display:none"></div>
+   <div id="taskHints" style="display:none"></div>
 </body>
 
 </html>

@@ -1,0 +1,6 @@
+from printer import *
+
+if lies()<"Informatik":
+    schreibe("davor")
+else:
+    schreibe("danach")

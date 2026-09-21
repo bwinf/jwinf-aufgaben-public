@@ -1,0 +1,11 @@
+name: "01.07 Parameter"
+standalone: true
+public_listing: true
+
+languages:
+  - blockly
+  - python
+
+tags:
+  - Turtle
+  - Sequenz

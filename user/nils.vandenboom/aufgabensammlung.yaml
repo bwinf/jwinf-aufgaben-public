@@ -8,6 +8,6 @@ language: legacy_blockly
 
 tasks:
   "Solange bis Schatz":
-    "../../training/03_Wiederholungen-Vertiefung/01_SolangeBis-Schatz/": {stars: 4}
+    "../../training/04_Wiederholungen_mit_Bedingung/01_SolangeBis-Schatz/": {stars: 4}
   "Aufgabe Zwei":
-    "../../training/03_Wiederholungen-Vertiefung/03_Ornamente/": {stars: 4}
+    "../../training/09_Wiederholungen_mit_Zählvariable/01_Ornamente/": {stars: 4}

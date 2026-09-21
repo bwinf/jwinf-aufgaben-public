@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <title>Course</title>
+   <script>
+      // Die information 'de' bezieht sich darauf, welche Übersetzungen aus der Bibliothek geladen werden.
+      // In diesem Fall werden alle Blöcke, Blockhilfen etc. auf deutsch angezeigt.
+      window.stringsLanguage = 'de';
+      window.taskStrings = {};
+   </script>
+   <script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js"
+      id="import-modules"></script>
+   <script class="remove" type="text/javascript">
+      var modulesPath = '../../../../_common/modules/'
+      // Die Bibliotheken werden geladen. Dabei sind die ersten immer gleich.
+      // 'jwinf_css' spezifiziert das für die JwInf-Plattform verwendete Design z.B. den Fuchs und das grün
+      // Davor steht die Aufgaben spezifische Bibliothek. So wird für
+      // Roboteraufgaben: 'blockly-robot-1.1' 
+      // Textaufgaben: 'blockly-printer'
+      // Turtleaufgaben: 'blockly-turtle' geladen.
+      importModules([
+         'jquery-1.7.1', 'JSON-js', 'raphael-2.2.1', 'beaver-task-2.0',
+         'jschannel', 'raphaelFactory-1.0', 'delayFactory-1.0',
+         'simulationFactory-1.0', 'platform-pr', 'buttonsAndMessages',
+         'beav-1.0', 'installationAPI.01', 'miniPlatform', 'conceptDisplay-1.0',
+         'conceptViewer-1.0', 'conceptViewer_css-1.0', 'taskStyles-mobileFirst',
+         'blockly-robot-1.1',
+         'jwinf_css'
+      ]);
+      // Die Standardsprache wird definiert, in diesem Fall Blockly 
+      // Andere Sprachen (wenn vorhanden) können dann mit ?language= als Suffix in der URL geladen werden.
+      importLanguageModules('blockly');
+
+      // Hier werden ein paar Grundinformationen zu der Aufgabe festgehalten
+   </script>
+   <script class="remove" type="text/javascript">
+      var json = {
+         "id": "",
+         "language": "de",
+         "version": "de.01",
+         "authors": "Hannah Rauterberg",
+         "translators": [],
+         "license": "",
+         "taskPathPrefix": "",
+         "modulesPathPrefix": "",
+         "browserSupport": [],
+         "fullFeedback": true,
+         "minWidth": "auto"
+      };
+   </script>
+   <script type="text/javascript" src="task_legacy.js"></script>
+</head>
+
+<body onresize="task.displayedSubTask.updateScale()">
+   <!-- Der Aufgabenname sowie die verwendeten Bildresourcen -->
+   <div id="task">
+      <h1>Course</h1>
+      <img src="icon.png" style="display:none" />
+
+      <div id="tabsContainer"></div>
+      <div id="taskContent">
+         <div id="taskIntro">
+            Programmiere den Roboter:<br>
+            Der Roboter steht auf einem Gitter. Auf einem der Felder steht eine graue Tafel <img src='grey.png'
+               width="15" height=auto />.
+            <div class="easy">
+               <p>
+                  Rechts vom Roboter steht eine Zahl. Die Zahl sagt, wie viele Schritte die graue Tafel entfernt ist.
+               </p>
+               <p>
+                  Der Roboter soll auf die Tafel die <b>Anzahl der Züge</b> schreiben, die benötigt werden, um
+                  die Tafel zu erreichen. Ein Schritt nach rechts zählt als ein Zug. Der Startpunkt
+                  für die Zählung ist das Zahlenfeld <img src='orange.png' width="15" height=auto />.
+               </p>
+            </div>
+            <div class="medium">
+               <p>
+                  Rechts neben dem Roboter stehen zwei Zahlen auf zwei Feldern. Die linke Zahl beschreibt, wie viele
+                  <b>Schritte nach rechts</b> die graue Tafel entfernt ist. Die rechte Zahl beschreibt die
+                  <b>Schritte nach oben</b>.
+               </p>
+               <p>
+                  Der Roboter soll auf die Tafel die <b>Anzahl der Züge</b> schreiben, die mindestens benötigt werden,
+                  um
+                  die Tafel zu erreichen. Ein Schritt nach rechts oder oben zählt als ein
+                  Zug <button type="button"
+                     style="background-color: white; border-radius: 4px; border: 1px solid #4a90e2"
+                     onclick="quickAlgoInterface.toggleMoreDetails();"><img src="../../../Bilder/bulb.svg"
+                        style="max-width:18px; vertical-align: middle;"></button>. Der Startpunkt für die Zählung ist
+                  das rechte Zahlenfeld <img src='orange.png' width="15" height=auto />.
+               </p>
+               <div class="long">
+                  <hr>
+                  <h2>Weitere Hinweise:</h2>
+                  <img src="Beispiel_diagSchritt_medium.svg">
+               </div>
+            </div>
+            <div class="hard">
+               <p>
+                  Rechts neben dem Roboter stehen zwei Zahlen auf zwei Feldern. Die linke Zahl beschreibt, wie viele
+                  <b>Schritte nach rechts</b> die graue Tafel entfernt ist. Die rechte Zahl beschreibt die
+                  <b>Schritte nach oben</b>.
+               </p>
+               <p>
+                  Der Roboter soll auf die Tafel die <b>Anzahl der Züge</b> schreiben, die mindestens benötigt
+                  werden, um
+                  die Tafel zu erreichen.
+                  Ein Schritt nach rechts, oben oder <b>diagonal</b> (also ein Feld nach rechts und eines nach oben)
+                  zählt als ein
+                  Zug.
+                  <button type="button" style="background-color: white; border-radius: 4px; border: 1px solid #4a90e2"
+                     onclick="quickAlgoInterface.toggleMoreDetails();"><img src="../../../Bilder/bulb.svg"
+                        style="max-width:18px; vertical-align: middle;"></button>. Der Startpunkt für die Zählung ist
+                  das rechte Zahlenfeld <img src='orange.png' width="15" height=auto />.
+
+
+               </p>
+               <div class="long">
+                  <hr>
+                  <h2>Weitere Hinweise:</h2>
+                  <img src="Beispiel_diagSchritt.svg">
+               </div>
+            </div>
+            <div class="hard ">
+               <div class="long">
+                  <hr>
+                  <h2>Eingeschränkte Bausteine:</h2>
+                  <p> Um eine reine Sequenz an Anweisungen oder eine Lösung, die nur auf das Bestehen von Testfällen
+                     abzielt, zu vermeiden, stehen nur zwei <img src="../../../Bilder/Number_write.svg" />-Baustein zur
+                     Verfügung.
+                  </p>
+               </div>
+            </div>
+            <div class="hard">
+               <div class="long">
+                  <hr>
+                  <h2>Fallunterscheidung:</h2>
+                  <p>Du kannst der <img src="../../../Bilder/controls_if_Zahnrad.svg" /> über das blaue Zahnrad weitere Fälle
+                     hinzufügen (oder entfernen), indem du sie vom linken grauen Kasten zum rechten weißen Kasten
+                     hinzufügst (oder aus dem weißen Kasten heraus ziehst):<br>
+                     <img src="../../../Bilder/ifMutator.svg" />
+                  </p>
+               </div>
+            </div>
+         </div>
+         <div id="gridContainer"></div>
+         <div id="blocklyLibContent"></div>
+      </div>
+
+   </div><!-- task -->
+</body>
+
+</html>

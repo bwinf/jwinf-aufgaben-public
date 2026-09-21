@@ -1,0 +1,11 @@
+name: "05.05 Murmel Ablegen"
+standalone: true
+public_listing: true
+
+languages:
+  - blockly
+  - python
+
+tags:
+  - Roboter
+  - Bedingte Wiederholung

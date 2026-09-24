@@ -14,7 +14,7 @@ tasks:
   "Aufgabe 3":
     "./VSA_Plattformen_3-4S": {stars: 4}
   "Aufgabe 4":
-    "training/08_VariablenLogik-Einfuehrung/04_MusterMitVariablen": {stars: 4}
+    "../../training/08_VariablenLogik-Einfuehrung/04_MusterMitVariablen": {stars: 4}
   "Aufgabe 5":
     "./ZBA_Labyrinth_4S": {stars: 4}
   "Aufgabe 6":

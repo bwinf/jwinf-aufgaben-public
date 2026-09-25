@@ -1,0 +1,29 @@
+const pythonCode_02_2 = `from turtle import *
+
+def blume():
+    stiftRunter()
+    geheSchritte(5)
+    dreheRechtsGrad(90)
+
+    for i in range(8):
+        geheSchritte(1)
+        dreheLinksGrad(45)
+    
+    stiftHoch()
+    dreheRechtsGrad(90)
+    geheSchritte(5)
+    dreheRechtsGrad(180)
+    
+blume()
+dreheRechtsGrad(90)
+geheSchritte(4)
+dreheLinksGrad(90)
+blume()
+dreheRechtsGrad(90)
+geheSchritte(6)
+dreheLinksGrad(90)
+blume()
+dreheLinksGrad(90)
+geheSchritte(20)
+dreheRechtsGrad(90)
+blume()`;

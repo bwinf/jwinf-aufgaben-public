@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>23-DE-12_Keksstapel</title>
+  <script>
+    window.stringsLanguage = 'de';
+  </script>
+  <script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js" id="import-modules"></script>
+  <script class="remove" type="text/javascript">
+    var modulesPath = '../../../../_common/modules/'
+    importModules(['jquery-1.7.1', 'JSON-js', 'raphael-2.2.1',
+      'beaver-task-2.0', 'jschannel', 'raphaelFactory-1.0',
+      'delayFactory-1.0', 'simulationFactory-1.0', 'platform-pr',
+      'buttonsAndMessages', 'beav-1.0', 'installationAPI.01',
+      'miniPlatform', 'conceptViewer-1.0',
+      'conceptViewer_css-1.0', 'taskStyles-mobileFirst',
+      'blockly-robot-1.1', 'jwinf_css'
+    ]);
+    // set Blockly as default language when none is specified through ?language=
+    importLanguageModules('blockly');
+  </script>
+  <script class="remove" type="text/javascript">
+    var json = {
+      "id": "",
+      "language": "de",
+      "version": "21-DE-18",
+      "authors": "Michael Pesch",
+      "translators": [],
+      "license": "",
+      "taskPathPrefix": "",
+      "modulesPathPrefix": "",
+      "browserSupport": [],
+      "fullFeedback": true,
+      "minWidth": "auto"
+    };
+  </script>
+  <script type="text/javascript" src="task_legacy.js"></script>
+</head>
+
+<body onresize="task.displayedSubTask.updateScale()">
+  <div id="task">
+    <h1>23-DE-12_Keksstapel</h1>
+    <img src="cell.png" style="display:none" />
+    <img src="round_dotted.png" style="display:none" />
+    <img src="round_hole.png" style="display:none" />
+    <img src="square_dotted.png" style="display:none" />
+    <img src="square_hole.png" style="display:none" />
+    <img src="icon.png" style="display:none" />
+
+    <div id="tabsContainer"></div>
+    <div id="taskContent" style="text-align:left;position:relative">
+      <div id="taskIntro">
+        Programmiere den Roboter:
+        <div>
+          <p>
+            Der Roboter kann mehrere Kekse nach dem <b>LIFO-Prinzip</b> aufheben und wieder ablegen. LIFO steht für "Last In First Out". Für den Roboter bedeutet das: <b>Den letzten Keks den er aufgehoben hat, legt er als ersten Keks wieder ab.</b>
+          </p>
+        </div>
+          
+        <div class="easy">
+          <p>Der Roboter soll jeden Keks (<img src="card_roundDotted.png", width="25px">, <img src="card_triangleDotted.png", width="25px">, <img src="card_squareDotted.png", width="25px">) im passenden Behälter (<img src="round_empty.png", width="25px">, <img src="triangle_empty.png", width="25px">, <img src="square_empty.png", width="25px">) ablegen. 
+          </p>
+        <p>
+          <b>Hinweis: </b>Der Roboter kann nicht wieder nach links gehen. Der Roboter kann mehrere Kekse auf einmal tragen.
+        </p>
+        <!-- <p>
+          <i>Beachte: Dein Programm muss mit allen Testfällen zurechtkommen.</i>
+        </p> -->
+        </div>
+        <div class="medium">
+          <p>Der Roboter soll jeden Keks (<img src="card_roundDotted.png", width="25px">, <img src="card_triangleDotted.png", width="25px">, <img src="card_squareDotted.png", width="25px">) in einem passenden und noch leeren Behälter (<img src="round_empty.png", width="25px">, <img src="triangle_empty.png", width="25px">, <img src="square_empty.png", width="25px">) ablegen. 
+          </p>
+          <p><b>Hinweis: </b>Der Roboter kann mehrere Kekse auf einmal tragen.</p>
+        <!-- <p>
+          <i>Beachte: Dein Programm muss mit allen Testfällen zurechtkommen.</i>
+        </p> -->
+        </div>
+        <div class="hard">
+          <p>
+            Der Roboter soll jeden Keks (<img src="card_roundDotted.png", width="25px">, <img src="card_triangleDotted.png", width="25px">, <img src="card_squareDotted.png", width="25px">) in einem passenden und noch leeren Behälter (<img src="round_empty.png", width="25px">, <img src="triangle_empty.png", width="25px">, <img src="square_empty.png", width="25px">) ablegen.
+          </p>
+          <p><b>Hinweis: </b>Der Roboter kann mehrere Kekse auf einmal tragen.</p>
+        </div>
+
+      </div>
+      <div id="gridContainer"></div>
+      <div id="blocklyLibContent"></div>
+    </div>
+
+  </div><!-- task -->
+</body>
+
+</html>

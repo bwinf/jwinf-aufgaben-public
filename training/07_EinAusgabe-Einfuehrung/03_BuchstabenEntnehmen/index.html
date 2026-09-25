@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script>window.stringsLanguage='de';window.taskStrings={};</script>
+<script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js" id="import-modules"></script>
+<script class="remove" type="text/javascript">
+var modulesPath = '../../../../_common/modules/';
+importModules(['jquery-1.7.1','JSON-js','raphael-2.2.1','codecast-7.7','jschannel','raphaelFactory-1.0','delayFactory-1.0','simulationFactory-1.0','platform-pr','beav-1.0','installationAPI.01','miniPlatform','taskStyles-mobileFirst','jwinf-codecast_css','jwinf-codecast','conceptDisplay-1.0','conceptViewer-2.0','conceptViewer_css-2.0']);
+</script>
+<script class="remove" type="text/javascript">
+var json = {
+      "id": "text_nimm",
+      "language": "de",
+      "version": "de.01",
+      "authors": "Katharina Schuster",
+      "translators": [],
+      "license": "",
+      "taskPathPrefix": "",
+      "modulesPathPrefix": "",
+      "browserSupport": [],
+      "acceptedAnswers": [""],
+      "fullFeedback": true,
+      "minWidth": "auto"
+    };
+</script>
+<script type="text/javascript" src="printer_task.js"></script>
+</head>
+<body id="app">
+<div id="react-container" style="width:100%;height:100vh"></div>
+
+<div id="task" style="display:none"><div id="tabsContainer"></div><div id="taskContent"><div id="gridContainer"></div><div id="blocklyLibContent"></div></div></div>
+<div id="taskIntro" style="display:none">
+        Schreibe ein Programm:<br>
+        <div class="easy">
+          <p>
+            Das Programm soll eine Textzeile einlesen und den 1. Buchstaben ausgeben.
+          </p>
+          <p data-lang="python">
+            Du kannst in python auf ein Zeichen einer Zeichenkette zugreifen, indem du eckige Klammern [&nbsp;] benutzt.
+            Wir
+            beginnen dabei immer bei <b>0</b> mit dem Zählen. Um auf das erste Zeichen zuzugreifen schreiben wir also:
+            <code>text[0]</code>.
+          </p>
+          <div class="long" data-lang="blockly">
+            <hr>
+            <h2>Weitere Hinweise:</h2>
+            Mit dem Baustein <img src="../../../Bilder/text_charAt.svg"> kann aus einem Text ein Buchstabe an folgenden
+            Positionen
+            entnommen werden:
+            <ul>
+              <li><code>nimm</code>: der Buchstabe wird an einer bestimmten Position entnommen.</li>
+              <li><code>nimm von hinten</code>: der Buchstabe wird an einer bestimmten Position von hinten gezählt
+                entnommen.</li>
+              <li><code>nimm ersten</code>: der erste Buchstabe wird entnommen.</li>
+              <li><code>nimm letzten</code>: der letzten Buchstabe wird entnommen.</li>
+              <li><code>nimm zufälligen</code>: ein zufälliger Buchstabe wird entnommen.</li>
+            </ul>
+            <p>
+              Über den kleinen Pfeil, können dir verschiedenen Optionen ausgewählt werden.
+            </p>
+            <p><b>Hinweis:</b> Die Variable <code>Text</code> im Baustein <img src="../../../Bilder/text_charAt.svg">
+              kann auch durch <img src="../../../Bilder/read.svg"> ersetzt werden.</p>
+          </div>
+        </div>
+        <div class="medium">
+          <p>
+            Das Programm soll eine Textzeile einlesen und das 4. Zeichen von hinten wieder ausgeben.
+          </p>
+          <p data-lang="python">
+            In python können wir nicht nur vorne anfangen zu zählen, sondern auch hinten. Wir
+            beginnen dabei immer bei <b>-1</b> mit dem Zählen. Um auf das letzte Zeichen zuzugreifen schreiben wir also:
+            <code>text[-1]</code>.
+          </p>
+        </div>
+        <div class="hard">
+          <p>
+            Das Programm soll die Wörter einlesen und abwechselnd den ersten und letzten Buchstaben ausgeben.
+          </p>
+          <p>
+            <b>Hinweis: </b>Es steht immer eine gerade Anzahl Wörter in der Eingabe.
+          </p>
+        </div>
+        <div>
+        </div>
+      </div>
+<div id="solution" style="display:none"></div>
+<div id="taskHints" style="display:none"></div>
+</body>
+</html>

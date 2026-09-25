@@ -1,0 +1,9 @@
+const pythonCode_06_2 = `from robot import *
+
+for i in range(24):
+    vorwaerts()
+    if vorHindernis():
+        dreheLinks()
+    if vorHindernis():
+        dreheRechts()
+        dreheRechts()`;

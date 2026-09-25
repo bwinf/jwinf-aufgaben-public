@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 235.14999 116.60002"
+   version="1.1"
+   class="blocklySvg"
+   width="235.14999"
+   height="116.60002"
+   id="svg61"
+   sodipodi:docname="svgexport-6.svg"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview61"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.2548701"
+     inkscape:cx="114.75291"
+     inkscape:cy="86.463131"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg61" />
+  <defs
+     id="defs2">
+    <filter
+       id="blocklyEmbossFilter8453496944292983">
+      <feGaussianBlur
+         in="SourceAlpha"
+         stdDeviation="1"
+         result="blur"
+         id="feGaussianBlur1" />
+      <feSpecularLighting
+         in="blur"
+         surfaceScale="1"
+         specularConstant="0.5"
+         specularExponent="10"
+         lighting-color="#ffffff"
+         result="specOut"
+         id="feSpecularLighting1">
+        <fePointLight
+           x="-5000"
+           y="-10000"
+           z="20000"
+           id="fePointLight1" />
+      </feSpecularLighting>
+      <feComposite
+         in="specOut"
+         in2="SourceAlpha"
+         operator="in"
+         result="specOut"
+         id="feComposite1" />
+      <feComposite
+         in="SourceGraphic"
+         in2="specOut"
+         operator="arithmetic"
+         k1="0"
+         k2="1"
+         k3="1"
+         k4="0"
+         id="feComposite2" />
+    </filter>
+    <pattern
+       id="blocklyDisabledPattern8453496944292983"
+       patternUnits="userSpaceOnUse"
+       width="10"
+       height="10">
+      <rect
+         width="10"
+         height="10"
+         fill="#aaa"
+         id="rect2" />
+      <path
+         d="M 0 0 L 10 10 M 10 0 L 0 10"
+         stroke="#cc0"
+         id="path2" />
+    </pattern>
+    <pattern
+       id="blocklyGridPattern8453496944292983"
+       patternUnits="userSpaceOnUse"
+       width="100"
+       height="100"
+       x="207.40833263397212"
+       y="7.000000000000057" />
+    <pattern
+       id="pattern2"
+       patternUnits="userSpaceOnUse"
+       width="100"
+       height="100"
+       x="207.40833263397212"
+       y="7.000000000000057" />
+  </defs>
+  <g
+     class="blocklyWorkspace"
+     id="g61"
+     transform="translate(-345.60001,-221.59999)">
+    <g
+       class="blocklyBlockCanvas"
+       transform="matrix(1.1,0,0,1.1,207.40833,7)"
+       id="g55">
+      <g
+         class="blocklyDraggable"
+         transform="translate(125.62879,195.09092)"
+         id="g54">
+        <path
+           class="blocklyPathDark"
+           transform="translate(1,1)"
+           fill="#678f17"
+           d="M 0,8 A 8,8 0 0 1 8,0 h 7 l 6,4 h 3 l 6,-4 h 64 v 5 c 0,10 -8,-8 -8,7.5 0,15.5 8,-2.5 8,7.5 v 4 0 l -6,4 h -3 l -6,-4 h -7 a 8,8 0 0 0 -8,8 v 13 a 8,8 0 0 0 8,8 h 22 v 10 0 l -6,4 h -3 l -6,-4 h -7 a 8,8 0 0 0 -8,8 v 12 a 8,8 0 0 0 8,8 h 22 v 10 H 29.5 l -6,4 h -3 l -6,-4 H 8 A 8,8 0 0 1 0,93 Z"
+           id="path41" />
+        <path
+           class="blocklyPath"
+           fill="#81b31d"
+           d="M 0,8 A 8,8 0 0 1 8,0 h 7 l 6,4 h 3 l 6,-4 h 64 v 5 c 0,10 -8,-8 -8,7.5 0,15.5 8,-2.5 8,7.5 v 4 0 l -6,4 h -3 l -6,-4 h -7 a 8,8 0 0 0 -8,8 v 13 a 8,8 0 0 0 8,8 h 22 v 10 0 l -6,4 h -3 l -6,-4 h -7 a 8,8 0 0 0 -8,8 v 12 a 8,8 0 0 0 8,8 h 22 v 10 H 29.5 l -6,4 h -3 l -6,-4 H 8 A 8,8 0 0 1 0,93 Z"
+           id="path42" />
+        <path
+           class="blocklyPathLight"
+           stroke="#a7ca61"
+           d="M 0.5,7.5 A 7.5,7.5 0 0 1 8,0.5 h 7 l 6,4 h 3 l 6,-4 h 63.5 m 0,0 M 89,19.3 92.68,17.2 m 0.82,7.3 M 65.989592,51.010408 A 8.5,8.5 0 0 0 72,53.5 h 21.5 m 0,10 M 65.989592,89.010408 A 8.5,8.5 0 0 0 72,91.5 H 93.5 M 2.6966991,98.303301 A 7.5,7.5 0 0 1 0.5,93 V 8"
+           fill="none"
+           id="path43" />
+        <text
+           class="blocklyText"
+           y="12.5"
+           transform="translate(10,5)"
+           fill="#ffffff"
+           id="text43"
+		   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.5455px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1">falls</text>
+        <text
+           class="blocklyText"
+           y="12.5"
+           transform="translate(10,29)"
+           fill="#ffffff"
+           id="text44"
+		   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.5455px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1">mache</text>
+        <text
+           class="blocklyText"
+           y="12.5"
+           transform="translate(10,68)"
+           fill="#ffffff"
+           id="text45"
+		   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.5455px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1">sonst</text>
+        <g
+           class="blocklyDraggable"
+           transform="translate(95)"
+           id="g47">
+          <path
+             class="blocklyPathDark"
+             transform="translate(1,1)"
+             fill="#226384"
+             d="M 0,0 H 117.77273 V 24 H 0 V 20 C 0,10 -8,28 -8,12.5 -8,-3 0,15 0,5 Z"
+             id="path45" />
+          <path
+             class="blocklyPath"
+             fill="#2b7ca5"
+             d="M 0,0 H 117.77273 V 24 H 0 V 20 C 0,10 -8,28 -8,12.5 -8,-3 0,15 0,5 Z"
+             id="path46" />
+          <path
+             class="blocklyPathLight"
+             stroke="#6ba3c0"
+             d="m 0.5,0.5 h 116.77273 m 0,0 M 0.5,23.5 v -5 M -6.86,18 q -1.52,-5.5 0,-11 M 0.5,8 V 0.5 H 1"
+             fill="none"
+             id="path47" />
+          <text
+             class="blocklyText"
+             y="12.5"
+             transform="translate(10,5)"
+             fill="#ffffff"
+             id="text47"
+			 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.5455px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1">auf Markierung</text>
+        </g>
+        <g
+           class="blocklyDraggable"
+           transform="translate(65,25)"
+           id="g50">
+          <path
+             class="blocklyPathDark"
+             transform="translate(1,1)"
+             fill="#5b3084"
+             d="M 0,8 A 8,8 0 0 1 8,0 h 7 l 6,4 h 3 L 30,0 H 86 V 24 H 29.5 l -6,4 h -3 l -6,-4 H 8 A 8,8 0 0 1 0,16 Z"
+             id="path48" />
+          <path
+             class="blocklyPath"
+             fill="#723ca5"
+             d="M 0,8 A 8,8 0 0 1 8,0 h 7 l 6,4 h 3 L 30,0 H 86 V 24 H 29.5 l -6,4 h -3 l -6,-4 H 8 A 8,8 0 0 1 0,16 Z"
+             id="path49" />
+          <path
+             class="blocklyPathLight"
+             stroke="#9c77c0"
+             d="M 0.5,7.5 A 7.5,7.5 0 0 1 8,0.5 h 7 l 6,4 h 3 l 6,-4 h 55.5 m 0,0 M 2.6966991,21.303301 A 7.5,7.5 0 0 1 0.5,16 V 8"
+             fill="none"
+             id="path50" />
+          <text
+             class="blocklyText"
+             y="12.5"
+             transform="translate(10,5)"
+             fill="#ffffff"
+             id="text50"
+			 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.5455px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1">färbe Feld</text>
+        </g>
+        <g
+           class="blocklyDraggable"
+           transform="translate(65,64)"
+           id="g53">
+          <path
+             class="blocklyPathDark"
+             transform="translate(1,1)"
+             fill="#5b3084"
+             d="M 0,8 A 8,8 0 0 1 8,0 h 7 l 6,4 h 3 l 6,-4 h 95.15151 V 24 H 29.5 l -6,4 h -3 l -6,-4 H 8 A 8,8 0 0 1 0,16 Z"
+             id="path51" />
+          <path
+             class="blocklyPath"
+             fill="#723ca5"
+             d="M 0,8 A 8,8 0 0 1 8,0 h 7 l 6,4 h 3 l 6,-4 h 95.15151 V 24 H 29.5 l -6,4 h -3 l -6,-4 H 8 A 8,8 0 0 1 0,16 Z"
+             id="path52" />
+          <path
+             class="blocklyPathLight"
+             stroke="#9c77c0"
+             d="M 0.5,7.5 A 7.5,7.5 0 0 1 8,0.5 h 7 l 6,4 h 3 l 6,-4 h 94.65151 m 0,0 M 2.6966991,21.303301 A 7.5,7.5 0 0 1 0.5,16 V 8"
+             fill="none"
+             id="path53" />
+          <text
+             class="blocklyText"
+             y="12.5"
+             transform="translate(10,5)"
+             fill="#ffffff"
+             id="text53"
+			 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.5455px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1">gehe nach oben</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

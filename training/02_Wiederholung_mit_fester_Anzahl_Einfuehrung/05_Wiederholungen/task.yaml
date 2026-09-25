@@ -1,0 +1,11 @@
+name: "02.05 Wiederholungen"
+standalone: true
+public_listing: true
+
+languages:
+  - blockly
+  - python
+
+tags:
+  - Turtle
+  - Wiederhole mit fester Anzahl

@@ -1,7 +1,7 @@
 category: public
 
-name: "Aufgabensammlung 10"
-secret: "CDRS10"
+name: "Beispielaufgabensammlung"
+secret: "beispiel"
 duration_minutes: 0
 
 language: blockly

@@ -1,0 +1,12 @@
+name: "06.06 Edelsteine und Hindernisse"
+standalone: true
+public_listing: true
+
+languages:
+  - blockly
+  - python
+
+tags:
+  - Roboter
+  - Verzweigungen
+  - Wiederhole mit fester Anzahl

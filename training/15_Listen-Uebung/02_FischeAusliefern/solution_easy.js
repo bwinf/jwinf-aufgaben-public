@@ -1,0 +1,12 @@
+const pythonCode_02_1 = `from robot import *
+
+for i in range(8):
+    for j in range(11):
+        rechts()
+        if aufFisch():
+            fangeFische(1)
+        if aufInsel():
+            legeFischeAb(1)
+    for j in range(11):
+        links()
+    unten()`;

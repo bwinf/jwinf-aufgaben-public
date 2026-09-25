@@ -1,0 +1,7 @@
+from robot import *
+
+vorwaerts()
+vorwaerts()
+dreheRechts()
+vorwaerts()
+hebeObjektAuf()

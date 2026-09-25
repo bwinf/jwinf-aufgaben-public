@@ -12,20 +12,20 @@ tasks:
   "Aufgabe 2":
     "../../training/01_Grundbausteine-Einfuehrung/03_Befehlsfolgen-Murmeln": {stars: 4}
   "Aufgabe 3":
-    "../../training/04_Wiederholungen-Uebung/02_MusterMalen": {stars: 4}
+    "../../training/05_Wiederholungen-Uebung/02_MusterMalen": {stars: 4}
   "Aufgabe 4":
-    "../../training/05_BedingteAnweisungen-Uebung/02_FindeDasZiel": {stars: 4}
+    "../../training/06_BedingteAnweisungen-Uebung/02_FindeDasZiel": {stars: 4}
   "Aufgabe 5":
-    "../../training/06_EinAusgabe-Einfuehrung/04_TextteileEntnehmen": {stars: 4}
+    "../../training/07_EinAusgabe-Einfuehrung/04_TextteileEntnehmen": {stars: 4}
   "Aufgabe 6":
-    "../../training/04_Wiederholungen-Uebung/07_Flaggen": {stars: 4}
+    "../../training/09_Wiederholungen_mit_Zählvariable/03_Flaggen": {stars: 4}
   "Aufgabe 7":
-    "../../training/04_Wiederholungen-Uebung/08_Schnecke": {stars: 4}
+    "../../training/09_Wiederholungen_mit_Zählvariable/04_Schnecke": {stars: 4}
   "Aufgabe 8":
-    "../../training/04_Wiederholungen-Uebung/05_MurmelAblegen": {stars: 4}
+    "../../training/05_Wiederholungen-Uebung/05_MurmelAblegen": {stars: 4}
   "Aufgabe 9":
-    "../../training/06_EinAusgabe-Einfuehrung/03_BuchstabenEntnehmen": {stars: 4}
+    "../../training/07_EinAusgabe-Einfuehrung/03_BuchstabenEntnehmen": {stars: 4}
   "Aufgabe 10":
-    "../../training/05_BedingteAnweisungen-Uebung/04_BeheizeDasSchloss": {stars: 4}
+    "../../training/06_BedingteAnweisungen-Uebung/04_BeheizeDasSchloss": {stars: 4}
 
 

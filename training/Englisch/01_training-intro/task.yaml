@@ -1,0 +1,10 @@
+name: "Bausteine zusammensetzen"
+standalone: true
+public_listing: true
+
+languages:
+  - blockly
+  - python
+
+tags:
+  - Einleitung

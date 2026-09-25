@@ -1,0 +1,13 @@
+name: "10.03 Rucksack"
+standalone: true
+public_listing: true
+
+languages:
+  - blockly
+  - python
+  
+tags:
+  - Text
+  - Variablen
+  - Verzweigungen
+  - Bedingte Wiederholung

@@ -1,0 +1,13 @@
+name: "Schwere Aufgaben - Palindrome"
+standalone: true
+public_listing: true
+
+languages:
+  - blockly
+
+tags:
+  - Text
+  - for-Schleife
+  - Bedingte Wiederholung
+  - Verzweigungen
+  - Variablen

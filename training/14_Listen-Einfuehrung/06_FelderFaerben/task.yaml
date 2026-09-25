@@ -1,0 +1,14 @@
+name: "14.06 Felder färben"
+standalone: true
+public_listing: true
+
+languages:
+  - blockly
+  - python
+
+tags:
+  - Roboter
+  - Liste
+  - Variablen
+  - Verzweigungen
+  - Wiederhole mit fester Anzahl

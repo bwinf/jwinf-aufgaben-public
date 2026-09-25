@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script>window.stringsLanguage='de';window.taskStrings={};</script>
+<script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js" id="import-modules"></script>
+<script class="remove" type="text/javascript">
+var modulesPath = '../../../../_common/modules/';
+importModules(['jquery-1.7.1','JSON-js','raphael-2.2.1','codecast-7.7','jschannel','raphaelFactory-1.0','delayFactory-1.0','simulationFactory-1.0','platform-pr','beav-1.0','installationAPI.01','miniPlatform','taskStyles-mobileFirst','jwinf-codecast_css','jwinf-codecast','conceptDisplay-1.0','conceptViewer-1.0','conceptViewer_css-1.0','blockly-robot-1.1','createAlgoreaInstructions-1.0','algoreaInstructionsStrings']);
+</script>
+<script class="remove" type="text/javascript">
+var json = {
+         "id": "",
+         "language": "de",
+         "version": "de.01",
+         "authors": "Katharina Schuster, Lenka Senajova",
+         "translators": [],
+         "license": "",
+         "taskPathPrefix": "",
+         "modulesPathPrefix": "",
+         "browserSupport": [],
+         "fullFeedback": true,
+         "minWidth": "auto"
+      };
+</script>
+<script type="text/javascript" src="task.js"></script>
+</head>
+<body id="app">
+<div id="react-container" style="width:100%;height:100vh"></div>
+<img src="icon.png" style="display:none" />
+<div id="task" style="display:none"><div id="tabsContainer"></div><div id="taskContent"><div id="gridContainer"></div><div id="blocklyLibContent"></div></div></div>
+<div id="taskIntro" style="display:none">
+            Programmiere den Roboter:<br>
+            <!-- Einleitungstext für easy -->
+            <p class="easy medium hard">
+               Der Roboter soll den Weltraum aufräumen. Dafür soll er allen Weltraumschrott <img src="objet1.png" style='vertical-align: bottom; height: 30px;'>, <img src="objet2.png" style='vertical-align: bottom; height: 30px;'> und <img src="solar_panel.png" style='vertical-align: bottom; height: 30px;'> aufheben.
+            </p>
+            <!-- Abschließender Hinweis für hard -->
+            <p class="easy">
+               <b>Hinweis: </b>Der Roboter startet immer links. Das Gitter ist immer 10 Felder breit.
+            </p>
+            <p class="medium">
+               <b>Hinweis:</b> Die letzte Zeile ist leer. Das Gitter ist immer 10 x 10 Felder groß. Der Roboter startet immer links oben.</p>
+            </p>
+            <p class="hard">
+               <b>Hinweis:</b> Die letzte Zeile ist leer. Der Roboter darf nicht gegen Asteroiden <img src="asteroide.png" style='vertical-align: bottom; height: 30px;'> fliegen. Der Schrott liegt in der Zeile immer vor einer Reihe Asteroiden. Das Feld hat 10 Zeilen und in der linken Spalte sind durchgängig Asteroiden. Der Roboter startet immer oben links.</p>
+            <p>
+               <i>Beachte: Dein Programm muss mit allen Testfällen zurechtkommen.</i>
+            </p>
+         </div>
+<div id="solution" style="display:none"></div>
+<div id="taskHints" style="display:none"></div>
+</body>
+</html>

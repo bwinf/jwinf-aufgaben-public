@@ -1,0 +1,15 @@
+name: "14.03 Liste durchlaufen"
+standalone: true
+public_listing: true
+
+languages:
+  - blockly
+  - python
+
+tags:
+  - Text
+  - Liste
+  - Bedingte Wiederholung
+  - forEach-Schleife
+  - for-Schleife
+  - Variablen

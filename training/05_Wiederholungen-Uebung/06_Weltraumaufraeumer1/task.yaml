@@ -1,0 +1,11 @@
+name: "05.06 Weltraumaufräumer 1"
+standalone: true
+public_listing: true
+
+languages:
+  - blockly
+  - python
+
+tags:
+  - Roboter
+  - Wiederhole mit fester Anzahl

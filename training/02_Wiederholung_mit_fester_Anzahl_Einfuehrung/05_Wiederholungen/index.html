@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script>window.stringsLanguage='de';window.taskStrings={};</script>
+<script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js" id="import-modules"></script>
+<script class="remove" type="text/javascript">
+var modulesPath = '../../../../_common/modules/';
+importModules(['jquery-1.7.1','JSON-js','raphael-2.2.1','codecast-7.7','jschannel','raphaelFactory-1.0','delayFactory-1.0','simulationFactory-1.0','platform-pr','beav-1.0','installationAPI.01','miniPlatform','taskStyles-mobileFirst','jwinf-codecast_css','jwinf-codecast','conceptDisplay-1.0','conceptViewer-2.0','conceptViewer_css-2.0','blockly-turtle']);
+</script>
+<script class="remove" type="text/javascript">
+var json = {
+         "id": "test-turtle-square",
+         "language": "de",
+         "version": "de.01",
+         "authors": "Robert Czechowski",
+         "translators": [],
+         "license": "",
+         "taskPathPrefix": "",
+         "modulesPathPrefix": "",
+         "browserSupport": [],
+         "acceptedAnswers": [""],
+         "fullFeedback": true,
+         "minWidth": "auto"
+      };
+</script>
+<script type="text/javascript" src="turtle_task.js"></script>
+</head>
+<body id="app">
+<div id="react-container" style="width:100%;height:100vh"></div>
+
+<div id="task" style="display:none"><div id="tabsContainer"></div><div id="taskContent"><div id="gridContainer"></div><div id="blocklyLibContent"></div></div></div>
+<div id="taskIntro" style="display:none">
+            Programmiere die Schildkröte:
+            <p>
+               Die Schildkröte soll den hellgrauen Strich zeichnen.
+            </p>
+             <p data-lang="python">
+               Bitte schau dir vorab die <b>Erläuterungen</b> unter "weitere Hinweise" an.
+             </p>
+            <div class ="long" data-lang="python">
+               <p>
+                  Zur Erinnerung:
+                 Benutze dafür die Wiederholungsanweisung <code>for</code>, die</span>
+                 dir erlaubt, eine oder mehrere Anweisungen mehrfach hintereinander auszuführen.
+               </p>
+               <p>Statt zum Beispiel fünfmal den gleichen Befehl zu schreiben:</p>
+               <pre>
+   gehe()
+   gehe()
+   gehe()
+   gehe()
+   gehe()
+   </pre>
+               <p>benutze die Wiederholungsanweisung <code>for</code>:</p>
+               <pre>
+   for loop in range(5):
+      gehe()
+   </pre>
+               <p>
+                 Die Zahl in der Klammer gibt die Anzahl der Wiederholungen an. Alle Befehle, die in der
+                 Wiederholungsanweisung ausgeführt
+                 werden sollen, müssen eingerückt werden. Dies kannst du mit einem oder mehreren Leerzeichen oder einem
+                 oder mehreren
+                 Tabulatoren tun. Wichtig ist hierbei, dass du immer die gleiche Einrücktiefe verwendest und den Doppelpunkt
+                 nicht vergisst.
+                 Die Einrückungen sind wichtig, da sie anzeigen welche Befehle zu welchem Block gehören.
+               </p>
+             </div>
+         </div>
+<div id="solution" style="display:none"></div>
+<div id="taskHints" style="display:none"></div>
+</body>
+</html>

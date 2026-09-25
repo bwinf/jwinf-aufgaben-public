@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script>window.stringsLanguage='de';window.taskStrings={};</script>
+<script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js" id="import-modules"></script>
+<script class="remove" type="text/javascript">
+var modulesPath = '../../../../_common/modules/';
+importModules(['jquery-1.7.1','JSON-js','raphael-2.2.1','codecast-7.7','jschannel','raphaelFactory-1.0','delayFactory-1.0','simulationFactory-1.0','platform-pr','beav-1.0','installationAPI.01','miniPlatform','taskStyles-mobileFirst','jwinf-codecast_css','jwinf-codecast','conceptDisplay-1.0','conceptViewer-2.0','conceptViewer_css-2.0','blockly-robot-1.1','createAlgoreaInstructions-1.0','algoreaInstructionsStrings']);
+</script>
+<script class="remove" type="text/javascript">
+var json = {
+      "id": "http://castor-informatique.fr/questions/algorea_2017_2_a/2017-FR-07-platforms-marbles",
+      "language": "de",
+      "version": "de.01",
+      "authors": "Mathias Hiron",
+      "translators": ["Robert Czechowski", "Wolfgang Pohl"],
+      "license": "",
+      "taskPathPrefix": "",
+      "modulesPathPrefix": "",
+      "browserSupport": [],
+      "fullFeedback": true,
+      "minWidth": "auto"
+    };
+</script>
+<script type="text/javascript" src="task.js"></script>
+</head>
+<body id="app">
+<div id="react-container" style="width:100%;height:100vh"></div>
+<img src="icon.png" style="display:none" />
+<div id="task" style="display:none"><div id="tabsContainer"></div><div id="taskContent"><div id="gridContainer"></div><div id="blocklyLibContent"></div></div></div>
+<div id="taskIntro" style="display:none">
+        <p>Programmiere den Roboter:</p>
+        <div class="easy medium">
+          <p>Der Roboter soll das Holz <img src="../../../Bilder/Roboter-Grafiken/firewood.png" style="vertical-align: middle; height: 40px;"> in den Kamin <img src="../../../Bilder/Roboter-Grafiken/hearth.png" style="vertical-align: middle; height: 40px;"> legen.</p>
+          
+          <p><b>Hinweis:</b> Beim Verlassen einer Plattform fährt der Roboter automatisch auf eine Plattform darunter. Der Roboter geht kaputt, wenn er mehr als drei Felder nach unten springt.</p>
+        </div>
+        <div class="hard">
+          <p>Der Roboter soll in jeden Kamin <img src="../../../Bilder/Roboter-Grafiken/hearth.png" style="vertical-align: middle; height: 40px;"> ein Holz <img src="../../../Bilder/Roboter-Grafiken/firewood.png" style="vertical-align: middle; height: 40px;"> legen.</p>
+          <p><b>Hinweis:</b> Beim Verlassen einer Plattform fährt der Roboter automatisch auf eine Plattform darunter. Der Roboter geht kaputt, wenn er mehr als drei Felder nach unten springt.</p>
+          <p><b>Tipp:</b> Wenn dein Roboter ganz am Ende gegen die Wand läuft, versuche eine geschicktere Abfolge der Befehle in der Wiederholung zu finden.</p>
+        </div>
+      </div>
+<div id="solution" style="display:none"></div>
+<div id="taskHints" style="display:none"></div>
+</body>
+</html>

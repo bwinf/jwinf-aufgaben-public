@@ -2,6 +2,7 @@ function initTask(subTask) {
    var cellSide = 60;
 
    subTask.gridInfos = {
+      context: "robot",
       conceptViewer: false,
       contextType: "marbles",
       blocklyColourTheme: "bwinf",
@@ -71,8 +72,22 @@ function initTask(subTask) {
    };
 
    initBlocklySubTask(subTask);
-   displayHelper.thresholdEasy = 5000;
-   displayHelper.thresholdMedium = 10000;
 }
 
-initWrapper(initTask, ["easy", "medium", "hard"], null, true);
+window.initBlocklySubTask = function () {};
+window.taskData = window.taskData || {};
+window.taskData.waitInit = function () { initTask(window.taskData); };
+window.taskData.codecastParameters = window.taskData.codecastParameters || {
+    language: "de-DE",
+    platform: "blockly",
+    canChangePlatform: false,
+    showStepper: true,
+    showStack: false,
+    showViews: true,
+    showIO: true,
+    controls: { reload: false },
+    hideSettings: true,
+    jwinfMenu: { copyPaste: true, undoRedo: true, svgExport: true }
+};
+
+

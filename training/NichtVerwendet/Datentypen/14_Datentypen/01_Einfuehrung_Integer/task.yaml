@@ -1,0 +1,9 @@
+name: "14.01 Einführung Integer"
+standalone: true
+public_listing: true
+
+languages:
+  - blockly
+  - python
+
+tags:

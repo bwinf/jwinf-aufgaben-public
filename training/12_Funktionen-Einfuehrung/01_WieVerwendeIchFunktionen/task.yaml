@@ -1,0 +1,12 @@
+name: "12.01 Wie verwende ich Funktionen"
+standalone: true
+public_listing: true
+
+languages:
+  - blockly
+  - python
+
+tags:
+  - Roboter
+  - Wiederhole mit fester Anzahl
+  - Funktionen

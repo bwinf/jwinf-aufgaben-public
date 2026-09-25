@@ -1,0 +1,6 @@
+const pythonCode_03_2 = `from printer import *
+
+if len(lies())<8:
+    schreibe("Zu kurz")
+else:
+    schreibe("Sehr gut")`;

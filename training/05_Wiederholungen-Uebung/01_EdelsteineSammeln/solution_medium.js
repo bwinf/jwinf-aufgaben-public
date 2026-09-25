@@ -1,0 +1,13 @@
+const pythonCode_01_2 = `from robot import *
+
+for i in range(6):
+    vorwaerts()
+dreheLinks()
+for i in range(8):
+    vorwaerts()
+dreheLinks()
+for i in range(3):
+    vorwaerts()
+dreheLinks()
+for i in range(4):
+    vorwaerts()`;

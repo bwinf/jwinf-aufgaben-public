@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script>window.stringsLanguage='de';window.taskStrings={};</script>
+<script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js" id="import-modules"></script>
+<script class="remove" type="text/javascript">
+var modulesPath = '../../../../_common/modules/';
+importModules(['jquery-1.7.1','JSON-js','raphael-2.2.1','codecast-7.7','jschannel','raphaelFactory-1.0','delayFactory-1.0','simulationFactory-1.0','platform-pr','beav-1.0','installationAPI.01','miniPlatform','taskStyles-mobileFirst','jwinf-codecast_css','jwinf-codecast','conceptDisplay-1.0','conceptViewer-2.0','conceptViewer_css-2.0','blockly-robot-1.1','createAlgoreaInstructions-1.0','algoreaInstructionsStrings']);
+</script>
+<script class="remove" type="text/javascript">
+var json = {
+      "id": "http://castor-informatique.fr/questions/algorea_training/training-repeat-paint/",
+      "language": "fr",
+      "version": "fr.01",
+      "authors": "Mathias Hiron",
+      "translators": [],
+      "license": "",
+      "taskPathPrefix": "",
+      "modulesPathPrefix": "",
+      "browserSupport": [],
+      "fullFeedback": true,
+      "minWidth": "auto"
+    };
+</script>
+<script type="text/javascript" src="task.js"></script>
+</head>
+<body id="app">
+<div id="react-container" style="width:100%;height:100vh"></div>
+<img src="icon.png" style="display:none" />
+<div id="task" style="display:none"><div id="tabsContainer"></div><div id="taskContent"><div id="gridContainer"></div><div id="blocklyLibContent"></div></div></div>
+<div id="taskIntro" style="display:none">
+        Programmiere den Roboter:
+        <p>
+          Der Roboter soll die markierten Felder <img src="../../../Bilder/Roboter-Grafiken/paint_marker.png" style="vertical-align: middle; height: 40px;"> färben.
+        </p>
+        <p data-lang="blockly">
+          Bitte schau dir vorab die Erläuterungen der Bausteine unter <b>"weitere Hinweise"</b> an.
+        </p>
+        <p data-lang="python">
+          Bitte schau dir vorab die <b>Erläuterungen</b> unter "weitere Hinweise" an.
+        </p>
+        <div class="long">
+          <hr>
+          <h2>Weitere Hinweise:</h2>
+          <p>
+            <span data-lang="blockly scratch"> 
+              Mit dem Baustein <code>wiederhole</code>, kannst du eine oder mehrere Anweisungen mehrfach hintereinander ausführen.
+            </span>
+            <span data-lang="python">
+              Benutze dafür die Wiederholungsanweisung <code>for</code>, die dir erlaubt, eine oder mehrere Anweisungen 
+              mehrfach hintereinander auszuführen.
+            </span>
+          </p>
+          <div data-lang="blockly scratch">
+            <p>Statt zum Beispiel dreimal die gleichen zwei Bausteine zu verwenden, </p>
+            <img data-lang="blockly" src="example_repeat_1.svg" style='width:auto;vertical-align:middle'>
+            <img data-lang="scratch" src="example_repeat_1_scratch.png" style='width:auto;vertical-align:middle'>
+
+            <p>
+              kannst du den Baustein <code>wiederhole</code> verwenden:
+            </p>
+            <img data-lang="blockly" src="example_repeat_2.svg" style='width:auto;vertical-align:middle'>
+            <img data-lang="scratch" src="example_repeat_2_scratch.png" style='width:auto;vertical-align:middle'>
+            <p>Um die Anzahl der Wiederholungen zu ändern, kannst du auf die Zahl im Baustein klicken und eine
+              neue Zahl mit der Tastatur oder über die Zahleneingabe auf der Website eingeben..</p>
+          </div>
+          <div data-lang="python">
+            <p>Statt zum Beispiel dreimal die gleichen zwei Befehle zu schreiben:</p>
+            <pre>
+  oben()
+  bemale()
+  oben()
+  bemale()
+  oben()
+  bemale()
+</pre>
+            <p>benutze die Wiederholungsanweisung <code>for</code>:</p>
+            <pre>
+  for loop in range(3):
+    oben()
+    bemale()
+</pre>
+            <p>
+              Die Zahl in der Klammer gibt die Anzahl der Wiederholungen an. Alle Befehle, die in der
+              Wiederholungsanweisung ausgeführt
+              werden sollen, müssen eingerückt werden.
+            </p>
+          </div>
+        </div>
+      </div>
+<div id="solution" style="display:none"></div>
+<div id="taskHints" style="display:none"></div>
+</body>
+</html>

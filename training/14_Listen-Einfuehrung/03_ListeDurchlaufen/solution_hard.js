@@ -1,0 +1,9 @@
+const pythonCode_03_3 = `from printer import *
+
+l = []
+
+while not eingabeEnde():
+    l.append(lies())
+    
+for ele in l:
+    schreibe(ele + "- erledigt")`;

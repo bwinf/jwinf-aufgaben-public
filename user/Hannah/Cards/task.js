@@ -1,10 +1,10 @@
 function initTask(subTask) {
   subTask.gridInfos = {
+    context: "robot",
     contextType: "cards",
     timeoutMinutes: 15, // Nach 15 Minuten warnen
-    hideSaveOrLoad: true, // Verbietet speichern
+    hideSaveOrLoad: true,
     languageStrings: {
-      // Ändert die lokalen language Strings
       blocklyRobot_lib: {
         label: {
           "withdrawObject": "Keks aufheben",
@@ -85,8 +85,8 @@ function initTask(subTask) {
 
           if (subTask.level == "medium") {
             if (context.getItemsOn(1, col, function (obj) {
-                return obj.isWithdrawable === true && obj.isSquare !== true;
-              }).length > 0) {
+              return obj.isWithdrawable === true && obj.isSquare !== true;
+            }).length > 0) {
               solved = false;
               context.success = false;
               throw ("Der Roboter möchte nur die eckigen Kekse aussortieren.")
@@ -121,8 +121,8 @@ function initTask(subTask) {
 
             if (container.containerFilter != undefined) {
               if (context.hasOn(row, col, function (obj) {
-                  return obj.isWithdrawable === true && !container.containerFilter(obj)
-                })) {
+                return obj.isWithdrawable === true && !container.containerFilter(obj)
+              })) {
                 solved = false;
                 message = Math.min(message, 0);
               }
@@ -150,117 +150,133 @@ function initTask(subTask) {
 
   subTask.data = {
     easy: [{
-        tiles: [
-          [1, 1, 1, 16, 16, 17, 16, 1, 1, 1, 2]
-        ],
-        toPick: 3,
-        initItems: [{
-          row: 0,
-          col: 0,
-          type: "robot"
-        }]
-      },
+      tiles: [
+        [1, 1, 1, 16, 16, 17, 16, 1, 1, 1, 2]
+      ],
+      toPick: 3,
+      initItems: [{
+        row: 0,
+        col: 0,
+        type: "robot"
+      }]
+    },
 
-      {
-        tiles: [
-          [1, 1, 1, 17, 16, 16, 16, 1, 1, 1, 2]
-        ],
-        toPick: [3],
-        initItems: [{
-          row: 0,
-          col: 0,
-          type: "robot"
-        }]
-      },
-      {
-        tiles: [
-          [1, 1, 16, 1, 17, 1, 1, 16, 1, 1, 2]
-        ],
-        toPick: [3],
-        initItems: [{
-          row: 0,
-          col: 0,
-          type: "robot"
-        }]
-      },
+    {
+      tiles: [
+        [1, 1, 1, 17, 16, 16, 16, 1, 1, 1, 2]
+      ],
+      toPick: [3],
+      initItems: [{
+        row: 0,
+        col: 0,
+        type: "robot"
+      }]
+    },
+    {
+      tiles: [
+        [1, 1, 16, 1, 17, 1, 1, 16, 1, 1, 2]
+      ],
+      toPick: [3],
+      initItems: [{
+        row: 0,
+        col: 0,
+        type: "robot"
+      }]
+    },
     ],
     medium: [{
-        tiles: [
-          [1, 16, 17, 16, 17, 16, 17, 16, 16, 17, 16],
-          [1, 1, 2, 1, 2, 1, 2, 1, 1, 2, 1]
-        ],
-        initItems: [{
-          row: 0,
-          col: 0,
-          type: "robot"
-        }]
-      },
-      {
-        tiles: [
-          [1, 17, 17, 17, 16, 16, 17, 17, 17, 16, 17],
-          [1, 2, 2, 2, 1, 1, 2, 2, 2, 1, 2]
-        ],
-        initItems: [{
-          row: 0,
-          col: 0,
-          type: "robot"
-        }]
-      },
-      {
-        tiles: [
-          [1, 17, 16, 17, 17, 17, 17, 17, 17, 17, 17],
-          [1, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2]
-        ],
-        initItems: [{
-          row: 0,
-          col: 0,
-          type: "robot"
-        }]
-      }
+      tiles: [
+        [1, 16, 17, 16, 17, 16, 17, 16, 16, 17, 16],
+        [1, 1, 2, 1, 2, 1, 2, 1, 1, 2, 1]
+      ],
+      initItems: [{
+        row: 0,
+        col: 0,
+        type: "robot"
+      }]
+    },
+    {
+      tiles: [
+        [1, 17, 17, 17, 16, 16, 17, 17, 17, 16, 17],
+        [1, 2, 2, 2, 1, 1, 2, 2, 2, 1, 2]
+      ],
+      initItems: [{
+        row: 0,
+        col: 0,
+        type: "robot"
+      }]
+    },
+    {
+      tiles: [
+        [1, 17, 16, 17, 17, 17, 17, 17, 17, 17, 17],
+        [1, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2]
+      ],
+      initItems: [{
+        row: 0,
+        col: 0,
+        type: "robot"
+      }]
+    }
     ],
     hard: [{
-        tiles: [
-          [1, 3, 1, 3, 1, 1, 1, 3, 3, 1, 3],
-          [1, 16, 17, 16, 1, 1, 17, 16, 16, 17, 16],
-          [1, 1, 2, 1, 1, 1, 2, 1, 1, 2, 1]
-        ],
-        initItems: [{
-          row: 1,
-          col: 0,
-          type: "robot"
-        }]
-      },
+      tiles: [
+        [1, 3, 1, 3, 1, 1, 1, 3, 3, 1, 3],
+        [1, 16, 17, 16, 1, 1, 17, 16, 16, 17, 16],
+        [1, 1, 2, 1, 1, 1, 2, 1, 1, 2, 1]
+      ],
+      initItems: [{
+        row: 1,
+        col: 0,
+        type: "robot"
+      }]
+    },
 
-      {
-        tiles: [
-          [1, 1, 3, 3, 1, 3, 1, 1, 3, 1, 3],
-          [1, 17, 16, 16, 1, 16, 17, 17, 16, 17, 16],
-          [1, 2, 1, 1, 1, 1, 2, 2, 1, 2, 1]
-        ],
-        initItems: [{
-          row: 1,
-          col: 0,
-          type: "robot"
-        }]
-      },
+    {
+      tiles: [
+        [1, 1, 3, 3, 1, 3, 1, 1, 3, 1, 3],
+        [1, 17, 16, 16, 1, 16, 17, 17, 16, 17, 16],
+        [1, 2, 1, 1, 1, 1, 2, 2, 1, 2, 1]
+      ],
+      initItems: [{
+        row: 1,
+        col: 0,
+        type: "robot"
+      }]
+    },
 
-      {
-        tiles: [
-          [1, 3, 1, 1, 1, 1, 3, 3, 3, 1, 1],
-          [1, 16, 17, 17, 1, 1, 16, 16, 16, 17, 17],
-          [1, 1, 2, 2, 1, 1, 1, 1, 1, 2, 2]
-        ],
-        initItems: [{
-          row: 1,
-          col: 0,
-          type: "robot"
-        }]
-      },
+    {
+      tiles: [
+        [1, 3, 1, 1, 1, 1, 3, 3, 3, 1, 1],
+        [1, 16, 17, 17, 1, 1, 16, 16, 16, 17, 17],
+        [1, 1, 2, 2, 1, 1, 1, 1, 1, 2, 2]
+      ],
+      initItems: [{
+        row: 1,
+        col: 0,
+        type: "robot"
+      }]
+    },
     ]
   };
   initBlocklySubTask(subTask);
-  displayHelper.thresholdEasy = 5000;
-  displayHelper.thresholdMedium = 10000;
 }
 
-initWrapper(initTask, ["easy", "medium", "hard"], null, true);
+window.initBlocklySubTask = function () { };
+window.taskData = window.taskData || {};
+window.taskData.waitInit = function () {
+  initTask(window.taskData);
+  function ccTask() { try { return window.Codecast.environments.main.store.getState().task; } catch (e) { return null; } }
+  try { Object.defineProperty(window.taskData, "level", { configurable: true, get: function () { var t = ccTask(); return t ? t.currentLevel : undefined; }, set: function () { } }); Object.defineProperty(window.taskData, "iTestCase", { configurable: true, get: function () { var t = ccTask(); return (t && t.currentTestId != null) ? t.currentTestId : 0; }, set: function () { } }); } catch (e) { }
+};
+window.taskData.codecastParameters = window.taskData.codecastParameters || {
+  language: "de-DE",
+  platform: "blockly",
+  canChangePlatform: false,
+  showStepper: true,
+  showStack: true,
+  showViews: true,
+  showIO: true,
+  controls: { reload: false },
+  hideSettings: true,
+  jwinfMenu: { copyPaste: true, undoRedo: true, svgExport: true }
+};

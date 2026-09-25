@@ -1,0 +1,2128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   height="128.26562"
+   version="1.1"
+   width="169.70312"
+   style="overflow:hidden"
+   id="svg289"
+   sodipodi:docname="Beispiel_diagSchritt.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview289"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="3.6787331"
+     inkscape:cx="30.853013"
+     inkscape:cy="40.095326"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg289" />
+  <desc
+     id="desc1"
+     style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">Created with Raphaël 2.2.0</desc>
+  <defs
+     style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+     id="defs168">
+    <clipPath
+       id="69A59603-DC1B-4424-B67C-1B310743E1B3"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="10"
+         y="30"
+         width="60"
+         height="60"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect1" />
+    </clipPath>
+    <clipPath
+       id="A43925A6-4212-4806-8920-39C8EA627F89"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="55"
+         y="18"
+         width="80"
+         height="80"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect2" />
+    </clipPath>
+    <clipPath
+       id="32C91BF6-9FAB-4D97-A6FB-BB8B358FFB4F"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="115"
+         y="18"
+         width="80"
+         height="80"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect3" />
+    </clipPath>
+    <clipPath
+       id="29638C55-CA06-464A-9E84-2E969E782B45"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="250"
+         y="30"
+         width="60"
+         height="60"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect4" />
+    </clipPath>
+    <clipPath
+       id="334F747F-E3EE-4BFC-9675-04667F4F64D1"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="310"
+         y="30"
+         width="60"
+         height="60"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect5" />
+    </clipPath>
+    <clipPath
+       id="081BA593-4188-44F6-90AC-B42B49187A88"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="415"
+         y="18"
+         width="80"
+         height="80"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect6" />
+    </clipPath>
+    <clipPath
+       id="F3EC43ED-4A3D-409D-9959-21404839A3E4"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="475"
+         y="18"
+         width="80"
+         height="80"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect7" />
+    </clipPath>
+    <clipPath
+       id="D4307B4C-367B-47C5-90F9-563CDAEAEC3F"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="370"
+         y="90"
+         width="60"
+         height="60"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect8" />
+    </clipPath>
+    <clipPath
+       id="B5F11A3E-1D06-4E96-A875-5F62E9F1EFA3"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="535"
+         y="78"
+         width="80"
+         height="80"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect9" />
+    </clipPath>
+    <clipPath
+       id="549E9280-7D8E-4D3E-BF04-CBEE229873CC"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="475"
+         y="138"
+         width="80"
+         height="80"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect10" />
+    </clipPath>
+    <clipPath
+       id="0AB1EA71-9476-4279-83F8-3A3374F85AF8"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="370"
+         y="210"
+         width="60"
+         height="60"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect11" />
+    </clipPath>
+    <clipPath
+       id="483F39C4-4B95-4B73-BF76-A7D79721DD0F"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="490"
+         y="210"
+         width="60"
+         height="60"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect12" />
+    </clipPath>
+    <clipPath
+       id="0A6200D8-05A8-465E-9730-27612DB8EE78"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="430"
+         y="270"
+         width="60"
+         height="60"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect13" />
+    </clipPath>
+    <clipPath
+       id="4D8D552D-1AC2-4181-903B-CDBD0276F3E7"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="490"
+         y="270"
+         width="60"
+         height="60"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect14" />
+    </clipPath>
+    <clipPath
+       id="43AC7461-40CF-495B-BD56-A76C3F30EFF1"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="550"
+         y="270"
+         width="60"
+         height="60"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect15" />
+    </clipPath>
+    <clipPath
+       id="E66C1943-A016-435A-9CA6-A9F5CE8B5A02"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="550"
+         y="330"
+         width="60"
+         height="60"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect16" />
+    </clipPath>
+    <clipPath
+       id="296226CC-686D-4525-8DAE-8E8742F8F5D7"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="475"
+         y="438"
+         width="80"
+         height="80"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect17" />
+    </clipPath>
+    <clipPath
+       id="73B97C5E-F1ED-4550-874C-E3BCD46616BC"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="490"
+         y="510"
+         width="60"
+         height="60"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect18" />
+    </clipPath>
+    <clipPath
+       id="E68A53CB-2F2B-495F-A242-BBCDD0F1DCB5"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="550"
+         y="510"
+         width="60"
+         height="60"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect19" />
+    </clipPath>
+    <clipPath
+       id="367D9532-DB30-44E1-B8EC-F4AAF88900A5"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="415"
+         y="558"
+         width="80"
+         height="80"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect20" />
+    </clipPath>
+    <clipPath
+       id="17CC6236-23A9-4F45-A8A8-F59F12D5E36E"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="475"
+         y="558"
+         width="80"
+         height="80"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect21" />
+    </clipPath>
+    <clipPath
+       id="067BB2E0-1F9A-4429-B75D-2F624A180E04"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="130"
+         y="570"
+         width="60"
+         height="60"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect22" />
+    </clipPath>
+    <clipPath
+       id="49AFE5BE-1DAC-43FA-B4DC-20A3A1EFFFEB"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="70"
+         y="570"
+         width="60"
+         height="60"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect23" />
+    </clipPath>
+    <clipPath
+       id="5DE0D25C-2361-497B-93D9-F1BAFBA6F50D"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="5"
+         y="565"
+         width="70"
+         height="70"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect24" />
+    </clipPath>
+    <clipPath
+       id="EB31582E-6600-4AEB-9D1E-8FBFEA884FCB"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="7.6875"
+         y="23.0625"
+         width="46.125"
+         height="46.125"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect25" />
+    </clipPath>
+    <clipPath
+       id="A861AF43-B80B-464F-B8CF-DEB0A990FBFB"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="42.28125"
+         y="13.8375"
+         width="61.5"
+         height="61.5"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect26" />
+    </clipPath>
+    <clipPath
+       id="AFFD1EA1-6426-4F8A-9ABA-35A11A24D616"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="88.40625"
+         y="13.8375"
+         width="61.5"
+         height="61.5"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect27" />
+    </clipPath>
+    <clipPath
+       id="AF7785A6-3840-4CFE-ABE3-2E0782C9FADE"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="192.1875"
+         y="23.0625"
+         width="46.125"
+         height="46.125"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect28" />
+    </clipPath>
+    <clipPath
+       id="57CDB45E-21A4-4421-A462-0E253681294F"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="238.3125"
+         y="23.0625"
+         width="46.125"
+         height="46.125"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect29" />
+    </clipPath>
+    <clipPath
+       id="D352FDD2-5E9A-42DD-8744-04849586977F"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="319.03125"
+         y="13.8375"
+         width="61.5"
+         height="61.5"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect30" />
+    </clipPath>
+    <clipPath
+       id="206B4135-A48B-4E47-8F28-E2AFA6C36AA2"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="365.15625"
+         y="13.8375"
+         width="61.5"
+         height="61.5"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect31" />
+    </clipPath>
+    <clipPath
+       id="2189B430-58B1-45C9-8721-517DEC37BD9D"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="284.4375"
+         y="69.1875"
+         width="46.125"
+         height="46.125"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect32" />
+    </clipPath>
+    <clipPath
+       id="1A2250DF-FB06-4353-BA46-097CD097966A"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="411.28125"
+         y="59.962502"
+         width="61.5"
+         height="61.5"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect33" />
+    </clipPath>
+    <clipPath
+       id="FDCB8966-D392-4A01-A75C-E7AEFF820BF7"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="365.15625"
+         y="106.0875"
+         width="61.5"
+         height="61.5"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect34" />
+    </clipPath>
+    <clipPath
+       id="CDAE7CE0-BAD7-426B-9161-857669806E63"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="284.4375"
+         y="161.4375"
+         width="46.125"
+         height="46.125"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect35" />
+    </clipPath>
+    <clipPath
+       id="F2BABADD-3F64-4D01-B005-80BB9C6EDEF0"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="376.6875"
+         y="161.4375"
+         width="46.125"
+         height="46.125"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect36" />
+    </clipPath>
+    <clipPath
+       id="FCDC8893-60BB-40E6-9C7A-911957456FEC"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="330.5625"
+         y="207.5625"
+         width="46.125"
+         height="46.125"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect37" />
+    </clipPath>
+    <clipPath
+       id="77DFB7CB-EBCA-4B50-AA85-0DFF5FB96716"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="376.6875"
+         y="207.5625"
+         width="46.125"
+         height="46.125"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect38" />
+    </clipPath>
+    <clipPath
+       id="58AE014B-FBF4-428B-B330-9BB3672D3C29"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="422.8125"
+         y="207.5625"
+         width="46.125"
+         height="46.125"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect39" />
+    </clipPath>
+    <clipPath
+       id="E643F511-319E-438C-8ED3-6D77FC5717D7"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="422.8125"
+         y="253.6875"
+         width="46.125"
+         height="46.125"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect40" />
+    </clipPath>
+    <clipPath
+       id="C160F578-79D4-4734-B9B4-F6EB9211FE29"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="365.15625"
+         y="336.71249"
+         width="61.5"
+         height="61.5"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect41" />
+    </clipPath>
+    <clipPath
+       id="978B9FE5-E7B0-45EE-9FE9-71A2805AA0CD"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="376.6875"
+         y="392.0625"
+         width="46.125"
+         height="46.125"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect42" />
+    </clipPath>
+    <clipPath
+       id="060C7C4B-F872-4B70-AB93-BBA0B7DFC1B9"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="422.8125"
+         y="392.0625"
+         width="46.125"
+         height="46.125"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect43" />
+    </clipPath>
+    <clipPath
+       id="7816EBB0-B8B2-4124-8D69-5338079E53C6"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="319.03125"
+         y="428.96249"
+         width="61.5"
+         height="61.5"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect44" />
+    </clipPath>
+    <clipPath
+       id="338798E2-8D91-448A-AD05-B1807571403C"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="365.15625"
+         y="428.96249"
+         width="61.5"
+         height="61.5"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect45" />
+    </clipPath>
+    <clipPath
+       id="7389EDA1-6DA5-44B8-A29B-63FFE1D27142"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="99.9375"
+         y="438.1875"
+         width="46.125"
+         height="46.125"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect46" />
+    </clipPath>
+    <clipPath
+       id="FB5C8FAA-7D1E-420D-AB90-1F7612A110FC"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="53.8125"
+         y="438.1875"
+         width="46.125"
+         height="46.125"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect47" />
+    </clipPath>
+    <clipPath
+       id="CE8EC873-9BF3-4A20-812D-8BF8587453CF"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="3.84375"
+         y="434.34375"
+         width="53.8125"
+         height="53.8125"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect48" />
+    </clipPath>
+    <clipPath
+       id="FA32D46B-2401-4DAF-BF86-112E55A0EA3A"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="7.6875"
+         y="23.0625"
+         width="46.125"
+         height="46.125"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect49" />
+    </clipPath>
+    <clipPath
+       id="2EF0F279-8021-438E-8DD7-4B2BD16C0069"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="42.28125"
+         y="13.8375"
+         width="61.5"
+         height="61.5"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect50" />
+    </clipPath>
+    <clipPath
+       id="E62F5B71-29D7-43F4-AC40-2F5E7FC517E1"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="88.40625"
+         y="13.8375"
+         width="61.5"
+         height="61.5"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect51" />
+    </clipPath>
+    <clipPath
+       id="40442F24-742C-4D6D-BC37-F56F70F4573E"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="192.1875"
+         y="23.0625"
+         width="46.125"
+         height="46.125"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect52" />
+    </clipPath>
+    <clipPath
+       id="6EC37D1D-BDE7-43A9-89E3-4A8BC4BC8AC2"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="238.3125"
+         y="23.0625"
+         width="46.125"
+         height="46.125"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect53" />
+    </clipPath>
+    <clipPath
+       id="9AAC9528-52A6-4873-8352-B5CD25C90943"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="319.03125"
+         y="13.8375"
+         width="61.5"
+         height="61.5"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect54" />
+    </clipPath>
+    <clipPath
+       id="79DD5812-B5FA-479E-98A9-AD1288662CB8"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="365.15625"
+         y="13.8375"
+         width="61.5"
+         height="61.5"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect55" />
+    </clipPath>
+    <clipPath
+       id="F5B9BD2A-20DF-49CD-9C99-ECD5A6E9D754"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="284.4375"
+         y="69.1875"
+         width="46.125"
+         height="46.125"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect56" />
+    </clipPath>
+    <clipPath
+       id="7CC2804E-7A8B-4E6C-A7AD-FB8EAF80557F"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="411.28125"
+         y="59.962502"
+         width="61.5"
+         height="61.5"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect57" />
+    </clipPath>
+    <clipPath
+       id="F7CA33C5-68EF-4AE3-92C2-D76A3970845E"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="365.15625"
+         y="106.0875"
+         width="61.5"
+         height="61.5"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect58" />
+    </clipPath>
+    <clipPath
+       id="4B232EBC-36AE-4966-A645-E84A4B499E76"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="284.4375"
+         y="161.4375"
+         width="46.125"
+         height="46.125"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect59" />
+    </clipPath>
+    <clipPath
+       id="E609AADE-3B40-4026-982B-81D2E62D65F5"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="376.6875"
+         y="161.4375"
+         width="46.125"
+         height="46.125"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect60" />
+    </clipPath>
+    <clipPath
+       id="28E00775-3B3A-4CB6-BACE-5B00CECC04C0"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="330.5625"
+         y="207.5625"
+         width="46.125"
+         height="46.125"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect61" />
+    </clipPath>
+    <clipPath
+       id="F9EE2531-C51C-4F17-8142-D5873FBE09C7"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="376.6875"
+         y="207.5625"
+         width="46.125"
+         height="46.125"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect62" />
+    </clipPath>
+    <clipPath
+       id="15E7BCFA-2568-4985-B123-68EDE4364108"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="422.8125"
+         y="207.5625"
+         width="46.125"
+         height="46.125"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect63" />
+    </clipPath>
+    <clipPath
+       id="77B65551-EBCC-4D9F-844B-B6972D4A619D"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="422.8125"
+         y="253.6875"
+         width="46.125"
+         height="46.125"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect64" />
+    </clipPath>
+    <clipPath
+       id="A6AF9AD6-1992-49E5-9B61-0AC6031AE51A"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="365.15625"
+         y="336.71249"
+         width="61.5"
+         height="61.5"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect65" />
+    </clipPath>
+    <clipPath
+       id="FFC6A9F5-7B46-4C0E-8889-B44D5066F45B"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="376.6875"
+         y="392.0625"
+         width="46.125"
+         height="46.125"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect66" />
+    </clipPath>
+    <clipPath
+       id="0C65ADCD-F4A0-4EE0-91ED-BC926BE9B375"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="422.8125"
+         y="392.0625"
+         width="46.125"
+         height="46.125"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect67" />
+    </clipPath>
+    <clipPath
+       id="42D0641D-27E8-43D4-A12F-BCAC5E8A3311"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="319.03125"
+         y="428.96249"
+         width="61.5"
+         height="61.5"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect68" />
+    </clipPath>
+    <clipPath
+       id="147BD007-01E3-4CBF-AB50-64E5F187383D"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="365.15625"
+         y="428.96249"
+         width="61.5"
+         height="61.5"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect69" />
+    </clipPath>
+    <clipPath
+       id="66046F15-7C08-4081-B2C2-A478256752C7"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="99.9375"
+         y="438.1875"
+         width="46.125"
+         height="46.125"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect70" />
+    </clipPath>
+    <clipPath
+       id="D7930A3D-DA1D-46A7-8E5D-65F5918D160B"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="53.8125"
+         y="438.1875"
+         width="46.125"
+         height="46.125"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect71" />
+    </clipPath>
+    <clipPath
+       id="BF3BC02C-73E8-4F93-88EE-CB5F93D69D76"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="3.84375"
+         y="434.34375"
+         width="53.8125"
+         height="53.8125"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect72" />
+    </clipPath>
+    <clipPath
+       id="3AF4A477-8787-49E2-BEA1-8B65F1746DC5"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="7.6875"
+         y="23.0625"
+         width="46.125"
+         height="46.125"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect73" />
+    </clipPath>
+    <clipPath
+       id="ECE1DD7C-3F03-46D5-A58E-6F0FA62194AA"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="42.28125"
+         y="13.8375"
+         width="61.5"
+         height="61.5"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect74" />
+    </clipPath>
+    <clipPath
+       id="83436712-ADE8-4CCF-A1A5-D091BBC440D3"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="88.40625"
+         y="13.8375"
+         width="61.5"
+         height="61.5"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect75" />
+    </clipPath>
+    <clipPath
+       id="CBA8D18C-98E6-491E-AB7A-89F343912CE6"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="192.1875"
+         y="23.0625"
+         width="46.125"
+         height="46.125"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect76" />
+    </clipPath>
+    <clipPath
+       id="95970309-1891-4A88-A389-8B8C0A9D2236"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="238.3125"
+         y="23.0625"
+         width="46.125"
+         height="46.125"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect77" />
+    </clipPath>
+    <clipPath
+       id="DB578481-252E-49FE-BB37-E5AD1798FDA1"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="319.03125"
+         y="13.8375"
+         width="61.5"
+         height="61.5"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect78" />
+    </clipPath>
+    <clipPath
+       id="FC9D6FF6-8873-4C8E-B5E2-8CDD0C4C077F"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="365.15625"
+         y="13.8375"
+         width="61.5"
+         height="61.5"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect79" />
+    </clipPath>
+    <clipPath
+       id="4E871BE4-D473-46C5-80B6-C8B0B594F8F7"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="284.4375"
+         y="69.1875"
+         width="46.125"
+         height="46.125"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect80" />
+    </clipPath>
+    <clipPath
+       id="F29F351F-8AD5-4AE0-8FEE-B25C41D30E77"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="411.28125"
+         y="59.962502"
+         width="61.5"
+         height="61.5"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect81" />
+    </clipPath>
+    <clipPath
+       id="72057F8B-E2D1-45C4-B7D8-568EBF645C81"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="365.15625"
+         y="106.0875"
+         width="61.5"
+         height="61.5"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect82" />
+    </clipPath>
+    <clipPath
+       id="B12ABF2B-5CDF-4990-B99E-725C515B2F31"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="284.4375"
+         y="161.4375"
+         width="46.125"
+         height="46.125"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect83" />
+    </clipPath>
+    <clipPath
+       id="BA4192D8-6B7C-4E7A-B271-E47CD5E729EC"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="376.6875"
+         y="161.4375"
+         width="46.125"
+         height="46.125"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect84" />
+    </clipPath>
+    <clipPath
+       id="C45C7CDD-E0B8-4EC9-84C1-860F59AB672B"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="330.5625"
+         y="207.5625"
+         width="46.125"
+         height="46.125"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect85" />
+    </clipPath>
+    <clipPath
+       id="44125EB9-0416-451C-9A3E-FDCC9E466CC1"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="376.6875"
+         y="207.5625"
+         width="46.125"
+         height="46.125"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect86" />
+    </clipPath>
+    <clipPath
+       id="6FFFA734-74FB-4795-98C2-61D3F7E5425D"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="422.8125"
+         y="207.5625"
+         width="46.125"
+         height="46.125"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect87" />
+    </clipPath>
+    <clipPath
+       id="8F574526-3AC5-4D26-9358-18D6A5EB16AA"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="422.8125"
+         y="253.6875"
+         width="46.125"
+         height="46.125"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect88" />
+    </clipPath>
+    <clipPath
+       id="C7A6B55B-5010-4E51-9730-289F5B911AD3"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="365.15625"
+         y="336.71249"
+         width="61.5"
+         height="61.5"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect89" />
+    </clipPath>
+    <clipPath
+       id="4D992B9B-5AB7-4314-94E2-EF39B55AF9B0"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="376.6875"
+         y="392.0625"
+         width="46.125"
+         height="46.125"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect90" />
+    </clipPath>
+    <clipPath
+       id="5F6895BA-8D0E-4C96-B539-D41A7432789C"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="422.8125"
+         y="392.0625"
+         width="46.125"
+         height="46.125"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect91" />
+    </clipPath>
+    <clipPath
+       id="01A3F9FC-2B79-40C1-A260-5BE8254082E0"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="319.03125"
+         y="428.96249"
+         width="61.5"
+         height="61.5"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect92" />
+    </clipPath>
+    <clipPath
+       id="FAAE83CD-E259-40F1-A956-69A081637470"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="365.15625"
+         y="428.96249"
+         width="61.5"
+         height="61.5"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect93" />
+    </clipPath>
+    <clipPath
+       id="5B88011B-682D-4E2A-A285-40100DBC121E"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="99.9375"
+         y="438.1875"
+         width="46.125"
+         height="46.125"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect94" />
+    </clipPath>
+    <clipPath
+       id="356DCB74-54BB-42D4-85D1-2A29DD69C4A9"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="53.8125"
+         y="438.1875"
+         width="46.125"
+         height="46.125"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect95" />
+    </clipPath>
+    <clipPath
+       id="5BD886E0-8F35-466F-BC21-9AFE183F4A0D"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="3.84375"
+         y="434.34375"
+         width="53.8125"
+         height="53.8125"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect96" />
+    </clipPath>
+    <clipPath
+       id="339C31F0-0251-476B-8D57-431A6B923CA4"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="7.6875"
+         y="23.0625"
+         width="46.125"
+         height="46.125"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect97" />
+    </clipPath>
+    <clipPath
+       id="B49C48CA-E911-4446-A50A-E2B1F42890C5"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="42.28125"
+         y="13.8375"
+         width="61.5"
+         height="61.5"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect98" />
+    </clipPath>
+    <clipPath
+       id="D27402D9-5CEE-4FC6-9EB3-7FD399ABB610"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="88.40625"
+         y="13.8375"
+         width="61.5"
+         height="61.5"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect99" />
+    </clipPath>
+    <clipPath
+       id="66B8ED42-4927-4E41-8041-346D10EA1371"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="192.1875"
+         y="23.0625"
+         width="46.125"
+         height="46.125"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect100" />
+    </clipPath>
+    <clipPath
+       id="CA6E8265-88F5-44E2-8AB4-F7E1CEC15076"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="238.3125"
+         y="23.0625"
+         width="46.125"
+         height="46.125"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect101" />
+    </clipPath>
+    <clipPath
+       id="75C884A4-4D26-48AC-B64D-6A0EC55A4E9D"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="319.03125"
+         y="13.8375"
+         width="61.5"
+         height="61.5"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect102" />
+    </clipPath>
+    <clipPath
+       id="0D817ED6-6185-4FAA-9275-9FEB06979F88"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="365.15625"
+         y="13.8375"
+         width="61.5"
+         height="61.5"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect103" />
+    </clipPath>
+    <clipPath
+       id="3E73EE74-8777-4F10-BB8B-C4200D1E4439"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="284.4375"
+         y="69.1875"
+         width="46.125"
+         height="46.125"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect104" />
+    </clipPath>
+    <clipPath
+       id="0CD04AAE-7097-4782-973D-AEA1BF57BC87"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="411.28125"
+         y="59.962502"
+         width="61.5"
+         height="61.5"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect105" />
+    </clipPath>
+    <clipPath
+       id="FD9FA292-38FE-4A5C-B26A-22E0A6327884"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="365.15625"
+         y="106.0875"
+         width="61.5"
+         height="61.5"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect106" />
+    </clipPath>
+    <clipPath
+       id="B1DA8BED-7169-45B7-B8AA-52045CBECFE3"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="284.4375"
+         y="161.4375"
+         width="46.125"
+         height="46.125"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect107" />
+    </clipPath>
+    <clipPath
+       id="E6198FBE-521B-409D-8690-6C4F4A234495"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="376.6875"
+         y="161.4375"
+         width="46.125"
+         height="46.125"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect108" />
+    </clipPath>
+    <clipPath
+       id="5E679BA2-A10C-4B46-B089-D88978476B65"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="330.5625"
+         y="207.5625"
+         width="46.125"
+         height="46.125"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect109" />
+    </clipPath>
+    <clipPath
+       id="A2802BDC-5448-49FC-804D-1E094DD04971"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="376.6875"
+         y="207.5625"
+         width="46.125"
+         height="46.125"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect110" />
+    </clipPath>
+    <clipPath
+       id="752786A6-FDD8-4193-8723-C62AE3A0A817"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="422.8125"
+         y="207.5625"
+         width="46.125"
+         height="46.125"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect111" />
+    </clipPath>
+    <clipPath
+       id="B7C96A64-F6F7-41CF-AA76-7586D1DD8B28"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="422.8125"
+         y="253.6875"
+         width="46.125"
+         height="46.125"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect112" />
+    </clipPath>
+    <clipPath
+       id="56B26D83-4A63-4B34-B968-1EABA7FB3946"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="365.15625"
+         y="336.71249"
+         width="61.5"
+         height="61.5"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect113" />
+    </clipPath>
+    <clipPath
+       id="4BDBB677-DA29-49B4-95C1-2720E0FC5B71"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="376.6875"
+         y="392.0625"
+         width="46.125"
+         height="46.125"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect114" />
+    </clipPath>
+    <clipPath
+       id="77644A0A-F836-4985-B80C-4491EB254E6E"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="422.8125"
+         y="392.0625"
+         width="46.125"
+         height="46.125"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect115" />
+    </clipPath>
+    <clipPath
+       id="FD4279A0-AD8E-41BD-9C14-8702C50CA531"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="319.03125"
+         y="428.96249"
+         width="61.5"
+         height="61.5"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect116" />
+    </clipPath>
+    <clipPath
+       id="1218BD41-1B24-4689-9EC5-90B107212402"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="365.15625"
+         y="428.96249"
+         width="61.5"
+         height="61.5"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect117" />
+    </clipPath>
+    <clipPath
+       id="4F3ECED8-9F2B-42B4-9C2F-996C42272FC4"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="99.9375"
+         y="438.1875"
+         width="46.125"
+         height="46.125"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect118" />
+    </clipPath>
+    <clipPath
+       id="71CD3C45-AD05-442B-8434-27981C3F70E2"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="53.8125"
+         y="438.1875"
+         width="46.125"
+         height="46.125"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect119" />
+    </clipPath>
+    <clipPath
+       id="8CFCFB35-E9BD-4622-8EDC-86321768B6A2"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="3.84375"
+         y="434.34375"
+         width="53.8125"
+         height="53.8125"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect120" />
+    </clipPath>
+    <clipPath
+       id="69F48113-95FA-4C7B-B676-6C0B422396A6"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="6.90625"
+         y="20.71875"
+         width="41.4375"
+         height="41.4375"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect121" />
+    </clipPath>
+    <clipPath
+       id="B5B2A173-E4FC-4F52-BFFD-EE3D72D2D97A"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="37.984375"
+         y="12.43125"
+         width="55.25"
+         height="55.25"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect122" />
+    </clipPath>
+    <clipPath
+       id="2CF6214D-4D8A-4C08-9230-52D27CAAF711"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="79.421875"
+         y="12.43125"
+         width="55.25"
+         height="55.25"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect123" />
+    </clipPath>
+    <clipPath
+       id="492E25A8-B4DA-4CE3-85CD-AEF9145E3B70"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="172.65625"
+         y="20.71875"
+         width="41.4375"
+         height="41.4375"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect124" />
+    </clipPath>
+    <clipPath
+       id="64EBC42F-284C-49A2-8C3A-C0027687FB30"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="214.09375"
+         y="20.71875"
+         width="41.4375"
+         height="41.4375"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect125" />
+    </clipPath>
+    <clipPath
+       id="701CEA78-BA11-49C4-A64E-990889464E3E"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="286.60938"
+         y="12.43125"
+         width="55.25"
+         height="55.25"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect126" />
+    </clipPath>
+    <clipPath
+       id="D29FF5CC-A79C-48F6-ACD4-688008928ABF"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="328.04688"
+         y="12.43125"
+         width="55.25"
+         height="55.25"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect127" />
+    </clipPath>
+    <clipPath
+       id="44815841-F9FE-4F7E-B411-DAEBD2E5B1BF"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="255.53125"
+         y="62.15625"
+         width="41.4375"
+         height="41.4375"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect128" />
+    </clipPath>
+    <clipPath
+       id="A1F29460-A712-493D-ADB2-A2D36CF5F4D0"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="369.48438"
+         y="53.868752"
+         width="55.25"
+         height="55.25"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect129" />
+    </clipPath>
+    <clipPath
+       id="AC62226E-F75A-47B8-804E-8052923D31D6"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="328.04688"
+         y="95.306252"
+         width="55.25"
+         height="55.25"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect130" />
+    </clipPath>
+    <clipPath
+       id="D748184F-C1AF-4F19-A185-20D8A00B1378"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="255.53125"
+         y="145.03125"
+         width="41.4375"
+         height="41.4375"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect131" />
+    </clipPath>
+    <clipPath
+       id="897AE2C9-4E4F-4033-A531-70CE1B76CF40"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="338.40625"
+         y="145.03125"
+         width="41.4375"
+         height="41.4375"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect132" />
+    </clipPath>
+    <clipPath
+       id="0FB6F68B-C9A7-41C3-B955-0FCCE73561F9"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="296.96875"
+         y="186.46875"
+         width="41.4375"
+         height="41.4375"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect133" />
+    </clipPath>
+    <clipPath
+       id="A03B1AD1-C6C7-4846-8C4C-D49680C9C52D"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="338.40625"
+         y="186.46875"
+         width="41.4375"
+         height="41.4375"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect134" />
+    </clipPath>
+    <clipPath
+       id="72938C20-FC88-4B68-8798-AFDE983E863E"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="379.84375"
+         y="186.46875"
+         width="41.4375"
+         height="41.4375"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect135" />
+    </clipPath>
+    <clipPath
+       id="AD945348-0440-4D36-82A7-B080C9FA5FF8"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="379.84375"
+         y="227.90625"
+         width="41.4375"
+         height="41.4375"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect136" />
+    </clipPath>
+    <clipPath
+       id="EE99448E-7EED-4B43-931D-3193002636E2"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="328.04688"
+         y="302.49374"
+         width="55.25"
+         height="55.25"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect137" />
+    </clipPath>
+    <clipPath
+       id="6B83B151-0DEF-42AE-B35B-130476F59199"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="338.40625"
+         y="352.21875"
+         width="41.4375"
+         height="41.4375"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect138" />
+    </clipPath>
+    <clipPath
+       id="37977F0A-9FEB-4A4F-9C05-4CA7DB7D11E7"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="379.84375"
+         y="352.21875"
+         width="41.4375"
+         height="41.4375"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect139" />
+    </clipPath>
+    <clipPath
+       id="609DB622-14D4-4147-A6B5-A83AB88E722A"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="286.60938"
+         y="385.36874"
+         width="55.25"
+         height="55.25"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect140" />
+    </clipPath>
+    <clipPath
+       id="936EFF4B-F0E0-4F77-961B-7726594ADB67"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="328.04688"
+         y="385.36874"
+         width="55.25"
+         height="55.25"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect141" />
+    </clipPath>
+    <clipPath
+       id="C8BE6CEE-0121-45CB-B284-F58382C907A2"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="89.78125"
+         y="393.65625"
+         width="41.4375"
+         height="41.4375"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect142" />
+    </clipPath>
+    <clipPath
+       id="FE5B2282-D4E9-4B1D-B951-8C2E1A911E0B"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="48.34375"
+         y="393.65625"
+         width="41.4375"
+         height="41.4375"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect143" />
+    </clipPath>
+    <clipPath
+       id="EFD665FC-7F05-4E91-85B5-4DF31D848794"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="3.453125"
+         y="390.20312"
+         width="48.34375"
+         height="48.34375"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect144" />
+    </clipPath>
+    <clipPath
+       id="262125E5-F5D1-4A16-BF49-3C230372DF6B"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="6.90625"
+         y="20.71875"
+         width="41.4375"
+         height="41.4375"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect145" />
+    </clipPath>
+    <clipPath
+       id="54F8E92A-4232-4F87-9E0B-35C7EA92D278"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="37.984375"
+         y="12.43125"
+         width="55.25"
+         height="55.25"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect146" />
+    </clipPath>
+    <clipPath
+       id="1E872A48-6C77-4DD4-9674-D45F2DCE8830"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="79.421875"
+         y="12.43125"
+         width="55.25"
+         height="55.25"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect147" />
+    </clipPath>
+    <clipPath
+       id="CD06EF24-489E-409D-AAA1-D5A7D572CCB1"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="172.65625"
+         y="20.71875"
+         width="41.4375"
+         height="41.4375"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect148" />
+    </clipPath>
+    <clipPath
+       id="B93D6265-B746-42D1-A2F2-824219CBF180"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="214.09375"
+         y="20.71875"
+         width="41.4375"
+         height="41.4375"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect149" />
+    </clipPath>
+    <clipPath
+       id="FC616D5D-43A9-4F56-A151-D3C79B515DC4"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="286.60938"
+         y="12.43125"
+         width="55.25"
+         height="55.25"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect150" />
+    </clipPath>
+    <clipPath
+       id="D087820C-4587-4A2F-9D48-1351C9AE03F8"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="328.04688"
+         y="12.43125"
+         width="55.25"
+         height="55.25"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect151" />
+    </clipPath>
+    <clipPath
+       id="485156E6-B056-4619-8840-0F9911408038"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="255.53125"
+         y="62.15625"
+         width="41.4375"
+         height="41.4375"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect152" />
+    </clipPath>
+    <clipPath
+       id="D13207F8-7C33-40CC-A4BE-355436447A51"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="369.48438"
+         y="53.868752"
+         width="55.25"
+         height="55.25"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect153" />
+    </clipPath>
+    <clipPath
+       id="5492F593-323D-4783-B73D-3DAC135D54A6"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="328.04688"
+         y="95.306252"
+         width="55.25"
+         height="55.25"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect154" />
+    </clipPath>
+    <clipPath
+       id="F353508A-D7B0-449A-90A7-C10D386292CD"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="255.53125"
+         y="145.03125"
+         width="41.4375"
+         height="41.4375"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect155" />
+    </clipPath>
+    <clipPath
+       id="8A6D966B-A0E0-4BD9-A704-2EF14EABA374"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="338.40625"
+         y="145.03125"
+         width="41.4375"
+         height="41.4375"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect156" />
+    </clipPath>
+    <clipPath
+       id="D3841BB9-5E74-454E-9A3E-97541556B59D"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="296.96875"
+         y="186.46875"
+         width="41.4375"
+         height="41.4375"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect157" />
+    </clipPath>
+    <clipPath
+       id="41BC2186-4667-49C9-974E-26402F2C8ED9"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="338.40625"
+         y="186.46875"
+         width="41.4375"
+         height="41.4375"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect158" />
+    </clipPath>
+    <clipPath
+       id="19D296FE-0567-4328-9698-AE292DF59172"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="379.84375"
+         y="186.46875"
+         width="41.4375"
+         height="41.4375"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect159" />
+    </clipPath>
+    <clipPath
+       id="A8B6AD70-8C71-47BF-A8C0-3D8FF6C94C4A"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="379.84375"
+         y="227.90625"
+         width="41.4375"
+         height="41.4375"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect160" />
+    </clipPath>
+    <clipPath
+       id="37826592-A154-4AAD-A879-24FA1E3B8CCD"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="328.04688"
+         y="302.49374"
+         width="55.25"
+         height="55.25"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect161" />
+    </clipPath>
+    <clipPath
+       id="90C7E28A-C72F-4F5B-8C61-3579F951BB6D"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="338.40625"
+         y="352.21875"
+         width="41.4375"
+         height="41.4375"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect162" />
+    </clipPath>
+    <clipPath
+       id="57EC0CCD-A498-49C7-A85B-0A2229366ABC"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="379.84375"
+         y="352.21875"
+         width="41.4375"
+         height="41.4375"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect163" />
+    </clipPath>
+    <clipPath
+       id="59519067-072E-497A-BF7A-56CF7B8BA41D"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="286.60938"
+         y="385.36874"
+         width="55.25"
+         height="55.25"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect164" />
+    </clipPath>
+    <clipPath
+       id="3FB7A68B-700B-437C-99BD-4D365D5A932F"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="328.04688"
+         y="385.36874"
+         width="55.25"
+         height="55.25"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect165" />
+    </clipPath>
+    <clipPath
+       id="0FE3526B-4AF7-4A06-901B-FF09D7D86E6B"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="89.78125"
+         y="393.65625"
+         width="41.4375"
+         height="41.4375"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect166" />
+    </clipPath>
+    <clipPath
+       id="94A57AB5-1B18-4306-9565-2C57B7A697A8"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="48.34375"
+         y="393.65625"
+         width="41.4375"
+         height="41.4375"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect167" />
+    </clipPath>
+    <clipPath
+       id="06E6382B-C6A8-4EBB-8E53-3DCBBD41E5AE"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)">
+      <rect
+         x="3.453125"
+         y="390.20312"
+         width="48.34375"
+         height="48.34375"
+         style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+         id="rect168" />
+    </clipPath>
+  </defs>
+  <g
+     id="g289"
+     transform="translate(-3.453125,-310.28125)">
+    <rect
+       x="6.90625"
+       y="310.78125"
+       width="41.4375"
+       height="41.4375"
+       rx="0"
+       ry="0"
+       fill="#d4e8c4"
+       stroke="#49b675"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+       id="rect240" />
+    <rect
+       x="48.34375"
+       y="310.78125"
+       width="41.4375"
+       height="41.4375"
+       rx="0"
+       ry="0"
+       fill="#d4e8c4"
+       stroke="#49b675"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+       id="rect241" />
+    <rect
+       x="89.78125"
+       y="310.78125"
+       width="41.4375"
+       height="41.4375"
+       rx="0"
+       ry="0"
+       fill="#d4e8c4"
+       stroke="#49b675"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+       id="rect242" />
+    <rect
+       x="131.21875"
+       y="310.78125"
+       width="41.4375"
+       height="41.4375"
+       rx="0"
+       ry="0"
+       fill="#d4e8c4"
+       stroke="#49b675"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+       id="rect243" />
+    <rect
+       x="6.90625"
+       y="352.21875"
+       width="41.4375"
+       height="41.4375"
+       rx="0"
+       ry="0"
+       fill="#d4e8c4"
+       stroke="#49b675"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+       id="rect250" />
+    <rect
+       x="48.34375"
+       y="352.21875"
+       width="41.4375"
+       height="41.4375"
+       rx="0"
+       ry="0"
+       fill="#d4e8c4"
+       stroke="#49b675"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+       id="rect251" />
+    <rect
+       x="89.78125"
+       y="352.21875"
+       width="41.4375"
+       height="41.4375"
+       rx="0"
+       ry="0"
+       fill="#d4e8c4"
+       stroke="#49b675"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+       id="rect252" />
+    <rect
+       x="131.21875"
+       y="352.21875"
+       width="41.4375"
+       height="41.4375"
+       rx="0"
+       ry="0"
+       fill="#d4e8c4"
+       stroke="#49b675"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+       id="rect253" />
+    <rect
+       x="6.90625"
+       y="393.65625"
+       width="41.4375"
+       height="41.4375"
+       rx="0"
+       ry="0"
+       fill="#d4e8c4"
+       stroke="#49b675"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+       id="rect260" />
+    <rect
+       x="48.34375"
+       y="393.65625"
+       width="41.4375"
+       height="41.4375"
+       rx="0"
+       ry="0"
+       fill="#d4e8c4"
+       stroke="#49b675"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+       id="rect261" />
+    <rect
+       x="89.78125"
+       y="393.65625"
+       width="41.4375"
+       height="41.4375"
+       rx="0"
+       ry="0"
+       fill="#d4e8c4"
+       stroke="#49b675"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+       id="rect262" />
+    <rect
+       x="131.21875"
+       y="393.65625"
+       width="41.4375"
+       height="41.4375"
+       rx="0"
+       ry="0"
+       fill="#d4e8c4"
+       stroke="#49b675"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+       id="rect263" />
+    <image
+       x="3.453125"
+       y="390.20312"
+       width="48.34375"
+       height="48.34375"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAAABGdBTUEAALGPC/xhBQAAAAFzUkdC&#10;AK7OHOkAAADwUExURQAAAD4+PkZGRjo6Ojw8PD4+Pj8/Pz4+PjU1NUJCQjw8PDs7O0VFRTU1NUZG&#10;Rjo6OjU1NVy6vP99YEqVln3IycxkTUZFRd9xWFm1tjg4OD4/Ply5u+h0Wk6bnfx8X1Slp/B3XFev&#10;sVGho/Z6XlWpq3rFx2a+wHPBwkqIiWWztN2Gb0FdXkJ6e+mCaWWrrFKTk5BvY7RyYPSBZmFWUaBy&#10;ZMJqVcKEcW64utZuV0VsbKCLfsiXhreAb9GEbnFhWXGRi1RNSYFoX2CTkUiRk4iNhNdpUYahmtBm&#10;TqGwqDtMTKuilpK5tXF1bYjAvtd8Zc1kTeMHQmsAAAAQdFJOUwA08XdhnhAc8oa+PUzU3+98BGhB&#10;AAAJ30lEQVRo3u2aaVviOhSAx4VNZ7SlLXShdKEsIvsqCKIIzuh19P//m5ucLE2hIM71uZ8mH2YU&#10;ad6cNScn/fbt7/g79o7U6clpKpn5IUk/Mt8zicz3LwekUmc5NMy0BMMw0S8X5+jzLyMk0jCvaRoS&#10;H/hXjEwnvoRznpb2jvT5fwQkTzOJDxho5C4y/0GcDNK88SFDMnK54z92gwSy9AEM8IPjoz/T1Jlh&#10;GNuLvu/377fFM4zLxGnys4zTTVMY/c5s3sxmi/V5vZjt1Wed/iYqffo5xkn0cfNh1Mvi0Vy1bdtu&#10;r5r4l96oY0a/d/IZxlHk0f6MELLZUTvQZVnWnfacfFAc3UW++gnLJM+E5+7ofGjMbR0BbAf9a7+x&#10;D+sPgtouM8lDIzwnSBEiiqWlhaVQEES2FvzzbF2Q5kA3OzrOcU2bMwZwC/n8jKgKILI3y7tFhhnx&#10;ZSFnPiAwkwLjrknmKBXyhVIx+yQDxAaIPEWf5kuU0nsIKYlDopwzBhSRz7vwA0CQpsh/T4TuUszM&#10;4JQPzXJ0yZc0IooKl/skVyoV2bJ03fN064n8ucD+XOcqOzs6ND5ydXiUz9G7/VWuVmQ69MBeTpt0&#10;FQVim+b9YfFyusHgE9R/qWpVFocVKMqCCOvShTT7/PE9sZ/kucREDLfAnr79R1XLFXlj6L6iLEdk&#10;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&#10;"
+       clip-path="url(#06E6382B-C6A8-4EBB-8E53-3DCBBD41E5AE)"
+       style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
+       id="image280" />
+  </g>
+  <g
+     id="g290"
+     inkscape:label="Pfeil"
+     transform="rotate(180,117.67524,190.7595)"
+     style="display:none">
+    <path
+       style="display:inline;overflow:hidden;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ff2626;stroke-width:2.30229;stroke-opacity:1"
+       d="M 160.8737,324.73854 V 274.89089"
+       id="path28-8" />
+    <path
+       style="display:inline;overflow:hidden;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ff2626;stroke-width:1.49847;stroke-opacity:1"
+       d="m 165.60081,280.94247 -5.51775,-5.28598 5.33975,-5.11546"
+       id="path27-7"
+       transform="rotate(-90,185.01647,299.85545)" />
+    <path
+       style="display:inline;overflow:hidden;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ff2626;stroke-width:2.12132;stroke-opacity:1"
+       d="m 159.79359,275.71268 h 21.1596"
+       id="path28" />
+  </g>
+  <g
+     id="g290-5"
+     inkscape:label="Pfeil"
+     transform="rotate(90,226.77118,123.41827)"
+     style="overflow:hidden">
+    <path
+       style="display:inline;overflow:hidden;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#2627ff;stroke-width:1.57517;stroke-opacity:1"
+       d="m 159.67139,326.72483 h 23.3849"
+       id="path28-8-3" />
+    <path
+       style="display:inline;overflow:hidden;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#2627ff;stroke-width:1.54364;stroke-opacity:1"
+       d="m 165.48617,331.94312 -5.86832,-5.27435 5.67901,-5.10421"
+       id="path27-7-5" />
+  </g>
+  <g
+     id="g290-5-1"
+     inkscape:label="Pfeil"
+     transform="rotate(90,231.16425,145.9999)"
+     style="overflow:hidden">
+    <path
+       style="display:inline;overflow:hidden;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#2627ff;stroke-width:1.57517;stroke-opacity:1"
+       d="m 156.41562,319.97999 16.53562,16.53562"
+       id="path28-8-3-5" />
+    <path
+       style="display:inline;overflow:hidden;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#2627ff;stroke-width:1.54364;stroke-opacity:1"
+       d="m 156.8374,327.78155 -0.42,-7.87906 7.62489,0.40645"
+       id="path27-7-5-1" />
+  </g>
+  <g
+     id="g290-5-1-5"
+     inkscape:label="Pfeil"
+     transform="rotate(135,158.77987,194.89872)"
+     style="overflow:hidden">
+    <path
+       style="display:inline;overflow:hidden;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#2627ff;stroke-width:1.57517;stroke-opacity:1"
+       d="m 156.41562,319.97999 16.53562,16.53562"
+       id="path28-8-3-5-5" />
+    <path
+       style="display:inline;overflow:hidden;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#2627ff;stroke-width:1.54364;stroke-opacity:1"
+       d="m 156.8374,327.78155 -0.42,-7.87906 7.62489,0.40645"
+       id="path27-7-5-1-6" />
+  </g>
+  <text
+     xml:space="preserve"
+     style="font-weight:300;font-stretch:condensed;font-size:16px;font-family:'Fira SC';-inkscape-font-specification:'Fira SC, Light Condensed';display:inline;overflow:hidden;fill:#1200f2;fill-rule:evenodd;stroke:#2627ff;stroke-width:0.0426667;stroke-opacity:1"
+     x="74.082458"
+     y="109.9479"
+     id="text290-1"><tspan
+       sodipodi:role="line"
+       id="tspan290-4"
+       x="74.082458"
+       y="109.9479"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:condensed;font-size:16px;font-family:'Fira SC';-inkscape-font-specification:'Fira SC, Medium Condensed';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f20000;fill-opacity:1;stroke:#ff2626;stroke-opacity:1">+1 Zug</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-weight:300;font-stretch:condensed;font-size:16px;font-family:'Fira SC';-inkscape-font-specification:'Fira SC, Light Condensed';display:inline;overflow:hidden;fill:#1200f2;fill-rule:evenodd;stroke:#2627ff;stroke-width:0.0426667;stroke-opacity:1"
+     x="29.896454"
+     y="64.192955"
+     id="text290-1-5"><tspan
+       sodipodi:role="line"
+       id="tspan290-4-4"
+       x="29.896454"
+       y="64.192955"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:condensed;font-size:16px;font-family:'Fira SC';-inkscape-font-specification:'Fira SC, Medium Condensed';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f20000;fill-opacity:1;stroke:#ff2626;stroke-opacity:1">+1 Zug</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-weight:300;font-stretch:condensed;font-size:16px;font-family:'Fira SC';-inkscape-font-specification:'Fira SC, Light Condensed';display:inline;overflow:hidden;fill:#1200f2;fill-rule:evenodd;stroke:#2627ff;stroke-width:0.0426667;stroke-opacity:1"
+     x="58.167057"
+     y="85.395905"
+     id="text290-1-4"><tspan
+       sodipodi:role="line"
+       id="tspan290-4-9"
+       x="58.167057"
+       y="85.395905"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:condensed;font-size:16px;font-family:'Fira SC';-inkscape-font-specification:'Fira SC, Medium Condensed';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f20000;fill-opacity:1;stroke:#ff2626;stroke-opacity:1">+1 Zug</tspan></text>
+</svg>

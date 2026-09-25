@@ -1,5 +1,7 @@
 function initTask(subTask) {
   subTask.gridInfos = {
+    context: "printer",
+    conceptViewer: true,
     timeoutMinutes: 10, // Nach 10 Minuten wird eine Warnung angezeigt.
     hideSaveOrLoad: false, // Speichern und Laden von Lösungen möglich.
     showIfMutator: true, // Es wird das blaue Zahnrad für die controls_if-Bausteine angezeigt.
@@ -175,4 +177,21 @@ function initTask(subTask) {
     initBlocklySubTask(subTask);
 }
 // Laden der definierten Informationen
-initWrapper(initTask, ["easy", "medium", "hard"], null);
+window.initBlocklySubTask = function () { };
+window.taskData = window.taskData || {};
+window.taskData.waitInit = function () { initTask(window.taskData); };
+window.taskData.codecastParameters = window.taskData.codecastParameters || {
+   language: "de-DE",
+   platform: "blockly",
+   canChangePlatform: false,
+   showStepper: true,
+   showStack: true,
+   showViews: true,
+   showIO: true,
+   controls: { reload: false },
+   hideSettings: true,
+   jwinfMenu: { copyPaste: true, undoRedo: true, svgExport: true },
+   showExpectedOutput: false,
+   canAddUserTests: true
+};
+window.taskData.codecastParameters.showStack = true;

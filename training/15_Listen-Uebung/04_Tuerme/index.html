@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script>window.stringsLanguage='de';window.taskStrings={};</script>
+<script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js" id="import-modules"></script>
+<script class="remove" type="text/javascript">
+var modulesPath = '../../../../_common/modules/';
+importModules(['jquery-1.7.1','JSON-js','raphael-2.2.1','codecast-7.7','jschannel','raphaelFactory-1.0','delayFactory-1.0','simulationFactory-1.0','platform-pr','beav-1.0','installationAPI.01','miniPlatform','taskStyles-mobileFirst','jwinf-codecast_css','jwinf-codecast','conceptDisplay-1.0','conceptViewer-1.0','conceptViewer_css-1.0','blockly-robot-1.1','createAlgoreaInstructions-1.0','algoreaInstructionsStrings']);
+</script>
+<script class="remove" type="text/javascript">
+var json = {
+      "id": "21-DE-30-sortieren",
+      "language": "de",
+      "version": "de.01",
+      "authors": "Wolfgang Pohl",
+      "translators": [],
+      "license": "",
+      "taskPathPrefix": "",
+      "modulesPathPrefix": "",
+      "browserSupport": [],
+      "fullFeedback": true,
+      "minWidth": "auto"
+    };
+</script>
+<script type="text/javascript" src="task.js"></script>
+</head>
+<body id="app">
+<div id="react-container" style="width:100%;height:100vh"></div>
+<img src="icon.png" style="display:none" />
+<div id="task" style="display:none"><div id="tabsContainer"></div><div id="taskContent"><div id="gridContainer"></div><div id="blocklyLibContent"></div></div></div>
+<div id="taskIntro" style="display:none">
+        <div class="easy">
+          Programmiere den Roboter:<br>
+          <p>
+            Zwei verschieden hohe Hochhäuser stehen nebeneinander. Sie stehen richtig, wenn das linke Hochhaus kleiner
+            ist als das rechte.
+          </p>
+          <p>
+            Der Roboter soll das Feld rechts neben den Zahlen färben, wenn die Hochhäuser richtig stehen.
+            Jede Zahl gibt die Höhe des Hochhauses darüber an.
+          </p>
+        </div>
+        <div class="medium">
+          Programmiere den Roboter:<br>
+          <p>
+            Elf Hochhäuser stehen nebeneinander. Sie sind alle unterschiedlich hoch. Ein Hochhaus steht richtig, wenn
+            alle Hochhäuser
+            links von ihm kleiner sind. Das Hochhaus ganz links steht immer richtig.<br>
+          </p>
+          <p>
+            Der Roboter soll in der unteren Reihe die Felder unter den Hochhäusern färben, die richtig stehen.
+            Jede Zahl gibt die Höhe des Hochhauses darüber an.
+          </p>
+        </div>
+        <div class="hard">
+          Programmiere den Roboter:<br>
+          <p>
+            Elf Hochhäuser stehen nebeneinander. Sie sind alle unterschiedlich hoch; die Höhen haben die
+            Werte von 1 bis 11. Ein Hochhaus steht richtig, wenn links von ihm kein einziges größeres
+            Hochhaus steht und rechts von ihm kein einziges kleineres Hochhaus steht.
+          </p>
+          <p>
+            Der Roboter soll in der unteren Reihe die Felder unter den Hochhäusern färben, die richtig stehen.
+            Die Zahlen geben die Höhe des Hochhauses darüber an.
+          </p>
+        </div>
+        <p>
+          Beachte: Dein Programm muss mit allen Testfällen zurechtkommen.
+        </p>
+      </div>
+<div id="solution" style="display:none"></div>
+<div id="taskHints" style="display:none"></div>
+</body>
+</html>

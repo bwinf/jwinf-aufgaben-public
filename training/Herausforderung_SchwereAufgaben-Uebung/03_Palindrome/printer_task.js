@@ -1,5 +1,6 @@
 function initTask(subTask) {
   subTask.gridInfos = {
+    context: "printer",
     hideSaveOrLoad: true,
     actionDelay: 200,
 
@@ -26,7 +27,7 @@ function initTask(subTask) {
     blocklyColourTheme: "bwinf",
     maxInstructions: 100,
     checkEndEveryTurn: false,
-    checkEndCondition: function(context, lastTurn) {
+    checkEndCondition: function (context, lastTurn) {
       if (!lastTurn) return;
 
       // throws, if something is wrong …
@@ -36,7 +37,7 @@ function initTask(subTask) {
       context.success = true;
       throw (window.languageStrings.messages.outputCorrect);
     },
-    computeGrade: function(context, message) {
+    computeGrade: function (context, message) {
       var rate = 0;
       if (context.success) {
         rate = 1;
@@ -54,17 +55,17 @@ function initTask(subTask) {
 
   subTask.data = {
     easy: [{
-        input: "spanien\nregallager\nhimmel\nalexander\ndefinition\nneozoen\notto\noffene\nente\nreittier\nmitten\nreliefpfeiler\norganisatoren\nrentner\nneben\ngegebenen\ngehege\n",
-        output: "regallager\nneozoen\notto\nreittier\nreliefpfeiler\nrentner\nneben\n",
-      },
-      {
-        input: "JRYSDVJNDZ\nDJSQZTJWAM\nPPUOBBOUPP\nARCERA\nPQBTVRBQP\nUFBKFFKBFU\nALZJCMFGZV\nPMPWSZIGQJ\nWFWOUIRWOWFW\nZXHUDDUHXZ\nNZDHNNHDZN\nJSJFKKFJSJ\nGWJCAGWUBJ\nTLKDAADKLT\nUAVMNGEPSA\nXWGKOOKGWX\nKKWOTCCTHD\nLFFASGQPPP\nPXPWEEWPXP\nILAMFVMROH\nBTCDPPDCTB\nAXFKVVKFXA\nJJBZZEHVNZ\n",
-        output: "PPUOBBOUPP\nUFBKFFKBFU\nZXHUDDUHXZ\nNZDHNNHDZN\nJSJFKKFJSJ\nTLKDAADKLT\nXWGKOOKGWX\nPXPWEEWPXP\nBTCDPPDCTB\nAXFKVVKFXA\n",
-      },
-      {
-        input: "kooophilpxoksewp\nsfumhigoiyefohpz\nfzdiigjemdkfultm\ndlutmphvvhpmtuld\ngeoivvdssdvvioeg\nkyblkomssmoklbyk\nnmhlyzyllyzylhmn\nrjllbuhthsijcogi\natdyinkyvtfegnzx\najmsjeruurejsmja\njjydfmpvvpmfdyjj\neavwlgtbbtglwvae\nlacapcqamxjoxxch\nstskqkuhxtuyxbjz\nnxeaokwfodlyfnwh\ngqeytixcsldeklkb\nwwzvmsfccfsmvzww\nlwhevjpaapjvehwl\nflnpoouylkvpwzgc\nvzdqmeqbfdouabqz\n",
-        output: "dlutmphvvhpmtuld\ngeoivvdssdvvioeg\nkyblkomssmoklbyk\nnmhlyzyllyzylhmn\najmsjeruurejsmja\njjydfmpvvpmfdyjj\neavwlgtbbtglwvae\nwwzvmsfccfsmvzww\nlwhevjpaapjvehwl\n",
-      },
+      input: "spanien\nregallager\nhimmel\nalexander\ndefinition\nneozoen\notto\noffene\nente\nreittier\nmitten\nreliefpfeiler\norganisatoren\nrentner\nneben\ngegebenen\ngehege\n",
+      output: "regallager\nneozoen\notto\nreittier\nreliefpfeiler\nrentner\nneben\n",
+    },
+    {
+      input: "JRYSDVJNDZ\nDJSQZTJWAM\nPPUOBBOUPP\nARCERA\nPQBTVRBQP\nUFBKFFKBFU\nALZJCMFGZV\nPMPWSZIGQJ\nWFWOUIRWOWFW\nZXHUDDUHXZ\nNZDHNNHDZN\nJSJFKKFJSJ\nGWJCAGWUBJ\nTLKDAADKLT\nUAVMNGEPSA\nXWGKOOKGWX\nKKWOTCCTHD\nLFFASGQPPP\nPXPWEEWPXP\nILAMFVMROH\nBTCDPPDCTB\nAXFKVVKFXA\nJJBZZEHVNZ\n",
+      output: "PPUOBBOUPP\nUFBKFFKBFU\nZXHUDDUHXZ\nNZDHNNHDZN\nJSJFKKFJSJ\nTLKDAADKLT\nXWGKOOKGWX\nPXPWEEWPXP\nBTCDPPDCTB\nAXFKVVKFXA\n",
+    },
+    {
+      input: "kooophilpxoksewp\nsfumhigoiyefohpz\nfzdiigjemdkfultm\ndlutmphvvhpmtuld\ngeoivvdssdvvioeg\nkyblkomssmoklbyk\nnmhlyzyllyzylhmn\nrjllbuhthsijcogi\natdyinkyvtfegnzx\najmsjeruurejsmja\njjydfmpvvpmfdyjj\neavwlgtbbtglwvae\nlacapcqamxjoxxch\nstskqkuhxtuyxbjz\nnxeaokwfodlyfnwh\ngqeytixcsldeklkb\nwwzvmsfccfsmvzww\nlwhevjpaapjvehwl\nflnpoouylkvpwzgc\nvzdqmeqbfdouabqz\n",
+      output: "dlutmphvvhpmtuld\ngeoivvdssdvvioeg\nkyblkomssmoklbyk\nnmhlyzyllyzylhmn\najmsjeruurejsmja\njjydfmpvvpmfdyjj\neavwlgtbbtglwvae\nwwzvmsfccfsmvzww\nlwhevjpaapjvehwl\n",
+    },
 
     ],
   };
@@ -72,4 +73,20 @@ function initTask(subTask) {
   initBlocklySubTask(subTask);
 }
 
-initWrapper(initTask, null, null);
+window.initBlocklySubTask = function () { };
+window.taskData = window.taskData || {};
+window.taskData.waitInit = function () { initTask(window.taskData); };
+window.taskData.codecastParameters = window.taskData.codecastParameters || {
+  language: "de-DE",
+  platform: "blockly",
+  canChangePlatform: false,
+  showStepper: true,
+  showStack: true,
+  showViews: true,
+  showIO: true,
+  controls: { reload: false },
+  hideSettings: true,
+  jwinfMenu: { copyPaste: true, undoRedo: true, svgExport: true }
+};
+window.taskData.codecastParameters.showStack = true;
+

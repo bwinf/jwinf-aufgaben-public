@@ -1,0 +1,12 @@
+name: "08.03 Dominosteine"
+standalone: true
+public_listing: true
+
+languages:
+  - blockly
+  - python
+  
+tags:
+  - Roboter
+  - Verzweigungen
+  - Wiederhole mit fester Anzahl

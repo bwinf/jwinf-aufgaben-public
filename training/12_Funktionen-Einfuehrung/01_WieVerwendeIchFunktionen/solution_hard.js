@@ -1,0 +1,51 @@
+const pythonCode_01_3 = `from robot import *
+
+def linksMuster():
+    faerbeFeld()
+    links()
+    faerbeFeld()
+    links()
+    faerbeFeld()
+    oben()
+    faerbeFeld()
+    rechts()
+    rechts()
+    faerbeFeld()
+
+def rechtsMuster():
+    faerbeFeld()
+    rechts()
+    faerbeFeld()
+    rechts()
+    faerbeFeld()
+    oben()
+    faerbeFeld()
+    links()
+    links()
+    faerbeFeld()
+    
+def musterGesamt():
+    for i in range(2):
+        faerbeFeld()
+        oben()
+    linksMuster()
+    oben()
+    rechtsMuster()
+    oben()
+    faerbeFeld()
+    oben()
+    rechtsMuster()
+    oben()
+    linksMuster()
+    for i in range(10):
+        unten()
+        
+for i in range(3):
+    rechts()
+musterGesamt()
+for i in range(8):
+    rechts()
+musterGesamt()
+for i in range(6):
+    rechts()
+musterGesamt()`;

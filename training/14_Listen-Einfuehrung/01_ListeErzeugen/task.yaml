@@ -1,0 +1,13 @@
+name: "14.01 Liste erzeugen"
+standalone: true
+public_listing: true
+
+languages:
+  - blockly
+  - python
+
+tags:
+  - Text
+  - Liste
+  - Bedingte Wiederholung
+  - Variablen

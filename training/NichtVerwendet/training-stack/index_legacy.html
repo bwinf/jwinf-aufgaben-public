@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Weg wiederholen</title>
+  <script>
+    window.stringsLanguage = 'de';
+    window.taskStrings = {
+      success: "Bravo! Der Roboter hat alle markierten Felder gefärbt.",
+      failure: "Dein Roboter hat nicht alle markierten Felder gefärbt.",
+    };
+  </script>
+  <script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js" id="import-modules"></script>
+  <script class="remove" type="text/javascript">
+    var modulesPath = '../../../../_common/modules/'
+    importModules([
+      'jquery-1.7.1', 'JSON-js', 'raphael-2.2.1', 'beaver-task-2.0', 'jschannel', 'raphaelFactory-1.0', 'delayFactory-1.0', 'simulationFactory-1.0',
+      'platform-pr', 'buttonsAndMessages', 'beav-1.0', 'installationAPI.01', 'miniPlatform',
+      'taskStyles-mobileFirst', 'blockly-robot-0.9', 'jwinf_css'
+    ]);
+    // set Blockly as default language when none is specified through ?language=
+    importLanguageModules('blockly');
+  </script>
+  <script class="remove" type="text/javascript">
+    var json = {
+      "id": "19-DE-22-weg-wiederholen",
+      "language": "de",
+      "version": "de.01",
+      "authors": "Robert Czechowski",
+      "translators": [],
+      "license": "",
+      "taskPathPrefix": "",
+      "modulesPathPrefix": "",
+      "browserSupport": [],
+      "fullFeedback": true,
+      "minWidth": "auto"
+    };
+  </script>
+  <script type="text/javascript" src="task_legacy.js"></script>
+</head>
+
+<body onresize="task.displayedSubTask.updateScale()">
+  <div id="task">
+    <h1>Weg wiederholen</h1>
+    <img src="marker.png" style="display:none" />
+    <img src="paint.png" style="display:none" />
+    <img src="green_robot.png" style="display:none" />
+
+    <div id="tabsContainer"></div>
+    <div id="taskContent" style="text-align:left;position:relative">
+      <div id="taskIntro">
+        <p>Programmiere den Roboter: Der Roboter soll alle markierten Felder färben.<p>
+          <p>
+            Benutze die Liste als Stapelspeicher mit dem Bausteinen <code>In der Liste … bei <b>letztem</b> Element füge ein</code> und <code>In der Liste … nimm und entferne bei <b>letztem</b> Element</code>
+          </p>
+          <p>
+            Beachte, dass diese Aufgabe mehrere Testfälle hat, und dein Programm mit allen Testfällen zurechtkommen muss.
+          </p>
+      </div>
+      <div id="gridContainer"></div>
+      <div id="blocklyLibContent"></div>
+    </div>
+
+  </div><!-- task -->
+</body>
+
+</html>

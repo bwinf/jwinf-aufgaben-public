@@ -1,0 +1,8 @@
+const pythonCode_02_1 = `from turtle import *
+
+geheSchritte(5)
+dreheRechtsGrad(90)
+
+for i in range(8):
+    geheSchritte(1)
+    dreheLinksGrad(45)`;

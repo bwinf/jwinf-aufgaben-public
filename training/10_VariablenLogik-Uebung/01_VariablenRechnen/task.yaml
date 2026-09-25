@@ -1,0 +1,12 @@
+name: "10.01 Variablen Rechnen"
+standalone: true
+public_listing: true
+
+languages:
+  - blockly
+  - python
+  
+tags:
+  - Roboter
+  - Variablen
+  - Wiederhole mit fester Anzahl

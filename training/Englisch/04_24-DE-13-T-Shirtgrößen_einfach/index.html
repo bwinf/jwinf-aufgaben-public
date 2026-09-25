@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script>window.stringsLanguage='de';window.taskStrings={};</script>
+<script class="remove" type="text/javascript" src="../../../../_common/modules/pemFioi/importModules-1.4-mobileFirst.js" id="import-modules"></script>
+<script class="remove" type="text/javascript">
+var modulesPath = '../../../../_common/modules/';
+importModules(['jquery-1.7.1','JSON-js','raphael-2.2.1','codecast-7.7','jschannel','raphaelFactory-1.0','delayFactory-1.0','simulationFactory-1.0','platform-pr','beav-1.0','installationAPI.01','miniPlatform','taskStyles-mobileFirst','jwinf-codecast_css','jwinf-codecast','conceptDisplay-1.0','conceptViewer-1.0','conceptViewer_css-1.0','blockly-printer']);
+</script>
+<script class="remove" type="text/javascript">
+var json = {
+      "id": "24-DE-13-T-Shirtgrößen_einfach",
+      "language": "de",
+      "version": "de.01",
+      "authors": "Annika Petersen",
+      "translators": [],
+      "license": "",
+      "taskPathPrefix": "",
+      "modulesPathPrefix": "",
+      "browserSupport": [],
+      "acceptedAnswers": [""],
+      "fullFeedback": true,
+      "minWidth": "auto"
+    };
+</script>
+<script type="text/javascript" src="printer_task.js"></script>
+</head>
+<body id="app">
+<div id="react-container" style="width:100%;height:100vh"></div>
+
+<div id="task" style="display:none"><div id="tabsContainer"></div><div id="taskContent"><div id="gridContainer"></div><div id="blocklyLibContent"></div></div></div>
+<div id="taskIntro" style="display:none">
+        Write a program:
+        <div class="easy">
+          <p>
+            Juno wears T-Shirts of size S only. The input containes the size of one T-Shirt.
+          </p>
+          <p>
+            The program has to check, if the T-Shirt fits Juno or not. Print <code>fitting</code> or <code>not fitting</code> accordingly.
+          </p>
+        </div>
+        <div class="medium">
+          <p>Juna wears T-Shirts of size M only. The input contains the size (S, M or L) of a T-Shirt.</p>
+          <p> The program has to check if the T-Shirt fits Juna, is too big (L) or too small (S). Print <code>fitting</code>, <code>too big</code> oder <code>too small</code> accordingly.
+        </div>
+        <div class = "hard">
+          <p>Juna wears T-Shirts of size M only. She tries on several T-Shirts. The input contains their sizes (S, M or L).</p>
+          <p> The program has to check if the T-Shirts fit Juna, are too big (L) or too small (S). For each T-Shirt print <code>fitting</code>, <code>too big</code> oder <code>too small</code> accordingly.<p>
+        </div>
+        <p class="easy medium hard">
+          <b>Hint:</b> Before using a variable you need to initialize it: 
+                    <img data-lang="blockly" src="Variable_initialisieren.png" />
+        </p>
+        <div>
+          <p>
+            <i>Note: Your program must be able to handle all test cases.</i>
+          </p>
+        </div>
+        <div class = "long">
+          <h2>Details:</h2>
+          <hr>
+          Using the block <img src="equal.png"> you can compare two elements.<br>
+          <img src="equal.png"> returns <code>True</code>, if the elements are the equal.<br>
+          <img src="unequal.png"> returns <code>True</code>, if the elements are not equal.<br>
+       </div>
+      </div>
+<div id="solution" style="display:none"></div>
+<div id="taskHints" style="display:none"></div>
+</body>
+</html>

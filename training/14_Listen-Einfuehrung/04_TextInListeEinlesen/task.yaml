@@ -1,0 +1,13 @@
+name: "14.04 Text in Liste einlesen"
+standalone: true
+public_listing: true
+
+languages:
+  - blockly
+  - python
+
+tags:
+  - Text
+  - Liste
+  - Variablen
+  - Bedingte Wiederholung

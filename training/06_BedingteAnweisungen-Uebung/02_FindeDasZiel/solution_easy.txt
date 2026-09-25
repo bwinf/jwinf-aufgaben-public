@@ -1,0 +1,7 @@
+from robot import *
+
+while not flaggeErobert():
+    dreheLinks()
+    if vorHindernis():
+        dreheRechts()
+    vorwaerts()

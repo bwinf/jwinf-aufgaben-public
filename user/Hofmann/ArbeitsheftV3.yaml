@@ -20,17 +20,17 @@ tasks:
 
 
   "Wiederholung mit fester Anzahl: Murmeln":
-    "../../training/01_Grundbausteine-Einfuehrung/06_Wiederholungen": {stars: 4}
+    "../../training/02_Wiederholung_mit_fester_Anzahl_Einfuehrung/01_Wiederholungen": {stars: 4}
   "Wiederholung mit fester Anzahl: Muster malen":
-    "../../training/01_Grundbausteine-Einfuehrung/07_MusterMalen": {stars: 4}
+    "../../training/02_Wiederholung_mit_fester_Anzahl_Einfuehrung/02_MusterMalen": {stars: 4}
   "Wiederholung mit fester Anzahl: Edelsteine sammeln":
     "./WdhFA_EdelsteineSammeln_4S": {stars: 4}
   "Wiederholung mit fester Anzahl: Bring den Fisch zur Insel":
-    "../../training/01_Grundbausteine-Einfuehrung/10_MehrWiederholungen": {stars: 4}
+    "../../training/02_Wiederholung_mit_fester_Anzahl_Einfuehrung/03_MehrWiederholungen": {stars: 4}
   "Wiederholung mit fester Anzahl: Leitkegel platzieren":
-    "../../training/04_Wiederholungen-Uebung/03_StraßeSichern": {stars: 4}
+    "../../training/05_Wiederholungen-Uebung/03_StraßeSichern": {stars: 4}
   "Wiederholung mit fester Anzahl: Zick-Zack":
-    "../../training/01_Grundbausteine-Einfuehrung/11_Zick-Zack": {stars: 4}
+    "../../training/02_Wiederholung_mit_fester_Anzahl_Einfuehrung/04_Zick-Zack": {stars: 4}
 
 
   "Bedingte Anweisung: Auf Markierungen malen":
@@ -44,19 +44,19 @@ tasks:
   "Bedingte Anweisung: Ab um die Hecke":
     "./BA_Labyrinth_2-3S": {stars: 3}
   "Bedingte Anweisung: Beheize das Schloss":
-    "../../training/05_BedingteAnweisungen-Uebung/04_BeheizeDasSchloss": {stars: 4}    
+    "../../training/06_BedingteAnweisungen-Uebung/04_BeheizeDasSchloss": {stars: 4}    
   "Bedingte Anweisung: Finde den Weg zum See":
     "./BA_FindeDenWegZumSee_2-3S": {stars: 3}
   "Bedingte Anweisung: Haus malen":
-    "../../training/01_Grundbausteine-Einfuehrung/13_Abschluss-HausMalen": {stars: 4}
+    "../../training/alt/13_Abschluss-HausMalen": {stars: 4}
   "Bedingte Anweisung: Fischen":
-    "../../training/01_Grundbausteine-Einfuehrung/12_Fischen": {stars: 4}
+    "../../training/03_Bedingte_Anweisungen_Einfuehrung/03_Fischen": {stars: 4}
 
 
   "Wiederholung mit Bedingung: Viele Murmeln":
-    "../../training/03_Wiederholungen-Vertiefung/02_SolangeBis-Murmeln": {stars: 4}
+    "../../training/04_Wiederholungen_mit_Bedingung/02_SolangeBis-Murmeln": {stars: 4}
   "Wiederholung mit Bedingung: Finde den Schatz":
-    "../../training/03_Wiederholungen-Vertiefung/01_SolangeBis-Schatz": {stars: 4}    
+    "../../training/04_Wiederholungen_mit_Bedingung/01_SolangeBis-Schatz": {stars: 4}    
   "Wiederholung mit Bedingung: Finde das Ziel":
     "./WdhMB_FindeDasZiel_2S": {stars: 2}
 
@@ -72,20 +72,20 @@ tasks:
 
 
   "Ein-/Ausgabe: Text ausgeben":
-    "../../training/06_EinAusgabe-Einfuehrung/01_TextAusgeben": {stars: 4}
+    "../../training/07_EinAusgabe-Einfuehrung/01_TextAusgeben": {stars: 4}
   "Ein-/Ausgabe: Text verändern":
-    "../../training/06_EinAusgabe-Einfuehrung/02_TextVeraendern": {stars: 4}
+    "../../training/07_EinAusgabe-Einfuehrung/02_TextVeraendern": {stars: 4}
   "Ein-/Ausgabe: Buchstaben entnehmen":
-    "../../training/06_EinAusgabe-Einfuehrung/03_BuchstabenEntnehmen": {stars: 4}
+    "../../training/07_EinAusgabe-Einfuehrung/03_BuchstabenEntnehmen": {stars: 4}
   "Ein-/Ausgabe: Textteile entnehmen":
-    "../../training/06_EinAusgabe-Einfuehrung/04_TextteileEntnehmen": {stars: 4}
+    "../../training/07_EinAusgabe-Einfuehrung/04_TextteileEntnehmen": {stars: 4}
   "Ein-/Ausgabe: Textteile suchen":
-    "../../training/06_EinAusgabe-Einfuehrung/05_TextteileSuchen": {stars: 4}
+    "../../training/07_EinAusgabe-Einfuehrung/05_TextteileSuchen": {stars: 4}
 
 
 
   "Vermischte und schwere Aufgaben: Muster malen mit der Schildkröte":
-    "../../training/04_Wiederholungen-Uebung/02_MusterMalen": {stars: 4}
+    "../../training/05_Wiederholungen-Uebung/02_MusterMalen": {stars: 4}
   "Vermischte und schwere Aufgaben: Sammle alle Edelsteine":
     "./VSA_EdelsteineUndHindernisse_4S": {stars: 4}
   "Vermischte und schwere Aufgaben: Finde den Weg zum See":
@@ -93,7 +93,7 @@ tasks:
   "Vermischte und schwere Aufgaben: Plattformen":
     "./VSA_Plattformen_3-4S": {stars: 4}
   "Vermischte und schwere Aufgaben mit Variablen: Alle Murmeln":
-    "../../training/08_VariablenLogik-Uebung/02_AlleMurmeln": {stars: 4}
+    "../../training/10_VariablenLogik-Uebung/02_AlleMurmeln": {stars: 4}
 
 
-message: "<h3 class=\'title is-5\'>Wusstest du schon, …</h3><p>… dass du Programme zwischen den verschiedenen Aufgabenversionen <b>kopieren</b> kannst? Nutze dazu einfach das Aufgabenmenü, oben rechts in der Aufgabe, oder die Tastenkürzel Strg+C und Strg+V (Cmd+C und Cmd+V).</p>"
+message: "<h3 class='title is-5'>Wusstest du schon, …</h3><p>… dass du Programme zwischen den verschiedenen Aufgabenversionen <b>kopieren</b> kannst? Nutze dazu einfach das Aufgabenmenü, oben rechts in der Aufgabe, oder die Tastenkürzel Strg+C und Strg+V (Cmd+C und Cmd+V).</p>"

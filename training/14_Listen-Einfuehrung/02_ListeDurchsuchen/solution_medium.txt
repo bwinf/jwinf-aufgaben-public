@@ -1,0 +1,9 @@
+from printer import *
+
+l = []
+
+while not eingabeEnde():
+    l.append(lies())
+
+l.remove("nicht")    
+schreibe(l)

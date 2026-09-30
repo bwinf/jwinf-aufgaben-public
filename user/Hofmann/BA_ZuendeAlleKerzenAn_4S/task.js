@@ -26,11 +26,11 @@ function initTask(subTask) {
    },
     itemTypes: {
       robot: {img: imgPath+"blue_robot.png", side: 85, isRobot: true, offsetX: -10, offsetY: 10, zOrder: 2},
-      initial_paint: {num: 3, img: "kerze.png", side: 60, isPaint: true, zOrder: 1},
+      initial_paint: {num: 13, img: "kerze.png", side: 60, isPaint: true, zOrder: 1},
       paint: {num: 2, img: "flamme.png", side: 60,  isWithdrawable: true, zOrder: 3},
-      marker: {num: 4, img: "docht.png", side: 60, isContainer: true, containerFilter: function(item) {return item.type === "paint";}, zOrder: 0},
+      marker: {num: 14, img: "docht.png", side: 60, isContainer: true, containerFilter: function(item) {return item.type === "paint";}, zOrder: 0},
       number: { side: 60, zOrder: 1 },
-      board_background: { num: 5, color: "#ffffff", side: 60, zOrder: 0 },
+      board_background: { num: 15, color: "#ffffff", side: 60, zOrder: 0 },
       board: { side: 60, isWritable: true, zOrder: 1 }
     },
     maxInstructions: {
@@ -112,10 +112,10 @@ function initTask(subTask) {
       tiles: [
         [1, 1, 1, 1, 1, 1, 1, 1, 1],
         [1, 1, 1, 1, 1, 1, 1, 1, 1],
-        [1, 1, 1, 1, 4, 1, 1, 1, 1],
-        [1, 1, 1, 1, 3, 1, 1, 1, 1],
-        [1, 1, 1, 1, 3, 1, 1, 1, 1],
-        [1, 1, 1, 1, 3, 1, 1, 1, 1]
+        [1, 1, 1, 1, 14, 1, 1, 1, 1],
+        [1, 1, 1, 1, 13, 1, 1, 1, 1],
+        [1, 1, 1, 1, 13, 1, 1, 1, 1],
+        [1, 1, 1, 1, 13, 1, 1, 1, 1]
       ],
       initItems: [{
         row: 5,
@@ -126,11 +126,11 @@ function initTask(subTask) {
     medium: [{
       tiles: [
         [1, 1, 1, 1, 1, 1, 1, 1, 1],
-        [1, 1, 4, 4, 4, 4, 4, 1, 1],
-        [1, 1, 3, 3, 3, 3, 3, 1, 1],
-        [1, 1, 3, 3, 3, 3, 3, 1, 1],
-        [1, 1, 3, 3, 3, 3, 3, 1, 1],
-        [1, 1, 3, 3, 3, 3, 3, 1, 1]
+        [1, 1, 14, 14, 14, 14, 14, 1, 1],
+        [1, 1, 13, 13, 13, 13, 13, 1, 1],
+        [1, 1, 13, 13, 13, 13, 13, 1, 1],
+        [1, 1, 13, 13, 13, 13, 13, 1, 1],
+        [1, 1, 13, 13, 13, 13, 13, 1, 1]
       ],
       initItems: [{
         row: 5,
@@ -142,10 +142,10 @@ function initTask(subTask) {
       tiles: [
       [1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
       [1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
-      [1, 1, 4, 1, 4, 4, 1, 1, 4, 1],
-      [1, 1, 3, 1, 3, 3, 1, 1, 3, 1],
-      [1, 1, 3, 1, 3, 3, 1, 1, 3, 1],
-      [1, 1, 3, 1, 3, 3, 1, 1, 3, 1]
+      [1, 1, 14, 1, 14, 14, 1, 1, 14, 1],
+      [1, 1, 13, 1, 13, 13, 1, 1, 13, 1],
+      [1, 1, 13, 1, 13, 13, 1, 1, 13, 1],
+      [1, 1, 13, 1, 13, 13, 1, 1, 13, 1]
       ],
       initItems: [{
         row: 5,

@@ -6,9 +6,8 @@ stages:
 testdeploy:
   image: 'alpine'
   stage: testdeploy
-  only:
-    - main
-    - deploy
+  rules:
+    - if: '$CI_PROJECT_PATH == "bwinf/jwinf-aufgaben-public" && ($CI_COMMIT_BRANCH == "main" || $CI_COMMIT_BRANCH == "deploy")'
   script:
     # Setup SSH deploy keys
     - 'which ssh-agent || ( apk add --no-cache openssh-client )'
@@ -30,9 +29,8 @@ testdeploy:
 deploy:
   image: 'alpine:latest'
   stage: deploy
-  only:
-    - main
-    - deploy
+  rules:
+    - if: '$CI_PROJECT_PATH == "bwinf/jwinf-aufgaben-public" && ($CI_COMMIT_BRANCH == "main" || $CI_COMMIT_BRANCH == "deploy")'
   script:
     # Setup SSH deploy keys
     - 'which ssh-agent || ( apk add --no-cache openssh-client )'
@@ -54,8 +52,8 @@ gitcopy:
     name: alpine/git
     entrypoint: [""]
   stage: gitcopy
-  only:
-    - main
+  rules:
+    - if: '$CI_PROJECT_PATH == "bwinf/jwinf-aufgaben-public" && $CI_COMMIT_BRANCH == "main"'
   variables:
     GIT_DEPTH: 0
   before_script:

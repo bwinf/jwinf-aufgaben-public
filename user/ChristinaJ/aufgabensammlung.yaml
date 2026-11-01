@@ -1,0 +1,15 @@
+category: public
+
+name: "Test Kapitel 8 - Variablen"
+secret: "WPF-Info-8-FSG"
+duration_minutes: 15
+
+language: blockly
+
+tasks:
+  "Aufgabe 1 - Variablen und Rechnen":
+    "../../training/10_VariablenLogik-Uebung/01_VariablenRechnen": {stars: 4}
+  "Aufgabe 2 - Muster mit Variablen":
+    "../../training/08_VariablenLogik-Einfuehrung/04_MusterMitVariablen": {stars: 4}
+  "Aufgabe 3 - Murmel finden":
+    "../../training/10_VariablenLogik-Uebung/04_MurmelnFinden": {stars: 4}
